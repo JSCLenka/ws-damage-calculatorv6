@@ -1,0 +1,83 @@
+[
+  {
+    "name": "母を想うフェイト",
+    "code": "N1/W32-004",
+    "rarity": "U",
+    "expansion": "Mahou Shoujo Lyrical Nanoha THE MOVIE 1st & 2nd A's",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7000",
+    "soul": 2,
+    "flavor_text": "ワガママを言って、母さんを困らせてばかりだった",
+    "ability": [
+      "【永】 他のあなたの《使い魔》のキャラがいるなら、このカードのパワーを＋2000。",
+      "【自】［(6)］ このカードがアタックした時、クライマックス置場に「ファランクスシフト」があるなら、あなたはコストを払ってよい。そうしたら、あなたの「母を想うフェイト」1枚につき、次の行動を行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Clone 《クローン》"
+    ],
+    "set": "N1",
+    "release": "W32",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card18898-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连动(1张「母を想うフェイト」): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连动(2张「母を想うフェイト」): 烧1 x2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "发动CX连动(3张「母を想うフェイト」): 烧1 x3次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          },
+          {
+            "label": "发动CX连动(4张「母を想うフェイト」): 烧1 x4次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

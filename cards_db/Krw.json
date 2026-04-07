@@ -1,0 +1,263 @@
+[
+  {
+    "name": "殿堂入り 静流",
+    "code": "Krw/W102-102",
+    "rarity": "C",
+    "expansion": "Key All Star",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 あなたのクライマックス置場に「ソウルメイト」が置かれた時、あなたのレベル置場のカードのレベルの合計が6以上なら、そのターン中、このカードは次の2つの能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラをクロック置場に置いてよい。』『【自】［手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを5枚まで選び、山札に戻し、相手はその山札をシャッフルする。』"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Disciplinary Committee"
+    ],
+    "set": "Krw",
+    "release": "W102",
+    "sid": "102",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/key_w102/krw_w102_102.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 あなたのクライマックス置場に「ソウルメイト」が置かれた時、あなたのレベル置場のカードのレベルの合計が6以上なら、そのターン中、このカードは次の2つの能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラをクロック置場に置いてよい。』『【自】［手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを5枚まで選び、山札に戻し、相手はその山札をシャッフルする。』"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回復しない",
+            "instructions": []
+          },
+          {
+            "label": "1点回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動 (経験6以上)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "正面アタック",
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "相手をリバースしない",
+                    "instructions": []
+                  },
+                  {
+                    "label": "相手をリバース→クロック送り",
+                    "instructions": [
+                      {
+                        "op": "OppReverseToClock"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "label": "ダイレクトアタック",
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "効果を発動しない",
+                    "instructions": []
+                  },
+                  {
+                    "label": "相手の控え室5枚を山札に戻す",
+                    "instructions": [
+                      {
+                        "op": "ReverseShuffle",
+                        "amount": 5
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夫婦漫才 小鳥",
+    "code": "Krw/W78-103",
+    "rarity": "R",
+    "expansion": "Key 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "いい女ってドライなの",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手のレベル3以下のキャラを1枚選び、控え室に置いてよい。そうしたら、相手は自分の控え室のコスト0以下のキャラを1枚まで選び、そのキャラがいた枠に置く。",
+      "【自】［手札の「クラスの異端児 小鳥」を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Plant 《植物》"
+    ],
+    "set": "Krw",
+    "release": "W78",
+    "sid": "103",
+    "image": "https://images.littleakiba.com/tcg/card59229-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付代价，发动效果",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "不支付代价",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "超法規的な存在 朱音",
+    "code": "Krw/WE50-45",
+    "rarity": "N",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】【CXコンボ】 あなたのCX置場に「ようこそ、我が神秘の部屋に」が置かれた時、そのターン中、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】【ターン1】 このカードのトリガーチェックでトリガーアイコンにがあるカードか、「ようこそ、我が神秘の部屋に」がでた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Magic",
+      "Occult"
+    ],
+    "set": "Krw",
+    "release": "WE50",
+    "sid": "45",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/krw_we50/krw_we50_45.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击时未触发魂标或指定CX (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 攻击时触发魂标或指定CX -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "超法規的な存在 朱音",
+    "code": "Krw/WE50-45PRR",
+    "rarity": "PRR",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】【CXコンボ】 あなたのCX置場に「ようこそ、我が神秘の部屋に」が置かれた時、そのターン中、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】【ターン1】 このカードのトリガーチェックでトリガーアイコンにがあるカードか、「ようこそ、我が神秘の部屋に」がでた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Magic",
+      "Occult"
+    ],
+    "set": "Krw",
+    "release": "WE50",
+    "sid": "45PRR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/krw_we50/krw_we50_45prr.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 条件未達成 / 発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: トリガーチェックで魂アイコンか対応CXが出た → 3ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

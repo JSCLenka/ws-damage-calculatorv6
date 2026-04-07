@@ -1,0 +1,57 @@
+[
+  {
+    "name": "図書室の主 ことみ",
+    "code": "Kcl/W78-109",
+    "rarity": "U",
+    "expansion": "Key 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "全部、読んじゃったから",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの、《Anniversary》か《音楽》のキャラの枚数に等しい。",
+      "【自】［手札の、《Anniversary》か《音楽》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から2枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Book 《本》"
+    ],
+    "set": "Kcl",
+    "release": "W78",
+    "sid": "109",
+    "image": "https://images.littleakiba.com/tcg/card59156-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用，检视对手牌库底2张，根据高潮卡数量烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

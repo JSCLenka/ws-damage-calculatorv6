@@ -1,0 +1,579 @@
+[
+  {
+    "name": "Dream Believers 日野下 花帆",
+    "code": "LHS/W122-003",
+    "rarity": "RR",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「抱きしめる花びら 日野下 花帆」の【起】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「水彩世界」があるなら、次の3つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。』『このカードのアタックの終わりに、あなたはこのカードの正面の【リバース】しているキャラを1枚まで選び、クロック置場に置く。』『［手札を2枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Cerise Bouquet"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_003.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不回复",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【CX连击】选项1: 对手换费",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              }
+            ]
+          },
+          {
+            "label": "【CX连击】选项2: 击倒送时计",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "条件达成: 击倒对手",
+                "instructions": [
+                  {
+                    "op": "OppReverseToClock"
+                  }
+                ]
+              },
+              {
+                "label": "未击倒对手",
+                "instructions": []
+              }
+            ]
+          },
+          {
+            "label": "【CX连击】选项3: [弃2手] 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dream Believers 安養寺 姫芽",
+    "code": "LHS/W122-004",
+    "rarity": "RR",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(3) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から6枚を、控え室に置き、相手に1ダメージをＸ回与える。ＸはそれらのカードのCXの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Mira-Cra Park!"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_004.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付cost并发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 6,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付cost",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "春風ブランコ 大沢 瑠璃乃",
+    "code": "LHS/W122-027",
+    "rarity": "C",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から2枚を、控え室に置き、相手の山札を上からＸ枚まで見て、カードをＸ枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。Ｘはこの効果で控え室に置かれたカードのトリガーアイコンのの合計に等しい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「ココン東西」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたは自分の、CX置場か控え室の、CXを1枚まで選び、山札に戻し、その山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Music",
+      "Mira-Cra Park!"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "027",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_027.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "自效果: 翻出0魂 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "自效果: 翻出1魂 -> 摩卡1",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 1,
+                "wr_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "自效果: 翻出2魂 -> 摩卡2",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "自效果: 翻出3魂 -> 摩卡3",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          },
+          {
+            "label": "自效果: 翻出4魂 -> 摩卡4",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 4,
+                "wr_amount": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dream Believers 藤島 慈",
+    "code": "LHS/W122-034",
+    "rarity": "RR",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがの効果か「365 Days 藤島 慈」の【起】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札の《音楽》のキャラを1枚控え室に置く］ このカードがアタックした時、CX置場に「ド！ド！ド！」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、あなたは自分の山札を上から2枚まで見て、山札の上に好きな順番で置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Mira-Cra Park!"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "034",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_034.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "みらくりえーしょん 大沢 瑠璃乃",
+    "code": "LHS/W122-042",
+    "rarity": "R",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたのCX置場のCXを1枚控え室に置く］ あなたのアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、相手のアンコールステップの始めに、このカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Music",
+      "Mira-Cra Park!"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "042",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_042.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付代价",
+            "instructions": []
+          },
+          {
+            "label": "【自】支付1张高潮卡，获得再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ドルフィン〰ビーチ 日野下 花帆",
+    "code": "LHS/W122-077",
+    "rarity": "R",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたの手札が5枚以下なら、あなたは相手に2ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Cerise Bouquet"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "077",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_077.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": "once_per_turn",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "不发动效果",
+                  "instructions": []
+                },
+                {
+                  "label": "手牌在5张以下，发动效果 -> 烧2",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rose Garden 村野 さやか",
+    "code": "LHS/W122-078",
+    "rarity": "R",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《音楽》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたのキャラすべてが《音楽》なら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックを1枚選び、手札に戻す。",
+      "【自】［(3)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Music",
+      "DOLLCHESTRA"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "078",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_078.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "眩輝夜行 乙宗 梢",
+    "code": "LHS/W122-095",
+    "rarity": "C",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(4) 手札を3枚控え室に置く］ このカードがアタックした時、CX置場に「眩耀夜行」があるなら、あなたはコストを払ってよい。そうしたら、相手に7ダメージを3回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Cerise Bouquet"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "095",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_095.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "【CX连击】支付[4费,3手牌]",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "レインボーシフォン 村野 さやか",
+    "code": "LHS/W122-T17",
+    "rarity": "TD",
+    "expansion": "Love Live! Hasu no Sora",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「ツキマカセ」があり、他のあなたの《音楽》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(2) あなたのCX置場のCXを1枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "DOLLCHESTRA"
+    ],
+    "set": "LHS",
+    "release": "W122",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lhs_w122/lhs_w122_t17.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (烧3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (烧3 + 追加烧1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

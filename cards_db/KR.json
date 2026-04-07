@@ -1,0 +1,190 @@
+[
+  {
+    "name": "“輪廻への導き”りんね",
+    "code": "KR/SE30-03",
+    "rarity": "RR",
+    "expansion": "Kyoukai no Rinne",
+    "side": "SE",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "すみやかに輪廻の輪に乗るように",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「ここから先は死神の仕事だ!!」があるなら、相手は自分の山札の上から5枚を公開し、このカードのバトル相手と同じカード名のキャラを1枚選び、クロック置場に置き、その山札をシャッフルし、あなたはそのバトル相手をクロック置場に置いてよい。"
+    ],
+    "attributes": [
+      "God of Death 《死神 》"
+    ],
+    "set": "KR",
+    "release": "SE30",
+    "sid": "03",
+    "image": "https://images.littleakiba.com/tcg/card27598-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (未击倒对手或无CX)",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (条件: 击倒对手)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "对手牌顶5张无同名卡",
+                "instructions": [
+                  {
+                    "op": "OppReverseToClock"
+                  }
+                ]
+              },
+              {
+                "label": "对手牌顶5张有同名卡",
+                "instructions": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  },
+                  {
+                    "op": "OppReverseToClock"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“記死神”架印",
+    "code": "KR/SE30-28",
+    "rarity": "R",
+    "expansion": "Kyoukai no Rinne",
+    "side": "SE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加える。残りのカードを控え室に置く。Ｘはあなたの、赤か《死神》のキャラの枚数に等しい。",
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「強制執行」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはこのカードの正面のキャラのコストに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "God of Death 《死神 》"
+    ],
+    "set": "KR",
+    "release": "SE30",
+    "sid": "28",
+    "image": "https://images.littleakiba.com/tcg/card27625-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 正面のキャラのコスト=0 (0点ダメージ)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 正面のキャラのコスト=1 (1点ダメージ)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 正面のキャラのコスト=2 (2点ダメージ)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 正面のキャラのコスト=3 (3点ダメージ)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“堕魔死神カンパニー”鯖人",
+    "code": "KR/SE30-42",
+    "rarity": "RR",
+    "expansion": "Kyoukai no Rinne",
+    "side": "SE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "その死神というのはどんな？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 あなたのクライマックス置場に「連帯保証人」が置かれた時、他のあなたの青のキャラが2枚以上で、前列にこのカードがいるなら、あなたは自分の山札を見て青のキャラを2枚まで選んで相手に見せ、手札に加え、自分の手札を2枚選び、控え室に置き、その山札をシャッフルし、相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "God of Death 《死神 》"
+    ],
+    "set": "KR",
+    "release": "SE30",
+    "sid": "42",
+    "image": "https://images.littleakiba.com/tcg/card27767-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "ReverseShuffle",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  }
+]

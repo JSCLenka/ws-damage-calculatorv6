@@ -1,0 +1,1085 @@
+[
+  {
+    "name": "優し気な笑顔 麻美",
+    "code": "KNK/W132-004",
+    "rarity": "R",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のトリガーアイコンがのCXが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの《かのかり》のキャラが2枚以上なら、このカードのパワーを＋3000。",
+      "【自】【ターン1】 このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_004.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件达成: 本回合从手牌登场",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "条件未达成: 非本回合登场",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "優し気な笑顔 麻美",
+    "code": "KNK/W132-004S",
+    "rarity": "SR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のトリガーアイコンがのCXが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの《かのかり》のキャラが2枚以上なら、このカードのパワーを＋3000。",
+      "【自】【ターン1】 このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "004S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_004s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "comment": "【自】【ターン1】 このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": {
+                "type": "turn",
+                "count": 1
+              },
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "『理想の彼女』 千鶴",
+    "code": "KNK/W132-043",
+    "rarity": "RR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《かのかり》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時か「気丈な彼女 千鶴」の【起】の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの下から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、CX置場に「彼女と涙」があり、他のあなたの《かのかり》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン3】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Diamond"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "043",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_043.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 3,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 2,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "『理想の彼女』 千鶴",
+    "code": "KNK/W132-043S",
+    "rarity": "SR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《かのかり》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時か「気丈な彼女 千鶴」の【起】の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの下から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、CX置場に「彼女と涙」があり、他のあなたの《かのかり》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン3】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Diamond"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "043S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_043s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 获得取消时烧2的能力(最多3次)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 3,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "『理想の彼女』 千鶴",
+    "code": "KNK/W132-043SP",
+    "rarity": "SP",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《かのかり》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時か「気丈な彼女 千鶴」の【起】の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの下から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、CX置場に「彼女と涙」があり、他のあなたの《かのかり》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン3】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Diamond"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "043SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_043sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: コストを払い、キャンセル時2点バーン能力を得る (ターン3回)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 3,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "星空の下 千鶴",
+    "code": "KNK/W132-049",
+    "rarity": "R",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがの効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「二人きりの撮影旅行」があるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Diamond"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_049.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "星空の下 千鶴",
+    "code": "KNK/W132-049S",
+    "rarity": "SR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがの効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「二人きりの撮影旅行」があるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Diamond"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "049S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_049s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 支付2手牌, 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "素敵な回り道 瑠夏",
+    "code": "KNK/W132-073S",
+    "rarity": "SR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(1)］ 控え室にこのカードがあり、あなたのレベルが3以上なら、あなたのCXフェイズ中、CX置場に「『恋人』としては普通のこと」が置かれた時、あなたはコストを払ってよい。そうしたら、あなたはこのカードを舞台の好きな枠に置く。",
+      "【自】 このカードがアタックした時、あなたは相手の控え室のカードを1枚まで選び、山札の上か下に置く。",
+      "【自】［(2) 手札の《かのかり》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのコスト＋1に等しい。（CXのコストは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Ribbon"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "073S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_073s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动选对手休息室卡的效果",
+            "instructions": []
+          },
+          {
+            "label": "选对手休息室1张卡放到牌库顶",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          },
+          {
+            "label": "选对手休息室1张卡放到牌库底",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动削顶烧效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻出0费卡 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出1费卡 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出2费卡 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出3费卡 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ネクストバッター 瑠夏",
+    "code": "KNK/W132-085",
+    "rarity": "U",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのソウルを＋1。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Ribbon"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_085.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "soul_boost": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(2费1手)，赋予取消烧2伤害的效果",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "将效果赋予自身",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "self",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "limit": 1,
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 2,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "将效果赋予其他角色",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "other_character",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "limit": 1,
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 2,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ネクストバッター 瑠夏",
+    "code": "KNK/W132-085S",
+    "rarity": "SR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのソウルを＋1。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rent-A-GF",
+      "Ribbon"
+    ],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "085S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_085s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを支払わない",
+            "instructions": []
+          },
+          {
+            "label": "コストを支払い、このキャラに能力を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "コストを支払い、他のキャラに能力を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "皆の“彼女” 千鶴",
+    "code": "KNK/W132-P03",
+    "rarity": "PR",
+    "expansion": "Rent-A-Girlfriend Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“君がいい” 千鶴」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「互いの気持ち」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1000し、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 このカードがフロントアタックされた時、あなたはこのカードを手札に戻してよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [],
+    "set": "KNK",
+    "release": "W132",
+    "sid": "P03",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w132/knk_w132_p03.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "七海 麻美",
+    "code": "KNK/W86-002",
+    "rarity": "RR",
+    "expansion": "Kanojo, Okarishimasu",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ウチ近いから休んでいかない…？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのアタック中、あなたはトリガーステップにトリガーチェックを2回行う。",
+      "【自】【CXコンボ】［(2)］ このカードのアタックの終わりに、クライマックス置場に「付き合ってる時よりも」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "《かのかり》"
+    ],
+    "set": "KNK",
+    "release": "W86",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card63910-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付手牌cost",
+            "instructions": []
+          },
+          {
+            "label": "支付1手牌: 赋予双判",
+            "instructions": [
+              {
+                "op": "TwinDrive"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX联动",
+            "instructions": []
+          },
+          {
+            "label": "支付2费 (CX联动): 看对手牌顶3张，最多弃3张",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "皆の“彼女” 千鶴",
+    "code": "KNK/W86-051",
+    "rarity": "RR",
+    "expansion": "Kanojo, Okarishimasu",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "どうかなっ？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“君がいい” 千鶴」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「互いの気持ち」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1000し、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 このカードがフロントアタックされた時、あなたはこのカードを手札に戻してよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《かのかり》",
+      "《ダイアモンド》"
+    ],
+    "set": "KNK",
+    "release": "W86",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card63978-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费和1张手牌发动CX连击：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "超ハイスペック 墨",
+    "code": "KNK/W86-057",
+    "rarity": "R",
+    "expansion": "Kanojo, Okarishimasu",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "－",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、他のあなたのカード名に「墨」を含むキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋2000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《かのかり》",
+      "《ダイアモンド》"
+    ],
+    "set": "KNK",
+    "release": "W86",
+    "sid": "057",
+    "image": "https://images.littleakiba.com/tcg/card63988-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 检视对手牌库底4张，根据CX数量烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“あーん♡”瑠夏",
+    "code": "KNK/W86-082",
+    "rarity": "R",
+    "expansion": "Kanojo, Okarishimasu",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "はい",
+    "ability": [
+      "【自】【CXコンボ】［(2)］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「高鳴る鼓動」があり、他のあなたの《かのかり》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『このカードを【スタンド】する。』『あなたは自分の控え室のキャラを3枚まで選び、手札に戻し、自分の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。』"
+    ],
+    "attributes": [
+      "《かのかり》",
+      "Ribbon 《リボン》"
+    ],
+    "set": "KNK",
+    "release": "W86",
+    "sid": "082",
+    "image": "https://images.littleakiba.com/tcg/card64021-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私の立場 瑠夏",
+    "code": "KNK/W86-095",
+    "rarity": "C",
+    "expansion": "Kanojo, Okarishimasu",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6000",
+    "soul": 1,
+    "flavor_text": "だって私 “彼女”じゃないんですか？",
+    "ability": [
+      "【永】 他のあなたの《かのかり》のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】［手札の「“そんなの耐えれませんっ!!”瑠夏」を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《かのかり》",
+      "Ribbon 《リボン》"
+    ],
+    "set": "KNK",
+    "release": "W86",
+    "sid": "095",
+    "image": "https://images.littleakiba.com/tcg/card64036-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 不支付cost",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "遅れて来た彼女 千鶴オクレテキタカノジョチヅル",
+    "code": "KNK/W86-T17",
+    "rarity": "TD",
+    "expansion": "Rent-A-Girlfriend",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「彼女モード」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kanokari",
+      "Diamond"
+    ],
+    "set": "KNK",
+    "release": "W86",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/knk_w86/knk_w86_t17.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

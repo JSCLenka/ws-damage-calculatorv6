@@ -1,0 +1,51 @@
+[
+  {
+    "name": "晴れ着のかがみ",
+    "code": "LS/W05-121",
+    "rarity": "PR",
+    "expansion": "Lucky Star",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "1500",
+    "soul": 1,
+    "flavor_text": "現実にそんなヤツいないっつの",
+    "ability": [
+      "【起】［あなたのキャラを1枚【レスト】する］ あなたは自分の山札の上から1枚をクロック置場に置く。そのカードが《双子》のキャラなら、このカードを思い出にし、あなたは自分の控え室の「双子の姉妹 かがみ＆つかさ」を1枚選び、舞台の好きな枠に置く。"
+    ],
+    "attributes": [
+      "Twins 《双子》",
+      "Book 《本》"
+    ],
+    "set": "LS",
+    "release": "W05",
+    "sid": "121",
+    "image": "https://images.littleakiba.com/tcg/card28073-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻顶为《双子》，换上「かがみ＆つかさ」攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

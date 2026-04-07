@@ -1,0 +1,2845 @@
+[
+  {
+    "name": "\"宇宙一の凸凹チーム\"ガーディアンズ・オブ・ギャラクシー",
+    "code": "MAR/S113-006",
+    "rarity": "R",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「GROUNDED」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされたなら、相手に2ダメージを与える。このダメージがキャンセルされたなら、あなたは相手の山札の上から3枚を、クロック置場に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "006",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_006.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (手牌6张或以下)",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1,
+                "on_cancel": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 2,
+                    "on_cancel": [
+                      {
+                        "op": "ClockShoot",
+                        "amount": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"宇宙一の凸凹チーム\"ガーディアンズ・オブ・ギャラクシー",
+    "code": "MAR/S113-006S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「GROUNDED」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされたなら、相手に2ダメージを与える。このダメージがキャンセルされたなら、あなたは相手の山札の上から3枚を、クロック置場に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "006S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_006s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (手牌≤6): 烧1, 取消则烧2, 再取消则踢3",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1,
+                "on_cancel": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 2,
+                    "on_cancel": [
+                      {
+                        "op": "ClockShoot",
+                        "amount": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"宇宙一の凸凹チーム\"ガーディアンズ・オブ・ギャラクシー",
+    "code": "MAR/S113-006SP",
+    "rarity": "SP",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「GROUNDED」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされたなら、相手に2ダメージを与える。このダメージがキャンセルされたなら、あなたは相手の山札の上から3枚を、クロック置場に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "006SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_006sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (手牌<=6)",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1,
+                "on_cancel": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 2,
+                    "on_cancel": [
+                      {
+                        "op": "ClockShoot",
+                        "amount": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"GOD OF THUNDER REBORN\"ソー",
+    "code": "MAR/S113-007",
+    "rarity": "R",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“The Saga Of The Mighty Thor”ジェーン・フォスター」の【起】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「THE WAR OF THE REALMS」があり、他のあなたの《MARVEL》のキャラがいるなら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_007.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手",
+                "instructions": []
+              },
+              {
+                "label": "击倒对手: 烧1 + 角色推顶",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  },
+                  {
+                    "op": "OppReverseToTop"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"GOD OF THUNDER REBORN\"ソー",
+    "code": "MAR/S113-007MR",
+    "rarity": "MR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“The Saga Of The Mighty Thor”ジェーン・フォスター」の【起】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「THE WAR OF THE REALMS」があり、他のあなたの《MARVEL》のキャラがいるなら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "007MR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_007mr.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "label": "登場時、クロックから1枚控え室へ",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "label": "CXコンボ: THE WAR OF THE REALMS",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "相手をリバースしなかった",
+                "instructions": []
+              },
+              {
+                "label": "相手をリバースした: 1ダメージ、相手キャラを山札の上へ",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  },
+                  {
+                    "op": "OppReverseToTop"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"THE LAST TOWN ON THE LEFT\"ファンタスティック・フォー",
+    "code": "MAR/S113-042",
+    "rarity": "U",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】［(3)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "042",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_042.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 角色踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"THE LAST TOWN ON THE LEFT\"ファンタスティック・フォー",
+    "code": "MAR/S113-042S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】［(3)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "042",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_042sr.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 将其送入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"マイルス・モラレス\"スパイダーマン",
+    "code": "MAR/S113-057",
+    "rarity": "RR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《MARVEL》なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替える。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「GANG WAR」があり、他のあなたの《MARVEL》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "057",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_057.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"マイルス・モラレス\"スパイダーマン",
+    "code": "MAR/S113-057S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《MARVEL》なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替える。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「GANG WAR」があり、他のあなたの《MARVEL》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "057S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_057s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击「GANG WAR」：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"マイルス・モラレス\"スパイダーマン",
+    "code": "MAR/S113-057SP",
+    "rarity": "SP",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《MARVEL》なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替える。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「GANG WAR」があり、他のあなたの《MARVEL》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "057SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_057sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "THE INVINCIBLE アイアンマン",
+    "code": "MAR/S113-058",
+    "rarity": "RR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《MARVEL》のキャラが2枚以上なら、そのターン中、このカードは次の3つの能力のうちあなたが選んだ1つを得る。『【自】 このカードがアタックした時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。』『【自】 このカードがアタックした時、CX置場にCXがあるなら、あなたは相手に1ダメージを与えてよい。』『【自】［(1) 手札の《MARVEL》のキャラを2枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "058",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_058.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件未達成: 他の《MARVEL》2枚未満 (効果なし)",
+            "instructions": []
+          },
+          {
+            "label": "条件達成: 他の《MARVEL》2枚以上 (効果を選択)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "選択した能力: ①アタック時1点回復",
+                "instructions": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "選択した能力: ②CX連動1点バーン",
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "CXあり -> 1点バーン",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "CXなし -> 効果なし",
+                    "instructions": []
+                  }
+                ]
+              },
+              {
+                "label": "選択した能力: ③アタック終了時、再スタンド (魂2)",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "THE INVINCIBLE アイアンマン",
+    "code": "MAR/S113-058S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《MARVEL》のキャラが2枚以上なら、そのターン中、このカードは次の3つの能力のうちあなたが選んだ1つを得る。『【自】 このカードがアタックした時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。』『【自】 このカードがアタックした時、CX置場にCXがあるなら、あなたは相手に1ダメージを与えてよい。』『【自】［(1) 手札の《MARVEL》のキャラを2枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "058S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_058s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "选择能力1：攻击时回1血",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Heal",
+                      "amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "选择能力2：攻击时烧1 (需CX)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "选择能力3：攻击结束时再动",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "THE INVINCIBLE アイアンマン",
+    "code": "MAR/S113-058SP",
+    "rarity": "SP",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《MARVEL》のキャラが2枚以上なら、そのターン中、このカードは次の3つの能力のうちあなたが選んだ1つを得る。『【自】 このカードがアタックした時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。』『【自】 このカードがアタックした時、CX置場にCXがあるなら、あなたは相手に1ダメージを与えてよい。』『【自】［(1) 手札の《MARVEL》のキャラを2枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "058SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_058sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件未達(他のMARVEL2枚未満)",
+            "instructions": []
+          },
+          {
+            "label": "このターン中、攻撃時に1点回復を得る",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Heal",
+                      "amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "このターン中、攻撃時に1点ダメージを得る",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "CXあり: 1点ダメージ",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "CXなし: 効果なし",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "このターン中、再スタンド能力を得る",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"THE MAD TITAN\"サノス",
+    "code": "MAR/S113-063",
+    "rarity": "R",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を2枚控え室に置く］ このカードのアタックの終わりに、他のあなたの《MARVEL》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から3枚を公開し、その山札をシャッフルする。あなたはこの効果で公開されたカードのトリガーアイコンのの合計以下の好きな数を宣言し、相手にＸダメージを与える。Ｘはあなたの宣言した数に等しい。（マイナスの数は宣言できない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "063",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_063.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果，合计翻出0魂 -> 烧0点",
+            "instructions": []
+          },
+          {
+            "label": "发动效果，合计翻出1魂 -> 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果，合计翻出2魂 -> 烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果，合计翻出3魂 -> 烧3点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果，合计翻出4魂 -> 烧4点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果，合计翻出5魂 -> 烧5点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果，合计翻出6魂或以上 -> 烧6点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"THE MAD TITAN\"サノス",
+    "code": "MAR/S113-063S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を2枚控え室に置く］ このカードのアタックの終わりに、他のあなたの《MARVEL》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から3枚を公開し、その山札をシャッフルする。あなたはこの効果で公開されたカードのトリガーアイコンのの合計以下の好きな数を宣言し、相手にＸダメージを与える。Ｘはあなたの宣言した数に等しい。（マイナスの数は宣言できない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "063S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_063s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻出0魂标 -> 烧0",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻出1魂标 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出2魂标 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出3魂标 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出4魂标 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出5魂标 -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出6+魂标 -> 烧6",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"ワンダ・マキシモフ\"スカーレット・ウィッチ",
+    "code": "MAR/S113-085",
+    "rarity": "R",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 0,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋1000。",
+      "【自】【CXコンボ】 あなたのCX置場に「NEED IS GREAT AND HOPE IS GONE」が置かれた時、他のあなたの《MARVEL》のキャラがいるなら、そのターン中、このカードは次の2つの能力を得る。『【自】［(1)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのアタック中、あなたはトリガーステップにトリガーチェックを2回行う。』『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_085.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX Combo: Pay (1) for Twin Drive",
+            "instructions": [
+              {
+                "op": "TwinDrive"
+              }
+            ]
+          },
+          {
+            "label": "Do not activate Twin Drive",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX Combo: Opponent is Reversed -> Burn 1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "Opponent is not Reversed",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"ワンダ・マキシモフ\"スカーレット・ウィッチ",
+    "code": "MAR/S113-085S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 0,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋1000。",
+      "【自】【CXコンボ】 あなたのCX置場に「NEED IS GREAT AND HOPE IS GONE」が置かれた時、他のあなたの《MARVEL》のキャラがいるなら、そのターン中、このカードは次の2つの能力を得る。『【自】［(1)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのアタック中、あなたはトリガーステップにトリガーチェックを2回行う。』『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "085S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_085s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击效果：发动双判",
+            "instructions": [
+              {
+                "op": "TwinDrive"
+              }
+            ]
+          },
+          {
+            "label": "CX连击效果：不发动双判",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"ワンダ・マキシモフ\"スカーレット・ウィッチ",
+    "code": "MAR/S113-085SP",
+    "rarity": "SP",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 0,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋1000。",
+      "【自】【CXコンボ】 あなたのCX置場に「NEED IS GREAT AND HOPE IS GONE」が置かれた時、他のあなたの《MARVEL》のキャラがいるなら、そのターン中、このカードは次の2つの能力を得る。『【自】［(1)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのアタック中、あなたはトリガーステップにトリガーチェックを2回行う。』『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "085SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_085sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "TwinDrive"
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手",
+                "instructions": []
+              },
+              {
+                "label": "击倒对手: 烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Freefall\"ホークアイ",
+    "code": "MAR/S113-087",
+    "rarity": "R",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 3000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《MARVEL》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】［手札の「トリックアロー」を1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "087",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_087.png",
+    "effects": [
+      {
+        "trigger": "OnEncoreStep",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Freefall\"ホークアイ",
+    "code": "MAR/S113-087S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 3000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《MARVEL》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】［手札の「トリックアロー」を1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "087S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_087s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(安可阶段): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Freefall\"ホークアイ",
+    "code": "MAR/S113-087SP",
+    "rarity": "SP",
+    "expansion": "Marvel Vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 3000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《MARVEL》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】［手札の「トリックアロー」を1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S113",
+    "sid": "087SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s113/mar_s113_087sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アンコールステップCXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "アンコールステップCXコンボ発動: 相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最強の超人 ハルク",
+    "code": "MAR/S124-039",
+    "rarity": "U",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(3) 手札を3枚控え室に置く］ このカードが手札から舞台に置かれたターン中、あなたのアンコールステップの始めに、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "039",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_039.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(登场回合中,对手前列全灭/全Reverse): 烧4点x2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最強の超人 ハルク",
+    "code": "MAR/S124-039S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(3) 手札を3枚控え室に置く］ このカードが手札から舞台に置かれたターン中、あなたのアンコールステップの始めに、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "039S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_039s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "满足条件(登场回合/前列/对手前列全空或倒置)并支付[3费3手] -> 烧4点两次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生きたハイテク・ウェポン アイアンマン",
+    "code": "MAR/S124-053",
+    "rarity": "RR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘは相手のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を3枚控え室に置く］ このカードがアタックした時、CX置場に「最後にして最大の逆襲」があり、他のあなたの《MARVEL》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "053",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_053.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "【CX连击】弃3张手牌：烧4，对手坟1张洗回牌库，再选1张置顶",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "ReverseShuffle",
+                "amount": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生きたハイテク・ウェポン アイアンマン",
+    "code": "MAR/S124-053EX",
+    "rarity": "SEC",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘは相手のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を3枚控え室に置く］ このカードがアタックした時、CX置場に「最後にして最大の逆襲」があり、他のあなたの《MARVEL》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "053EX",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_053ex.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付3手发动CX连击: 烧4+坟洗1+坟顶置1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "ReverseShuffle",
+                "amount": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生きたハイテク・ウェポン アイアンマン",
+    "code": "MAR/S124-053S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘは相手のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を3枚控え室に置く］ このカードがアタックした時、CX置場に「最後にして最大の逆襲」があり、他のあなたの《MARVEL》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "053S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_053s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：烧4，对手洗坟1，对手顶置1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "ReverseShuffle",
+                "amount": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "THANOS IS COMING サノス",
+    "code": "MAR/S124-066",
+    "rarity": "U",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の「宇宙のバランス サノス」を1枚選び、手札に戻すかストック置場に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「宇宙のバランス サノス」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "066",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_066.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 赋予自身[取消时再烧]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": "last_cancelled"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击: 赋予其他角色[取消时再烧]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": "last_cancelled"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "THANOS IS COMING サノス",
+    "code": "MAR/S124-066S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の「宇宙のバランス サノス」を1枚選び、手札に戻すかストック置場に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「宇宙のバランス サノス」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "066S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_066s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (手牌>6或不支付费用)",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (手牌≤6且支付1费)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": "last_cancelled"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "世界最高のスーパーヒーローの一人 キャプテン・アメリカ",
+    "code": "MAR/S124-080",
+    "rarity": "RR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「最強の絆」があるなら、次の相手のターンの終わりまで、このカードは【リバース】せず、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室の《MARVEL》のキャラを2枚まで選び、1枚選び、手札に戻し、残りのカードをストック置場に置き、そのターン中、このカードのパワーを＋2000。』『［(1) 手札を1枚控え室に置く］ あなたのキャラすべてが《MARVEL》なら、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_080.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "选择效果1: 回收+堆费",
+            "instructions": []
+          },
+          {
+            "label": "选择效果2: 造成伤害",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "造成2点伤害",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "造成3点伤害",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "世界最高のスーパーヒーローの一人 キャプテン・アメリカ",
+    "code": "MAR/S124-080EX",
+    "rarity": "SEC",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「最強の絆」があるなら、次の相手のターンの終わりまで、このカードは【リバース】せず、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室の《MARVEL》のキャラを2枚まで選び、1枚選び、手札に戻し、残りのカードをストック置場に置き、そのターン中、このカードのパワーを＋2000。』『［(1) 手札を1枚控え室に置く］ あなたのキャラすべてが《MARVEL》なら、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "080EX",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_080ex.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "效果1: 补充手牌与费用(无伤害)",
+            "instructions": []
+          },
+          {
+            "label": "效果2: 造成伤害(需满足条件)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "造成2点伤害",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "造成3点伤害",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "世界最高のスーパーヒーローの一人 キャプテン・アメリカ",
+    "code": "MAR/S124-080S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「最強の絆」があるなら、次の相手のターンの終わりまで、このカードは【リバース】せず、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室の《MARVEL》のキャラを2枚まで選び、1枚選び、手札に戻し、残りのカードをストック置場に置き、そのターン中、このカードのパワーを＋2000。』『［(1) 手札を1枚控え室に置く］ あなたのキャラすべてが《MARVEL》なら、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "080S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_080s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果①: 手札とストックを増やす (ダメージなし)",
+            "instructions": []
+          },
+          {
+            "label": "効果②: ダメージを与える",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "2ダメージを与える",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "3ダメージを与える",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“インフィニティ・サーガ”キャプテン・アメリカ",
+    "code": "MAR/S124-085",
+    "rarity": "R",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 7500,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたの山札が6枚以下なら、あなたは自分の控え室のカードすべてを、山札に戻してよい。そうしたら、その山札をシャッフルする。",
+      "【起】［(1) 【スタンド】しているこのカードを控え室に置く］ あなたのレベルが3以上なら、あなたは自分の山札を見て「新たな“キャプテン・アメリカ”ファルコン」を1枚まで選んで相手に見せ、手札に加え、自分の手札の「新たな“キャプテン・アメリカ”ファルコン」を1枚まで選び、このカードがいた枠に置き、自分の控え室の「“インフィニティ・サーガ”キャプテン・アメリカ」を1枚まで選び、その舞台に置かれたキャラの下にマーカーとして表向きに置き、その山札をシャッフルする。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_085.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动【起】能力",
+            "instructions": []
+          },
+          {
+            "label": "发动【起】能力：换上「新たな“キャプテン・アメリカ”ファルコン」进行攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“インフィニティ・サーガ”キャプテン・アメリカ",
+    "code": "MAR/S124-085S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 7500,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたの山札が6枚以下なら、あなたは自分の控え室のカードすべてを、山札に戻してよい。そうしたら、その山札をシャッフルする。",
+      "【起】［(1) 【スタンド】しているこのカードを控え室に置く］ あなたのレベルが3以上なら、あなたは自分の山札を見て「新たな“キャプテン・アメリカ”ファルコン」を1枚まで選んで相手に見せ、手札に加え、自分の手札の「新たな“キャプテン・アメリカ”ファルコン」を1枚まで選び、このカードがいた枠に置き、自分の控え室の「“インフィニティ・サーガ”キャプテン・アメリカ」を1枚まで選び、その舞台に置かれたキャラの下にマーカーとして表向きに置き、その山札をシャッフルする。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "085S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_085s.png",
+    "effects": [
+      {
+        "trigger": "OnActivate",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "起動効果：新たな“キャプテン・アメリカ”ファルコンに交代し攻撃",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ギャラクタス",
+    "code": "MAR/S124-091",
+    "rarity": "U",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、あなたのアタックフェイズの始めに、あなたはこのカード以外のすべてのプレイヤーのキャラすべてを、控え室に置いてよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 このカードがダイレクトアタックした時、あなたは自分の控え室の《MARVEL》のキャラを1枚選び、ストック置場に置いてよい。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "091",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_091.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：获得[取消时烧3(回合1次)]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ギャラクタス",
+    "code": "MAR/S124-091S",
+    "rarity": "SR",
+    "expansion": "Marvel Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、あなたのアタックフェイズの始めに、あなたはこのカード以外のすべてのプレイヤーのキャラすべてを、控え室に置いてよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 このカードがダイレクトアタックした時、あなたは自分の控え室の《MARVEL》のキャラを1枚選び、ストック置場に置いてよい。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S124",
+    "sid": "091S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s124/mar_s124_091s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未发动清场效果",
+            "instructions": []
+          },
+          {
+            "label": "【登场回合限定】已发动清场效果，获得取消烧3能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"アスガルド\"の王子 ソー",
+    "code": "MAR/S89-003",
+    "rarity": "RR",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《MARVEL》のキャラか「ムジョルニア」を1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】【CXコンボ】［(1) 手札の、《MARVEL》のキャラか「ムジョルニア」を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「北欧の伝説 ソー」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与え、そのターン中、このカードのパワーを＋3000。Ｘはあなたの控え室の「ムジョルニア」の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 不发动",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 烧1 (控室ムジョルニア=1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 烧2 (控室ムジョルニア=2)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 烧3 (控室ムジョルニア=3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 烧4 (控室ムジョルニア=4)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "宇宙一危険な女性 ガモーラ",
+    "code": "MAR/S89-010",
+    "rarity": "R",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《MARVEL》のキャラの枚数に等しい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "010",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_010.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "宇宙一危険な女性 ガモーラ",
+    "code": "MAR/S89-010MR",
+    "rarity": "MR",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《MARVEL》のキャラの枚数に等しい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "010MR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_010mr.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最凶最悪のラスボス サノス",
+    "code": "MAR/S89-034",
+    "rarity": "RR",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "034",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_034.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "StockSwap"
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 4,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最凶最悪のラスボス サノス",
+    "code": "MAR/S89-034MR",
+    "rarity": "MR",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "034MR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_034mr.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "StockSwap"
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 4,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ブラック・ウィドウ",
+    "code": "MAR/S89-042",
+    "rarity": "R",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたが【起】を使った時、あなたのキャラすべてに、そのターン中、パワーを＋2000。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「超一流のエージェント ブラック・ウィドウ」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "042",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_042.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ブラック・ウィドウ",
+    "code": "MAR/S89-042MR",
+    "rarity": "MR",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたが【起】を使った時、あなたのキャラすべてに、そのターン中、パワーを＋2000。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「超一流のエージェント ブラック・ウィドウ」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "042MR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_042mr.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生ける伝説 キャプテン・アメリカ",
+    "code": "MAR/S89-074",
+    "rarity": "RR",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「伝説のソルジャー キャプテン・アメリカ」が置かれた時、前列にこのカードがいて、他のあなたの《MARVEL》のキャラが4枚以上なら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】［(1)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "074",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_074.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(需前列+4个以上其他<MARVEL>角色)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "神級の弓の使い手 ホークアイ",
+    "code": "MAR/S89-090",
+    "rarity": "U",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《MARVEL》のキャラの枚数×500に等しい。",
+      "【自】［(1) 手札の《MARVEL》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "090",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_090.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(登场回合内)：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "世界最高の戦闘兵器 アイアンマン",
+    "code": "MAR/S89-T13",
+    "rarity": "TD",
+    "expansion": "Marvel",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「無敵のアイアンマン」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのレベル0以下のカードの枚数に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "S89",
+    "sid": "T13",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_s89/mar_s89_t13.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "level_le_0",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"I am Iron Man.\" アイアンマン",
+    "code": "MAR/SE40-018",
+    "rarity": "N",
+    "expansion": "Marvel Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードのアタックの終わりに、クライマックス置場に「“最後”にして“最大”の戦い」があり、他のあなたの《MARVEL》のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを与える。』『あなたは自分の手札を2枚選び、控え室に置く。2枚置いたなら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "MARVEL"
+    ],
+    "set": "MAR",
+    "release": "SE40",
+    "sid": "018",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mar_se40/mar_se40_018.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【CX连击】选项1: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "【CX连击】选项2(弃2手): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

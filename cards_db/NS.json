@@ -1,0 +1,172 @@
+[
+  {
+    "name": "“エース・オブ・エース”なのは\n“Ace of Aces” Nanoha",
+    "code": "NS/W04-052",
+    "rarity": "RR",
+    "expansion": "Mahou Shoujo Lyrical Nanoha StrikerS",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "スターズ１、高町なのは！いきまーすっ！",
+    "ability": [
+      "【自】［(4)］ このカードがアタックした時、クライマックス置場に「スターライトブレイカー」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたの控え室のクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "NS",
+    "release": "W04",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card276-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (休息室CX=1): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=2): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=3): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=4): 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=5): 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=6): 烧6",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=7): 烧7",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (休息室CX=8): 烧8",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 8,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "鉄槌の騎士ヴィータ\nIron Hammer Knight Vita",
+    "code": "NS/W04-056",
+    "rarity": "R",
+    "expansion": "Mahou Shoujo Lyrical Nanoha StrikerS",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5000",
+    "soul": 1,
+    "flavor_text": "いくぞ、アイゼン！",
+    "ability": [
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「ぶち抜けー！」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "NS",
+    "release": "W04",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card304-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "何もしない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

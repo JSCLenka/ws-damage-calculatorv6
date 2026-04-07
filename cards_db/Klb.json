@@ -1,0 +1,213 @@
+[
+  {
+    "name": "リトルバスターズ！(バンド) 鈴",
+    "code": "Klb/W102-039",
+    "rarity": "U",
+    "expansion": "Key All Star",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が5以上なら、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(3) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの下から1枚を、ストック置場に置く。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Animal"
+    ],
+    "set": "Klb",
+    "release": "W102",
+    "sid": "039",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/key_w102/klb_w102_039.png",
+    "jpAbility": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が5以上なら、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(3) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの下から1枚を、ストック置場に置く。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【经验5】支付3费弃1手: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "黄昏の街を見下ろす鈴と小毬",
+    "code": "Klb/WE50-13",
+    "rarity": "N",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋3500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「リトルバスターズ！」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Animal",
+      "Sweets"
+    ],
+    "set": "Klb",
+    "release": "WE50",
+    "sid": "13",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/klb_we50/klb_we50_13.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 给予对手1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "黄昏の街を見下ろす鈴と小毬",
+    "code": "Klb/WE50-13PRR",
+    "rarity": "PRR",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋3500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「リトルバスターズ！」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Animal",
+      "Sweets"
+    ],
+    "set": "Klb",
+    "release": "WE50",
+    "sid": "13PRR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/klb_we50/klb_we50_13prr.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "黄昏の街を見下ろす鈴と小毬",
+    "code": "Klb/WE50-13SP",
+    "rarity": "SP",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋3500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「リトルバスターズ！」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Animal",
+      "Sweets"
+    ],
+    "set": "Klb",
+    "release": "WE50",
+    "sid": "13SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/klb_we50/klb_we50_13sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

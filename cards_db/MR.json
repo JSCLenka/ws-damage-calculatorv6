@@ -1,0 +1,965 @@
+[
+  {
+    "name": "最強の座 鶴乃",
+    "code": "MR/W59-004",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "最強の魔法少女の座は、私がもらった〜！",
+    "ability": [
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「バスケットボールでも最強！」があるなら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、相手に1ダメージを与え、あなたは自分のクロックの上から1枚までを、控え室に置く。』（ダメージキャンセルは発生する）",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Magia 《マギア》"
+    ],
+    "set": "MR",
+    "release": "W59",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card45425-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: ダメージキャンセル時、1点バーン＆1回復",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    },
+                    {
+                      "op": "Heal",
+                      "amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登場ターン中: ダメージキャンセル時、1点バーン",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "登場ターンではない",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "差し伸ばした手 まどか",
+    "code": "MR/W59-032",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「もうひとつの希望」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》"
+    ],
+    "set": "MR",
+    "release": "W59",
+    "sid": "032",
+    "image": "https://images.littleakiba.com/tcg/card45453-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手并发动CX连击",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "五十鈴 れん",
+    "code": "MR/W59-063",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "いつだって上手く言葉が出てこない",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《魔法》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「君と、ここで」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたのクロックの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Magia 《マギア》"
+    ],
+    "set": "MR",
+    "release": "W59",
+    "sid": "063",
+    "image": "https://images.littleakiba.com/tcg/card45484-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无CX连击效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 发动CX连击",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "时计区0张: 烧0",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 0,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "时计区1张: 烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "时计区2张: 烧2",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "时计区3张: 烧3",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "时计区4张: 烧4",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "时计区5张: 烧5",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 5,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "时计区6张: 烧6",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 6,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“曲げない信念”杏子",
+    "code": "MR/W59-067",
+    "rarity": "U",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "これがあたしのさ、曲げられない信念なんだよ",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(6)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされなかった時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Skill 《スキル》"
+    ],
+    "set": "MR",
+    "release": "W59",
+    "sid": "067",
+    "image": "https://images.littleakiba.com/tcg/card45487-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "弃1张手牌，回复1点血量",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付6费",
+            "instructions": []
+          },
+          {
+            "label": "支付6费，赋予前排角色贯穿伤害效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "不发动追加伤害",
+                      "instructions": []
+                    },
+                    {
+                      "label": "伤害贯穿，追加1点伤害",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "不发动追加伤害",
+                      "instructions": []
+                    },
+                    {
+                      "label": "伤害贯穿，追加1点伤害",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来への導き いろは",
+    "code": "MR/W59-078",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《魔法》のキャラを1枚選び、手札に戻してよい。",
+      "【自】 このカードがアタックした時、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「繋がり」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分の【リバース】している《魔法》のキャラを1枚選び、【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic 《魔法》"
+    ],
+    "set": "MR",
+    "release": "W59",
+    "sid": "078",
+    "image": "https://images.littleakiba.com/tcg/card45502-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 再站另一名角色进行攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "みかづき荘の仲間 いろは",
+    "code": "MR/W80-003",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ういの病気を治して!!",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「いろはのドッペル」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「妹の病気を治すために」があるなら、あなたはコストを払ってよい。そうしたら、あなたは2か3か4を宣言し、相手にＸダメージを与え、そのターン中、このカードのパワーを＋4000。Ｘはあなたの宣言した数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Cuisine 《料理》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card60620-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "自分のクロックの上から1枚を、控え室に置く (回復1)",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 2ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 3ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 4ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "息の合った姉妹 月夜",
+    "code": "MR/W80-034",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7000",
+    "soul": 1,
+    "flavor_text": "酔い痴れて下さいませ",
+    "ability": [
+      "【永】 他のあなたの《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】【CXコンボ】［手札の「黒羽根」を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「姉妹の饗演」があり、他のあなたの《魔法》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の控え室の《魔法》のキャラを1枚まで選び、ストック置場に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Twins 《双子》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "034",
+    "image": "https://images.littleakiba.com/tcg/card60663-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 支付1手牌「黒羽根」，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アリナ・グレイ",
+    "code": "MR/W80-036",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 3,
+    "flavor_text": "壊れちゃったよね!?　アリナの飼育箱",
+    "ability": [
+      "【自】【CXコンボ】 あなたのクライマックス置場に「弁償してくれるヨネ!?」が置かれた時、前列にこのカードがいるなら、そのターン中、このカードのパワーを＋3000し、あなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは自分の控え室の《魔法》のキャラを1枚選び、ストック置場に置いてよい。』",
+      "【自】［(1) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。他のキャラが舞台から控え室に置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "《マギウス》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "036",
+    "image": "https://images.littleakiba.com/tcg/card60665-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动烧1效果",
+            "instructions": []
+          },
+          {
+            "label": "发动烧1效果 (当其他角色离场时，每回合1次)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "噂の真相究明 かえで",
+    "code": "MR/W80-051",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "だから友達じゃないってことには、ならないと思うよ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「かえでのドッペル」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたのターン中、相手のキャラが舞台から控え室に置かれた時かバトル中の相手のキャラが【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Plant 《植物》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card60684-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手/离场: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "噂の真相究明 レナ",
+    "code": "MR/W80-052",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "げ、下僕でいなさい！",
+    "ability": [
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「コネクト」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。",
+      "【自】 チェンジ ［このカードを控え室に置く］ あなたのアンコールステップの始めに、このカードが【レスト】しているなら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の《魔法》のキャラを1枚選び、このカードがいた枠に置く。（アンコールステップの始めにこのカードがいないなら発動しない）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card60686-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (CX连击)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "それぞれの想い ももこ",
+    "code": "MR/W80-064",
+    "rarity": "U",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6500",
+    "soul": 1,
+    "flavor_text": "関係ない魔法少女なんてひとりもいないんだよ",
+    "ability": [
+      "【永】 他のあなたの《魔法》のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードが控え室から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《魔法》のキャラなら、そのカードをストック置場に置く。",
+      "【自】【CXコンボ】［(2) あなたのクライマックス置場の「コネクト」を1枚控え室に置く］ あなたのターンの終わりに、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "064",
+    "image": "https://images.littleakiba.com/tcg/card60702-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回合结束时不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "回合结束时发动CX连击[コネクト] -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "それぞれの想い フェリシア",
+    "code": "MR/W80-082",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "これを飲み続けてれば、ラッキーがずっと続くんだよな？",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《魔法》のキャラすべてに、パワーを＋1500。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、他のあなたの《魔法》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは1枚引き、自分の手札を1枚選び、控え室に置き、相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。",
+      "【自】 あなたのカードが思い出になった時、他のあなたの《魔法》のキャラがいるなら、そのターン中、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "082",
+    "image": "https://images.littleakiba.com/tcg/card60725-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：看对手牌顶2张，最多送入休息室2张",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "それぞれの想い やちよ",
+    "code": "MR/W80-083",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "仲間なんてもう二度と作らない",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「思い出す過去」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋4000し、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたはこのカードを【スタンド】してよい。』"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Model 《モデル》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "083",
+    "image": "https://images.littleakiba.com/tcg/card60727-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 伤害被取消时再动",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 2
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "メンバーのまとめ役 ももこ",
+    "code": "MR/W80-T09",
+    "rarity": "TD",
+    "expansion": "Puella Magi Madoka Magica Side Story: Magia Record (Anime)",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "うちのチームのメンバーに手出ししようたぁ、いい度胸だ！",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《魔法》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】［(3)］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》"
+    ],
+    "set": "MR",
+    "release": "W80",
+    "sid": "T09",
+    "image": "https://images.littleakiba.com/tcg/card60894-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

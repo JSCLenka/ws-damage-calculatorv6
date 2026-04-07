@@ -1,0 +1,216 @@
+[
+  {
+    "name": "“最後”まで笑顔 八九寺真宵",
+    "code": "MG/S39-007",
+    "rarity": "R",
+    "expansion": "Monogatari Series Second Season",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "大好きでしたよ、阿良々木さん",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の《怪異》のキャラを1枚選び、そのターン中、ソウルを＋1し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』その後、あなたのアンコールステップの始めに、このカードを思い出にする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Strangeness 《怪異》",
+      "Spirit/Ghost 《霊》"
+    ],
+    "set": "MG",
+    "release": "S39",
+    "sid": "007",
+    "image": "https://images.littleakiba.com/tcg/card24722-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "给予自身+1魂与取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消，发动效果：烧1",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "伤害被取消，不发动效果",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "给予其他《怪異》角色+1魂与取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消，发动效果：烧1",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "伤害被取消，不发动效果",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "真剣な面持ち 戦場ヶ原ひたぎ",
+    "code": "MG/S39-052",
+    "rarity": "RR",
+    "expansion": "Monogatari Series Second Season",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "駄目よ。許さない。絶対に許さないんだから",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】 このカードがアタックした時、クライマックス置場に「ある冬の日」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Strangeness 《怪異》",
+      "Stationery 《文房具》"
+    ],
+    "set": "MG",
+    "release": "S39",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card24776-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连动: 对手烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“前髪娘”千石撫子",
+    "code": "MG/S39-077",
+    "rarity": "RR",
+    "expansion": "Monogatari Series Second Season",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「北白蛇神社の神様 千石撫子」の【自】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】 このカードがアタックした時、クライマックス置場に「自分だけの夢のために」があるなら、あなたは自分の山札の上から5枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋5000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Strangeness 《怪異》"
+    ],
+    "set": "MG",
+    "release": "S39",
+    "sid": "077",
+    "image": "https://images.littleakiba.com/tcg/card24808-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "self",
+            "zone": "top",
+            "mill_amount": 5,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  }
+]

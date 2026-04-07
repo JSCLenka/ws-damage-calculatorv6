@@ -1,0 +1,339 @@
+[
+  {
+    "name": "オメガ・ルガール",
+    "code": "KF/S05-057",
+    "rarity": "R",
+    "expansion": "The King of Fighters",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 1,
+    "flavor_text": "跡形も無く散れぇぇい！",
+    "ability": [
+      "【自】［(4)］ バトル中のこのカードが【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、このカードを山札に戻す。その山札をシャッフルする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Orochi 《オロチ》",
+      "Gangster 《暗黒街》"
+    ],
+    "set": "KF",
+    "release": "S05",
+    "sid": "057",
+    "image": "https://images.littleakiba.com/tcg/card6911-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (此卡未被击倒或不支付费用)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：此卡被击倒 -> 支付(4)烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "テリー・ボガード",
+    "code": "KF/SE43-30",
+    "rarity": "N",
+    "expansion": "King of Fighters Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 6000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋4000。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「バスターウルフ」があり、他のあなたのキャラが3枚以上なら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Animal"
+    ],
+    "set": "KF",
+    "release": "SE43",
+    "sid": "30",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kf_se43/kf_se43_30.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "暴走庵",
+    "code": "KF/SE43-32",
+    "rarity": "N",
+    "expansion": "King of Fighters Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「炎の貴公子 京」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(4) 他のあなたの舞台のキャラを1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Orochi",
+      "Relics"
+    ],
+    "set": "KF",
+    "release": "SE43",
+    "sid": "32",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kf_se43/kf_se43_32.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回血1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不知火 舞",
+    "code": "KF/SE43-34",
+    "rarity": "N",
+    "expansion": "King of Fighters Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fan",
+      "Ninja"
+    ],
+    "set": "KF",
+    "release": "SE43",
+    "sid": "34",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kf_se43/kf_se43_34.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【自】コストを払い、4ダメージを与える",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クーラ・ダイアモンド",
+    "code": "KF/SE43-57",
+    "rarity": "N",
+    "expansion": "King of Fighters Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「クロウバイツ」があり、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Modification",
+      "Doll"
+    ],
+    "set": "KF",
+    "release": "SE43",
+    "sid": "57",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kf_se43/kf_se43_57.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (条件: 场上有CX和另外3名角色)",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不知火 舞",
+    "code": "KF/SE43-P02",
+    "rarity": "PR",
+    "expansion": "King of Fighters Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "扇子",
+      "忍"
+    ],
+    "set": "KF",
+    "release": "SE43",
+    "sid": "P02",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kf_se43/kf_se43_p02.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费：对手洗费",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费，弃2张手牌：对对手造成4点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

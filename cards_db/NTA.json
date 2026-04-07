@@ -1,0 +1,277 @@
+[
+  {
+    "name": "閃光の戦斧と共に フェイト",
+    "code": "NTA/WE48-17",
+    "rarity": "N",
+    "expansion": "Nanoha 20th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのパワーを＋2000。",
+      "【自】【CXコンボ】【ターン1】［(3) 手札を1枚控え室に置く］ このカードのアタックの終わりに、CX置場に「なまえをよんで」があり、他のあなたの、《魔法》か《武器》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic",
+      "Clone"
+    ],
+    "set": "NTA",
+    "release": "WE48",
+    "sid": "17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/n/nta_we48/nta_we48_17.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付代价",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费, 1手牌]发动CX连击: 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "魔導師の杖と共に なのは",
+    "code": "NTA/WE48-39",
+    "rarity": "N",
+    "expansion": "Nanoha 20th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場の「君に逢いたくなったなら なのは」が2枚以上なら、このカードのパワーを＋2500し、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「20年の魔法」があり、あなたの思い出置場の、《魔法》か《武器》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Weapon"
+    ],
+    "set": "NTA",
+    "release": "WE48",
+    "sid": "39",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/n/nta_we48/nta_we48_39.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "永続効果の条件未達成 (思い出 or 未击倒)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 思い出2枚以上 & 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ条件未達成 (CX or 思い出)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ&思い出条件達成 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ミッドチルダ式 なのは",
+    "code": "NTA/WE48-40",
+    "rarity": "N",
+    "expansion": "Nanoha 20th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《魔法》か《武器》のキャラが2枚以上なら、このカードのパワーを＋4000。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、CX置場に「魔法少女の日常」があり、前列にこのカードがいて、このカードの正面のキャラがいないか【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Weapon"
+    ],
+    "set": "NTA",
+    "release": "WE48",
+    "sid": "40",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/n/nta_we48/nta_we48_40.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：烧1，并获得安可步骤能力",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "安可步骤: 条件不满足 (对手未被击倒或位置非空)",
+                    "instructions": []
+                  },
+                  {
+                    "label": "安可步骤: 条件满足 (对手被击倒或位置为空) -> 烧3",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夜天の書と共に はやて",
+    "code": "NTA/WE48-58",
+    "rarity": "N",
+    "expansion": "Nanoha 20th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「夜の終わり、旅の終わり」があり、他のあなたの、青か《魔法》か《武器》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋2000。Ｘはそれらのカードのレベル0以下のカードの枚数に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Book"
+    ],
+    "set": "NTA",
+    "release": "WE48",
+    "sid": "58",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/n/nta_we48/nta_we48_58.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 削底4张判定烧",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "level_le_0",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

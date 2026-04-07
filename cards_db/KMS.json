@@ -1,0 +1,862 @@
+[
+  {
+    "name": "15th Anniversary アリス",
+    "code": "KMS/W133-004",
+    "rarity": "RR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 このカードは、あなたの思い出置場の《金髪》のキャラが2枚以上なら、パワーを＋1000し、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けず、5枚以上なら、『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』を得て、6枚以上なら、このカードの【CXコンボ】の効果で与えるダメージを＋1。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「金髪の天使」があるなら、あなたは相手に1ダメージを与えるか、自分のクロック置場の《きんいろ》のキャラを1枚まで選び、思い出にする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Blonde"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_004.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 烧1点伤害 (回忆<6)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 烧2点伤害 (回忆≥6)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 选择非伤害效果 (回忆时计区)",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动击倒效果 (回忆<5 或 未击倒对手)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(回忆≥5 且 击倒对手): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "15th Anniversary アリス",
+    "code": "KMS/W133-004EX",
+    "rarity": "SEC",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 このカードは、あなたの思い出置場の《金髪》のキャラが2枚以上なら、パワーを＋1000し、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けず、5枚以上なら、『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』を得て、6枚以上なら、このカードの【CXコンボ】の効果で与えるダメージを＋1。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「金髪の天使」があるなら、あなたは相手に1ダメージを与えるか、自分のクロック置場の《きんいろ》のキャラを1枚まで選び、思い出にする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Blonde"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "004EX",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_004ex.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足击倒烧条件 (回忆<5 或 未击倒对手)",
+            "instructions": []
+          },
+          {
+            "label": "满足击倒烧条件 (回忆>=5 且 击倒对手) -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (回忆《金髪》<6): 选择烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (回忆《金髪》>=6): 选择烧2 (1+1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击: 选择存回忆 (无伤害)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "15th Anniversary アリス",
+    "code": "KMS/W133-004S",
+    "rarity": "SR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 このカードは、あなたの思い出置場の《金髪》のキャラが2枚以上なら、パワーを＋1000し、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けず、5枚以上なら、『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』を得て、6枚以上なら、このカードの【CXコンボ】の効果で与えるダメージを＋1。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「金髪の天使」があるなら、あなたは相手に1ダメージを与えるか、自分のクロック置場の《きんいろ》のキャラを1枚まで選び、思い出にする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Blonde"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "004S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_004s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "思い出 < 5枚 (CXコンボのみ)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "CX効果: 相手に1ダメージ",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "CX効果: クロック回収 (ダメージなし)",
+                    "instructions": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "思い出 = 5枚 (CXコンボ + リバース効果)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "CX効果: 相手に1ダメージ",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "CX効果: クロック回収 (ダメージなし)",
+                    "instructions": []
+                  }
+                ]
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "条件達成: 相手をリバース → 3ダメージ",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "未達成: 相手をリバースしない",
+                    "instructions": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "思い出 >= 6枚 (CXコンボ強化 + リバース効果)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "CX効果: 相手に2ダメージ (1+1)",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "CX効果: クロック回収 (ダメージなし)",
+                    "instructions": []
+                  }
+                ]
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "条件達成: 相手をリバース → 3ダメージ",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "未達成: 相手をリバースしない",
+                    "instructions": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "15th Anniversary アリス",
+    "code": "KMS/W133-004b",
+    "rarity": "RR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 このカードは、あなたの思い出置場の《金髪》のキャラが2枚以上なら、パワーを＋1000し、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けず、5枚以上なら、『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』を得て、6枚以上なら、このカードの【CXコンボ】の効果で与えるダメージを＋1。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「金髪の天使」があるなら、あなたは相手に1ダメージを与えるか、自分のクロック置場の《きんいろ》のキャラを1枚まで選び、思い出にする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Blonde"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "004b",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_004b.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【CXコンボ】回忆<6张 & 选择烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "【CXコンボ】回忆>=6张 & 选择烧2点 (1+1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "【CXコンボ】选择送回忆(无伤害)",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【永】击倒效果未发动 (回忆<5张 或 未击倒对手)",
+            "instructions": []
+          },
+          {
+            "label": "【永】击倒效果发动 (回忆>=5张) -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "外国への憧れ 忍",
+    "code": "KMS/W133-040",
+    "rarity": "R",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札か思い出置場から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置き、自分の控え室の「典型的な女子高生 忍」を1枚まで選び、思い出にする。",
+      "【自】【CXコンボ】 記憶 ［手札の緑のカードを1枚控え室に置く］ このカードのアタックの終わりに、CX置場に「ゴミはゴミ箱へ！」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与え、このカードが【レスト】しているなら、あなたは自分の思い出置場の「典型的な女子高生 忍」を1枚までとこのカードを選び、入れ替え、入れ替えて舞台に置かれたキャラを【レスト】する。Ｘは公開されたカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Traditional Japanese Style"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "040",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_040.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：弃1张绿色手牌",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "外国への憧れ 忍",
+    "code": "KMS/W133-040S",
+    "rarity": "SR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札か思い出置場から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置き、自分の控え室の「典型的な女子高生 忍」を1枚まで選び、思い出にする。",
+      "【自】【CXコンボ】 記憶 ［手札の緑のカードを1枚控え室に置く］ このカードのアタックの終わりに、CX置場に「ゴミはゴミ箱へ！」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与え、このカードが【レスト】しているなら、あなたは自分の思い出置場の「典型的な女子高生 忍」を1枚までとこのカードを選び、入れ替え、入れ替えて舞台に置かれたキャラを【レスト】する。Ｘは公開されたカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Traditional Japanese Style"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "040S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_040s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 翻顶造成(等级+1)点伤害，与回忆区角色交换",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スランプ脱却 勇",
+    "code": "KMS/W133-049",
+    "rarity": "C",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 5500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《きんいろ》のキャラが2枚以上なら、このカードのパワーを＋5000。",
+      "【自】【CXコンボ】 あなたのアンコールステップの始めに、CX置場に「カリスマファッションモデル」があり、前列にこのカードがいて、他のあなたの《きんいろ》のキャラが2枚以上で、このカードの正面のキャラがいないか【リバース】しているなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Model"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_049.png",
+    "effects": [
+      {
+        "trigger": "OnEncoreStepStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果或条件不满足",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「カリスマファッションモデル」: 给予对方1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スランプ脱却 勇",
+    "code": "KMS/W133-049S",
+    "rarity": "SR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 5500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《きんいろ》のキャラが2枚以上なら、このカードのパワーを＋5000。",
+      "【自】【CXコンボ】 あなたのアンコールステップの始めに、CX置場に「カリスマファッションモデル」があり、前列にこのカードがいて、他のあなたの《きんいろ》のキャラが2枚以上で、このカードの正面のキャラがいないか【リバース】しているなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Model"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "049S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_049s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アンコールステップのCXコンボ条件未達成",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 正面のキャラがいないかリバース→1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たおやかな女の子 綾",
+    "code": "KMS/W133-080",
+    "rarity": "RR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 6500,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出が2枚以上なら、このカードのパワーを＋4500し、このカードは『【自】 アンコール ［手札のキャラを1枚控え室に置く］』を得る。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「聡明なるツインテール」があり、他のあなたの《きんいろ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを1枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手に2ダメージを与え、自分のクロックの上から1枚までを、控え室に置く。（ダメージキャンセルは発生する）",
+      "【自】 このカードがトリガーした時、あなたの手札が5枚以下なら、あなたは自分のストックの上から1枚を、手札に戻してよい。"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Tsundere"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_080.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たおやかな女の子 綾",
+    "code": "KMS/W133-080S",
+    "rarity": "SR",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 6500,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出が2枚以上なら、このカードのパワーを＋4500し、このカードは『【自】 アンコール ［手札のキャラを1枚控え室に置く］』を得る。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「聡明なるツインテール」があり、他のあなたの《きんいろ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを1枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手に2ダメージを与え、自分のクロックの上から1枚までを、控え室に置く。（ダメージキャンセルは発生する）",
+      "【自】 このカードがトリガーした時、あなたの手札が5枚以下なら、あなたは自分のストックの上から1枚を、手札に戻してよい。"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Tsundere"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "080S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_080s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "ReverseShuffle",
+            "amount": 1
+          },
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          },
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たおやかな女の子 綾",
+    "code": "KMS/W133-080SP",
+    "rarity": "SP",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 6500,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出が2枚以上なら、このカードのパワーを＋4500し、このカードは『【自】 アンコール ［手札のキャラを1枚控え室に置く］』を得る。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「聡明なるツインテール」があり、他のあなたの《きんいろ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを1枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手に2ダメージを与え、自分のクロックの上から1枚までを、控え室に置く。（ダメージキャンセルは発生する）",
+      "【自】 このカードがトリガーした時、あなたの手札が5枚以下なら、あなたは自分のストックの上から1枚を、手札に戻してよい。"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Tsundere"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "080SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_080sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "Do not activate CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "Activate CX Combo: Shuffle 1 card from opponent's WR, Burn 2, Heal 1",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "面接練習 綾",
+    "code": "KMS/W133-T18",
+    "rarity": "TD",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Tsundere"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "T18",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_t18.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "相手に1ダメージを与える",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "面接練習 綾",
+    "code": "KMS/W133-T18SP",
+    "rarity": "SP",
+    "expansion": "Kiniro Mosaic: 15th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kiniro",
+      "Tsundere"
+    ],
+    "set": "KMS",
+    "release": "W133",
+    "sid": "T18SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kms_w133/kms_w133_t18sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果：不发动",
+            "instructions": []
+          },
+          {
+            "label": "登场效果：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

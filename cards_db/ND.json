@@ -1,0 +1,400 @@
+[
+  {
+    "name": "守るべき大切なもの なのは",
+    "code": "ND/W67-021",
+    "rarity": "RR",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "戦わなきゃ守れないものもある！",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(2)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「魔法の使い道」があり、あなたのレベル置場に「守るべき大切なもの なのは」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚選び、そのターン中、パワーを＋1000し、次の効果のうちあなたが選んだ1つを行う。『相手に2ダメージを与える。』『相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "021",
+    "image": "https://images.littleakiba.com/tcg/card52165-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击(击倒对手): 烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击(击倒对手): 烧4点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "限界を超えた力 なのは",
+    "code": "ND/W67-033",
+    "rarity": "U",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "アミタ「…なのはさん…」",
+    "ability": [
+      "【永】 舞台にこのカードがいるなら、このカードは《フォーミュラ》を得る。",
+      "【自】【CXコンボ】［(1) 手札の「ヴァリアントザッパー」を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「フォーミュラとの融合」があり、他のあなたの、《魔法》か《武器》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "033",
+    "image": "https://images.littleakiba.com/tcg/card52177-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "明日を切り拓く一撃 ディアーチェ",
+    "code": "ND/W67-046",
+    "rarity": "RR",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "我等が渾身の恩返し！\n受け取れェェェッ！！",
+    "ability": [
+      "【永】 このカードの下のマーカー1枚につき、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時か『チェンジ』で舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、自分の控え室の、「平穏な日常 シュテル」を1枚までと「平穏な日常 レヴィ」を1枚まで選び、このカードの下にマーカーとして好きな順番で表向きに置く。",
+      "【自】【CXコンボ】［(3)］ このカードがアタックした時、クライマックス置場に「我等が渾身の恩返し」があるなら、あなたはコストを払ってよい。そうしたら、次の行動を2回行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Book 《本》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "046",
+    "image": "https://images.littleakiba.com/tcg/card52190-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "宝物の時間 キリエ",
+    "code": "ND/W67-047",
+    "rarity": "RR",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "あたしにとっては大切な友達なんだもん！",
+    "ability": [
+      "【自】【CXコンボ】［(3) 手札の《フォーミュラ》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「2人の想い出」があり、あなたのキャラすべてが《フォーミュラ》なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、このカードは次の2つの能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラをクロック置場に置いてよい。』『【自】 この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたは自分のキャラを1枚とこのカードを選び、入れ替え、このカードを【スタンド】する。』"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Formula 《フォーミュラ》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "047",
+    "image": "https://images.littleakiba.com/tcg/card52191-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "支付COST发动CX连击",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手 (无效果)",
+                "instructions": []
+              },
+              {
+                "label": "条件达成: 击倒对手",
+                "instructions": [
+                  {
+                    "op": "OppReverseToClock"
+                  },
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "衛星砲型イリス",
+    "code": "ND/W67-073",
+    "rarity": "U",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6500",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 このカードの正面のキャラはサイドアタックできない。",
+      "【自】 このカードが「歪んだ理想 フィル」の【自】の効果で舞台に置かれた時、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 このカードが【リバース】した時、このカードのバトル相手のレベルが3以下なら、あなたはそのバトル相手を【リバース】してよい。』",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Formula 《フォーミュラ》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "073",
+    "image": "https://images.littleakiba.com/tcg/card52216-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "張り詰めた一瞬 フェイト",
+    "code": "ND/W67-105",
+    "rarity": "PR",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［(1) 手札のカード名に「フェイト」か「アルフ」を含むキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手のコスト1以下のキャラを1枚まで選び、手札に戻し、そのターン中、このカードのソウルを＋1。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Clone 《クローン》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "105",
+    "image": "https://images.littleakiba.com/tcg/card52284-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ]
+            }
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "コストを払わない",
+                "instructions": []
+              },
+              {
+                "label": "コストを払い、ソウル+1",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "self",
+                    "soul_boost": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "顧みぬ突撃 なのは",
+    "code": "ND/W67-106",
+    "rarity": "PR",
+    "expansion": "Mahou Shoujo Lyrical Nanoha Detonation",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［手札のカード名に「なのは」を含むキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋4000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】［(2) このカードを山札の上に置く］ このカードがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する。バトル相手がいなくなってもダイレクトアタックにはならない）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "ND",
+    "release": "W67",
+    "sid": "106",
+    "image": "https://images.littleakiba.com/tcg/card52285-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

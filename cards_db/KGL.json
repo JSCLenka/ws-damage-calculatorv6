@@ -1,0 +1,1078 @@
+[
+  {
+    "name": "ラブ探偵 千花",
+    "code": "KGL/S79-025",
+    "rarity": "RR",
+    "expansion": "Kaguya-sama Love is War",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "ではその恋という名の落とし物、この名探偵が見つけ出して差し上げます",
+    "ability": [
+      "【永】 他のあなたの《秀知院》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「社会への叛逆」があるなら、あなたはコストを払ってよい。そうしたら、次の行動を2回行う。『相手にＸダメージを与える。Ｘはあなたの控え室の「ラブ探偵」の枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《秀知院》",
+      "《書記》"
+    ],
+    "set": "KGL",
+    "release": "S79",
+    "sid": "025",
+    "image": "https://images.littleakiba.com/tcg/card63474-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "控室「ラブ探偵」x1: 烧1, 两次",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "控室「ラブ探偵」x2: 烧2, 两次",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "控室「ラブ探偵」x3: 烧3, 两次",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "控室「ラブ探偵」x4: 烧4, 两次",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 4,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 4,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "貫く信条 御行",
+    "code": "KGL/S79-026",
+    "rarity": "RR",
+    "expansion": "Kaguya-sama Love is War",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ここからは、本気でやらせてもらうぞ",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、次の相手のターンの終わりまで、このカードのパワーを＋4500し、このカードは次の能力を得る。『【永】 このカードのバトル中、すべてのプレイヤーは『助太刀』を手札からプレイできない。』",
+      "【自】 経験 ［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのレベル置場のカードのレベルの合計が4以上なら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "《秀知院》",
+      "《会長》"
+    ],
+    "set": "KGL",
+    "release": "S79",
+    "sid": "026",
+    "image": "https://images.littleakiba.com/tcg/card63476-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(经验4): 击倒对手 -> 将其送入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天才たちの真剣勝負 かぐや",
+    "code": "KGL/S79-050",
+    "rarity": "RR",
+    "expansion": "Kaguya-sama Love is War",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "会長のそういう所が…ですよ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「交流会の後で」があり、他のあなたの《秀知院》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）",
+      "【自】 共鳴 ［手札を1枚控え室に置き、手札の「勇気を与える愛」を1枚公開する］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《秀知院》",
+      "《副会長》"
+    ],
+    "set": "KGL",
+    "release": "S79",
+    "sid": "050",
+    "image": "https://images.littleakiba.com/tcg/card63510-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "花火大会 御行",
+    "code": "KGL/S79-055",
+    "rarity": "R",
+    "expansion": "Kaguya-sama Love is War",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "来い四宮",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「花火の音は聞こえない」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《秀知院》のキャラを1枚選び、【スタンド】する。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「花火の音は聞こえない」があり、他のあなたの「副会長 かぐや」と「花火大会 優」と「花火大会 千花」がいるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《秀知院》",
+      "《会長》"
+    ],
+    "set": "KGL",
+    "release": "S79",
+    "sid": "055",
+    "image": "https://images.littleakiba.com/tcg/card63518-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 满足烧1条件 + 再动(魂1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 满足烧1条件 + 再动(魂2)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 满足烧1条件 + 再动(魂3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 3
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 不满足烧1条件 + 再动(魂1)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 不满足烧1条件 + 再动(魂2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 不满足烧1条件 + 再动(魂3)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "賢い提案 かぐや",
+    "code": "KGL/S79-080",
+    "rarity": "R",
+    "expansion": "Kaguya-sama Love is War",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "そうです！私も鍵アカにします！",
+    "ability": [
+      "【永】 他のあなたの《秀知院》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《秀知院》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「うれし恥ずかし初メール」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚選び、【スタンド】する。"
+    ],
+    "attributes": [
+      "《秀知院》",
+      "《副会長》"
+    ],
+    "set": "KGL",
+    "release": "S79",
+    "sid": "080",
+    "image": "https://images.littleakiba.com/tcg/card63555-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 重置另一个角色 (1魂)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击: 重置另一个角色 (2魂)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击: 重置另一个角色 (3魂)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "副会長 かぐやﾌｸｶｲﾁｮｳ ｶｸﾞﾔ",
+    "code": "KGL/S79-T17",
+    "rarity": "TD",
+    "expansion": "Kaguya-sama: Love is War",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《秀知院》のキャラすべてに、パワーを＋1500。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Vice President"
+    ],
+    "set": "KGL",
+    "release": "S79",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20201120_sm09.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 3,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生徒会最後の日 千花",
+    "code": "KGL/S95-002",
+    "rarity": "RR",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札の《秀知院》のキャラを1枚控え室に置く］ あなたのクライマックス置場に「繰り返される過ち」が置かれた時、他のあなたの《秀知院》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の2つの能力を得る。『【自】 このカードがフロントアタックかサイドアタックした時、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1000。』『【自】 このカードがダイレクトアタックした時、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札の《秀知院》のキャラを1枚控え室に置く］ あなたのクライマックス置場に「繰り返される過ち」が置かれた時、他のあなたの《秀知院》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の2つの能力を得る。『【自】 このカードがフロントアタックかサイドアタックした時、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1000。』『【自】 このカードがダイレクトアタックした時、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Secretary"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "002",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_002.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnClimax",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX联动",
+            "instructions": []
+          },
+          {
+            "label": "发动CX联动 (需要4个以上其他<秀知院>角色)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "正面/侧面攻击: 烧2",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 2,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "直接攻击: 烧3",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 3,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ブリーフ愛好家 優",
+    "code": "KGL/S95-007",
+    "rarity": "R",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ブリーフ党の主張」があるなら、あなたは自分の控え室の、《秀知院》のキャラかイベントを2枚まで選び、ストック置場に好きな順番で置き、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 このカードがフロントアタックされた時、あなたはこのカードを手札に戻してよい。』"
+    ],
+    "jpAbility": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ブリーフ党の主張」があるなら、あなたは自分の控え室の、《秀知院》のキャラかイベントを2枚まで選び、ストック置場に好きな順番で置き、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 このカードがフロントアタックされた時、あなたはこのカードを手札に戻してよい。』"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Treasurer"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_007.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "会計監査 ミコ",
+    "code": "KGL/S95-031",
+    "rarity": "R",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「皆の見本として」があり、他のあなたの《秀知院》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「皆の見本として」があり、他のあなたの《秀知院》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Student Council Auditor"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "031",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_031.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "恋したくなった圭",
+    "code": "KGL/S95-036",
+    "rarity": "U",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《秀知院》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《秀知院》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたの《秀知院》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《秀知院》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Treasurer"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "036",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_036.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手: 将其送入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "マーチングバンド 御行",
+    "code": "KGL/S95-051",
+    "rarity": "RR",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "jpAbility": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "President"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "051",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_051.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "经验等级合计≥6: 支付(2)费2手牌, 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "手を伸ばす御行",
+    "code": "KGL/S95-056",
+    "rarity": "R",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 2,
+    "power": 7000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《秀知院》のキャラが2枚以上なら、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「月明かりに照らされて」が置かれた時、前列にこのカードがいて、あなたのキャラすべてが《秀知院》なら、あなたは他の自分のキャラを1枚まで選び、手札に戻し、そのターン中、このカードは次の能力を得る。『【自】 あなたのアタックフェイズの始めに、あなたは他の自分の《秀知院》のキャラを1枚選び、【スタンド】し、そのターン中、そのキャラのパワーを＋1000。』"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたの《秀知院》のキャラが2枚以上なら、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「月明かりに照らされて」が置かれた時、前列にこのカードがいて、あなたのキャラすべてが《秀知院》なら、あなたは他の自分のキャラを1枚まで選び、手札に戻し、そのターン中、このカードは次の能力を得る。『【自】 あなたのアタックフェイズの始めに、あなたは他の自分の《秀知院》のキャラを1枚選び、【スタンド】し、そのターン中、そのキャラのパワーを＋1000。』"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "President"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "056",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_056.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnCXPlaced",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(再动另一名角色)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "再动角色的基础魂值为1",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 1
+                  }
+                ]
+              },
+              {
+                "label": "再动角色的基础魂值为2",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              },
+              {
+                "label": "再动角色的基础魂值为3",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "規律のために ミコ",
+    "code": "KGL/S95-063",
+    "rarity": "U",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたのキャラのトリガーチェックでトリガーアイコンがのクライマックスがでた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたのキャラのトリガーチェックでトリガーアイコンがのクライマックスがでた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Student Council Auditor"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "063",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_063.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不回复",
+            "instructions": []
+          },
+          {
+            "label": "回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(触发魂CX): 支付cost烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "マーチングバンド かぐや",
+    "code": "KGL/S95-077",
+    "rarity": "RR",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの後列の《秀知院》のキャラ1枚につき、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 このカードがアタックした時、クライマックス置場に「突然の結婚イベント」があり、あなたの思い出置場に「決別の言葉」と「生徒会選挙」と「写真撮影」と「満月の日に」があり、他のあなたの《秀知院》のキャラがいるなら、あなたは相手に3ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたの後列の《秀知院》のキャラ1枚につき、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 このカードがアタックした時、クライマックス置場に「突然の結婚イベント」があり、あなたの思い出置場に「決別の言葉」と「生徒会選挙」と「写真撮影」と「満月の日に」があり、他のあなたの《秀知院》のキャラがいるなら、あなたは相手に3ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Shuchiin",
+      "Vice-President"
+    ],
+    "set": "KGL",
+    "release": "95",
+    "sid": "077",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_077.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天才の頭脳？ 千花",
+    "code": "KGL/S95-P01",
+    "rarity": "PR",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《秀知院》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 バトル中のこのカードが【リバース】した時、あなたは自分の山札の上から1枚を公開する。そのカードのレベルが2以上なら、あなたはこのカードを手札に戻してよい。（クライマックスのレベルは0として扱う。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "秀知院",
+      "書記"
+    ],
+    "set": "KGL",
+    "release": "S95",
+    "sid": "P01",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_p01.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 / 翻出非《秀知院》角色",
+            "instructions": []
+          },
+          {
+            "label": "翻出《秀知院》角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天才の頭脳？ 千花",
+    "code": "KGL/S95-P01S",
+    "rarity": "PR",
+    "expansion": "Kaguya Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《秀知院》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 バトル中のこのカードが【リバース】した時、あなたは自分の山札の上から1枚を公開する。そのカードのレベルが2以上なら、あなたはこのカードを手札に戻してよい。（クライマックスのレベルは0として扱う。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "秀知院",
+      "書記"
+    ],
+    "set": "KGL",
+    "release": "S95",
+    "sid": "P01S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/kgl_s95/kgl_s95_p01s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：翻顶为《秀知院》角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果 / 翻顶非《秀知院》角色",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

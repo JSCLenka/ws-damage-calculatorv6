@@ -1,0 +1,173 @@
+[
+  {
+    "name": "夏の一滴 しろは",
+    "code": "Ksm/W102-054",
+    "rarity": "RR",
+    "expansion": "Key All Star",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「REFLECTION BLUE」があり、他のあなたのキャラが3枚以上なら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。この効果で相手のカードが控え室に置かれなかったなら、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Summer Pockets"
+    ],
+    "set": "Ksm",
+    "release": "W102",
+    "sid": "054",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/key_w102/ksm_w102_054.png",
+    "jpAbility": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「REFLECTION BLUE」があり、他のあなたのキャラが3枚以上なら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。この効果で相手のカードが控え室に置かれなかったなら、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "海の家の看板娘 紬＆静久",
+    "code": "Ksm/WE50-57",
+    "rarity": "N",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「絶景ビーチ」があり、他のあなたの、《Anniversary》か《サマポケ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Summer Pockets",
+      "Stuffed Animal"
+    ],
+    "set": "Ksm",
+    "release": "WE50",
+    "sid": "57",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ksm_we50/ksm_we50_57.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "从时计区顶回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "海の家の看板娘 紬＆静久",
+    "code": "Ksm/WE50-57PRR",
+    "rarity": "PRR",
+    "expansion": "Key 25th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「絶景ビーチ」があり、他のあなたの、《Anniversary》か《サマポケ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Summer Pockets",
+      "Stuffed Animal"
+    ],
+    "set": "Ksm",
+    "release": "WE50",
+    "sid": "57PRR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ksm_we50/ksm_we50_57prr.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击效果: 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

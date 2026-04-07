@@ -1,0 +1,540 @@
+[
+  {
+    "name": "伝えたい想い 天王寺 璃奈",
+    "code": "LNJ/W85-004",
+    "rarity": "RR",
+    "expansion": "Love Live! Nijigasaki Academy School Idol Club",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もしも本当に電脳世界で歌えたなら？んー……電波に乗ってどこにでも行けるってことかな。そんなことができたら……今よりもっとたくさんの人と繋がれる",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 記憶 ［(1) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「レインボーローズ 天王寺 璃奈」があり、あなたの思い出置場の「繋がるメロディー 天王寺 璃奈」が2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "W85",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card66210-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(需记忆区有2张以上): 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Emotional Power 優木 せつ菜",
+    "code": "LNJ/W85-042",
+    "rarity": "RR",
+    "expansion": "Love Live! Nijigasaki Academy School Idol Club",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "あなたの声をもっと聞きたいの！",
+    "ability": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ アンコールステップの始めに、あなたのクライマックス置場に「レインボーローズ 優木 せつ菜」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "W85",
+    "sid": "042",
+    "image": "https://images.littleakiba.com/tcg/card66267-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnEncoreStep",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "手牌6张以下, 发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夢の世界へようこそ〜 近江 彼方",
+    "code": "LNJ/W85-073",
+    "rarity": "RR",
+    "expansion": "Love Live! Nijigasaki Academy School Idol Club",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "リラックスし過ぎて寝ないで？\nうんうん、分かってる～だいじょうぶ……\nいざって時は、あなたが起こしてくれるもんね～",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札の《音楽》のキャラを1枚控え室に置く］ あなたのアタックフェイズの始めに、このカードが前列にいて【スタンド】していて、他のあなたの《音楽》のキャラがいるなら、あなたはこのカードを【レスト】する。そうしたら、あなたはコストを払ってよい。そうしたら、次の2つの効果を好きな順番で1回ずつ行う。『相手に1ダメージを与える。』『相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "W85",
+    "sid": "073",
+    "image": "https://images.littleakiba.com/tcg/card66313-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付1手费，发动效果",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "先烧1，再烧3",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "先烧3，再烧1",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "LOVE＆PEACE 優木 せつ菜",
+    "code": "LNJ/W85-T12",
+    "rarity": "TD",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《音楽》のキャラが4枚以上なら、このカードのパワーを＋5000し、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "W85",
+    "sid": "T12",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lnj_w85/lnj_w85_t12.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 / 翻出非《音乐》角色",
+            "instructions": []
+          },
+          {
+            "label": "翻出《音乐》角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "可愛いが溢れるステージ 中須 かすみ",
+    "code": "LNJ/W97-003",
+    "rarity": "RR",
+    "expansion": "Love Live Nijigasaki Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(1) 手札の《音楽》のキャラを1枚控え室に置き、手札の「可愛いが溢れるステージ 中須 かすみ」を1枚公開する］ あなたのクライマックス置場に「Cutest♡ガール」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(1) 手札の《音楽》のキャラを1枚控え室に置き、手札の「可愛いが溢れるステージ 中須 かすみ」を1枚公開する］ あなたのクライマックス置場に「Cutest♡ガール」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "97",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lnj_w97/lnj_w97_003.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "all_others",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 2,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スクールアイドルフェスティバル 天王寺 璃奈",
+    "code": "LNJ/W97-009",
+    "rarity": "R",
+    "expansion": "Love Live Nijigasaki Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、山札の上に好きな順番で置き、そのターン中、このカードのパワーを＋2000し、次の行動を行う。『あなたは相手のレベル1以上のキャラを1枚選んでよい。そうしたら、相手は自分の控え室のレベルＸ以下のキャラを1枚選び、入れ替える。Ｘはあなたが選んだキャラのレベル－1に等しい。』",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、山札の上に好きな順番で置き、そのターン中、このカードのパワーを＋2000し、次の行動を行う。『あなたは相手のレベル1以上のキャラを1枚選んでよい。そうしたら、相手は自分の控え室のレベルＸ以下のキャラを1枚選び、入れ替える。Ｘはあなたが選んだキャラのレベル－1に等しい。』",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "97",
+    "sid": "009",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lnj_w97/lnj_w97_009.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夢見るステージ 近江 彼方",
+    "code": "LNJ/W97-071",
+    "rarity": "RR",
+    "expansion": "Love Live Nijigasaki Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《音楽》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置き、このカードを【レスト】する］ あなたのクライマックス置場に「ハルカカナタ」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から7枚を、控え室に置き、相手に3ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《音楽》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置き、このカードを【レスト】する］ あなたのクライマックス置場に「ハルカカナタ」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から7枚を、控え室に置き、相手に3ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "97",
+    "sid": "071",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lnj_w97/lnj_w97_071.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 7,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "素敵な旅へご案内♪ エマ・ヴェルデ",
+    "code": "LNJ/WE38-039",
+    "rarity": "N",
+    "expansion": "Love Live Thanksgiving Festival",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "E38",
+    "sid": "039",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lnj_we38/lnj_we38_039.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手费: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "まるで夢みたいです 三船 栞子",
+    "code": "LNJ/WE39-015",
+    "rarity": "N",
+    "expansion": "Love Live! Sukufesu 10th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LNJ",
+    "release": "E39",
+    "sid": "015",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lnj_we39/lnj_we39_015.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付费用(弃2手): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

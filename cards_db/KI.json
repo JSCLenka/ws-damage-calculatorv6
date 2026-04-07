@@ -1,0 +1,189 @@
+[
+  {
+    "name": "“不思議メンヘラ”仁子",
+    "code": "KI/S44-002",
+    "rarity": "RR",
+    "expansion": "Kiznaiver",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ほんとの自分を、不思議って言ってもらえるなんて！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(2) 手札の「クラスの珍獣枠 仁子」を1枚控え室に置く］ あなたのクライマックス置場に「友達だから」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたの前列のキャラすべてに、そのターン中、パワーを＋1000し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Bond 《キズナ》",
+      "Wonder 《不思議》"
+    ],
+    "set": "KI",
+    "release": "S44",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card31413-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 前列全体にキャンセル時1点バーン付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "自信喪失 千鳥",
+    "code": "KI/S44-052",
+    "rarity": "RR",
+    "expansion": "Kiznaiver",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私……園崎さんより、かっちょんのこと、ずっと知ってるって。でも……それさえも違ったら……",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(3)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Bond 《キズナ》",
+      "Housekeeping 《家事》"
+    ],
+    "set": "KI",
+    "release": "S44",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card31463-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付手牌1: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付3费",
+            "instructions": []
+          },
+          {
+            "label": "支付3费: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“分かち合うこれから”園崎",
+    "code": "KI/S44-077",
+    "rarity": "RR",
+    "expansion": "Kiznaiver",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "今、何を考えましたか？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 あなたのクライマックス置場に「開放される痛み」が置かれた時、このカードの下にマーカーがないなら、あなたは自分の控え室の《キズナ》のキャラを1枚選び、このカードの下にマーカーとして裏向きに置いてよい。",
+      "【自】［このカードの下のマーカーを1枚控え室に置く］ このカードのバトル中、あなたの受けたダメージがキャンセルされなかった時、あなたはコストを払ってよい。そうしたら、相手に同じダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Bond 《キズナ》",
+      "Mystery 《謎》"
+    ],
+    "set": "KI",
+    "release": "S44",
+    "sid": "077",
+    "image": "https://images.littleakiba.com/tcg/card31488-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  }
+]

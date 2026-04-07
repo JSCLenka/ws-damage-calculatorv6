@@ -1,0 +1,952 @@
+[
+  {
+    "name": "“僕らのLIVE 君とのLIFE”小泉 花陽",
+    "code": "LL/W24-010",
+    "rarity": "R",
+    "expansion": "Love Live!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［あなたの【スタンド】している《音楽》のキャラを1枚【レスト】する］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは他の自分の《音楽》のキャラを1枚選び、そのターン中、ソウルを＋1。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W24",
+    "sid": "010",
+    "image": "https://images.littleakiba.com/tcg/card9299-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST",
+            "instructions": []
+          },
+          {
+            "label": "支付COST: 使我方另一个角色魂+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "レッスン着のことり",
+    "code": "LL/W28-056",
+    "rarity": "R",
+    "expansion": "Love Live! feat. School Idol Festival",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "みんなが喜んでくれるように頑張ります♪",
+    "ability": [
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「Wonderful Rush」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W28",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card10578-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1手1费): 造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Happy maker!”絢瀬 絵里",
+    "code": "LL/W34-001",
+    "rarity": "RR",
+    "expansion": "Love Live! Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたのカード名に「絵里」を含むキャラが4枚以上なら、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。",
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。",
+      "【起】［(1)］ あなたは自分のカード名に「絵里」を含むキャラを1枚選び、そのターン中、パワーを＋1500。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W34",
+    "sid": "001",
+    "image": "https://images.littleakiba.com/tcg/card20519-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Happy maker!”南 ことり",
+    "code": "LL/W34-035",
+    "rarity": "RR",
+    "expansion": "Love Live! Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 他のあなたの《音楽》のキャラがアタックした時、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W34",
+    "sid": "035",
+    "image": "https://images.littleakiba.com/tcg/card20553-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夏祭りデート”東條 希",
+    "code": "LL/W36-003",
+    "rarity": "RR",
+    "expansion": "Love Live! School Idol Festival Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "祭りは楽しんだもん勝ちやで？　ほら、行こ行こ♪",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラが3枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードがアタックした時、あなたは他の自分の《音楽》のキャラを1枚選び、そのターン中、パワーを＋1000。",
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Wafuku 《和服》"
+    ],
+    "set": "LL",
+    "release": "W36",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card21699-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(登场回合): 击倒对手 -> 踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夏祭りデート”園田 海未",
+    "code": "LL/W36-036",
+    "rarity": "RR",
+    "expansion": "Love Live! School Idol Festival Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ミニスカートになった浴衣などもかわいいですが……やはり伝統的な浴衣が好きですね",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【起】［(1) あなたの《音楽》のキャラを2枚【レスト】する］ あなたは相手のレベル0以下のキャラを1枚選び、控え室に置く。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Wafuku 《和服》"
+    ],
+    "set": "LL",
+    "release": "W36",
+    "sid": "036",
+    "image": "https://images.littleakiba.com/tcg/card21741-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果不发动或条件未满足",
+            "instructions": []
+          },
+          {
+            "label": "登场效果: 牌顶为《音乐》角色，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夏祭りデート”小泉 花陽",
+    "code": "LL/W36-069",
+    "rarity": "RR",
+    "expansion": "Love Live! School Idol Festival Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "花陽としたことが、わたあめの存在を忘れていました！　一緒に食べに行きましょうっ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「ドキドキバレンタイン」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、そのターン中、このカードのパワーを＋3000。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Wafuku 《和服》"
+    ],
+    "set": "LL",
+    "release": "W36",
+    "sid": "069",
+    "image": "https://images.littleakiba.com/tcg/card21783-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 支付3费2手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“あなたにテレパシー”東條 希",
+    "code": "LL/W68-003",
+    "rarity": "RR",
+    "expansion": "Love Live School Idol Festival Vol.3 ~6th Anniversary~",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "心の中が読めたら、全部伝わるかな？あなたへの感謝も、大好きって気持ちも",
+    "ability": [
+      "【永】 記憶 あなたの思い出が3枚以上なら、このカードのパワーを＋1500し、ソウルを＋1し、このカードは『【自】 アンコール ［手札の《音楽》のキャラを1枚控え室に置く］』を得る。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2)］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「リラックスして楽しいステージ」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置く。それらのカードにクライマックスがあるなら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W68",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card52573-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "思い出が3枚未満",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "CXコンボを発動しない",
+                    "instructions": []
+                  },
+                  {
+                    "label": "CXコンボ発動: 相手の山札下から4枚削り、CXがあれば再スタンド",
+                    "instructions": [
+                      {
+                        "op": "MillAndBurn",
+                        "target_player": "opp",
+                        "zone": "bottom",
+                        "mill_amount": 4,
+                        "condition": "is_cx",
+                        "mode": "once_if_any",
+                        "burn_amount": 0,
+                        "on_success": [
+                          {
+                            "op": "PseudoExtraAttack",
+                            "soul": 2
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "思い出が3枚以上 (永続ソウル+1)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "CXコンボを発動しない",
+                    "instructions": []
+                  },
+                  {
+                    "label": "CXコンボ発動: 相手の山札下から4枚削り、CXがあれば再スタンド",
+                    "instructions": [
+                      {
+                        "op": "MillAndBurn",
+                        "target_player": "opp",
+                        "zone": "bottom",
+                        "mill_amount": 4,
+                        "condition": "is_cx",
+                        "mode": "once_if_any",
+                        "burn_amount": 0,
+                        "on_success": [
+                          {
+                            "op": "PseudoExtraAttack",
+                            "soul": 3
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“スペクタクルな仕掛け”矢澤 にこ",
+    "code": "LL/W68-012",
+    "rarity": "R",
+    "expansion": "Love Live School Idol Festival Vol.3 ~6th Anniversary~",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "今日のにこは、港で未だ帰らぬ恋人を待つ可憐な美少女！",
+    "ability": [
+      "【永】 他のあなたのカード名に「真姫」か「にこ」か「絵里」を含むキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Pirate 《海賊》"
+    ],
+    "set": "LL",
+    "release": "W68",
+    "sid": "012",
+    "image": "https://images.littleakiba.com/tcg/card52582-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[1费,1手], 直击时烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“伝えたい気持ち”高坂 穂乃果",
+    "code": "LL/W68-037",
+    "rarity": "RR",
+    "expansion": "Love Live School Idol Festival Vol.3 ~6th Anniversary~",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "今の私たちがあるのは、あなたの応援のお陰なんだよ",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が5以上なら、このカードのパワーを＋2500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「ウキウキわくわくのステージ」が置かれた時、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W68",
+    "sid": "037",
+    "image": "https://images.littleakiba.com/tcg/card52608-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(CX连击)：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“９人のアリス！？”園田 海未",
+    "code": "LL/W68-045",
+    "rarity": "R",
+    "expansion": "Love Live School Idol Festival Vol.3 ~6th Anniversary~",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "4000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1)］ あなたのクライマックス置場に「リラックスして楽しいステージ」が置かれた時、あなたの思い出が3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Fairy Tale 《童話》"
+    ],
+    "set": "LL",
+    "release": "W68",
+    "sid": "045",
+    "image": "https://images.littleakiba.com/tcg/card52616-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(回忆>=3): 发动CX连击 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“時には素直に”西木野 真姫",
+    "code": "LL/W68-069",
+    "rarity": "RR",
+    "expansion": "Love Live School Idol Festival Vol.3 ~6th Anniversary~",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「あなたに贈りたい曲」が置かれた時、前列にこのカードがいて、他のあなたのカード名に「真姫」か「にこ」か「絵里」を含むキャラが4枚以上なら、あなたは他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "W68",
+    "sid": "069",
+    "image": "https://images.littleakiba.com/tcg/card52640-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击(前列+4名指定角色)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“SUNNY DAY SONG”高坂 穂乃果",
+    "code": "LL/WE24-17",
+    "rarity": "RR",
+    "expansion": "Love Live! The School Idol Movie Extra Booster",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 あなたのクライマックス置場に「SUNNY DAY SONG」が置かれた時、前列にこのカードがいるなら、あなたのキャラすべてに、そのターン中、パワーを＋500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。』"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "WE24",
+    "sid": "17",
+    "image": "https://images.littleakiba.com/tcg/card24597-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未翻出《音乐》角色 / 或选择不发动",
+            "instructions": []
+          },
+          {
+            "label": "翻出《音乐》角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Angelic Angel”南 ことり",
+    "code": "LL/WE24-20",
+    "rarity": "R",
+    "expansion": "Love Live! The School Idol Movie Extra Booster",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7000",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードがアタックした時、このカードの正面のキャラのレベルが3以上なら、そのターン中、このカードのパワーを＋6000。",
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「僕たちはひとつの光」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LL",
+    "release": "WE24",
+    "sid": "20",
+    "image": "https://images.littleakiba.com/tcg/card24550-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连动「僕たちはひとつの光」: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "素敵な旅へご案内♪ 星空 凛",
+    "code": "LL/WE38-038",
+    "rarity": "N",
+    "expansion": "Love Live Thanksgiving Festival",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「リラックスして楽しいステージ」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「リラックスして楽しいステージ」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LL",
+    "release": "E38",
+    "sid": "038",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/ll_we38/ll_we38_038.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“花よりたおやかに♪”矢澤 にこ",
+    "code": "LL/WE39-020",
+    "rarity": "N",
+    "expansion": "Love Live! Sukufesu 10th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードの正面のキャラのソウルを－1。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "jpAbility": [
+      "【永】 このカードの正面のキャラのソウルを－1。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LL",
+    "release": "E39",
+    "sid": "020",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/ll_we39/ll_we39_020.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付2费1手发动效果",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“かわいさ満開♪”南 ことり",
+    "code": "LL/WE39-038",
+    "rarity": "N",
+    "expansion": "Love Live! Sukufesu 10th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、このカードの正面のキャラのレベルが3以上なら、そのターン中、このカードのパワーを＋6000。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「僕たちはひとつの光」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードがアタックした時、このカードの正面のキャラのレベルが3以上なら、そのターン中、このカードのパワーを＋6000。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「僕たちはひとつの光」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LL",
+    "release": "E39",
+    "sid": "038",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/ll_we39/ll_we39_038.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击[僕たちはひとつの光]: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

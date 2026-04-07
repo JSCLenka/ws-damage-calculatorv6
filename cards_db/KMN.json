@@ -1,0 +1,326 @@
+[
+  {
+    "name": "なんでも気になる サーバル",
+    "code": "KMN/W51-001",
+    "rarity": "FR",
+    "expansion": "Kemono Friends",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "うみゃー！みゃみゃみゃみゃみゃみゃ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《フレンズ》のキャラの枚数×1000に等しい。",
+      "【自】【CXコンボ】 記憶 ［(2) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたの前列の中央の枠のキャラがアタックした時、クライマックス置場に「元の姿へ……」があり、あなたの思い出置場の《フレンズ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Friends 《フレンズ》"
+    ],
+    "set": "KMN",
+    "release": "W51",
+    "sid": "001",
+    "image": "https://images.littleakiba.com/tcg/card38605-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场回血效果",
+            "instructions": []
+          },
+          {
+            "label": "登场时效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击(回忆区フレンズ≥2): 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ジャングル人生 エリマキキツネザル",
+    "code": "KMN/W51-039",
+    "rarity": "FR",
+    "expansion": "Kemono Friends",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ジャングルぐらしも楽じゃないよ！",
+    "ability": [
+      "【永】 他のあなたの後列の《フレンズ》のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から2枚まで見て、山札の上に元の順番で置く。",
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Friends 《フレンズ》"
+    ],
+    "set": "KMN",
+    "release": "W51",
+    "sid": "039",
+    "image": "https://images.littleakiba.com/tcg/card38643-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 将其送入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ホラー作家 タイリクオオカミ",
+    "code": "KMN/W51-047",
+    "rarity": "U",
+    "expansion": "Kemono Friends",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 1,
+    "flavor_text": "……",
+    "ability": [
+      "【自】 あなたのクライマックスがクライマックス置場に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《フレンズ》のキャラの枚数×500に等しい。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「フレンズ総攻撃」があるなら、あなたは自分の山札の上から1枚を公開する。そのカードが《フレンズ》のキャラなら、あなたは相手に5ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Friends 《フレンズ》",
+      "Manga 《漫画》"
+    ],
+    "set": "KMN",
+    "release": "W51",
+    "sid": "047",
+    "image": "https://images.littleakiba.com/tcg/card38651-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (未击倒/顶卡不符/不选择发动)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 & 公开顶卡是<フレンズ> -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "脅威の歌声？ トキ",
+    "code": "KMN/W51-062",
+    "rarity": "RR",
+    "expansion": "Kemono Friends",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "～♪゛～♪゛",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「雲の上の山頂まで」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の後列のレベル1以下のキャラを1枚選ぶ。そのキャラは次の相手のスタンドフェイズに【スタンド】しない。（ダメージキャンセルは発生する）",
+      "【自】 アンコール ［手札の《フレンズ》のキャラを1枚控え室に置く］ （このカードが舞台から控え室に置かれた時、あなたはコストを払ってよい。そうしたら、このカードがいた枠に【レスト】して置く）"
+    ],
+    "attributes": [
+      "Friends 《フレンズ》",
+      "Music 《音楽》"
+    ],
+    "set": "KMN",
+    "release": "W51",
+    "sid": "062",
+    "image": "https://images.littleakiba.com/tcg/card38666-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "百獣の王 ライオン",
+    "code": "KMN/W51-064",
+    "rarity": "R",
+    "expansion": "Kemono Friends",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ほう……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《フレンズ》のキャラを1枚選び、手札に戻してよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードが「本気の勝負」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。（トリガーチェックででた「本気の勝負」のの効果でこのカードが舞台に置かれた時も使える）"
+    ],
+    "attributes": [
+      "Friends 《フレンズ》",
+      "Weapon 《武器》"
+    ],
+    "set": "KMN",
+    "release": "W51",
+    "sid": "064",
+    "image": "https://images.littleakiba.com/tcg/card38668-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 使这张卡再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“PPP”ロイヤルペンギン",
+    "code": "KMN/W51-085",
+    "rarity": "RR",
+    "expansion": "Kemono Friends",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "キラキラ～",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の青のキャラを1枚選び、手札に戻してよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「アイドルオーラ」があり、他のあなたの、「“PPP”ジェンツーペンギン」と「“PPP”フンボルトペンギン」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《フレンズ》のキャラか「“PPP”プラチナチケット」なら、あなたは自分の、「“PPP”コウテイペンギン」を1枚までと「“PPP”イワトビペンギン」を1枚まで選び、【スタンド】する。（公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Friends 《フレンズ》",
+      "Music 《音楽》"
+    ],
+    "set": "KMN",
+    "release": "W51",
+    "sid": "085",
+    "image": "https://images.littleakiba.com/tcg/card38689-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击或翻顶失败",
+            "instructions": []
+          },
+          {
+            "label": "CX连击成功: 再动1人 (魂2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "CX连击成功: 再动2人 (魂2+2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

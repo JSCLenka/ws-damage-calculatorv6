@@ -1,0 +1,52 @@
+[
+  {
+    "name": "いつもの別れ 八九寺真宵",
+    "code": "NM/S24-052",
+    "rarity": "R",
+    "expansion": "Nisemonogatari",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "またお会いしましょう",
+    "ability": [
+      "【自】［(1) 手札を1枚クロック置場に置く］ このカードがアタックした時、クライマックス置場に「かみましたっ！」があるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Strangeness 《怪異》",
+      "Blood 《血》"
+    ],
+    "set": "NM",
+    "release": "S24",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card10094-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1费, 1手牌入时计)，造成5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

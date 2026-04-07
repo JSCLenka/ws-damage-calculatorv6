@@ -1,0 +1,320 @@
+[
+  {
+    "name": "希望と諦念 ほむら",
+    "code": "MM/W17-P07",
+    "rarity": "PR",
+    "expansion": "Puella Magi Madoka Magica",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "1000",
+    "soul": 2,
+    "flavor_text": "一度魔法少女になってしまったら、\nもう救われる望みなんてない",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Time 《時間》"
+    ],
+    "set": "MM",
+    "release": "W17",
+    "sid": "P07",
+    "image": "https://images.littleakiba.com/tcg/card28078-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 踢入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“今が幸せ”マミ",
+    "code": "MM/W35-007",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica the Movie: Rebellion",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "魔法少女としての運命を受け入れた生き方が、こんなに幸せで充実したものになるなんて",
+    "ability": [
+      "【永】 他のあなたの《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札からか『チェンジ』で、舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Tea 《お茶》"
+    ],
+    "set": "MM",
+    "release": "W35",
+    "sid": "007",
+    "image": "https://images.littleakiba.com/tcg/card21509-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“まどかのために”ほむら",
+    "code": "MM/W35-026",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica the Movie: Rebellion",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もう二度とインキュベーターにあの子は触らせない",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『チェンジ』で舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の【スタンド】している《魔法》のキャラを1枚選び、【レスト】する。",
+      "【自】 このカードがアタックした時、クライマックス置場に「結界の真実」があるなら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラをクロック置場に置いてよい。』"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Time 《時間》"
+    ],
+    "set": "MM",
+    "release": "W35",
+    "sid": "026",
+    "image": "https://images.littleakiba.com/tcg/card21528-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 将其送入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "悪魔となったほむら",
+    "code": "MM/W35-034",
+    "rarity": "R",
+    "expansion": "Puella Magi Madoka Magica the Movie: Rebellion",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "やっと、捕まえた",
+    "ability": [
+      "【永】 このカードの下にマーカーがあるなら、このカードのパワーを＋8500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の「アルティメットまどか」を1枚選び、このカードの下にマーカーとして裏向きに置いてよい。そうしたら、あなたは自分の控え室の「新世界のまどか」を1枚選び、舞台の好きな枠に置く。",
+      "【自】[(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Demon 《悪魔》"
+    ],
+    "set": "MM",
+    "release": "W35",
+    "sid": "034",
+    "image": "https://images.littleakiba.com/tcg/card21537-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 角色踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "直感的なタイプ 杏子",
+    "code": "MM/W35-062",
+    "rarity": "RR",
+    "expansion": "Puella Magi Madoka Magica the Movie: Rebellion",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "こんな妙なことほっとけるかよ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】[(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Sweets 《お菓子》"
+    ],
+    "set": "MM",
+    "release": "W35",
+    "sid": "062",
+    "image": "https://images.littleakiba.com/tcg/card21565-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动能力",
+            "instructions": []
+          },
+          {
+            "label": "发动能力：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用：造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "希望と諦念 ほむら",
+    "code": "MM/W35-107",
+    "rarity": "PR",
+    "expansion": "Puella Magi Madoka Magica the Movie: Rebellion",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "魔法少女は戦い続けなければならない。それが奇跡を願った対価",
+    "ability": [
+      "【自】[(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。",
+      "【起】［あなたの《魔法》のキャラを1枚【レスト】する］ そのターン中、このカードのパワーを＋1500。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Time 《時間》"
+    ],
+    "set": "MM",
+    "release": "W35",
+    "sid": "107",
+    "image": "https://images.littleakiba.com/tcg/card21604-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未满足条件 (非登场回合 或 未击倒对手)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 登场回合中击倒对手",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "name": "マクロス・クォーター強攻型\nMacross Quarter Storm Attack Mode",
+    "code": "MF/S13-056",
+    "rarity": "R",
+    "expansion": "Macross Frontier",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「マクロス・アタック」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはそのキャラのコストに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Mecha 《メカ》"
+    ],
+    "set": "MF",
+    "release": "S13",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card4659-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 击倒Cost 0角色",
+            "instructions": []
+          },
+          {
+            "label": "击倒Cost 1角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒Cost 2角色 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒Cost 3角色 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

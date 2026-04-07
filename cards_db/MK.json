@@ -1,0 +1,401 @@
+[
+  {
+    "name": "“憧れの舞台”ネロ",
+    "code": "MK/SE29-01",
+    "rarity": "RR",
+    "expansion": "Milky Holmes the Movie -Milky Holmes Counterattack-",
+    "side": "SE",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "僕の歌を聴けーー！",
+    "ability": [
+      "【永】 あなたのクロック置場に「逆襲のネロ」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500。",
+      "【自】この能力は1ターンにつき2回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Detective 《探偵》",
+      "Sweets 《お菓子》"
+    ],
+    "set": "MK",
+    "release": "SE29",
+    "sid": "01",
+    "image": "https://images.littleakiba.com/tcg/card27241-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非本回合从手牌登场 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "本回合从手牌登场 (获得取消烧效果)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 2,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消: 不发动效果",
+                      "instructions": []
+                    },
+                    {
+                      "label": "伤害被取消: 发动效果烧1",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "逆襲のエリー",
+    "code": "MK/SE29-18",
+    "rarity": "R",
+    "expansion": "Milky Holmes the Movie -Milky Holmes Counterattack-",
+    "side": "SE",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "それは七転び八――",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500。",
+      "【自】［(2) 手札の《探偵》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、あなたの前列の中央の枠のキャラがアタックした時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Detective 《探偵》",
+      "Book 《本》"
+    ],
+    "set": "MK",
+    "release": "SE29",
+    "sid": "18",
+    "image": "https://images.littleakiba.com/tcg/card27191-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)费+2手牌使此卡再动 (限1次)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“憧れの舞台”シャロ",
+    "code": "MK/SE29-27",
+    "rarity": "RR",
+    "expansion": "Milky Holmes the Movie -Milky Holmes Counterattack-",
+    "side": "SE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "元気に行きますよー！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《探偵》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「シンクロニシティ」があるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたのクライマックスがレベル置場に置かれた時、そのターン中、このカードのパワーを＋2500。"
+    ],
+    "attributes": [
+      "Detective 《探偵》",
+      "Camera 《カメラ》"
+    ],
+    "set": "MK",
+    "release": "SE29",
+    "sid": "27",
+    "image": "https://images.littleakiba.com/tcg/card27267-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(CX在场): 击倒对手 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "審美の時間 アルセーヌ",
+    "code": "MK/SE29-41",
+    "rarity": "RR",
+    "expansion": "Milky Holmes the Movie -Milky Holmes Counterattack-",
+    "side": "SE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "怪盗は――美しくあらねばなりませんわ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『チェンジ』で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードがアタックした時、クライマックス置場に「決戦！怪盗VS探偵」があるなら、あなたは自分の山札の上から4枚を、控え室に置き、相手にＸダメージを与え、あなたの《怪盗》のキャラ1枚につき、そのターン中、このカードのパワーを＋1000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Phantom Thief 《怪盗》",
+      "Mask 《仮面》"
+    ],
+    "set": "MK",
+    "release": "SE29",
+    "sid": "41",
+    "image": "https://images.littleakiba.com/tcg/card27281-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "self",
+            "zone": "top",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ま”じめな警察官 平乃",
+    "code": "MK/SJ01-024J",
+    "rarity": "C",
+    "expansion": "Milky Holmes Party Pack",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "2",
+    "cost": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのレアリティにSPを含むキャラすべてに、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。バトルステップの終わりに、このカードがバトル中なら、このカードを【スタンド】する。』",
+      "※このカードは公式・公認大会では使用できません。"
+    ],
+    "attributes": [
+      "警察",
+      "武器"
+    ],
+    "set": "MK",
+    "release": "SJ01",
+    "sid": "024J",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mk_sj01/mk_sj01_024.png",
+    "soul": 1,
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再动",
+            "instructions": []
+          },
+          {
+            "label": "发动再动 (攻击角色基础魂为1)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "发动再动 (攻击角色基础魂为2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“た”げいたさい シャロ",
+    "code": "MK/SJ01-028J",
+    "rarity": "RR",
+    "expansion": "Milky Holmes Party Pack",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［座ったまま、好きな曲のサビを歌って踊る］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（音には注意しましょう。ダメージキャンセルは発生する）",
+      "※このカードは公式・公認大会では使用できません。"
+    ],
+    "attributes": [
+      "探偵",
+      "カメラ"
+    ],
+    "set": "MK",
+    "release": "SJ01",
+    "sid": "028J",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mk_sj01/mk_sj01_028.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST",
+            "instructions": []
+          },
+          {
+            "label": "支付COST：造成5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“雨上がりのミライ”コーデリア",
+    "code": "MK/SJ01-060",
+    "rarity": "MR",
+    "expansion": "Milky Holmes Party Pack",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から5枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "探偵",
+      "スポーツ"
+    ],
+    "set": "MK",
+    "release": "SJ01",
+    "sid": "060",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mk_sj01/mk_sj01_060.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付[1费, 弃1手牌]发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 5,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

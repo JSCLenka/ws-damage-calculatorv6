@@ -1,0 +1,421 @@
+[
+  {
+    "name": "お兄様のジャケット 佳樹",
+    "code": "MKI/W126-004",
+    "rarity": "RR",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《青春》のキャラがいるなら、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(2) 手札を1枚控え室に置き、手札の「温水和彦」を1枚公開する］ このカードがアタックした時、CX置場に「お兄様と学園祭デートです」があり、他のあなたの《青春》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Youth",
+      "Little Sister"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回血1 (有其他《青春》角色)",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击 (2费弃1手)",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 2,
+                "on_cancel": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 2,
+                    "on_cancel": [
+                      {
+                        "op": "DealDamage",
+                        "amount": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "陸上ガール 檸檬",
+    "code": "MKI/W126-035",
+    "rarity": "RR",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋4000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「それでも走り出す」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "attributes": [
+      "Youth",
+      "Makeine"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "035",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_035.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "クロックから回復しない",
+            "instructions": []
+          },
+          {
+            "label": "クロックから1枚回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 相手の山札の上3枚を見て操作",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "その瞳に映るのは 知花",
+    "code": "MKI/W126-061",
+    "rarity": "R",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】［(1) 手札の《青春》のキャラを1枚控え室に置く］ あなたのアンコールステップの始めに、CX置場に「責任とれよ」があり、前列にこのカードがいて、他のあなたの《青春》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Youth",
+      "Makeine"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "061",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_061.png",
+    "effects": [
+      {
+        "trigger": "OnEncoreStepStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "興味津々 知花",
+    "code": "MKI/W126-065",
+    "rarity": "U",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 2,
+    "power": 7000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《青春》なら、このカードのパワーを＋2500し、このカードは『【自】 アンコール ［手札の《青春》のキャラを1枚控え室に置く］』を得る。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Youth",
+      "Makeine"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "065",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_065.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费, 弃1手牌]，造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ナイスバディ 杏菜",
+    "code": "MKI/W126-077",
+    "rarity": "RR",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 思い出置場にこのカードがあるなら、あなたはレベル4であることによって敗北しない。（レベル5になったら敗北する）",
+      "【自】 このカードが「ナイスバディ 杏菜」以外のカードの効果で思い出になった時、このカードを控え室に置く。",
+      "【自】【CXコンボ】 このカードのアタックの終わりに、CX置場に「そういうとこだよ」があるなら、次の2つの効果のうちあなたが選んだ1つを行う。『［(5) あなたの山札の上から3枚をクロック置場に置く］ このカードが手札から舞台に置かれたターンなら、あなたはコストを払ってよい。そうしたら、このカードを思い出にする。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Youth",
+      "Makeine"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "077",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_077.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "选择效果1：自身送入回忆区（无伤害）",
+            "instructions": []
+          },
+          {
+            "label": "选择效果2：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "食い意地だけは負けない 杏菜",
+    "code": "MKI/W126-082",
+    "rarity": "R",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 6500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場の《青春》のキャラ1枚につき、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】 経験 ［手札を2枚控え室に置く］ このカードがアタックした時、他のあなたの《青春》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたのレベル置場の《青春》のキャラが2枚以下なら0、3枚なら1、4枚以上なら2に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Youth",
+      "Makeine"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_082.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未発動/レベル置場の《青春》が2枚以下",
+            "instructions": []
+          },
+          {
+            "label": "発動/レベル置場の《青春》が3枚: 1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "発動/レベル置場の《青春》が4枚以上: 2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "負けヒロイン 檸檬",
+    "code": "MKI/W126-T10",
+    "rarity": "TD",
+    "expansion": "Makeine: Too Many Losing Heroines",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《青春》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】【ターン1】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「アンタが新入部員！」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《青春》のキャラかイベントなら、このカードを【スタンド】し、そのターン中、このカードのパワーを＋1000。（公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Youth",
+      "Makeine"
+    ],
+    "set": "MKI",
+    "release": "W126",
+    "sid": "T10",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/m/mki_w126/mki_w126_t10.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(翻顶成功): 再攻击一次",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1588 @@
+[
+  {
+    "name": "“紅魔族”めぐみん",
+    "code": "KS/W49-034",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "我と共に究極の深淵を覗く覚悟をせよ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を、控え室に置き、相手のレベルＸ以下のキャラを1枚まで選び、控え室に置く。Ｘはそのカードのレベルに等しい。（クライマックスのレベルは0として扱う）",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「爆裂魔法」があり、他のあなたの「“不安でいっぱい”カズマ」がいて、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W49",
+    "sid": "034",
+    "image": "https://images.littleakiba.com/tcg/card34337-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 给予对手5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "めぐみん",
+    "code": "KS/W49-035",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "見せてあげますよ、本物の爆裂魔法を!!",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1)］ あなたのアタックフェイズの始めに、クライマックス置場に「本物の爆裂魔法」があり、このカードが前列にいて【スタンド】しているなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたはこのカードの正面のレベル3以下のキャラを1枚選び、クロック置場に置き、このカードを【レスト】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W49",
+    "sid": "035",
+    "image": "https://images.littleakiba.com/tcg/card34338-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧4 + 对面角色踢时计",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“同時発射!!”ウィズ",
+    "code": "KS/W49-044",
+    "rarity": "R",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6500",
+    "soul": 1,
+    "flavor_text": "めぐみんさん、同時発射です!!……!?",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのレベル3以上のキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】［(1) 手札を2枚控え室に置く］ あなたのアタックフェイズの始めに、クライマックス置場に「本物の爆裂魔法」があり、他のあなたの「めぐみん」がいるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Death 《死》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W49",
+    "sid": "044",
+    "image": "https://images.littleakiba.com/tcg/card34347-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動：相手に5ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“人形の恐怖”めぐみん",
+    "code": "KS/W49-050",
+    "rarity": "U",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5000",
+    "soul": 1,
+    "flavor_text": "その、アクアに身の安全を守ってもらうのと……一緒にトイレに……と思いまして……",
+    "ability": [
+      "【自】 他のあなたのバトル中のキャラが【リバース】した時、あなたは自分の《魔法》のキャラを1枚選び、そのターン中、パワーを＋3000。",
+      "【起】 集中 ［(1) あなたのキャラを2枚【レスト】する］ あなたは自分の山札の上から4枚をめくり、控え室に置く。相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W49",
+    "sid": "050",
+    "image": "https://images.littleakiba.com/tcg/card34353-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnStandPhase",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "self",
+            "zone": "top",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“良き出会いのあらんことを”エリス",
+    "code": "KS/W49-072",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "……生まれ変わったあなたに、また良き出会いのあらんことを……",
+    "ability": [
+      "【永】 あなたのクロック置場に「“雪精討伐の意味とは？”アクア」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《冒険者》か《女神》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(1) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたの前列の中央の枠のキャラがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《冒険者》か《女神》のキャラなら、このカードを【スタンド】する。（公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Goddess 《女神》"
+    ],
+    "set": "KS",
+    "release": "W49",
+    "sid": "072",
+    "image": "https://images.littleakiba.com/tcg/card34375-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付再动费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1费2手)尝试再动",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "翻顶检定失败",
+                "instructions": []
+              },
+              {
+                "label": "翻顶检定成功 -> 再动",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“地獄の公爵”バニル",
+    "code": "KS/W55-003",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "一発キツいの食らわしてくれるわ！",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札からか『チェンジ』で、舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】［このカードを控え室に置く］ 相手のドローフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「“仮面の力”ダクネス」を1枚選び、このカードがいた枠に置き、そのターン中、そのキャラのパワーを＋2500。"
+    ],
+    "attributes": [
+      "Mask 《仮面》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W55",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card41152-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件未达成：非登场回合",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：登场回合 -> 伤害被取消时，削顶烧(等级+1)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“走り出せ”ダクネス",
+    "code": "KS/W55-004",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私が前に出よう",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「初めての高揚感」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Passion 《煩悩 》"
+    ],
+    "set": "KS",
+    "release": "W55",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card41153-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用效果",
+            "instructions": []
+          },
+          {
+            "label": "【自】从时计区顶回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "【CX】赋予自身[取消时烧2]效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "【CX】赋予其他角色[取消时烧2]效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“爆裂娘”めぐみん",
+    "code": "KS/W55-043",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "撃っていいんですか!?",
+    "ability": [
+      "【永】 あなたのクロック置場に「水着のめぐみん」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から3枚を、控え室に置く。それらのカードの、《冒険者》か《魔法》のキャラが1枚以上なら、あなたは自分の山札の上から1枚までを、ストック置場に置く。2枚以上なら、あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－4000。3枚以上なら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W55",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card41197-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (翻出<冒険者>或<魔法>角色卡不足3张)",
+            "instructions": []
+          },
+          {
+            "label": "效果发动: 翻出3张 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“氷の魔女”ウィズ",
+    "code": "KS/W55-044",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "カースド・クリスタルプリズン！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《冒険者》か《魔法》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】【CXコンボ】［(2) 手札の、《冒険者》か《魔法》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「カースド・クリスタルプリズン！」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、次の相手のターンの終わりまで、相手は舞台にいるキャラの【起】を使えない。"
+    ],
+    "attributes": [
+      "Death 《死》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W55",
+    "sid": "044",
+    "image": "https://images.littleakiba.com/tcg/card41198-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果: 翻牌成功，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "登场效果: 不发动 / 翻牌失败",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 未击倒对手",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“パワーアップする爆裂魔法”めぐみん",
+    "code": "KS/W55-053",
+    "rarity": "R",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの、《冒険者》か《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W55",
+    "sid": "053",
+    "image": "https://images.littleakiba.com/tcg/card41207-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费, 2手牌]: 造成5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“怒れる拳”アクア",
+    "code": "KS/W55-085",
+    "rarity": "R",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! 2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ゴッドォオオオ――",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】 あなたのクライマックスフェイズの始めに、あなたは自分の控え室の「“街を歩けば”アクシズ教徒」を3枚まで選び、このカードの下にマーカーとして好きな順番で表向きに置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「女神の怒り」があるなら、相手は自分の山札の上からＸ枚を、控え室に置く。それらのカードにクライマックスがあるなら、あなたはこのカードの正面のレベル3以下のキャラを1枚選び、クロック置場に置く。Ｘはこのカードの下のマーカーの枚数に等しい。",
+      "【自】 ターンの終わりに、あなたはこのカードの下のマーカーをすべて控え室に置く。"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Goddess 《女神》"
+    ],
+    "set": "KS",
+    "release": "W55",
+    "sid": "085",
+    "image": "https://images.littleakiba.com/tcg/card41239-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "マーカー=0枚: 効果なし",
+            "instructions": []
+          },
+          {
+            "label": "マーカー=1枚: トップ1枚見てCXあれば1クロックシュート",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "top",
+                "mill_amount": 1,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "マーカー=2枚: トップ2枚見てCXあれば1クロックシュート",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "top",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "マーカー=3枚: トップ3枚見てCXあれば1クロックシュート",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "top",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“地獄の公爵”バニル",
+    "code": "KS/W75-007",
+    "rarity": "R",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札からか『チェンジ』で、舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】［このカードを控え室に置く］ 相手のドローフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「“仮面の力”ダクネス」を1枚選び、このカードがいた枠に置き、そのターン中、そのキャラのパワーを＋2500。"
+    ],
+    "attributes": [
+      "仮面",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_007.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": {
+                "type": "turn",
+                "count": 1
+              },
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“走り出せ”ダクネス",
+    "code": "KS/W75-008",
+    "rarity": "R",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「初めての高揚感」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "冒険者",
+      "煩悩"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_008.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 赋予自身【取消时烧2】效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 赋予其他角色【取消时烧2】效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "めぐみん",
+    "code": "KS/W75-035",
+    "rarity": "RR",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1)］ あなたのアタックフェイズの始めに、クライマックス置場に「本物の爆裂魔法」があり、このカードが前列にいて【スタンド】しているなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたはこのカードの正面のレベル3以下のキャラを1枚選び、クロック置場に置き、このカードを【レスト】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "冒険者",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "035",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_035.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧4, 对面角色送时计",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“爆裂娘”めぐみん",
+    "code": "KS/W75-044",
+    "rarity": "R",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「水着のめぐみん」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から3枚を、控え室に置く。それらのカードの、《冒険者》か《魔法》のキャラが1枚以上なら、あなたは自分の山札の上から1枚までを、ストック置場に置く。2枚以上なら、あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－4000。3枚以上なら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "冒険者",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "044",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_044.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "削顶结果不满3张指定卡/不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "削顶3张为指定卡，发动效果烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“パワーアップする爆裂魔法”めぐみん",
+    "code": "KS/W75-045",
+    "rarity": "R",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの、《冒険者》か《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "冒険者",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "045",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_045.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费,弃2手]: 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“氷の魔女”ウィズ",
+    "code": "KS/W75-046",
+    "rarity": "R",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《冒険者》か《魔法》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】【CXコンボ】［(2) 手札の、《冒険者》か《魔法》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「カースド・クリスタルプリズン！」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、次の相手のターンの終わりまで、相手は舞台にいるキャラの【起】を使えない。"
+    ],
+    "attributes": [
+      "死",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "046",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_046.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动或条件未达成",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(翻出指定卡): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不支付cost",
+                "instructions": []
+              },
+              {
+                "label": "支付cost发动CX连击",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“同時発射!!”ウィズ",
+    "code": "KS/W75-053",
+    "rarity": "U",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのレベル3以上のキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】［(1) 手札を2枚控え室に置く］ あなたのアタックフェイズの始めに、クライマックス置場に「本物の爆裂魔法」があり、他のあなたの「めぐみん」がいるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "死",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "053",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_053.png",
+    "soul": 1,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 5,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“紅魔族”めぐみん",
+    "code": "KS/W75-056",
+    "rarity": "U",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を、控え室に置き、相手のレベルＸ以下のキャラを1枚まで選び、控え室に置く。Ｘはそのカードのレベルに等しい。（クライマックスのレベルは0として扱う）",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「爆裂魔法」があり、他のあなたの「“不安でいっぱい”カズマ」がいて、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "冒険者",
+      "魔法"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "056",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_056.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「爆裂魔法」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“良き出会いのあらんことを”エリス",
+    "code": "KS/W75-072",
+    "rarity": "RR",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「“雪精討伐の意味とは？”アクア」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《冒険者》か《女神》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(1) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたの前列の中央の枠のキャラがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《冒険者》か《女神》のキャラなら、このカードを【スタンド】する。（公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "女神"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "072",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_072.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动能力",
+            "instructions": []
+          },
+          {
+            "label": "发动能力，翻顶成功再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“怒れる拳”アクア",
+    "code": "KS/W75-084",
+    "rarity": "U",
+    "expansion": "Various",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】 あなたのクライマックスフェイズの始めに、あなたは自分の控え室の「“街を歩けば”アクシズ教徒」を3枚まで選び、このカードの下にマーカーとして好きな順番で表向きに置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「女神の怒り」があるなら、相手は自分の山札の上からＸ枚を、控え室に置く。それらのカードにクライマックスがあるなら、あなたはこのカードの正面のレベル3以下のキャラを1枚選び、クロック置場に置く。Ｘはこのカードの下のマーカーの枚数に等しい。",
+      "【自】 ターンの終わりに、あなたはこのカードの下のマーカーをすべて控え室に置く。"
+    ],
+    "attributes": [
+      "冒険者",
+      "女神"
+    ],
+    "set": "KS",
+    "release": "W75",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/k/ks_w75/ks_w75_084.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "マーカー=0枚 (効果なし)",
+            "instructions": []
+          },
+          {
+            "label": "マーカー=1枚: 1枚削りCXなら正面クロック送り",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "top",
+                "mill_amount": 1,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "マーカー=2枚: 2枚削りCXなら正面クロック送り",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "top",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "マーカー=3枚: 3枚削りCXなら正面クロック送り",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "top",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "ClockShoot",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“脳筋クルセイダー”ダクネス",
+    "code": "KS/W76-002",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! Kurenai Densetsu",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "デュラハン「攻撃がスカだった変態騎士めが！一体何が……」",
+    "ability": [
+      "【永】 他のあなたの、《冒険者》か《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時か『合体』で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ぼ……防御力……？」があり、他のあなたの、《冒険者》か《魔法》のキャラが4枚以上なら、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの正面のキャラかこのカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Passion 《煩悩 》"
+    ],
+    "set": "KS",
+    "release": "W76",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card56949-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ条件未達成",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 他のキャラ4枚以上",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“最強の魔法使い”めぐみん",
+    "code": "KS/W76-033",
+    "rarity": "RR",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! Kurenai Densetsu",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ゆんゆんがあの時、私に爆裂魔法への道を行かせてくれたから、今日の私がいるのです！",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(3) あなたのクライマックス置場の「合わせた掌」を1枚控え室に置き、あなたの前列の、「“最高の魔法使い”ゆんゆん」を1枚とこのカードを【レスト】する］ あなたのアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルし、あなたはこの能力のコストで【レスト】したキャラの正面のキャラすべてを、クロック置場に置き、相手に3ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer 《冒険者》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W76",
+    "sid": "033",
+    "image": "https://images.littleakiba.com/tcg/card56990-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：逆压缩+送2体角色进时计+烧3x2",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              },
+              {
+                "op": "ClockShoot",
+                "amount": 1
+              },
+              {
+                "op": "ClockShoot",
+                "amount": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“便利な転移魔法”ウィズ",
+    "code": "KS/W76-043",
+    "rarity": "R",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! Kurenai Densetsu",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "紅魔の里近くに送ればいいんですね",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《冒険者》か《魔法》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(3)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Death 《死》",
+      "Magic 《魔法》"
+    ],
+    "set": "KS",
+    "release": "W76",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card57009-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付3费",
+            "instructions": []
+          },
+          {
+            "label": "支付3费: 扒底4张，根据CX数烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“お出迎え”こめっこ",
+    "code": "KS/W76-055",
+    "rarity": "U",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! Kurenai Densetsu",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "アクア「なんか、ちっこいめぐみんが現れたんですけど」",
+    "ability": [
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「ただいまとおかえり」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Younger Sister 《妹》"
+    ],
+    "set": "KS",
+    "release": "W76",
+    "sid": "055",
+    "image": "https://images.littleakiba.com/tcg/card57024-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 对手3张坟洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“『魔術師殺し』との合成”シルビア",
+    "code": "KS/W76-082",
+    "rarity": "R",
+    "expansion": "Kono Subarashii Sekai ni Shukufuku wo! Kurenai Densetsu",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "これがアタシの能力。兵器だろうが何だろうが、我が身に取り込んで一体化する力……",
+    "ability": [
+      "【永】 このカードのパワーを＋3000し、このカードのパワーを＋Ｘ。Ｘはこのカードの下のマーカーの枚数×500に等しい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置き、あなたのクライマックス置場の「紅魔の里侵略」を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、他のあなたの、《魔王軍》かカード名に「カズマ」を含むキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Devil's Army 《魔王軍》",
+      "《―》"
+    ],
+    "set": "KS",
+    "release": "W76",
+    "sid": "082",
+    "image": "https://images.littleakiba.com/tcg/card57059-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件或不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 满足条件(其他角色≥4)并支付费用 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

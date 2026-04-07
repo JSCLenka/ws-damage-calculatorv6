@@ -1,0 +1,742 @@
+[
+  {
+    "name": "カリスマギャラクシー すみれ",
+    "code": "LSP/W92-005",
+    "rarity": "RR",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "今日から私が教えてあげる。本物の…ショウビジネスの世界を!",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「ギャラクシーな掛け合い」が置かれた時、前列にこのカードがいて、あなたのキャラすべてが《音楽》なら、あなたは自分のキャラを1枚選び、そのターン中、次の2つの能力のうちあなたが選んだ1つを与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』『【自】［(1) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "005",
+    "image": "https://images.littleakiba.com/tcg/card71108-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击：选择赋予【取消时烧2】能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          },
+          {
+            "label": "CX连击：选择赋予【击倒再动】能力",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "未击倒对手 (无效果)",
+                    "instructions": []
+                  },
+                  {
+                    "label": "条件达成：击倒对手 -> 再动",
+                    "instructions": [
+                      {
+                        "op": "PseudoExtraAttack",
+                        "soul": 2
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "かわいい服 かのん",
+    "code": "LSP/W92-015",
+    "rarity": "R",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "それは全然大丈夫じゃない～!!",
+    "ability": [
+      "【自】［(2) 他のあなたの【スタンド】している、「まだ名もないキモチ 可可」と「まだ名もないキモチ 恋」を1枚ずつ【レスト】する］ このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの、「普通科 千砂都」と「カリスマギャラクシー すみれ」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の上から2枚を、クロック置場に置く。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "015",
+    "image": "https://images.littleakiba.com/tcg/card71131-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件或不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费+休息2人]，踢对手牌库顶2张入时计区",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "内緒で集合 千砂都",
+    "code": "LSP/W92-035",
+    "rarity": "C",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《音楽》のキャラの枚数×1500に等しい。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「新しいことを見つける楽しさ」があるなら、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルする。Ｘはあなたの《音楽》のキャラの枚数に等しい。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "035",
+    "image": "https://images.littleakiba.com/tcg/card71152-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "description": "CXコンボ：バトル相手をリバースさせたか？",
+            "choices": [
+              {
+                "label": "はい（リバースさせた）",
+                "instructions": [
+                  {
+                    "op": "ReverseShuffle",
+                    "amount": "count_other_characters"
+                  }
+                ]
+              },
+              {
+                "label": "いいえ",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "普通科 かのん",
+    "code": "LSP/W92-047",
+    "rarity": "RR",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "私の名前は澁谷かのんです！",
+    "ability": [
+      "【永】 相手の後列のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「色んな色の光」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードは次の能力を得る。『【自】［手札の《音楽》のキャラを3枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "047",
+    "image": "https://images.littleakiba.com/tcg/card71175-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "支付3张手牌，造成2点伤害",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "不支付费用",
+                    "instructions": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ダンスが得意 千砂都",
+    "code": "LSP/W92-053",
+    "rarity": "R",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「この学校が一番」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「この学校が一番」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたのキャラすべてに、そのターン中、パワーを＋500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを山札の上に置いてよい。』"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "053",
+    "image": "https://images.littleakiba.com/tcg/card71188-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (未发动CX连击 或 未击倒对手)",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (CX连击发动中 & 击倒对手)",
+            "instructions": [
+              {
+                "op": "OppReverseToTop"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ギャラクシー すみれ",
+    "code": "LSP/W92-062",
+    "rarity": "U",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、次の2つの効果のうちあなたが選んだ1つを行う。あなたのレベルが3以上で、あなたのクロックが6枚なら、さらに次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。』『あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "062",
+    "image": "https://images.littleakiba.com/tcg/card71198-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件未達成 (レベル3未満 or クロック5枚以下)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "効果A: 相手の控え室を逆圧縮",
+                    "instructions": [
+                      {
+                        "op": "Decompress",
+                        "retain_amount": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "効果B: 相手の山札下3枚を見てCX枚数バーン",
+                    "instructions": [
+                      {
+                        "op": "MillAndBurn",
+                        "target_player": "opp",
+                        "zone": "bottom",
+                        "mill_amount": 3,
+                        "condition": "is_cx",
+                        "mode": "per_card",
+                        "burn_amount": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "条件達成 (レベル3以上 & クロック6枚)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "効果A (1回目): 相手の控え室を逆圧縮",
+                    "instructions": [
+                      {
+                        "op": "Decompress",
+                        "retain_amount": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "効果B (1回目): 相手の山札下3枚を見てCX枚数バーン",
+                    "instructions": [
+                      {
+                        "op": "MillAndBurn",
+                        "target_player": "opp",
+                        "zone": "bottom",
+                        "mill_amount": 3,
+                        "condition": "is_cx",
+                        "mode": "per_card",
+                        "burn_amount": 1
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "効果A (2回目): 相手の控え室を逆圧縮",
+                    "instructions": [
+                      {
+                        "op": "Decompress",
+                        "retain_amount": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "効果B (2回目): 相手の山札下3枚を見てCX枚数バーン",
+                    "instructions": [
+                      {
+                        "op": "MillAndBurn",
+                        "target_player": "opp",
+                        "zone": "bottom",
+                        "mill_amount": 3,
+                        "condition": "is_cx",
+                        "mode": "per_card",
+                        "burn_amount": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Liella! 可可",
+    "code": "LSP/W92-083",
+    "rarity": "R",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ソングフォーオール!!",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "083",
+    "image": "https://images.littleakiba.com/tcg/card71235-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "ReverseShuffle",
+            "amount": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "結ばれる想い 恋",
+    "code": "LSP/W92-084",
+    "rarity": "R",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "この学校にとって音楽はとても大切なものです",
+    "ability": [
+      "【自】【CXコンボ】 経験 ［(1)］ このカードがアタックした時、クライマックス置場に「穏やかな日差しの下で」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋3000し、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分のクロックを2枚まで選び、控え室に置く。』『相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "084",
+    "image": "https://images.littleakiba.com/tcg/card71237-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 选择回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击: 选择回复2点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击: 选择烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クーカー 恋",
+    "code": "LSP/W92-096",
+    "rarity": "C",
+    "expansion": "Love Live! Superstar!!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 経験 あなたのレベル置場の、「Liella! 恋」か「結ばれる想い 恋」が2枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 このカードのアタック中、あなたはトリガーステップにトリガーチェックを2回行う。",
+      "【自】 チェンジ あなたのクライマックスフェイズの始めに、あなたは自分のレベル置場の、「Liella! 恋」か「結ばれる想い 恋」を1枚とこのカードを選び、入れ替えてよい。（舞台に置くキャラは【スタンド】して置かれる）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "LSP",
+    "release": "W92",
+    "sid": "096",
+    "image": "https://images.littleakiba.com/tcg/card71250-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "TwinDrive"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "唐 可可",
+    "code": "LSP/W92-T19",
+    "rarity": "TD",
+    "expansion": "Love Live Superstar",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「私立結ヶ丘女子高等学校1年生」があるなら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「私立結ヶ丘女子高等学校1年生」があるなら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LSP",
+    "release": "92",
+    "sid": "T19",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lsp_w92/lsp_w92_t19.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "素敵な旅へご案内♪ 桜小路 きな子",
+    "code": "LSP/WE38-011",
+    "rarity": "N",
+    "expansion": "Love Live Thanksgiving Festival",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードのパワーを＋2500し、ソウルを＋1。"
+    ],
+    "jpAbility": [
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードのパワーを＋2500し、ソウルを＋1。"
+    ],
+    "attributes": [
+      "Music"
+    ],
+    "set": "LSP",
+    "release": "E38",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/l/lsp_we38/lsp_we38_011.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 对手逆压缩(坟场留1张CX洗牌)",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: +1魂",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

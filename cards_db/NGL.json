@@ -1,0 +1,305 @@
+[
+  {
+    "name": "人類種全権代理者 空",
+    "code": "NGL/S58-003",
+    "rarity": "RR",
+    "expansion": "No Game No Life",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "こと電子ゲームなら、 チートでもツールアシストでも好きに使え",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「打倒唯一神」があるなら、あなたは自分のストックの下から1枚を、控え室に置いてよい。そのカードのレベルが3以上なら、相手に2ダメージを与える。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Imanity 《人類種》"
+    ],
+    "set": "NGL",
+    "release": "S58",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card45890-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果 / 费用底张非L3+",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (费用底张为L3+) -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "生まれ直した世界 空",
+    "code": "NGL/S58-004",
+    "rarity": "R",
+    "expansion": "No Game No Life",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "俺の些細な願いを……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ゲーム》のキャラの枚数に等しい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Imanity 《人類種》"
+    ],
+    "set": "NGL",
+    "release": "S58",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card45893-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果或未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "发动效果并击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "思いを継ぐもの ステフ",
+    "code": "NGL/S58-051",
+    "rarity": "RR",
+    "expansion": "No Game No Life",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "お爺様は人類種の可能性を信じていたんですの （人類種ルビ：イマニティ）",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 記憶 ［手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「巻き添え担当」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与え、そのターン中、このカードのパワーを＋3000。Ｘはあなたの思い出置場の「愚王と呼ばれた男」の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Imanity 《人類種》"
+    ],
+    "set": "NGL",
+    "release": "S58",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card46015-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 思い出1枚 → 1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 思い出2枚 → 2点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 思い出3枚 → 3点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 思い出4枚 → 4点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "『　』の従属者 ジブリール",
+    "code": "NGL/S58-052",
+    "rarity": "RR",
+    "expansion": "No Game No Life",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "それでこそ我らを統べるべきお方……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Flugel 《天翼種》"
+    ],
+    "set": "NGL",
+    "release": "S58",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card46016-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 -> 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "二人で一人 白",
+    "code": "NGL/S58-081",
+    "rarity": "RR",
+    "expansion": "No Game No Life",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "にぃ……あのあと、いづなたんに話した……",
+    "ability": [
+      "【自】【CXコンボ】 あなたのクライマックス置場に「ようこそ、ゲーマー」が置かれた時、前列にこのカードがいるなら、あなたは1枚まで引き、そのターン中、このカードのパワーを＋6000。",
+      "【自】［(1) 手札の《ゲーム》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Imanity 《人類種》"
+    ],
+    "set": "NGL",
+    "release": "S58",
+    "sid": "081",
+    "image": "https://images.littleakiba.com/tcg/card46045-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
