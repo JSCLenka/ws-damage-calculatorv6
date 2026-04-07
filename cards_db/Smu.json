@@ -1,0 +1,79 @@
+[
+  {
+    "name": "居てもいい居場所 ふゆほたる",
+    "code": "Smu/W123-029",
+    "rarity": "RR",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「最後の戦い」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "Insect",
+      "Dream"
+    ],
+    "set": "Smu",
+    "release": "W123",
+    "sid": "029",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/smu_w123/smu_w123_029.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「最後の戦い」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

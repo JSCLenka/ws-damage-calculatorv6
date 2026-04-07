@@ -1,0 +1,107 @@
+[
+  {
+    "name": "澪と主従契約",
+    "code": "Sst/W62-051",
+    "rarity": "RR",
+    "expansion": "Kadokawa Sneaker Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "刃更……あたしの胸、見ちゃうの？",
+    "ability": [
+      "【永】 他のあなたの後列の、《スニーカー文庫》か《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「澪の悦び」があるなら、あなたは相手にＸダメージを与えてよい。Ｘは相手の【リバース】しているキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko 《スニーカー文庫》",
+      "Magic 《魔法》"
+    ],
+    "set": "Sst",
+    "release": "W62",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card50233-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "CX Combo: Reverse Opponent (X=1)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "CX Combo: Reverse Opponent (X=2)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "CX Combo: Reverse Opponent (X=3)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "CX Combo: Reverse Opponent (X=4)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "CX Combo: Reverse Opponent (X=5)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 5,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "Skip / No Reverse",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "ノブレス・オブリージュ 那佳",
+    "code": "Snw/W123-108",
+    "rarity": "R",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたのCX置場に「ネウロイの熱烈歓迎」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "Magic",
+      "Weapon"
+    ],
+    "set": "Snw",
+    "release": "W123",
+    "sid": "108",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/snw_w123/snw_w123_108.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "Arm Cancel-Burn ability (1/Turn)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          },
+          {
+            "label": "Cancel-Burn already used or not applicable",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "Opponent NOT reversed",
+            "instructions": []
+          },
+          {
+            "label": "CX Combo: Opponent REVERSED -> Restand",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

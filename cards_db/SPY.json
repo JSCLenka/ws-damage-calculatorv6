@@ -1,0 +1,428 @@
+[
+  {
+    "name": "おそろいのキーホルダー ベッキー",
+    "code": "SPY/S106-002",
+    "rarity": "RR",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 5000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 後列にこのカードがいるなら、他のあなたの「超能力者の少女 アーニャ」すべてに、次の能力を与える。『【永】 他のあなたの《バーリント市》のキャラすべてに、パワーを＋1500。』",
+      "【自】［手札を2枚控え室に置く］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【起】［手札の「おそろいのキーホルダー ベッキー」を1枚控え室に置き、このカードを【レスト】する］ あなたは自分の山札を見て《バーリント市》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。"
+    ],
+    "jpAbility": [
+      "【永】 後列にこのカードがいるなら、他のあなたの「超能力者の少女 アーニャ」すべてに、次の能力を与える。『【永】 他のあなたの《バーリント市》のキャラすべてに、パワーを＋1500。』",
+      "【自】［手札を2枚控え室に置く］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【起】［手札の「おそろいのキーホルダー ベッキー」を1枚控え室に置き、このカードを【レスト】する］ あなたは自分の山札を見て《バーリント市》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Berlint City",
+      "Eden Academy"
+    ],
+    "set": "SPY",
+    "release": "106",
+    "sid": "002",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_002.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CLIMAX阶段开始效果：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动CLIMAX阶段开始效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "おそろいのキーホルダー アーニャ",
+    "code": "SPY/S106-003",
+    "rarity": "RR",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「一緒にお出かけ」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分のクロックの上から1枚までを、控え室に置く。",
+      "【自】 チェンジ あなたのアンコールステップの始めに、このカードが【レスト】しているなら、あなたはこのカードのマーカーか自分の控え室の、「元気な娘 アーニャ」を1枚選び、このカードがいる枠に【レスト】して置いてよい。そうしたら、このカードをそのキャラの下にマーカーとして表向きに置く。"
+    ],
+    "jpAbility": [
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「一緒にお出かけ」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分のクロックの上から1枚までを、控え室に置く。",
+      "【自】 チェンジ あなたのアンコールステップの始めに、このカードが【レスト】しているなら、あなたはこのカードのマーカーか自分の控え室の、「元気な娘 アーニャ」を1枚選び、このカードがいる枠に【レスト】して置いてよい。そうしたら、このカードをそのキャラの下にマーカーとして表向きに置く。"
+    ],
+    "attributes": [
+      "Berlint City",
+      "Supernatural Power"
+    ],
+    "set": "SPY",
+    "release": "106",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 查看对手牌顶3张并回复1点",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "大切な家族 アーニャ＆ボンド",
+    "code": "SPY/S106-044",
+    "rarity": "U",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《バーリント市》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《バーリント市》のキャラが4枚以上なら、あなたは自分の控え室の《バーリント市》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】［手札を1枚控え室に置く］ このカードがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、このカードを手札に戻す。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《バーリント市》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《バーリント市》のキャラが4枚以上なら、あなたは自分の控え室の《バーリント市》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】［手札を1枚控え室に置く］ このカードがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、このカードを手札に戻す。"
+    ],
+    "attributes": [
+      "Berlint City",
+      "Forger Family"
+    ],
+    "set": "SPY",
+    "release": "106",
+    "sid": "044",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_044.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "トップチェック不発、または効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "トップチェック成功→1点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "〈いばら姫〉 ヨル",
+    "code": "SPY/S106-059",
+    "rarity": "RR",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「フォージャー家の妻」があり、他のあなたの《バーリント市》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋4000。（ダメージキャンセルは発生する）",
+      "【自】 チェンジ あなたのアンコールステップの始めに、このカードが【レスト】しているなら、あなたはこのカードのマーカーか自分の控え室の、「心優しい母 ヨル」を1枚選び、このカードがいる枠に【レスト】して置いてよい。そうしたら、このカードをそのキャラの下にマーカーとして表向きに置く。"
+    ],
+    "jpAbility": [
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「フォージャー家の妻」があり、他のあなたの《バーリント市》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋4000。（ダメージキャンセルは発生する）",
+      "【自】 チェンジ あなたのアンコールステップの始めに、このカードが【レスト】しているなら、あなたはこのカードのマーカーか自分の控え室の、「心優しい母 ヨル」を1枚選び、このカードがいる枠に【レスト】して置いてよい。そうしたら、このカードをそのキャラの下にマーカーとして表向きに置く。"
+    ],
+    "attributes": [
+      "Berlint City",
+      "Assassin"
+    ],
+    "set": "SPY",
+    "release": "106",
+    "sid": "059",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_059.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件/不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "CX联动: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "殺人術の使い手 ヨル",
+    "code": "SPY/S106-064",
+    "rarity": "R",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《バーリント市》のキャラなら、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "jpAbility": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《バーリント市》のキャラなら、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Berlint City",
+      "Assassin"
+    ],
+    "set": "SPY",
+    "release": "106",
+    "sid": "064",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_064.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "翻顶非目标或0级目标(无效果)",
+            "instructions": []
+          },
+          {
+            "label": "翻顶为1级目标：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "翻顶为2级目标：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "翻顶为3级目标：烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "諜報員〈黄昏〉",
+    "code": "SPY/S106-080",
+    "rarity": "RR",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": ["SOUL"],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「任務は潜んでスマートに」があり、あなたの手札が6枚以下なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。このダメージがキャンセルされたなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】 チェンジ ... (略)"
+    ],
+    "attributes": ["Berlint City", "WISE"],
+    "set": "SPY",
+    "release": "106",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_080.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (支付2费): 烧3, 取消则烧1",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 3,
+                "on_cancel": [
+                  { "op": "Burn", "amount": 1, "times": 1 }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "仮初めの家族 ロイド＆アーニャ＆ヨル",
+    "code": "SPY/S106-T19",
+    "rarity": "TD",
+    "expansion": "Spy X Family",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「秘密だらけの家族」があり、他のあなたの《バーリント市》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「秘密だらけの家族」があり、他のあなたの《バーリント市》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Berlint City",
+      "Forger Family"
+    ],
+    "set": "SPY",
+    "release": "106",
+    "sid": "T19",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/spy_s106/spy_s106_t19.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 造成3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

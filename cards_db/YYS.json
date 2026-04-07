@@ -1,0 +1,356 @@
+[
+  {
+    "name": "俺の流儀 コガラシ",
+    "code": "YYS/W61-007",
+    "rarity": "R",
+    "expansion": "Yuragi-sou no Yuuna-san",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "俺がぶん殴れねえのは女だけだ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「すべてを貫く拳」が置かれた時、前列にこのカードがいるなら、そのターン中、このカードのパワーを＋2500し、このカードは次の能力を得る。『【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラを思い出にし、相手に5ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Supernatural Ability 《霊能力者》",
+      "Yuragi Manor 《ゆらぎ荘》"
+    ],
+    "set": "YYS",
+    "release": "W61",
+    "sid": "007",
+    "image": "https://images.littleakiba.com/tcg/card48335-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "幸せな日々 幽奈",
+    "code": "YYS/W61-052",
+    "rarity": "RR",
+    "expansion": "Yuragi-sou no Yuuna-san",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "これ以上、一体どんな未練があるっていうんでしょうね？",
+    "ability": [
+      "【永】 他のあなたの、《ゆらぎ荘》か《湯煙町》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「積み重なる思い出」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与え、そのターン中、このカードのパワーを＋1000。Ｘはあなたの思い出置場のカードの持つ色の合計に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Spirit/Ghost 《霊》",
+      "Yuragi Manor 《ゆらぎ荘》"
+    ],
+    "set": "YYS",
+    "release": "W61",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card48380-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击 (回忆区1色): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (回忆区2色): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (回忆区3色): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (回忆区4色): 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "海の妖精 幽奈",
+    "code": "YYS/W61-064",
+    "rarity": "U",
+    "expansion": "Yuragi-sou no Yuuna-san",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "ど…どうですか？　似合い…ますか？",
+    "ability": [
+      "【自】【CXコンボ】［あなたのクライマックス置場の「太陽と海と幽奈さん」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「太陽と海と幽奈さん」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Spirit/Ghost 《霊》",
+      "Yuragi Manor 《ゆらぎ荘》"
+    ],
+    "set": "YYS",
+    "release": "W61",
+    "sid": "064",
+    "image": "https://images.littleakiba.com/tcg/card48392-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「太陽と海と幽奈さん」: 再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "乙女な反応 狭霧",
+    "code": "YYS/W61-079",
+    "rarity": "RR",
+    "expansion": "Yuragi-sou no Yuuna-san",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "…ッ…くっ……",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て「乙女な反応 狭霧」を1枚まで選び、舞台の好きな枠に置き、その山札をシャッフルする。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「瞳の中の私」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Ninja 《忍》",
+      "Yuragi Manor 《ゆらぎ荘》"
+    ],
+    "set": "YYS",
+    "release": "W61",
+    "sid": "079",
+    "image": "https://images.littleakiba.com/tcg/card48407-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【CX联动】对对手造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ゆらぎ荘の風紀委員 狭霧",
+    "code": "YYS/W61-T19",
+    "rarity": "TD",
+    "expansion": "Yuragi-sou no Yuuna-san",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もし貴様がゆらぎ荘の風紀を乱す行いに及ぶなら…この雨野狭霧が天誅を下す！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《ゆらぎ荘》か《湯煙町》か《忍》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードが手札から舞台に置かれた時、次の相手のターンの終わりまで、このカードのパワーを＋Ｘ。Ｘはあなたの、《ゆらぎ荘》か《湯煙町》か《忍》のキャラの枚数×500に等しい。"
+    ],
+    "attributes": [
+      "Ninja 《忍》",
+      "Yuragi Manor 《ゆらぎ荘》"
+    ],
+    "set": "YYS",
+    "release": "W61",
+    "sid": "T19",
+    "image": "https://images.littleakiba.com/tcg/card48171-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "公開したカードが対象外、または効果を使用しない",
+            "instructions": []
+          },
+          {
+            "label": "公開したカードが対象キャラ → 相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ゆらぎ荘の風紀委員 狭霧",
+    "code": "YYS/W61-T19R",
+    "rarity": "TD",
+    "expansion": "Yuragi-sou no Yuuna-san",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もし貴様がゆらぎ荘の風紀を乱す行いに及ぶなら…この雨野狭霧が天誅を下す！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《ゆらぎ荘》か《湯煙町》か《忍》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードが手札から舞台に置かれた時、次の相手のターンの終わりまで、このカードのパワーを＋Ｘ。Ｘはあなたの、《ゆらぎ荘》か《湯煙町》か《忍》のキャラの枚数×500に等しい。"
+    ],
+    "attributes": [
+      "Ninja 《忍》",
+      "Yuragi Manor 《ゆらぎ荘》"
+    ],
+    "set": "YYS",
+    "release": "W61",
+    "sid": "T19R",
+    "image": "https://images.littleakiba.com/tcg/card48173-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：顶张是目标角色，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果或条件未满足",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

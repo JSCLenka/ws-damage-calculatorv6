@@ -1,0 +1,531 @@
+[
+  {
+    "name": "背中に刻む\"悪一文字\" 相楽左之助",
+    "code": "RKN/S115-004",
+    "rarity": "RR",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《明治剣客浪漫譚》なら、このカードは次の2つの能力を得る。『【永】 あなたのターン中、このカードのパワーを＋3000。』『【自】 アンコール ［手札の《明治剣客浪漫譚》のキャラを1枚控え室に置く］』",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「正義の拳」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Brawler"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_004.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：洗坟3张，烧4",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "暖かな日差し 緋村剣心",
+    "code": "RKN/S115-012",
+    "rarity": "R",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《明治剣客浪漫譚》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 共鳴 ［手札の「人斬り抜刀斎 緋村剣心」を2枚公開する］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、他のあなたの《明治剣客浪漫譚》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋2に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Swordsman"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_012.png",
+    "effects": [
+      {
+        "trigger": "OnDamageCancel",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动共鸣效果",
+            "instructions": []
+          },
+          {
+            "label": "发动共鸣效果: 削顶烧(等级+2)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "斬馬刀の使い手 相楽左之助",
+    "code": "RKN/S115-013",
+    "rarity": "R",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたは自分の山札の上から1枚を、控え室に置く。そのカードのトリガーアイコンにがあるなら、このカードを【スタンド】する。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「渾身の大技」があるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Brawler"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "013",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_013.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未达成再动条件 (击倒对手&翻魂)",
+            "instructions": []
+          },
+          {
+            "label": "达成再动条件: 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(弃2手): 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "弱き者を助け強き者を挫く 明神弥彦",
+    "code": "RKN/S115-032",
+    "rarity": "C",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 0,
+    "power": 4000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《明治剣客浪漫譚》なら、このカードのパワーを＋5000。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「己が剣に背負うもの」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Swordsman"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "032",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_032.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "神速の抜刀術 緋村剣心",
+    "code": "RKN/S115-043",
+    "rarity": "RR",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《明治剣客浪漫譚》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(2) 手札の《明治剣客浪漫譚》のキャラを1枚控え室に置き、手札の「人斬り抜刀斎 緋村剣心」を2枚公開する］ このカードがアタックした時、CX置場に「揺るがない信念」があり、他のあなたの《明治剣客浪漫譚》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Swordsman"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "043",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_043.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2, 共2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"神谷活心流\"門下生 明神弥彦",
+    "code": "RKN/S115-056",
+    "rarity": "U",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《明治剣客浪漫譚》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Swordsman"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "056",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_056.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"回天剣舞\" 四乃森蒼紫",
+    "code": "RKN/S115-073",
+    "rarity": "RR",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「御庭番衆御頭の真髄」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、次の行動を3回行う。『あなたは相手の山札の下から2枚を、控え室に置き、相手にＸダメージを与える。ＸはそれらのカードのCXの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Oniwabanshu"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "073",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_073.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 3回、相手の山札下2枚を見てCX枚数バーン",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新撰組三番隊組長 斎藤 一",
+    "code": "RKN/S115-079",
+    "rarity": "R",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《明治剣客浪漫譚》のキャラなら、あなたは相手の前列のレベル3以下のキャラを1枚選び、山札の下に置いてよい。（公開したカードは元に戻す）",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがダイレクトアタックした時、CX置場に「牙を剥く狼」があるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Spy"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "079",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_079.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(直击时): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "抜刀術の構え 緋村剣心",
+    "code": "RKN/S115-T20",
+    "rarity": "TD",
+    "expansion": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 共鳴 ［(1) 手札を1枚控え室に置き、手札の「流浪人 緋村剣心」を1枚公開する］ このカードがアタックした時、CX置場に「生死分ける刹那の抜刀」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から1枚見て、山札の上か下に置き、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Meiji Kenkaku Romantan",
+      "Swordsman"
+    ],
+    "set": "RKN",
+    "release": "S115",
+    "sid": "T20",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rkn_s115/rkn_s115_t20.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 1,
+            "wr_amount": 1
+          },
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  }
+]

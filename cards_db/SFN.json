@@ -1,0 +1,561 @@
+[
+  {
+    "name": "\"故郷の花\" フリーレン＆ヒンメル",
+    "code": "SFN/S108-002",
+    "rarity": "RR",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの、《冒険者》か《魔法》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 あなたのターン中、他のあなたの、《冒険者》か《魔法》のキャラがいるなら、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "002",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_002.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费,2手]烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "旅立ちのきっかけ ヒンメル",
+    "code": "SFN/S108-003",
+    "rarity": "RR",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、他のあなたの、《冒険者》か《魔法》のキャラがいるなら、あなたは自分のクロックの上から1枚までを、控え室に置き、コストを払ってよい。コストを払ったなら、あなたは自分の手札の「旅立ちのきっかけ フリーレン」を1枚まで選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「久遠の愛情」があり、あなたの手札が5枚以下で、他のあなたの、《冒険者》か《魔法》のキャラが2枚以上なら、あなたは相手の山札の下から3枚を、控え室に置き、相手に2ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Weapon"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_003.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果 (有其他角色): 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (手牌≤5, 角色≥2)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"人の心に触れる旅路\"フリーレン",
+    "code": "SFN/S108-018",
+    "rarity": "U",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 7500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたがイベントをプレイした時、他のあなたの、《冒険者》か《魔法》のキャラがいるなら、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「後悔」があるなら、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "018",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_018.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "ReverseShuffle",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "腐敗の賢老クヴァール",
+    "code": "SFN/S108-032",
+    "rarity": "U",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Demon"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "032",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_032.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费和2手牌，烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不器用な誕生日 シュタルク",
+    "code": "SFN/S108-047",
+    "rarity": "RR",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［手札を1枚控え室に置き、あなたのクライマックス置場の「若者の特権」を1枚控え室に置く］ あなたのアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは自分の控え室の「不器用な誕生日 フェルン」を1枚まで選び、舞台の好きな枠に置き、次の2つの効果のうちあなたが選んだ1つを行う。『次の相手のターンの終わりまで、このカードは『【永】 大活躍』を得る。』『あなたは自分の控え室のカードを1枚まで選び、ストック置場に置く。』"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Weapon"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "047",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_047.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击效果",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不器用な誕生日 フェルン",
+    "code": "SFN/S108-052",
+    "rarity": "R",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 3500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【起】［(3) 手札の「誕生日プレゼント」を1枚このカードの下にマーカーとして表向きに置き、このカードを【レスト】する］ 相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "052",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_052.png",
+    "effects": [
+      {
+        "trigger": "OnActivate",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动【起】能力",
+            "instructions": []
+          },
+          {
+            "label": "发动【起】能力：造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "フリーレン＆フェルン＆シュタルク",
+    "code": "SFN/S108-053",
+    "rarity": "R",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「旅の途中」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "053",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_053.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「旅の途中」: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "恩返し フェルン",
+    "code": "SFN/S108-083",
+    "rarity": "R",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「一人前の魔法使い」が置かれた時、そのターン中、このカードは次の2つの能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "083",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_083.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击效果: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "葬送のフリーレン",
+    "code": "SFN/S108-T17",
+    "rarity": "TD",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「約束の蒼月草」があり、他のあなたの、《冒険者》か《魔法》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは自分の、《冒険者》か《魔法》のキャラを1枚選び、そのターン中、パワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_t17.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新年祭 フェルン",
+    "code": "SFN/S108-T18",
+    "rarity": "TD",
+    "expansion": "Sousou no Frieren",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "SFN",
+    "release": "S108",
+    "sid": "T18",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sfn_s108/sfn_s108_t18.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回血1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1)弃1手 & 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

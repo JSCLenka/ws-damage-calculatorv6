@@ -1,0 +1,1012 @@
+[
+  {
+    "name": "自分で決めた道 梓川 花楓",
+    "code": "SBY/W114-003",
+    "rarity": "RR",
+    "expansion": "Aobuta Movie Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場に、「のこされた夢」と「二人の想い抱きしめて 梓川 花楓」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「勇気を運ぶ海風」が置かれた時、前列にこのカードがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の山札を見て《思春期》のキャラを3枚まで選び、公開し、1枚選び、手札に加え、1枚選び、ストック置場に置き、残りのカードを控え室に置き、その山札をシャッフルし、そのターン中、このカードのパワーを＋3000。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence",
+      "Animal"
+    ],
+    "set": "SBY",
+    "release": "W114",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sby_w114/sby_w114_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "選択1：サーチ効果 (ダメージ無し)",
+            "instructions": []
+          },
+          {
+            "label": "選択2：相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "謎の少女 ランドセルガール",
+    "code": "SBY/W114-037",
+    "rarity": "R",
+    "expansion": "Aobuta Movie Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を5枚控え室に置く］ このカードがアタックした時、クライマックス置場に「見覚えのある少女」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence",
+      "Knapsack"
+    ],
+    "set": "SBY",
+    "release": "W114",
+    "sid": "037",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sby_w114/sby_w114_037.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "发动CX Combo (弃5手): 烧2, 再烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "君と過ごした一年間 桜島 麻衣",
+    "code": "SBY/W114-049",
+    "rarity": "RR",
+    "expansion": "Aobuta Movie Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1) 手札の《思春期》のキャラを1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「ふたりだけのキス」があり、あなたの手札が5枚以下で、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、次の行動をＸ回行う。『あなたは相手の山札の下から2枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に2ダメージを与える。』Ｘはあなたの思い出置場の異なるカード名のカードの枚数が3枚以下なら2、4枚以上なら3に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence",
+      "Cooking"
+    ],
+    "set": "SBY",
+    "release": "W114",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sby_w114/sby_w114_049.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "思い出3枚以下: 2回実行",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 2
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "思い出4枚以上: 3回実行",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 2
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 2
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "姉御肌 豊浜 のどか",
+    "code": "SBY/W114-055",
+    "rarity": "R",
+    "expansion": "Aobuta Movie Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】【CXコンボ】 あなたのクライマックス置場に「ミューズになっちゃう」があるなら、あなたのキャラすべてに、パワーを＋1500。",
+      "【自】［(2)］ あなたのアンコールステップの始めに、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence",
+      "Stylish"
+    ],
+    "set": "SBY",
+    "release": "W114",
+    "sid": "055",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sby_w114/sby_w114_055.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アンコールステップの始め: 条件を満たさない",
+            "instructions": []
+          },
+          {
+            "label": "アンコールステップの始め: 相手の前列がいないか全てリバースしている → 相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不可思議のカルテ 双葉 理央",
+    "code": "SBY/W114-084",
+    "rarity": "R",
+    "expansion": "Aobuta Movie Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 3500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。",
+      "【起】［このカードを控え室に置く］ あなたは相手のキャラを1枚選び、相手の舞台のキャラのいない他の枠に動かし、自分の「ロジカルウィッチ 双葉 理央」を1枚選び、そのターン中、パワーを＋3500し、次の能力を与える。『【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence",
+      "Science"
+    ],
+    "set": "SBY",
+    "release": "W114",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sby_w114/sby_w114_084.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付2手牌",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "母に向き合う 梓川 咲太",
+    "code": "SBY/W114-089",
+    "rarity": "U",
+    "expansion": "Aobuta Movie Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードのアタックの終わりに、他のあなたの前列の「未来への約束 桜島 麻衣」がいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence"
+    ],
+    "set": "SBY",
+    "release": "W114",
+    "sid": "089",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sby_w114/sby_w114_089.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费和1张手牌，造成4点伤害 (需要另一张「未来への約束 桜島 麻衣」在前列)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "黄昏の夕空 桜島 麻衣",
+    "code": "SBY/W64-006",
+    "rarity": "R",
+    "expansion": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードがアタックした時、他のあなたの《思春期》のキャラが4枚以上なら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000し、ソウルを＋1。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Cuisine 《料理》"
+    ],
+    "set": "SBY",
+    "release": "W64",
+    "sid": "006",
+    "image": "https://images.littleakiba.com/tcg/card50885-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件 (其他思春期角色<4)",
+            "instructions": []
+          },
+          {
+            "label": "满足条件 -> 自身+1魂",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "满足条件 -> 其他角色+1魂",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnDamageCancel",
+        "limit": {
+          "type": "turn",
+          "count": 1
+        },
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (非登场回合 / 选择不发动)",
+            "instructions": []
+          },
+          {
+            "label": "登场回合伤害被取消 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "冷静沈着 双葉 理央",
+    "code": "SBY/W64-032",
+    "rarity": "R",
+    "expansion": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "最近は桜島先輩にご執心だそうじゃないか。",
+    "ability": [
+      "【永】 前列の中央の枠にこのカードがいるなら、このカードのパワーを＋4000。",
+      "【永】 あなたのレベルが3以上なら、このカードは『【永】 大活躍』を得る。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Science 《科学》"
+    ],
+    "set": "SBY",
+    "release": "W64",
+    "sid": "032",
+    "image": "https://images.littleakiba.com/tcg/card50911-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "水着姿 古賀 朋絵",
+    "code": "SBY/W64-033",
+    "rarity": "R",
+    "expansion": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "か、かわいいっていうな",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、山札の上に好きな順番で置き、相手のキャラを1枚まで選び、手札に戻す。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「ありったけの嘘を君に」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Smartphone 《スマホ》"
+    ],
+    "set": "SBY",
+    "release": "W64",
+    "sid": "033",
+    "image": "https://images.littleakiba.com/tcg/card50912-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 角色踢时计 & 烧1",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              },
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ロジカルウィッチ 双葉 理央",
+    "code": "SBY/W64-079",
+    "rarity": "RR",
+    "expansion": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "それじゃ。私、靴下履くから",
+    "ability": [
+      "【永】 他のあなたの《思春期》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「青春はパラドックス」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Science 《科学》"
+    ],
+    "set": "SBY",
+    "release": "W64",
+    "sid": "079",
+    "image": "https://images.littleakiba.com/tcg/card50958-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (不发动CX联动)",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 -> 发动CX联动再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "泡沫の存在 桜島 麻衣",
+    "code": "SBY/W64-T18",
+    "rarity": "TD",
+    "expansion": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《思春期》のキャラの枚数に等しい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Cuisine 《料理》"
+    ],
+    "set": "SBY",
+    "release": "W64",
+    "sid": "T18",
+    "image": "https://images.littleakiba.com/tcg/card50510-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クリスマスプレゼント 豊浜 のどか",
+    "code": "SBY/W77-003",
+    "rarity": "RR",
+    "expansion": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "あたしからのクリスマスプレゼント",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのクライマックス置場に「ミニライブ！」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚とこのカードを選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。』（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Fashionable 《オシャレ》"
+    ],
+    "set": "SBY",
+    "release": "W77",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card56621-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 赋予自身与其他角色取消烧能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "いつものやりとり 双葉 理央",
+    "code": "SBY/W77-031",
+    "rarity": "R",
+    "expansion": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "梓川がエロい目で見てくるって桜島先輩に報告する",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】 このカードがアタックした時、あなたは自分の《思春期》のキャラを1枚選び、そのターン中、パワーを＋Ｘ。Ｘはあなたの《思春期》のキャラの枚数×500に等しい。",
+      "【自】［手札のキャラを2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのバトル相手をクロック置場に置く。"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Science 《科学》"
+    ],
+    "set": "SBY",
+    "release": "W77",
+    "sid": "031",
+    "image": "https://images.littleakiba.com/tcg/card56662-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 角色踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新たな一歩 梓川 花楓",
+    "code": "SBY/W77-051",
+    "rarity": "RR",
+    "expansion": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ど、どう？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《思春期》のキャラを1枚選び、手札に戻してよい。",
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《思春期》のキャラの枚数×500に等しい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Animal 《動物》"
+    ],
+    "set": "SBY",
+    "release": "W77",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card56684-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付代价",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌: 造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "修羅場から退散 梓川 花楓",
+    "code": "SBY/W77-060",
+    "rarity": "U",
+    "expansion": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6000",
+    "soul": 1,
+    "flavor_text": "ごちそうさま",
+    "ability": [
+      "【永】 他のあなたの《思春期》のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「3人だけの空間」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Animal 《動物》"
+    ],
+    "set": "SBY",
+    "release": "W77",
+    "sid": "060",
+    "image": "https://images.littleakiba.com/tcg/card56698-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "かけがえのない存在 牧之原 翔子",
+    "code": "SBY/W77-074",
+    "rarity": "RR",
+    "expansion": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "はい、咲太さん！",
+    "ability": [
+      "【自】 このカードが手札かレベル置場から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(2)］ このカードがアタックした時、クライマックス置場に「たどり着いた未来」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分の山札を上から1枚見て、山札の上か控え室に置き、そのターン中、このカードのパワーを＋2500。"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Mystery 《謎》"
+    ],
+    "set": "SBY",
+    "release": "W77",
+    "sid": "074",
+    "image": "https://images.littleakiba.com/tcg/card56715-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "しない",
+            "instructions": []
+          },
+          {
+            "label": "クロックの上から1枚を、控え室に置く",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 相手の山札の上から3枚まで見て、3枚まで選び、残りを控え室に置く",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "デートの計画 古賀 朋絵",
+    "code": "SBY/W77-081",
+    "rarity": "R",
+    "expansion": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ちょっとにやついてるし",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《思春期》のキャラの枚数×500に等しい。",
+      "【自】［(1) 手札の《思春期》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Adolescence 《思春期》",
+      "Smartphone 《スマホ》"
+    ],
+    "set": "SBY",
+    "release": "W77",
+    "sid": "081",
+    "image": "https://images.littleakiba.com/tcg/card56727-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

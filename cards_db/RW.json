@@ -1,0 +1,297 @@
+[
+  {
+    "name": "“せいいっぱいの力”朱音",
+    "code": "RW/W20-043",
+    "rarity": "R",
+    "expansion": "Rewrite Harvest festa!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 1,
+    "flavor_text": "…抜けろぉぉぉぉぉっ！",
+    "ability": [
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「竜神の祭壇」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Occult 《オカルト》"
+    ],
+    "set": "RW",
+    "release": "W20",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card7666-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费用，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“風祭学院高校”篝",
+    "code": "RW/W48-008",
+    "rarity": "R",
+    "expansion": "Rewrite TV Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたのカード名に「小鳥」か「篝」か「瑚太朗」を含むキャラの枚数に等しい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Key 《鍵》",
+      "Time 《時間》"
+    ],
+    "set": "RW",
+    "release": "W48",
+    "sid": "008",
+    "image": "https://images.littleakiba.com/tcg/card33646-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付代价(1费1手牌)，获得击倒烧效果",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "未击倒对手",
+                    "instructions": []
+                  },
+                  {
+                    "label": "击倒对手: 烧1",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "不支付代价",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“滅びによる救済”朱音",
+    "code": "RW/W48-055",
+    "rarity": "RR",
+    "expansion": "Rewrite TV Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "呼び水は十分…すべて整ったわ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［あなたの山札の上から1枚をクロック置場に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋5500。",
+      "【自】［(2) 手札を2枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードがアタックした時、あなたのレベルが3以上で、あなたのクロックが6枚なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic 《魔法》"
+    ],
+    "set": "RW",
+    "release": "W48",
+    "sid": "055",
+    "image": "https://images.littleakiba.com/tcg/card33697-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再站效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(L3,6血)：支付cost再站",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“かいりき”ちはや",
+    "code": "RW/W48-056",
+    "rarity": "RR",
+    "expansion": "Rewrite TV Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もう、なんなんですか～",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「力強いですし」があるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sweets 《お菓子》",
+      "Occult 《オカルト》"
+    ],
+    "set": "RW",
+    "release": "W48",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card33698-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付cost发动CX连击：烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“新しい思い出”静流",
+    "code": "RW/W48-074",
+    "rarity": "RR",
+    "expansion": "Rewrite TV Anime",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "…これ、大事にする",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か下に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Discipline Committee 《風紀委員》",
+      "Occult 《オカルト》"
+    ],
+    "set": "RW",
+    "release": "W48",
+    "sid": "074",
+    "image": "https://images.littleakiba.com/tcg/card33716-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

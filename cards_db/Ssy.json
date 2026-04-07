@@ -1,0 +1,281 @@
+[
+  {
+    "name": "ハイテンション傍若無人エクスプレス ハルヒ",
+    "code": "Ssy/W123-063",
+    "rarity": "RR",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの、《スニーカー文庫》か《SOS団》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】 あなたのアンコールステップの始めに、CX置場に「SOS団」があり、他のあなたのキャラが2枚以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『［(1) 手札を1枚控え室に置く］ 前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』『［(2)］ 後列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "SOS Brigade",
+      "Brigade Leader"
+    ],
+    "set": "Ssy",
+    "release": "W123",
+    "sid": "063",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ssy_w123/ssy_w123_063.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ(前列): 2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ(後列): 1点回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "35th Anniversary ハルヒ",
+    "code": "Ssy/W123-T07",
+    "rarity": "TD",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのCX置場に「SOS団入団試験！」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。』"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "SOS Brigade",
+      "Brigade Leader"
+    ],
+    "set": "Ssy",
+    "release": "W123",
+    "sid": "T07",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ssy_w123/ssy_w123_t07.png",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 全体队友获得攻击时摩卡(看2丢2)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Moca",
+                      "target_player": "opp",
+                      "look_amount": 2,
+                      "wr_amount": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "コスプレモード みくる",
+    "code": "Ssy/W62-035",
+    "rarity": "R",
+    "expansion": "Kadokawa Sneaker Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6000",
+    "soul": 1,
+    "flavor_text": "すす、涼宮さん……。これちょっとあたしには小さいような……",
+    "ability": [
+      "【自】［(1)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのアタック中、あなたはトリガーステップにトリガーチェックを2回行う。",
+      "【自】 このカードが【リバース】した時、このカードのバトル相手のレベルが相手のレベルより高いなら、あなたは相手のクロックの上から1枚を、控え室に置いてよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Sneaker Bunko 《スニーカー文庫》",
+      "SOS Dan 《SOS団》"
+    ],
+    "set": "Ssy",
+    "release": "W62",
+    "sid": "035",
+    "image": "https://images.littleakiba.com/tcg/card50254-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[1]费用，获得双判",
+            "instructions": [
+              {
+                "op": "TwinDrive"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "出会いの記憶 長門",
+    "code": "Ssy/W62-075",
+    "rarity": "RR",
+    "expansion": "Kadokawa Sneaker Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "わたしはあなたに会ったことがある",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「白紙の入部届」があるなら、以下の効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室のカードを1枚まで選び、ストック置場に置き、すべてのプレイヤーは自分の控え室のカードすべてを、山札に戻し、それらの山札をシャッフルする。』『あなたは自分の山札の上から6枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko 《スニーカー文庫》",
+      "SOS Dan 《SOS団》"
+    ],
+    "set": "Ssy",
+    "release": "W62",
+    "sid": "075",
+    "image": "https://images.littleakiba.com/tcg/card50267-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "选择1：强制对手洗坟",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 0
+              }
+            ]
+          },
+          {
+            "label": "选择2：自削6张烧X (X=CX数)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 6,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "校内一の変人 ハルヒ",
+    "code": "Ssy/W62-T08",
+    "rarity": "TD",
+    "expansion": "Kadokawa Sneaker Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ないんだったら自分で作ればいいのよ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(4) 他のあなたの舞台のキャラを1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko 《スニーカー文庫》",
+      "SOS Dan 《SOS団》"
+    ],
+    "set": "Ssy",
+    "release": "W62",
+    "sid": "T08",
+    "image": "https://images.littleakiba.com/tcg/card56557-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付代价烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

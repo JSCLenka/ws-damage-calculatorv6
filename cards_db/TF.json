@@ -1,0 +1,231 @@
+[
+  {
+    "name": "“幹部乗組員”アドルフ",
+    "code": "TF/S32-002",
+    "rarity": "RR",
+    "expansion": "Terra Formars",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "あんまりよォ…寄って集って虐めるもんじゃないぜ…？人間はな弱いんだよ",
+    "ability": [
+      "【自】 このカードの与えたダメージがキャンセルされた時、そのターン中、このカードのパワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Remodified 《改造》",
+      "Electricity 《電気》"
+    ],
+    "set": "TF",
+    "release": "S32",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card20862-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "このターン中、手札から舞台に置かれていない",
+            "instructions": []
+          },
+          {
+            "label": "このターン中、手札から舞台に置かれた（キャンセル時効果有効）",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“アネックス1号の艦長”小町 小吉",
+    "code": "TF/S32-027",
+    "rarity": "RR",
+    "expansion": "Terra Formars",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "血よりも固い絆で結ばれた…昆となる",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。",
+      "【自】 このカードがアタックした時、クライマックス置場に「最期の言葉」があるなら、あなたは自分の山札の上から1枚を、ストック置場に置き、次の相手のターンの終わりまで、このカードのパワーを＋3000。"
+    ],
+    "attributes": [
+      "Remodified 《改造》",
+      "Insect 《虫》"
+    ],
+    "set": "TF",
+    "release": "S32",
+    "sid": "027",
+    "image": "https://images.littleakiba.com/tcg/card20887-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手并弃1手牌",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“アネックス1号の乗組員”膝丸 燈",
+    "code": "TF/S32-052",
+    "rarity": "RR",
+    "expansion": "Terra Formars",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "125万種以上の命の炎が燃え盛る",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「差し伸べられた手」の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「M.O.手術」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。（ダメージキャンセルは発生する）",
+      "【自】 バトル中のこのカードが【リバース】した時、他のあなたの《改造》のキャラが1枚以下なら、あなたは自分の山札の上から1枚を、クロック置場に置く。"
+    ],
+    "attributes": [
+      "Remodified 《改造》",
+      "Insect 《虫》"
+    ],
+    "set": "TF",
+    "release": "S32",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card20912-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "有CX联动「M.O.手術」, 发动效果: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "无CX联动/不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“禍を生むもの”テラフォーマー",
+    "code": "TF/S32-076",
+    "rarity": "RR",
+    "expansion": "Terra Formars",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたのカード名に「テラフォーマー」を含むキャラすべてに、パワーを＋1500。",
+      "【自】［(1) 手札を1枚控え室に置き、このカードを【レスト】する］ あなたのクライマックス置場に「BLACK BEETLE 死者と蟲」が置かれた時、このカードが【スタンド】しているなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見てレベル2以下のカード名に「テラフォーマー」を含むキャラを1枚まで選び、舞台の好きな枠に置き、その山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Insect 《虫》"
+    ],
+    "set": "TF",
+    "release": "S32",
+    "sid": "076",
+    "image": "https://images.littleakiba.com/tcg/card20936-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 山札からキャラを出し、追加アタック",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,429 @@
+[
+  {
+    "name": "夜木沼 伊緒",
+    "code": "SGS/S37-006",
+    "rarity": "RR",
+    "expansion": "Schoolgirl Strikers",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "あたしたち 負けるわけにはいかないの",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ストライカー》のキャラの枚数に等しい。",
+      "【自】［(2)］ このカードがアタックした時、クライマックス置場に「さあ あたしの番だね！ 覚悟ッ！」があり、他のあなたの黄のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、あなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Striker 《ストライカー》",
+      "Sports 《スポーツ》"
+    ],
+    "set": "SGS",
+    "release": "S37",
+    "sid": "006",
+    "image": "https://images.littleakiba.com/tcg/card25592-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连动",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连动: 前排全体获得【取消时烧1(每回合1次)】",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "杏橋 天音",
+    "code": "SGS/S37-052",
+    "rarity": "RR",
+    "expansion": "Schoolgirl Strikers",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "もっとあたしを目立たせなさいよっ！",
+    "ability": [
+      "【永】 あなたの山札が5枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《ストライカー》のキャラを1枚選び、手札に戻してよい。",
+      "【自】 このカードがアタックした時、クライマックス置場に「天音 オンステージ！」があるなら、あなたは相手にＸダメージを与えてよい。Ｘは相手の【リバース】しているキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Striker 《ストライカー》",
+      "Animal 《動物》"
+    ],
+    "set": "SGS",
+    "release": "S37",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card25646-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "0 damage (0 reversed)",
+                "instructions": []
+              },
+              {
+                "label": "1 damage (1 reversed)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "2 damage (2 reversed)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "3 damage (3 reversed)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "4 damage (4 reversed)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "5 damage (5 reversed)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 5,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "緋ノ宮 二穂",
+    "code": "SGS/S37-053",
+    "rarity": "RR",
+    "expansion": "Schoolgirl Strikers",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "11000",
+    "soul": 2,
+    "flavor_text": "ちいさき者よ。そこをどけ",
+    "ability": [
+      "【永】 あなたの、「灰島 依咲里」と「灰島 華賀利」がいるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「あたしの顔は一度までだ！」があり、他のあなたの赤のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。（ダメージキャンセルは発生する）",
+      "【自】 このカードがフロントアタックされた時、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。"
+    ],
+    "attributes": [
+      "Striker 《ストライカー》",
+      "Noble Daughter 《令嬢》"
+    ],
+    "set": "SGS",
+    "release": "S37",
+    "sid": "053",
+    "image": "https://images.littleakiba.com/tcg/card25648-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连动: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ビスケット・シリウス”蒼井 雪枝",
+    "code": "SGS/S37-062",
+    "rarity": "R",
+    "expansion": "Schoolgirl Strikers",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "遠慮はしませんっ！",
+    "ability": [
+      "【永】 あなたのキャラすべてが赤なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが赤のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】［(1)］ このカードの与えたダメージがキャンセルされた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のキャラを1枚選び、手札に戻し、自分の手札を1枚選び、控え室に置く。"
+    ],
+    "attributes": [
+      "Striker 《ストライカー》",
+      "Wonder 《不思議》"
+    ],
+    "set": "SGS",
+    "release": "S37",
+    "sid": "062",
+    "image": "https://images.littleakiba.com/tcg/card25666-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登場時効果：不発（公開したカードが赤のキャラではない）",
+            "instructions": []
+          },
+          {
+            "label": "登場時効果：成功（公開したカードが赤のキャラ）→1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "モルガナ",
+    "code": "SGS/S37-114",
+    "rarity": "R",
+    "expansion": "Schoolgirl Strikers",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "よくがんばりましたね。無意味でしたけど",
+    "ability": [
+      "【永】 あなたの青のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が5以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(3)］ このカードのバトル中、あなたの受けたダメージがキャンセルされなかった時、あなたはコストを払ってよい。そうしたら、相手に同じダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Striker 《ストライカー》",
+      "Mystery 《謎》"
+    ],
+    "set": "SGS",
+    "release": "S37",
+    "sid": "114",
+    "image": "https://images.littleakiba.com/tcg/card25726-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动反伤效果 (经验未达成或未受伤害)",
+            "instructions": []
+          },
+          {
+            "label": "经验5达成: 受1伤, 反伤1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "经验5达成: 受2伤, 反伤2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "经验5达成: 受3伤, 反伤3点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "经验5达成: 受4伤, 反伤4点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ショコラーデ・ミラ”末葉 あおい",
+    "code": "SGS/S37-115",
+    "rarity": "R",
+    "expansion": "Schoolgirl Strikers",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "しとめる！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“ショコラーデ・ミラ”賢宮 ほたる」の【自】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「決戦の時」があり、他のあなたのカード名に「“ショコラーデ・ミラ”」を含むキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードのパワーを＋2500し、以下の効果のうちあなたが選んだ1つを行う。『相手に1ダメージを与える。』『あなたは自分のクロックの上から1枚を、控え室に置く。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Striker 《ストライカー》",
+      "Swordplay 《剣術》"
+    ],
+    "set": "SGS",
+    "release": "S37",
+    "sid": "115",
+    "image": "https://images.littleakiba.com/tcg/card25728-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：对敌方造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

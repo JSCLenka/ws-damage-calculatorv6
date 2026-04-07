@@ -1,0 +1,297 @@
+[
+ {
+    "name": "電車とツーショット なでしこ",
+    "code": "YRC/W116-031",
+    "rarity": "RR",
+    "expansion": "Yuru Camp: Season 3",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 3,
+    "trigger": ["SOUL"],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、CX置場に「はいチーズ！」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": ["Yuru Camp△", "Cooking"],
+    "set": "YRC",
+    "release": "W116",
+    "sid": "031",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/y/yrc_w116/yrc_w116_031.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                { "op": "SelfMillLevelBurn", "base_amount": 1 }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (付2费2手): 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "次のキャンプ リン",
+    "code": "YRC/W116-068",
+    "rarity": "RR",
+    "expansion": "Yuru Camp: Season 3",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのカード名に「テント」を含むキャラの下のマーカーの枚数の合計が3枚以上なら、このカードのパワーを＋2500し、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「あちあちパスタ」があり、他のあなたの《ゆるキャン△》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Yuru Camp△",
+      "Bike"
+    ],
+    "set": "YRC",
+    "release": "W116",
+    "sid": "068",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/y/yrc_w116/yrc_w116_068.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "永続効果なし (テントマーカー3枚未満)",
+            "instructions": []
+          },
+          {
+            "label": "永続効果発動 (テントマーカー3枚以上): 焼き1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ「あちあちパスタ」不使用",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ「あちあちパスタ」使用: 焼き3点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不覚の二度寝 リン",
+    "code": "YRC/W116-083",
+    "rarity": "U",
+    "expansion": "Yuru Camp: Season 3",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Yuru Camp△",
+      "Bike"
+    ],
+    "set": "YRC",
+    "release": "W116",
+    "sid": "083",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/y/yrc_w116/yrc_w116_083.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付费用，烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "火起こし リン",
+    "code": "YRC/W116-T09",
+    "rarity": "TD",
+    "expansion": "Yuru Camp: Season 3",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ゆるキャン△》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「ソロキャン」があるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Yuru Camp△",
+      "Bike"
+    ],
+    "set": "YRC",
+    "release": "W116",
+    "sid": "T09",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/y/yrc_w116/yrc_w116_t09.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 3,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スッキリカット 千明",
+    "code": "YRC/W116-T18",
+    "rarity": "TD",
+    "expansion": "Yuru Camp: Season 3",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《ゆるキャン△》のキャラの枚数×1000に等しい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Yuru Camp△",
+      "Glasses"
+    ],
+    "set": "YRC",
+    "release": "W116",
+    "sid": "T18",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/y/yrc_w116/yrc_w116_t18.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费，弃1手牌 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

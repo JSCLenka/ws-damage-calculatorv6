@@ -1,0 +1,312 @@
+[
+  {
+    "name": "乙女な機械 アイギス",
+    "code": "P3/S01-112",
+    "rarity": "PR",
+    "expansion": "Persona 3",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "これからも、わたしの一番の大切は… あなたの傍にいることです",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［手札のキャラを2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのバトル相手をクロック置場に置く。"
+    ],
+    "attributes": [
+      "Mecha 《メカ》",
+      "Weapon 《武器》"
+    ],
+    "set": "P3",
+    "release": "S01",
+    "sid": "112",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/p/p3_sc01/p3_sc01_112.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "主人公＆タナトス リロード",
+    "code": "P3/SE46-16",
+    "rarity": "N",
+    "expansion": "Persona 3 RELOAD Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「DONE AND DUSTED.」があり、あなたのキャラすべてが《リロード》なら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室の、《リロード》か《魔法》か《武器》のキャラか、相手の舞台のキャラを1枚まで選び、手札に戻し、自分の山札の上から1枚までを、ストック置場に置く。』『［手札の、《リロード》か《魔法》か《武器》のキャラを1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Reload",
+      "Magic",
+      "God"
+    ],
+    "set": "P3",
+    "release": "SE46",
+    "sid": "16",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/p/p3_se46/p3_se46_16.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "从时计区顶回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击选项1: 回收/赚费(无伤害)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击选项2: 弃1张手牌，烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"ストレガ\"タカヤ",
+    "code": "P3/SE46-41",
+    "rarity": "N",
+    "expansion": "Persona 3 RELOAD Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Reload",
+      "Magic",
+      "Weapon"
+    ],
+    "set": "P3",
+    "release": "SE46",
+    "sid": "41",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/p/p3_se46/p3_se46_41.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费2手牌: 烧2, 对手休息室1张卡置顶",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "順平＆ヘルメス リロード",
+    "code": "P3/SE46-42",
+    "rarity": "N",
+    "expansion": "Persona 3 RELOAD Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Reload",
+      "Weapon",
+      "God"
+    ],
+    "set": "P3",
+    "release": "SE46",
+    "sid": "42",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/p/p3_se46/p3_se46_42.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未发动效果或未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "支付费用并击倒对手 -> 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "隊員No.4 岳羽 ゆかり",
+    "code": "P3/SE46-56",
+    "rarity": "N",
+    "expansion": "Persona 3 RELOAD Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「THERE YOU HAVE IT.」があり、あなたのキャラすべてが《リロード》なら、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか4ダメージを与え、相手の控え室のカードを1枚まで選び、山札の上に置き、次の相手のターンの終わりまで、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Reload",
+      "Magic",
+      "Weapon"
+    ],
+    "set": "P3",
+    "release": "SE46",
+    "sid": "56",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/p/p3_se46/p3_se46_56.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(支付2手牌)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "造成2点伤害 + 对手坟顶1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  },
+                  {
+                    "op": "OppTopDeck",
+                    "max_cards": 1
+                  }
+                ]
+              },
+              {
+                "label": "造成4点伤害 + 对手坟顶1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 1
+                  },
+                  {
+                    "op": "OppTopDeck",
+                    "max_cards": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,2670 @@
+[
+  {
+    "name": "スペシャルドリーマー スペシャルウィーク",
+    "code": "UMA/W106-011",
+    "rarity": "R",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「みんなにとっての“日本一”」があり、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚見て、キャラかイベントを1枚までとクライマックスを1枚まで選び、クロック置場に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_011.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「みんなにとっての“日本一”」があり、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚見て、キャラかイベントを1枚までとクライマックスを1枚まで選び、クロック置場に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回復しない",
+            "instructions": []
+          },
+          {
+            "label": "1点回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 相手の山札の上から1枚をクロックに置く",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 相手の山札の上から2枚をクロックに置く",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "フォーミュラオブルージュ マルゼンスキー",
+    "code": "UMA/W106-012",
+    "rarity": "R",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、あなたは他の自分の《ウマ娘》のキャラを1枚選び、そのターン中、パワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_012.png",
+    "jpAbility": [
+      "【自】 このカードがアタックした時、あなたは他の自分の《ウマ娘》のキャラを1枚選び、そのターン中、パワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非登场回合 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "登场回合：攻击被取消时发动效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "エル☆Número 1 エルコンドルパサー",
+    "code": "UMA/W106-020",
+    "rarity": "U",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 あなたのメインフェイズ中、このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋2000し、あなたは自分の山札の上から1枚を公開する。そのカードが《ウマ娘》のキャラなら舞台の好きな枠に置く。（そうでないなら元に戻す）",
+      "【自】［手札を1枚控え室に置く］ このカードがアタックした時、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "020",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_020.png",
+    "jpAbility": [
+      "【自】 あなたのメインフェイズ中、このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋2000し、あなたは自分の山札の上から1枚を公開する。そのカードが《ウマ娘》のキャラなら舞台の好きな枠に置く。（そうでないなら元に戻す）",
+      "【自】［手札を1枚控え室に置く］ このカードがアタックした時、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付1手牌，发动扒底烧效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "偉大なるフォトグラフィーア テイエムオペラオー",
+    "code": "UMA/W106-047",
+    "rarity": "R",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《ウマ娘》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、このカードのパワーを＋2500。",
+      "【永】 大活躍 （相手がアタックする時、【リバース】していないこのカードが前列の中央の枠にいるなら、かわりに相手はこのカードにフロントアタックする）",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "047",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_047.png",
+    "jpAbility": [
+      "【永】 あなたの《ウマ娘》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、このカードのパワーを＋2500。",
+      "【永】 大活躍 （相手がアタックする時、【リバース】していないこのカードが前列の中央の枠にいるなら、かわりに相手はこのカードにフロントアタックする）",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "努力は裏切らない！ ダイワスカーレット",
+    "code": "UMA/W106-049",
+    "rarity": "R",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードのバトル中、相手はイベントを手札からプレイできない。",
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《ウマ娘》のキャラがいるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】 チェンジ ［このカードを手札に戻す］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「うるさい監視役 ウオッカ」を1枚まで選び、このカードがいた枠に置く。（クライマックスフェイズの始めにこのカードがいないなら発動しない）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_049.png",
+    "jpAbility": [
+      "【永】 このカードのバトル中、相手はイベントを手札からプレイできない。",
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《ウマ娘》のキャラがいるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】 チェンジ ［このカードを手札に戻す］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「うるさい監視役 ウオッカ」を1枚まで選び、このカードがいた枠に置く。（クライマックスフェイズの始めにこのカードがいないなら発動しない）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 对手烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "フィーユ・エクレール カレンチャン",
+    "code": "UMA/W106-050",
+    "rarity": "R",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ウマ娘》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「紅葉の賀は賑わいて」があり、このカードの下にマーカーがあるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "050",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_050.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ウマ娘》のキャラの枚数に等しい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「紅葉の賀は賑わいて」があり、このカードの下にマーカーがあるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動 (マーカーなし等)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動 (マーカーあり)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天嗤う鏑矢 ナリタブライアン",
+    "code": "UMA/W106-080",
+    "rarity": "RR",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《ウマ娘》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「才能の塊」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_080.png",
+    "jpAbility": [
+      "【永】 前列にこのカードがいるなら、あなたの《ウマ娘》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「才能の塊」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 造成3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Enchaînement シンボリルドルフ",
+    "code": "UMA/W106-081",
+    "rarity": "RR",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "081",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_081.png",
+    "jpAbility": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果或未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "支付费用并击倒对手: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "幸せは曲がり角の向こう ライスシャワー",
+    "code": "UMA/W106-082",
+    "rarity": "RR",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「ライバルの背中のその先へ」があるなら、相手に1ダメージを与え、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_082.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「ライバルの背中のその先へ」があるなら、相手に1ダメージを与え、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (仅发动烧1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒对手 & 满足条件支付cost (发动烧1+烧3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Step! Smile! Wink! トウカイテイオー",
+    "code": "UMA/W106-092",
+    "rarity": "R",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。",
+      "【自】［(1) 手札の「Step! Smile! Wink! トウカイテイオー」を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "092",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_092.png",
+    "jpAbility": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。",
+      "【自】［(1) 手札の「Step! Smile! Wink! トウカイテイオー」を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "StockSwap"
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不沈艦の進撃 ゴールドシップ",
+    "code": "UMA/W106-121",
+    "rarity": "RR",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「第1回ファンタジー記念」があり、このカードの下にマーカーがあるなら、あなたは自分の山札の上から1枚を公開する。そのカードが《ウマ娘》のキャラかイベントなら、このカードを【スタンド】し、そのターン中、このカードのパワーを＋1000。（公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "121",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_121.png",
+    "jpAbility": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「第1回ファンタジー記念」があり、このカードの下にマーカーがあるなら、あなたは自分の山札の上から1枚を公開する。そのカードが《ウマ娘》のキャラかイベントなら、このカードを【スタンド】し、そのターン中、このカードのパワーを＋1000。（公開したカードは元に戻す）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击 / 判定失败",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 -> 判定成功: 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天衣無縫の陽気なウマ娘 ミスターシービー",
+    "code": "UMA/W106-156",
+    "rarity": "PR",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か下に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "156",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_156.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か下に置く。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "静かなる疾走者 サイレンススズカ",
+    "code": "UMA/W106-T16",
+    "rarity": "TD",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「きっとここから、必ずここで」があり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのソウルを－1。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "T16",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_t16.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「きっとここから、必ずここで」があり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのソウルを－1。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2, 魂-1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": -1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "明朗快活お祭り娘！ キタサンブラック",
+    "code": "UMA/W106-T25",
+    "rarity": "TD",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《ウマ娘》のキャラなら、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "T25",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_t25.png",
+    "jpAbility": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《ウマ娘》のキャラなら、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "SelfMillLevelBurn",
+            "base_amount": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "爽やか完璧優等生！ ナリタトップロード",
+    "code": "UMA/W106-T33",
+    "rarity": "TD",
+    "expansion": "Uma Musume",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「もっと、輝きの先へ」が置かれた時、前列にこのカードがいて、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラが4枚以上なら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W106",
+    "sid": "T33",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w106/uma_w106_t33.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「もっと、輝きの先へ」が置かれた時、前列にこのカードがいて、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラが4枚以上なら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (前列+有标记+其他4个马娘)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1,
+                      "on_cancel": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "限界を越えた先 ジャングルポケット",
+    "code": "UMA/W119-003",
+    "rarity": "RR",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋3000。",
+      "【自】 このカードが手札から舞台に置かれた時、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分のクロックの上から1枚を、控え室に置いてよい。』『［手札を1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、このカードの下にマーカーとして表向きに置く。』",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「先に行くぜ」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、相手に1ダメージをＸ回与える。Ｘはこのカードの下のマーカーが2枚以下なら1、3枚なら2、4枚以上なら3に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "マーカーが2枚以下: 1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "マーカーが3枚: 1ダメージ x2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "マーカーが4枚以上: 1ダメージ x3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "勝利の栄光へ テイエムオペラオー",
+    "code": "UMA/W119-029",
+    "rarity": "RR",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「覇道の軌跡」があり、このカードの下にマーカーがあり、他のあなたの《ウマ娘》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から1枚見て、好きな数を宣言し、相手にＸダメージを与える。Ｘはあなたの宣言した数に等しい。（見たカードは元に戻す。マイナスの数は宣言できない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "029",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_029.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：宣言1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击：宣言2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击：宣言3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击：宣言4点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "想いを背負って ナリタトップロード",
+    "code": "UMA/W119-030",
+    "rarity": "RR",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 チェンジ ［このカードを控え室に置く］ あなたのドローフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の《ウマ娘》のキャラを1枚選び、このカードがいた枠に置き、そのターン中、そのキャラのパワーを＋3000。（ドローフェイズの始めにこのカードがいないなら発動しない）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "030",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_030.png",
+    "effects": [
+      {
+        "trigger": "OnEncoreStep",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动安可阶段效果: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "狂気の光 アグネスタキオン",
+    "code": "UMA/W119-037",
+    "rarity": "R",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のCXが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 あなたのターン中、他のあなたの《ウマ娘》のキャラがいるなら、このカードのパワーを＋3000。",
+      "【自】［(1) 手札の《ウマ娘》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "037",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_037.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付代价使其再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "実証実験 アグネスタキオン",
+    "code": "UMA/W119-051",
+    "rarity": "C",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、このカードの正面のキャラのレベルが3以上なら、そのターン中、このカードのパワーを＋6000。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたは相手のクロックの上から1枚を、控え室に置いてよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "051",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_051.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 或选择不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手并发动效果",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "可能性のその先へ アグネスタキオン",
+    "code": "UMA/W119-056",
+    "rarity": "RR",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から2枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「本能のままに」があるなら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたのレベルが3で、相手のレベルが2でクロックが4枚以上なら、あなたは自分の手札を2枚選び、控え室に置く。2枚置いたなら、相手は自分のクロックを1枚選び、レベル置場に置き、残りのクロックを控え室に置く。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "056",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_056.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "效果1: 支付1费 -> 烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "效果2: 支付1费+2手 -> 强制对手升级 (需自Lv3/相Lv2C4+)",
+            "instructions": [
+              {
+                "op": "OppForceLevelUp"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "プランA アグネスタキオン",
+    "code": "UMA/W119-066",
+    "rarity": "U",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 3500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのレベル3以上のキャラすべてに、パワーを＋2000。",
+      "【自】 加速 ［あなたの控え室の《ウマ娘》のキャラを1枚クロック置場の下に置き、【スタンド】しているこのカードを【レスト】する］ あなたのCXフェイズの始めかあなたのアンコールステップの始めに、他のあなたの「可能性のその先へ アグネスタキオン」がいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "066",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_066.png",
+    "effects": [
+      {
+        "trigger": "OnCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动【加速】(保留至Encore阶段)",
+            "instructions": []
+          },
+          {
+            "label": "CX阶段发动【加速】(横置+自残1): 烧 1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnEncore",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动【加速】",
+            "instructions": []
+          },
+          {
+            "label": "Encore阶段发动【加速】(横置+自残1): 烧 1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天真爛漫なウマ娘 ジャングルポケット",
+    "code": "UMA/W119-084",
+    "rarity": "R",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_084.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：查看对手牌库顶2张，最多2张送入休息室",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私のライブ ダンツフレーム",
+    "code": "UMA/W119-087",
+    "rarity": "U",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 6000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 このカードが【リバース】した時、このカードのバトル相手のレベルが相手のレベルより高いなら、あなたはそのキャラを山札の下に置いてよい。"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "087",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_087.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私だって ダンツフレーム",
+    "code": "UMA/W119-088",
+    "rarity": "U",
+    "expansion": "Uma Musume: Door to a New Era",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚までを、ストック置場に置き、そのターン中、このカードのパワーを＋4500し、このカードは次の能力を得る。『【永】 このカードは相手の効果に選ばれない。』",
+      "【自】【CXコンボ】 加速 ［(2) 手札を1枚控え室に置き、あなたの山札の上から1枚をクロック置場に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、CX置場に「勝利への執念」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Uma Musume"
+    ],
+    "set": "UMA",
+    "release": "W119",
+    "sid": "088",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w119/uma_w119_088.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 再动 (场上另有2名以上《ウマ娘》角色)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“その名は”オグリキャップ",
+    "code": "UMA/W134-010",
+    "rarity": "R",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《ウマ娘》のキャラの枚数×1000に等しい。",
+      "【自】【ターン1】［(2) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "010",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_010.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“その名は”オグリキャップ",
+    "code": "UMA/W134-010S",
+    "rarity": "SR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《ウマ娘》のキャラの枚数×1000に等しい。",
+      "【自】【ターン1】［(2) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "010S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_010s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手，或不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付代价发动效果进行再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“カサマツトレセン学園”フジマサマーチ",
+    "code": "UMA/W134-011",
+    "rarity": "R",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「絶対に中央になど行かせない！」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_011.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(支付1手牌)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "将效果赋予自身",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "self",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 2,
+                          "on_cancel": [
+                            {
+                              "op": "DealDamage",
+                              "amount": 2
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "将效果赋予其他角色",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "other_character",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 2,
+                          "on_cancel": [
+                            {
+                              "op": "DealDamage",
+                              "amount": 2
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“カサマツトレセン学園”フジマサマーチ",
+    "code": "UMA/W134-011S",
+    "rarity": "SR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「絶対に中央になど行かせない！」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "011S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_011s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(赋予自身取消烧)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": 2,
+                      "on_cancel": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击(赋予另一角色取消烧)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": 2,
+                      "on_cancel": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“カサマツトレセン学園”フジマサマーチ",
+    "code": "UMA/W134-011SP",
+    "rarity": "SP",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「絶対に中央になど行かせない！」があり、他のあなたの《ウマ娘》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "011SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_011sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果：回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(丢1手)，赋予自身效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": 2,
+                      "on_cancel": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击(丢1手)，赋予其他角色效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": 2,
+                      "on_cancel": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“宣戦布告”タマモクロス",
+    "code": "UMA/W134-043",
+    "rarity": "U",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「“日本一のウマ娘”タマモクロス」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたのCX置場に「一瞬で場を支配する異才」があるなら、相手に1ダメージを与え、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。（ダメージキャンセルは発生する）",
+      "【自】 このカードが舞台から控え室に置かれた時、あなたはこのカードを手札に戻すかストック置場に置いてよい。そうしたら、あなたは自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "043",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_043.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“宣戦布告”タマモクロス",
+    "code": "UMA/W134-043S",
+    "rarity": "SR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「“日本一のウマ娘”タマモクロス」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたのCX置場に「一瞬で場を支配する異才」があるなら、相手に1ダメージを与え、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。（ダメージキャンセルは発生する）",
+      "【自】 このカードが舞台から控え室に置かれた時、あなたはこのカードを手札に戻すかストック置場に置いてよい。そうしたら、あなたは自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "043S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_043s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ど根性ヒロイン”サクラチヨノオー",
+    "code": "UMA/W134-055",
+    "rarity": "RR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 5000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《ウマ娘》なら、このカードのパワーを＋5000し、ソウルを＋1。",
+      "【自】【CXコンボ】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたのCX置場に「日本ダービー」があり、このカードの下にマーカーがあり、あなたのキャラすべてが《ウマ娘》なら、あなたはこのカードを【スタンド】してよい。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "055",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_055.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "通常攻撃 (永続/CXコンボ条件未達成)",
+            "instructions": []
+          },
+          {
+            "label": "永続効果のみ発動 (全ウマ娘: +1魂)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "永続+CXコンボ発動 (+1魂, キャンセル時スタンド選択可)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "per_turn": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 3
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ど根性ヒロイン”サクラチヨノオー",
+    "code": "UMA/W134-055S",
+    "rarity": "SR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 5000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《ウマ娘》なら、このカードのパワーを＋5000し、ソウルを＋1。",
+      "【自】【CXコンボ】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたのCX置場に「日本ダービー」があり、このカードの下にマーカーがあり、あなたのキャラすべてが《ウマ娘》なら、あなたはこのカードを【スタンド】してよい。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "055S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_055s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件 (非全员ウマ娘)",
+            "instructions": []
+          },
+          {
+            "label": "满足条件 (全员ウマ娘): 魂+1 & CX连击准备",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "不发动再动 (无CX「日本ダービー」或无Marker)",
+                      "instructions": []
+                    },
+                    {
+                      "label": "发动再动 (有CX「日本ダービー」且有Marker)",
+                      "instructions": [
+                        {
+                          "op": "PseudoExtraAttack",
+                          "soul": 3
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ど根性ヒロイン”サクラチヨノオー",
+    "code": "UMA/W134-055SP",
+    "rarity": "SP",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 5000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《ウマ娘》なら、このカードのパワーを＋5000し、ソウルを＋1。",
+      "【自】【CXコンボ】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたのCX置場に「日本ダービー」があり、このカードの下にマーカーがあり、あなたのキャラすべてが《ウマ娘》なら、あなたはこのカードを【スタンド】してよい。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "055SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_055sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "场上非全《ウマ娘》角色",
+            "instructions": []
+          },
+          {
+            "label": "场上全为《ウマ娘》角色 (魂+1)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「日本ダービー」(满足标记&全员ウマ娘条件)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "【回合1次】伤害被取消：不发动效果",
+                      "instructions": []
+                    },
+                    {
+                      "label": "【回合1次】伤害被取消：将此卡再开",
+                      "instructions": [
+                        {
+                          "op": "PseudoExtraAttack",
+                          "soul": 2
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“白い稲妻”タマモクロス",
+    "code": "UMA/W134-056",
+    "rarity": "RR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 経験 このカードのアタックの終わりに、CX置場に「白い稲妻」があり、あなたのレベル置場のカードのレベルの合計が8以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『［手札を1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』『［手札を2枚控え室に置き、あなたのレベル置場の表向きのカードを3枚裏向きにする］ あなたはコストを払ってよい。そうしたら、領域を発動する。』（ダメージキャンセルは発生する）",
+      "【リプレイ】 領域 あなたは他の自分のキャラすべてを、控え室に置き、自分の控え室の「“領域”タマモクロス」を1枚とこのカードを選び、入れ替える。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "056",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_056.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "【经验8】CX连击效果1: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "【经验8】CX连击效果2: 发动[领域]进行再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“白い稲妻”タマモクロス",
+    "code": "UMA/W134-056S",
+    "rarity": "SR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 経験 このカードのアタックの終わりに、CX置場に「白い稲妻」があり、あなたのレベル置場のカードのレベルの合計が8以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『［手札を1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』『［手札を2枚控え室に置き、あなたのレベル置場の表向きのカードを3枚裏向きにする］ あなたはコストを払ってよい。そうしたら、領域を発動する。』（ダメージキャンセルは発生する）",
+      "【リプレイ】 領域 あなたは他の自分のキャラすべてを、控え室に置き、自分の控え室の「“領域”タマモクロス」を1枚とこのカードを選び、入れ替える。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "056S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_056s.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ効果: 2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ効果: 「領域」を発動し「“領域”タマモクロス」と入れ替わり再攻撃",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“白い稲妻”タマモクロス",
+    "code": "UMA/W134-056SSP",
+    "rarity": "SSP",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 経験 このカードのアタックの終わりに、CX置場に「白い稲妻」があり、あなたのレベル置場のカードのレベルの合計が8以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『［手札を1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』『［手札を2枚控え室に置き、あなたのレベル置場の表向きのカードを3枚裏向きにする］ あなたはコストを払ってよい。そうしたら、領域を発動する。』（ダメージキャンセルは発生する）",
+      "【リプレイ】 領域 あなたは他の自分のキャラすべてを、控え室に置き、自分の控え室の「“領域”タマモクロス」を1枚とこのカードを選び、入れ替える。"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "056SSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_056ssp.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "效果1: 造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "效果2: 发动【领域】(换人再攻击)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“領域”タマモクロス",
+    "code": "UMA/W134-060",
+    "rarity": "R",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 控え室にこのカードがあるなら、あなたの第1ターンの始めに、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。",
+      "【自】【CXコンボ】［手札を3枚控え室に置く］ このカードが「“白い稲妻”タマモクロス」の【リプレイ】の効果で舞台に置かれたターン中、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "060",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_060.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1，看对手牌库顶3张，最多3张按顺序放回，其余丢弃",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+ {
+    "name": "“上着をバッと……”オグリキャップ",
+    "code": "UMA/W134-097",
+    "rarity": "U",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Event",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 3,
+    "power": 0,
+    "soul": 0,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "あなたの《ウマ娘》のキャラがいるなら、あなたのキャラすべてに、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 経験 レベル置場にこのカードがあり、他のあなたのレベル置場に「“上着をバッと……”オグリキャップ」がないなら、あなたのアタックフェイズの始めに、あなたは自分の「“芦毛の怪物”オグリキャップ」を1枚選び、そのターン中、パワーを＋500し、次の能力を与える。『【永】 このカードのバトル中、相手は『助太刀』を手札からプレイできない。』"
+    ],
+    "attributes": [],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "097",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_097.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用事件",
+            "instructions": []
+          },
+          {
+            "label": "使用事件 (全场赋予：取消烧1)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“領域”タマモクロス",
+    "code": "UMA/W134-060S",
+    "rarity": "SR",
+    "expansion": "Umamusume: Cinderella Gray",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 控え室にこのカードがあるなら、あなたの第1ターンの始めに、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。",
+      "【自】【CXコンボ】［手札を3枚控え室に置く］ このカードが「“白い稲妻”タマモクロス」の【リプレイ】の効果で舞台に置かれたターン中、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Uma Musume",
+      "Cinderella Gray"
+    ],
+    "set": "UMA",
+    "release": "W134",
+    "sid": "060S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/u/uma_w134/uma_w134_060s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 支付3手牌",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

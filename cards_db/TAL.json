@@ -1,0 +1,1065 @@
+[
+  {
+    "name": "騎士 クロエ・ヴァレンス",
+    "code": "TAL/S126-008",
+    "rarity": "R",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックすべてを、山札に戻し、その山札をシャッフルし、自分の山札の上から同じ枚数をストック置場に置く。』『あなたは相手の山札の下から3枚を、控え室に置く。それらのカードにCXがあるなら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Legendia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_008.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "相手のストックを全て入れ替える",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              }
+            ]
+          },
+          {
+            "label": "相手の山札の底3枚を見て、CXがあれば1ダメージ",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "騎士 クロエ・ヴァレンス",
+    "code": "TAL/S126-008S",
+    "rarity": "SR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックすべてを、山札に戻し、その山札をシャッフルし、自分の山札の上から同じ枚数をストック置場に置く。』『あなたは相手の山札の下から3枚を、控え室に置く。それらのカードにCXがあるなら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Legendia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "008S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_008s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "效果1: 交换对手费用",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              }
+            ]
+          },
+          {
+            "label": "效果2: 扒底3张，若有CX则烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ストラタ軍の少佐 ヒューバート・オズウェル",
+    "code": "TAL/S126-023",
+    "rarity": "C",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《冒険》のキャラが2枚以上なら、このカードのパワーを＋4000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。ＸはそれらのカードのCXの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Graces F"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "023",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_023.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 扒底4张，根据CX数烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ストラタ軍の少佐 ヒューバート・オズウェル",
+    "code": "TAL/S126-023S",
+    "rarity": "SR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《冒険》のキャラが2枚以上なら、このカードのパワーを＋4000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。ＸはそれらのカードのCXの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Graces F"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "023S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_023s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "時空剣士 クレス・アルベイン",
+    "code": "TAL/S126-031",
+    "rarity": "RR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「時空剣士 クレス・アルベイン」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札か思い出置場から舞台に置かれたターン中、このカードのアタックの終わりに、相手に1ダメージを与え、あなたは自分の控え室の《冒険》のキャラを1枚まで選び、ストック置場に置き、このカードを思い出にする。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 記憶 思い出置場にこのカードがあり、あなたのレベルが3以上なら、あなたのCX置場に「伝説のRPG」が置かれた時、あなたはこのカードを舞台のキャラのいない枠に置いてよい。"
+    ],
+    "attributes": [
+      "Adventure",
+      "Phantasia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "031",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_031.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "時空剣士 クレス・アルベイン",
+    "code": "TAL/S126-031S",
+    "rarity": "SR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「時空剣士 クレス・アルベイン」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札か思い出置場から舞台に置かれたターン中、このカードのアタックの終わりに、相手に1ダメージを与え、あなたは自分の控え室の《冒険》のキャラを1枚まで選び、ストック置場に置き、このカードを思い出にする。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 記憶 思い出置場にこのカードがあり、あなたのレベルが3以上なら、あなたのCX置場に「伝説のRPG」が置かれた時、あなたはこのカードを舞台のキャラのいない枠に置いてよい。"
+    ],
+    "attributes": [
+      "Adventure",
+      "Phantasia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "031S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_031s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "comment": "【自】 このカードが手札か思い出置場から舞台に置かれたターン中、このカードのアタックの終わりに、相手に1ダメージを与える",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "世界再生の旅 コレット・ブルーネル",
+    "code": "TAL/S126-045",
+    "rarity": "U",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《冒険》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［手札の《冒険》のキャラを2枚控え室に置き、【スタンド】しているこのカードを控え室に置く］ あなたのアンコールステップの始めに、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは自分のクロックの下から2枚までを、控え室に置き、自分のキャラを2枚まで選び、【レスト】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Symphonia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "045",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_045.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アンコールステップ効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "アンコールステップ効果を発動: 4点ダメージ、2点回復",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "世界再生の旅 コレット・ブルーネル",
+    "code": "TAL/S126-045S",
+    "rarity": "SR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《冒険》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［手札の《冒険》のキャラを2枚控え室に置き、【スタンド】しているこのカードを控え室に置く］ あなたのアンコールステップの始めに、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは自分のクロックの下から2枚までを、控え室に置き、自分のキャラを2枚まで選び、【レスト】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Symphonia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "045S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_045s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动安可阶段效果",
+            "instructions": []
+          },
+          {
+            "label": "发动安可阶段效果 (烧4, 不回血)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动安可阶段效果 (烧4, 回血1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "发动安可阶段效果 (烧4, 回血2)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ローレライの剣士 ルーク・フォン・ファブレ",
+    "code": "TAL/S126-061",
+    "rarity": "RR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「心の成長 ルーク・フォン・ファブレ」の【起】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(2) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「存在を賭けた、誓いと約束」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札の上に好きな順番で置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "The Abyss"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "061",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_061.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(经验6): 对手坟2张置顶 -> 烧4",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 2
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ローレライの剣士 ルーク・フォン・ファブレ",
+    "code": "TAL/S126-061S",
+    "rarity": "SR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「心の成長 ルーク・フォン・ファブレ」の【起】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(2) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「存在を賭けた、誓いと約束」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札の上に好きな順番で置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "The Abyss"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "061S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_061s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (经验6): 对手坟2张非CX置顶, 烧4",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 2
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ラタトスクモード エミル・キャスタニエ",
+    "code": "TAL/S126-066",
+    "rarity": "R",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 4000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋8000。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「魔王獄炎波」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Knight of Ratatosk"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "066",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_066.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ラタトスクモード エミル・キャスタニエ",
+    "code": "TAL/S126-066S",
+    "rarity": "SR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 4000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋8000。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「魔王獄炎波」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Knight of Ratatosk"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "066S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_066s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "正義を貫く道 ユーリ・ローウェル",
+    "code": "TAL/S126-095",
+    "rarity": "RR",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 あなたのCX置場に「明星の光」が置かれた時、前列にこのカードがいて、他のあなたのキャラが2枚以上なら、相手に2ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(5) 手札を2枚控え室に置き、あなたのCX置場のCXを1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、相手に2ダメージを2回与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Vesperia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "095",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_095.png",
+    "effects": [
+      {
+        "trigger": "OnCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボのみ発動 (2点ダメージ)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボに加えてアンコールステップ能力も使用 (合計2点ダメージ + 2点ダメージx2回)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "正義を貫く道 ユーリ・ローウェル",
+    "code": "TAL/S126-095SSP",
+    "rarity": "SSP",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 あなたのCX置場に「明星の光」が置かれた時、前列にこのカードがいて、他のあなたのキャラが2枚以上なら、相手に2ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(5) 手札を2枚控え室に置き、あなたのCX置場のCXを1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、相手に2ダメージを2回与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Vesperia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "095SSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_095ssp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 条件未达成",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 条件达成",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "安可步骤: 不发动获得的能力",
+                      "instructions": []
+                    },
+                    {
+                      "label": "安可步骤: 发动获得的能力 -> 烧2 x2",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 2,
+                          "times": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "公爵子息 ルーク・フォン・ファブレ",
+    "code": "TAL/S126-T09",
+    "rarity": "TD",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《冒険》のキャラの枚数×1000に等しい。",
+      "【自】【ターン1】［(3) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの《冒険》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Adventure",
+      "The Abyss"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "T09",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_t09.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再站",
+            "instructions": []
+          },
+          {
+            "label": "支付3费1手牌再站 (需场上另有4名<冒險>角色)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "公爵子息 ルーク・フォン・ファブレ",
+    "code": "TAL/S126-T09SP",
+    "rarity": "SP",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《冒険》のキャラの枚数×1000に等しい。",
+      "【自】【ターン1】［(3) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの《冒険》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Adventure",
+      "The Abyss"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "T09SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_t09sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：支付3费1手再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "猟師の青年 リッド・ハーシェル",
+    "code": "TAL/S126-T10",
+    "rarity": "TD",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋3500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「冒険は終わらない」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Eternia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "T10",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_t10.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 发动效果，对对手造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "明朗快活な少女  ファラ・エルステッド",
+    "code": "TAL/S126-T11",
+    "rarity": "TD",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたのキャラすべてが《冒険》なら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Eternia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "T11",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_t11.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻顶烧 (伤害=卡牌等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "明朗快活な少女  ファラ・エルステッド",
+    "code": "TAL/S126-T11SP",
+    "rarity": "SP",
+    "expansion": "Tales of Series",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたのキャラすべてが《冒険》なら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Adventure",
+      "Eternia"
+    ],
+    "set": "TAL",
+    "release": "S126",
+    "sid": "T11SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/tal_s126/tal_s126_t11sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "从时计区底回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付费用并发动：翻顶烧(等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

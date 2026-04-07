@@ -1,0 +1,73 @@
+[
+  {
+    "name": "二度目の恋 結女",
+    "code": "Stk/W123-107",
+    "rarity": "R",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のCXが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札の《スニーカー文庫》のキャラを1枚控え室に置く］ このカードがアタックした時、CX置場に「新たな関係」があり、他のあなたの《スニーカー文庫》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードは『【永】 大活躍』を得る。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "Book"
+    ],
+    "set": "Stk",
+    "release": "W123",
+    "sid": "107",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/stk_w123/stk_w123_107.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场时回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

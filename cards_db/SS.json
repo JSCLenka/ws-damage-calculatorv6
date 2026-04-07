@@ -1,0 +1,512 @@
+[
+  {
+    "name": "\"フレイムヘイズ\"シャナ",
+    "code": "SS/WE41-15",
+    "rarity": "N",
+    "expansion": "Shana Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《炎》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「確かめたい気持ち」があるなら、そのターン中、このカードは赤を得て、あなたはコストを5回まで払う。次の行動をＸ回行う。『あなたは相手の山札の下から3枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に1ダメージを与える。』Ｘはこの能力のコストを払った回数＋1に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Flame",
+      "Melon Pan"
+    ],
+    "set": "SS",
+    "release": "WE41",
+    "sid": "15",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ss_we41/ss_we41_15.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (发动CX连击)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "支付0次费用 (X=1次判定)",
+                "instructions": [
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "支付1次费用 (X=2次判定)",
+                "instructions": [
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "支付2次费用 (X=3次判定)",
+                "instructions": [
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "支付3次费用 (X=4次判定)",
+                "instructions": [
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "支付4次费用 (X=5次判定)",
+                "instructions": [
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "支付5次费用 (X=6次判定)",
+                "instructions": [
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  },
+                  {
+                    "op": "MillAndBurn",
+                    "target_player": "opp",
+                    "zone": "bottom",
+                    "mill_amount": 3,
+                    "condition": "is_cx",
+                    "mode": "once_if_any",
+                    "burn_amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャナ＆悠二",
+    "code": "SS/WE41-38",
+    "rarity": "N",
+    "expansion": "Shana Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(3) 手札の《炎》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Flame",
+      "Weapon"
+    ],
+    "set": "SS",
+    "release": "WE41",
+    "sid": "38",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ss_we41/ss_we41_38.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "经验6 & 支付费用: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "大いなる器 シャナ",
+    "code": "SS/WE41-39",
+    "rarity": "N",
+    "expansion": "Shana Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(2)］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「天破壌砕」があり、他のあなたの《炎》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『このカードを【スタンド】する。』『あなたは自分の控え室のキャラを3枚まで選び、手札に戻し、自分の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。』"
+    ],
+    "attributes": [
+      "Flame",
+      "Weapon"
+    ],
+    "set": "SS",
+    "release": "WE41",
+    "sid": "39",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ss_we41/ss_we41_39.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击效果: 将此卡【再动】",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击效果: 回收3卡+洗坟 (无伤害)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "『巫女』ヘカテー",
+    "code": "SS/WE41-57",
+    "rarity": "N",
+    "expansion": "Shana Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Flame",
+      "Miko"
+    ],
+    "set": "SS",
+    "release": "WE41",
+    "sid": "57",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ss_we41/ss_we41_57.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "神威召還 ヘカテー",
+    "code": "SS/WE41-58",
+    "rarity": "N",
+    "expansion": "Shana Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「次の願いの結実まで」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Flame",
+      "Miko"
+    ],
+    "set": "SS",
+    "release": "WE41",
+    "sid": "58",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/ss_we41/ss_we41_58.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "弃1张手牌：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,717 @@
+[
+  {
+    "name": "ツンデレ系幼なじみ 英梨々",
+    "code": "SHS/W56-003",
+    "rarity": "RR",
+    "expansion": "Saenai Heroine no Sodatekata",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "バッカじゃないの!?　変な風に勘違いしないでよねっ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「パチモン幼なじみ」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたの控え室の「パチモン幼なじみ」の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Manga 《漫画》"
+    ],
+    "set": "SHS",
+    "release": "W56",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card42172-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "控え室CX=1枚: 1点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "控え室CX=2枚: 2点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "控え室CX=3枚: 3点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クリエイターの矜持 詩羽",
+    "code": "SHS/W56-059",
+    "rarity": "RR",
+    "expansion": "Saenai Heroine no Sodatekata",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "クリエイターの世界へようこそ、安芸倫也君",
+    "ability": [
+      "【自】 このカードがアタックした時、他のあなたの、《ゲーム》か《小説》のキャラがいるなら、そのターン中、このカードのパワーを＋1500。",
+      "【自】[(2) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Novel 《小説》"
+    ],
+    "set": "SHS",
+    "release": "W56",
+    "sid": "059",
+    "image": "https://images.littleakiba.com/tcg/card42228-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再度攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "icy tail 美智留",
+    "code": "SHS/W56-081",
+    "rarity": "RR",
+    "expansion": "Saenai Heroine no Sodatekata",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "将来にいい思い出をたくさん残すためにも、今はとことん楽しまなくっちゃね！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「icy tail」があるなら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Music 《音楽》"
+    ],
+    "set": "SHS",
+    "release": "W56",
+    "sid": "081",
+    "image": "https://images.littleakiba.com/tcg/card42250-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "イラストレーターの戦い 出海",
+    "code": "SHS/W71-003",
+    "rarity": "RR",
+    "expansion": "Saenai Heroine no Sodatekata ♭",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「決意の対峙」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋2に等しい。』（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Manga 《漫画》"
+    ],
+    "set": "SHS",
+    "release": "W71",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card53628-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 伤害被取消时, 烧(卡牌等级+2)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+ {
+    "name": "門出のはなむけ 英梨々",
+    "code": "SHS/W71-009",
+    "rarity": "R",
+    "expansion": "Saenai Heroine no Sodatekata ♭",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［(1)］ このカードが、手札か山札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て「門出のはなむけ 英梨々」を1枚まで選び、舞台の好きな枠に置き、その山札をシャッフルする。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードの与えたダメージがキャンセルされなかった時、あなたのクライマックス置場に「出し抜かれ、ポンコツ」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game",
+      "Manga"
+    ],
+    "set": "SHS",
+    "release": "W71",
+    "sid": "009",
+    "image": "https://images.littleakiba.com/tcg/card53634-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 贴膜(贯通时付费烧1, 理论无限次)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "limit": 99,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新しい物語 恵",
+    "code": "SHS/W71-056",
+    "rarity": "RR",
+    "expansion": "Saenai Heroine no Sodatekata ♭",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 記憶 あなたの思い出が2枚以上なら、あなたのターン中、このカードのパワーを＋2000。3枚以上なら、このカードのバトル中、相手は『助太刀』を手札からプレイできない。4枚以上なら、このカードは相手の効果に選ばれない。",
+      "【自】 このカードが手札から舞台に置かれた時か「おやすみの前に 恵」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「再起と新規のゲームスタート」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》"
+    ],
+    "set": "SHS",
+    "release": "W71",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card53681-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新たなる選択肢 詩羽",
+    "code": "SHS/W71-057",
+    "rarity": "RR",
+    "expansion": "Saenai Heroine no Sodatekata ♭",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「切り取られた風景 英梨々」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(3)］ クライマックス置場に「二泊三日の新ルート」があり、あなたのレベル置場に「新たなる選択肢 詩羽」があるなら、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、次の2つの効果をあなたは好きな順番に行う。コストを払わないなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。』『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game 《ゲーム》",
+      "Novel 《小説》"
+    ],
+    "set": "SHS",
+    "release": "W71",
+    "sid": "057",
+    "image": "https://images.littleakiba.com/tcg/card53682-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コスト(3)を払う: 控え室3枚戻し＆1点バーン",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              },
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "コストを払わない: 控え室3枚戻しのみ",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "コストを払わない: 1点バーンのみ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "色褪せない青春グラフィティ 出海",
+    "code": "SHS/W98-009",
+    "rarity": "R",
+    "expansion": "Saekano Fine",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたの控え室の《ゲーム》のキャラを1枚クロック置場の下に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、ターンの終わりに、あなたは自分のクロックの下から2枚までを、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「夢紡ぐスケッチ」があり、他のあなたの《ゲーム》のキャラが4枚以上なら、次の行動を行う。『あなたのクロックが5枚以下なら、あなたは相手に1ダメージを与えてよい。あなたのクロックが6枚なら、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】［あなたの控え室の《ゲーム》のキャラを1枚クロック置場の下に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、ターンの終わりに、あなたは自分のクロックの下から2枚までを、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「夢紡ぐスケッチ」があり、他のあなたの《ゲーム》のキャラが4枚以上なら、次の行動を行う。『あなたのクロックが5枚以下なら、あなたは相手に1ダメージを与えてよい。あなたのクロックが6枚なら、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game",
+      "Manga"
+    ],
+    "set": "SHS",
+    "release": "98",
+    "sid": "009",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/shs_w98/shs_w98_009.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击条件达成 (自时计≤5)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击条件达成 (自时计=6)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "鋭い乙女の勘 出海",
+    "code": "SHS/W98-018",
+    "rarity": "U",
+    "expansion": "Saekano Fine",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたの控え室の《ゲーム》のキャラを1枚クロック置場の下に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】［あなたの控え室の《ゲーム》のキャラを1枚クロック置場の下に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game",
+      "Manga"
+    ],
+    "set": "SHS",
+    "release": "98",
+    "sid": "018",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/shs_w98/shs_w98_018.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST",
+            "instructions": []
+          },
+          {
+            "label": "支付COST: 获得[取消时烧3]的能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ドレスアップ 恵",
+    "code": "SHS/W98-068",
+    "rarity": "R",
+    "expansion": "Saekano Fine",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ゲーム》のキャラの枚数に等しい。",
+      "【自】［(1) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ゲーム》のキャラの枚数に等しい。",
+      "【自】［(1) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game"
+    ],
+    "set": "SHS",
+    "release": "98",
+    "sid": "068",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/shs_w98/shs_w98_068.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧1 + 对手坟顶1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "再集結 詩羽",
+    "code": "SHS/W98-070",
+    "rarity": "R",
+    "expansion": "Saekano Fine",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《ゲーム》のキャラすべてに、パワーを＋1500。",
+      "【自】［手札の「再集結 詩羽」を1枚控え室に置く］ このカードがアタックした時、他のあなたの《ゲーム》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「冴えない彼女の育てかた –最終章–」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたの《ゲーム》のキャラすべてに、パワーを＋1500。",
+      "【自】［手札の「再集結 詩羽」を1枚控え室に置く］ このカードがアタックした時、他のあなたの《ゲーム》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「冴えない彼女の育てかた –最終章–」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Game",
+      "Novel"
+    ],
+    "set": "SHS",
+    "release": "98",
+    "sid": "070",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/shs_w98/shs_w98_070.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：支付手牌，回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击：支付2费，烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

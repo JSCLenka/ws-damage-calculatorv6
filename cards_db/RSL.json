@@ -1,0 +1,1139 @@
+[
+  {
+    "name": "“ふたりの花道”花柳 香子",
+    "code": "RSL/S56-003",
+    "rarity": "RR",
+    "expansion": "Shoujo☆Kageki Revue Starlight",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "メインキャストは双葉はん……あんたの方がふさわしいわ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手のキャラを1枚まで選び、手札に戻し、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(1) 手札のカード名に「双葉」か「香子」を含むキャラを1枚控え室に置く］ あなたのクライマックス置場に「最高の自分」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Weapon 《武器》"
+    ],
+    "set": "RSL",
+    "release": "S56",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card48465-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "all_others",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 2,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私のキラめき 石動 双葉",
+    "code": "RSL/S56-010",
+    "rarity": "R",
+    "expansion": "Shoujo☆Kageki Revue Starlight",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "一緒にキラめきが見たいんだ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたの前列の中央の枠にカード名に「香子」を含むキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Weapon 《武器》"
+    ],
+    "set": "RSL",
+    "release": "S56",
+    "sid": "010",
+    "image": "https://images.littleakiba.com/tcg/card48472-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "前排中央有「香子」, 支付(1)和1手牌: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“情熱とキラめき”愛城 華恋",
+    "code": "RSL/S56-036",
+    "rarity": "RR",
+    "expansion": "Shoujo☆Kageki Revue Starlight",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私たちは何度だって舞台に立てる！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“華、ひらくとき”神楽 ひかり」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「されど舞台はつづく」があり、あなたの前列の中央の枠に「“情熱とキラめき”愛城 華恋」がいるなら、そのターン中、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Weapon 《武器》"
+    ],
+    "set": "RSL",
+    "release": "S56",
+    "sid": "036",
+    "image": "https://images.littleakiba.com/tcg/card48498-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击未满足/未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“華、ひらくとき”神楽 ひかり",
+    "code": "RSL/S56-037",
+    "rarity": "RR",
+    "expansion": "Shoujo☆Kageki Revue Starlight",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "それでも……見えたの！ふたりの！スタァライトが!!!!",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「“情熱とキラめき”愛城 華恋」を1枚選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】［(1) あなたの前列の中央の枠のカード名に「華恋」を含むキャラを1枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「されど舞台はつづく」があり、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたはこのカードを【レスト】し、前列の中央のキャラのいない枠に動かし、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000し、このカードは『【永】 大活躍』を得る。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Weapon 《武器》"
+    ],
+    "set": "RSL",
+    "release": "S56",
+    "sid": "037",
+    "image": "https://images.littleakiba.com/tcg/card48499-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "Encore Step CX Combo: Do not activate",
+            "instructions": []
+          },
+          {
+            "label": "Encore Step CX Combo: Pay cost & Sac Karen -> Burn 1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "気高き意志 西條 クロディーヌ",
+    "code": "RSL/S56-068",
+    "rarity": "RR",
+    "expansion": "Shoujo☆Kageki Revue Starlight",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「壮烈な覚悟 天堂 真矢」の【自】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「The Show Must Go On」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の前列の中央の枠の「壮烈な覚悟 天堂 真矢」を1枚選び、【スタンド】する。"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Weapon 《武器》"
+    ],
+    "set": "RSL",
+    "release": "S56",
+    "sid": "068",
+    "image": "https://images.littleakiba.com/tcg/card48530-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费手牌1]使「天堂真矢」再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "運命の舞台 愛城 華恋",
+    "code": "RSL/S56-T13",
+    "rarity": "TD",
+    "expansion": "Shoujo☆Kageki Revue Starlight",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "いこう、あの舞台へ――\n輝くスタァに、ふたりで――",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《レヴュー》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】［(1)］ このカードがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、このカードを手札に戻す。"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Weapon 《武器》"
+    ],
+    "set": "RSL",
+    "release": "S56",
+    "sid": "T13",
+    "image": "https://images.littleakiba.com/tcg/card47063-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "公开卡是《レヴュー》角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "公开卡不是《レヴュー》角色",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“駆け出し船長”大月 あるる",
+    "code": "RSL/S69-004",
+    "rarity": "RR",
+    "expansion": "Shoujo☆Kageki Revue Starlight -Re LIVE-",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたが【起】を使った時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《レヴュー》のキャラの枚数×500に等しい。",
+      "【自】【CXコンボ】［(3)］ このカードがアタックした時、クライマックス置場に「世界の財宝は私たちのもの」があるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Frontier School of Arts 《フロンティア芸術学校》"
+    ],
+    "set": "RSL",
+    "release": "S69",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card53761-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "【CX连击】支付3费：对敌方造成3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“あやかし見廻り隊 隊長”音無 いちえ",
+    "code": "RSL/S69-039",
+    "rarity": "R",
+    "expansion": "Shoujo☆Kageki Revue Starlight -Re LIVE-",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「帝都の平和を守るもの達」があり、他のあなたの「“あやかし見廻り隊 副長”巴 珠緒」がいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Rinmeikan Girls School 《凛明館女学校》"
+    ],
+    "set": "RSL",
+    "release": "S69",
+    "sid": "039",
+    "image": "https://images.littleakiba.com/tcg/card53796-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "发动CX Combo: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“銃士ポルトス”露崎 まひる",
+    "code": "RSL/S69-059",
+    "rarity": "R",
+    "expansion": "Shoujo☆Kageki Revue Starlight -Re LIVE-",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「陽光きらめくお洗濯日和」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「陽光きらめくお洗濯日和」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたのキャラすべてに、そのターン中、ソウルを＋1。",
+      "【自】 相手のターン中、あなたの受けたダメージがキャンセルされなかった時、前列にこのカードがいるなら、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。",
+      "【自】 アンコール ［手札の《レヴュー》のキャラを1枚控え室に置く］ （このカードが舞台から控え室に置かれた時、あなたはコストを払ってよい。そうしたら、このカードがいた枠に【レスト】して置く）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Seisho Music Academy 《聖翔音楽学園》"
+    ],
+    "set": "RSL",
+    "release": "S69",
+    "sid": "059",
+    "image": "https://images.littleakiba.com/tcg/card53816-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 再スタンド＆全体ソウル+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "soul_boost": 1
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新たな舞台 雪代 晶",
+    "code": "RSL/S69-072",
+    "rarity": "RR",
+    "expansion": "Shoujo☆Kageki Revue Starlight -Re LIVE-",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 経験 あなたのレベル置場に「新たな舞台 雪代 晶」があるなら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「氷上の華麗なるプラチナ」があるなら、あなたはコストを払ってよい。そうしたら、次の行動を2回行う。『あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Siegfeld Institute of Music 《シークフェルト音楽学院》"
+    ],
+    "set": "RSL",
+    "release": "S69",
+    "sid": "072",
+    "image": "https://images.littleakiba.com/tcg/card53829-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 执行2次[扒底4张，根据CX数烧血]",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“銃士アラミス”星見 純那",
+    "code": "RSL/S69-078",
+    "rarity": "R",
+    "expansion": "Shoujo☆Kageki Revue Starlight -Re LIVE-",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から5枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Seisho Music Academy 《聖翔音楽学園》"
+    ],
+    "set": "RSL",
+    "release": "S69",
+    "sid": "078",
+    "image": "https://images.littleakiba.com/tcg/card53835-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费，弃1手牌 -> 翻顶5张，每有1张CX烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 5,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“太陽の国の軍団長”天堂 真矢",
+    "code": "RSL/S69-079",
+    "rarity": "R",
+    "expansion": "Shoujo☆Kageki Revue Starlight -Re LIVE-",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(4) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Revue 《レヴュー》",
+      "Seisho Music Academy 《聖翔音楽学園》"
+    ],
+    "set": "RSL",
+    "release": "S69",
+    "sid": "079",
+    "image": "https://images.littleakiba.com/tcg/card53836-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手并支付费用 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "わがままハイウェイ 花柳 香子",
+    "code": "RSL/S98-008",
+    "rarity": "R",
+    "expansion": "Revue Movie",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ あなたのクライマックス置場に「あなたを待って」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ あなたのクライマックス置場に「あなたを待って」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue",
+      "Weapon"
+    ],
+    "set": "RSL",
+    "release": "98",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_s98/rsl_s98_008.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "翠の光 星見 純那",
+    "code": "RSL/S98-025",
+    "rarity": "RR",
+    "expansion": "Revue Movie",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《レヴュー》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 このカードの下のマーカー1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードがアタックした時、あなたは自分の控え室のキャラを1枚選び、このカードの下にマーカーとして表向きに置いてよい。",
+      "【自】【CXコンボ】［(2) このカードの下のマーカーすべてを控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「私が主役の舞台」があるなら、あなたはコストを払ってよい。そうしたら、次の行動をＸ回行う。『相手に1ダメージを与える。』Ｘはこの能力のコストで控え室に置かれたマーカーの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 あなたの《レヴュー》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 このカードの下のマーカー1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードがアタックした時、あなたは自分の控え室のキャラを1枚選び、このカードの下にマーカーとして表向きに置いてよい。",
+      "【自】【CXコンボ】［(2) このカードの下のマーカーすべてを控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「私が主役の舞台」があるなら、あなたはコストを払ってよい。そうしたら、次の行動をＸ回行う。『相手に1ダメージを与える。』Ｘはこの能力のコストで控え室に置かれたマーカーの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue",
+      "Weapon"
+    ],
+    "set": "RSL",
+    "release": "98",
+    "sid": "025",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_s98/rsl_s98_025.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击 (X=1 marker): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (X=2 markers): 烧1 x2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (X=3 markers): 烧1 x3次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (X=4 markers): 烧1 x4次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 4
+              }
+            ]
+          },
+          {
+            "label": "CX连击 (X=5 markers): 烧1 x5次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "舞台で演じないのなら 露崎 まひる",
+    "code": "RSL/S98-031",
+    "rarity": "R",
+    "expansion": "Revue Movie",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《レヴュー》のキャラがいるなら、このカードのパワーを＋2500し、このカードは次の能力を得る。『【永】 このカードの正面のキャラは他の枠に動かせない。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「あなたと私の舞台」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手の山札を上から1枚見て、山札の上か下に置く。"
+    ],
+    "jpAbility": [
+      "【永】 あなたのターン中、他のあなたの《レヴュー》のキャラがいるなら、このカードのパワーを＋2500し、このカードは次の能力を得る。『【永】 このカードの正面のキャラは他の枠に動かせない。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「あなたと私の舞台」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手の山札を上から1枚見て、山札の上か下に置く。"
+    ],
+    "attributes": [
+      "Revue",
+      "Weapon"
+    ],
+    "set": "RSL",
+    "release": "98",
+    "sid": "031",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_s98/rsl_s98_031.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私たちは　ともに、 西條 クロディーヌ",
+    "code": "RSL/S98-048",
+    "rarity": "RR",
+    "expansion": "Revue Movie",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、自分の山札を上から3枚まで見て、山札の上に好きな順番で置く。",
+      "【自】 このカードがアタックした時、他のあなたの《レヴュー》のキャラがいるなら、そのターン中、このカードのパワーを＋3000。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、自分の山札を上から3枚まで見て、山札の上に好きな順番で置く。",
+      "【自】 このカードがアタックした時、他のあなたの《レヴュー》のキャラがいるなら、そのターン中、このカードのパワーを＋3000。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue",
+      "Weapon"
+    ],
+    "set": "RSL",
+    "release": "98",
+    "sid": "048",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_s98/rsl_s98_048.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "次の舞台、次の役ヘ 愛城 華恋",
+    "code": "RSL/S98-049",
+    "rarity": "RR",
+    "expansion": "Revue Movie",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「再会 神楽 ひかり」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「アタシ再生産」があるなら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、控え室に置き、残りのカードを山札に戻し、相手はその山札をシャッフルし、そのターン中、このカードのパワーを＋3000。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時か「再会 神楽 ひかり」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「アタシ再生産」があるなら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、控え室に置き、残りのカードを山札に戻し、相手はその山札をシャッフルし、そのターン中、このカードのパワーを＋3000。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue",
+      "Weapon"
+    ],
+    "set": "RSL",
+    "release": "98",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_s98/rsl_s98_049.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 相手の山札の上から3枚まで見て、3枚まで控え室に置く",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "再生産列車",
+    "code": "RSL/S98-074",
+    "rarity": "U",
+    "expansion": "Revue Movie",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 1,
+    "power": 0,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【CXコンボ】 あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の2つの効果のうちあなたが選んだ1つを行う。",
+      "『相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "『あなたは自分の控え室の「アタシ再生産」を1枚選び、手札に戻す。』"
+    ],
+    "jpAbility": [
+      "【CXコンボ】 あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の2つの効果のうちあなたが選んだ1つを行う。",
+      "『相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "『あなたは自分の控え室の「アタシ再生産」を1枚選び、手札に戻す。』"
+    ],
+    "attributes": [
+      "特徴なし"
+    ],
+    "set": "RSL",
+    "release": "98",
+    "sid": "074",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_s98/rsl_s98_074.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "选择效果：烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "选择效果：回收事件卡（无伤害）",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Delight 雪代 晶",
+    "code": "RSL/SE38-24",
+    "rarity": "N",
+    "expansion": "Revue Starlight The Live Edel Delight Portrait Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、相手のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードのバトル中、あなたはイベントと『助太刀』を、手札からプレイできない。』",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue",
+      "Siegfeld Institute of Music"
+    ],
+    "set": "RSL",
+    "release": "SE38",
+    "sid": "24",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_se38/rsl_se38_24.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、相手のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードのバトル中、あなたはイベントと『助太刀』を、手札からプレイできない。』",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Delight 雪代 晶",
+    "code": "RSL/SE38-P01S",
+    "rarity": "PR",
+    "expansion": "Revue Starlight The Live Edel Delight Portrait Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、相手のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードのバトル中、あなたはイベントと『助太刀』を、手札からプレイできない。』",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revue",
+      "Siegfeld Institute of Music"
+    ],
+    "set": "RSL",
+    "release": "SE38",
+    "sid": "P01S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rsl_se38/rsl_se38_p01s.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、相手のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードのバトル中、あなたはイベントと『助太刀』を、手札からプレイできない。』",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付2手费，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

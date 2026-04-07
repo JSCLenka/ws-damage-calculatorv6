@@ -1,0 +1,323 @@
+[
+  {
+    "name": "“極秘任務”レイア",
+    "code": "SW/S49-003re",
+    "rarity": "RR",
+    "expansion": "STAR WARS",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "助けて、オビ=ワン・ケノービ。あなただけが頼りです",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「Medal Ceremony」があるなら、あなたは自分のキャラを1枚選び、そのターン中、ソウルを＋1し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "New Hope 《新たなる希望》"
+    ],
+    "set": "SW",
+    "release": "S49",
+    "sid": "003re",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sw_s49/sw_s49_003re.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "赋予自身+1魂与取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "per_turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "赋予其他角色+1魂与取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "per_turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“シスの暗黒卿”ダース・ベイダー",
+    "code": "SW/S49-055re",
+    "rarity": "RR",
+    "expansion": "STAR WARS",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "仲間になれ。修行を完成させてやる",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘは相手のキャラの枚数に等しい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「I am your father.」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Empire Strike Back 《帝国の逆襲》"
+    ],
+    "set": "SW",
+    "release": "S49",
+    "sid": "055re",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sw_s49/sw_s49_055re.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“覚醒”レイ",
+    "code": "SW/S49-088re",
+    "rarity": "RR",
+    "expansion": "STAR WARS",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "マズ・カナタ「あのライトセーバーは、ルークの物だよ。その前はルークの父親の物だった、そして今、お前を呼んでいる」",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋1500。",
+      "【自】［あなたの控え室の「Lightsaber」を1枚このカードの下にマーカーとして表向きに置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「The Force Awakens」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Force Awaken 《フォースの覚醒》"
+    ],
+    "set": "SW",
+    "release": "S49",
+    "sid": "088re",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sw_s49/sw_s49_088re.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 再攻击一次",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夢を追う若者”ルーク",
+    "code": "SW/S49-089re",
+    "rarity": "RR",
+    "expansion": "STAR WARS",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "レイア「彼には彼の行く道があるのよ。他人がそれを選ぶことはできないわ」",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、自分の控え室の「Lightsaber」を1枚まで選び、このカードの下にマーカーとして表向きに置く。",
+      "【自】【CXコンボ】［このカードの下のマーカーを1枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「A New Hope」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "New Hope 《新たなる希望》"
+    ],
+    "set": "SW",
+    "release": "S49",
+    "sid": "089re",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sw_s49/sw_s49_089re.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"力への渇望\"アナキン",
+    "code": "SW/SE39-015",
+    "rarity": "N",
+    "expansion": "Star Wars Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを思い出にしてよい。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から5枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋2000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revenge of the Sith"
+    ],
+    "set": "SW",
+    "release": "SE39",
+    "sid": "015",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sw_se39/sw_se39_015.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アタック時効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払い、山札下5枚を見てCXの枚数ダメージ",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 5,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

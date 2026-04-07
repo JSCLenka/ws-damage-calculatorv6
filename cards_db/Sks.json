@@ -1,0 +1,205 @@
+[
+  {
+    "name": "サマーバケーション めぐみん",
+    "code": "Sks/W123-093",
+    "rarity": "C",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 あなたのアタックフェイズの始めに、CX置場に「爆裂魔法」があり、他のあなたの前列のキャラがいないなら、そのターン中、このカードのパワーを＋3000し、このカードは次の能力を得る。『【自】［(1) 手札を2枚控え室に置き、他のあなたの「冒険者（最弱職） カズマ」の下のマーカーを1枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを好きな回数払う。相手に4ダメージをＸ回与える。Ｘはこの能力のコストを払った回数＋3に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "Adventurer",
+      "Magic"
+    ],
+    "set": "Sks",
+    "release": "W123",
+    "sid": "093",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sks_w123/sks_w123_093.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ不発",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動 (前列に他のキャラがいない)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "コスト0回払い: 4点ダメージ x3回",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 3
+                  }
+                ]
+              },
+              {
+                "label": "コスト1回払い: 4点ダメージ x4回",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 4
+                  }
+                ]
+              },
+              {
+                "label": "コスト2回払い: 4点ダメージ x5回",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 5
+                  }
+                ]
+              },
+              {
+                "label": "コスト3回払い: 4点ダメージ x6回",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 6
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アークプリースト（駄女神） アクア",
+    "code": "Sks/W123-102",
+    "rarity": "RR",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの、《スニーカー文庫》か《冒険者》か《女神》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「乾杯！」があり、他のあなたのキャラが2枚以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを与える。』『［(2)］ あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードは次の能力を得る。『【永】 このカードの正面のキャラはプレイヤーにダメージを与えることができない。』』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "Adventurer",
+      "Goddess"
+    ],
+    "set": "Sks",
+    "release": "W123",
+    "sid": "102",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sks_w123/sks_w123_102.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击效果: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击效果: 赋予对手攻击无效(无伤害)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "サマーバケーション アクア",
+    "code": "Sks/W123-123",
+    "rarity": "C",
+    "expansion": "Kadokawa Sneaker Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 4500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの「アークプリースト（駄女神） アクア」すべてに、レベルを－1し、パワーを＋1500。",
+      "【永】 他のあなたの、《スニーカー文庫》か《冒険者》か《女神》のキャラすべてに、パワーを＋500。",
+      "【自】 加速 ［(2) あなたの控え室の、《スニーカー文庫》か《冒険者》か《女神》のキャラを1枚クロック置場の下に置き、【スタンド】しているこのカードを【レスト】する］ あなたのアンコールステップの始めに、他のあなたの「アークプリースト（駄女神） アクア」がいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Sneaker Bunko",
+      "Adventurer",
+      "Goddess"
+    ],
+    "set": "Sks",
+    "release": "W123",
+    "sid": "123",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/s/sks_w123/sks_w123_123.png",
+    "effects": [
+      {
+        "trigger": "OnEncoreStep",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない/条件を満たさない",
+            "instructions": []
+          },
+          {
+            "label": "他の「アクア」がいて効果を発動: 相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

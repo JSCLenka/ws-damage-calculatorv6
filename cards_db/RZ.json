@@ -1,0 +1,1917 @@
+[
+  {
+    "name": "\"暴食の魔女\" ダフネ",
+    "code": "RZ/S116-007",
+    "rarity": "R",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 4000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは相手のキャラの枚数×2000に等しい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Witch"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_007.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)费弃2手，清空费用，烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "知識欲の権化 エキドナ",
+    "code": "RZ/S116-008",
+    "rarity": "R",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、あなたは相手の控え室のカードを1枚まで選び、山札の上か下に置く。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置き、あなたのCX置場の「知識欲の発露」を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚選び、【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic",
+      "Witch"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_008.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アタック時効果：発動しない",
+            "instructions": []
+          },
+          {
+            "label": "アタック時効果：相手の控え室のカード1枚を山札の上に置く",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ：発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ：他のキャラ（ソウル1）をスタンド",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ：他のキャラ（ソウル2）をスタンド",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"怠惰の魔女\" セクメト",
+    "code": "RZ/S116-012",
+    "rarity": "U",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 1500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《魔法》か《武器》のキャラすべてに、パワーを＋2000。",
+      "【自】［【スタンド】しているこのカードを【レスト】する］ あなたのアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたのキャラすべてに、そのターン中、ソウルを＋1。このカードは次のあなたのスタンドフェイズに【スタンド】しない。"
+    ],
+    "attributes": [
+      "Magic",
+      "Witch"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_012.png",
+    "effects": [
+      {
+        "trigger": "OnAttackPhaseStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动能力：全体角色魂+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动能力",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"憤怒の魔女\" ミネルヴァ",
+    "code": "RZ/S116-013",
+    "rarity": "U",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《魔法》か《武器》のキャラが4枚以上なら、このカードのパワーを＋5000し、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』",
+      "【自】［(1)］ このカードがアタックした時、あなたのキャラすべてが《魔法》か《武器》なら、あなたはコストを払ってよい。そうしたら、あなたは相手に1ダメージを与えるか、自分のクロックの上から1枚を、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Witch"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "013",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_013.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付1费，对对手造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "支付1费，回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "導き出した答え エミリア",
+    "code": "RZ/S116-027",
+    "rarity": "RR",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場に、「温かな愛情 エミリア＆フォルトナ」と「立ちはだかる“試練”」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】 あなたのCX置場に「月下、出鱈目なステップ」が置かれた時、あなたの手札が6枚以下なら、次の相手のターンの終わりまで、このカードは次の3つの能力を得る。『【永】 このカードのバトル中、相手は『助太刀』を手札からプレイできない。』『【永】 このカードは【リバース】しない。』『【自】［(1) 手札の緑のカードを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Celestial Spirit"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "027",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_027.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "手札6枚以下でCXコンボ発動",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "コストを払い4点ダメージ",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 4,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "コストを払わない",
+                    "instructions": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "手札7枚以上 (CXコンボ不発)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "感情の発露 エミリア",
+    "code": "RZ/S116-036",
+    "rarity": "U",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 6500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの後列の、《魔法》か《武器》のキャラ1枚につき、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「信じる理由」があり、他のあなたの「心の底からの愛の言葉 スバル」がいるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Magic",
+      "Celestial Spirit"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "036",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_036.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (查看0张)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 查看对手牌顶1张",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 1,
+                "wr_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 查看对手牌顶2张",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Happy Christmas パック",
+    "code": "RZ/S116-037",
+    "rarity": "U",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、次の行動を2回行う。『あなたは相手のレベル1以上のキャラを1枚選んでよい。そうしたら、相手は自分の控え室のレベルＸ以下のキャラを1枚選び、入れ替える。Ｘはあなたが選んだキャラのレベル－1に等しい。』",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Celestial Spirit"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "037",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_037.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动能力或未能击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1手1费)并击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "可憐で壮健な姉メイド ラム",
+    "code": "RZ/S116-048",
+    "rarity": "RR",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 7500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの、《魔法》か《武器》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋3500し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを思い出にしてよい。』",
+      "【自】［あなたの控え室の「可憐で壮健な姉メイド ラム」を1枚このカードの下にマーカーとして裏向きに置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Maid"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "048",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_048.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"その人\"を待って ベアトリス",
+    "code": "RZ/S116-049",
+    "rarity": "RR",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、自分の思い出置場の「叡智の書」を1枚まで選び、このカードの下にマーカーとして表向きに置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「四百年越しの選択」があり、他のあなたの、《魔法》か《武器》のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを与える。』『［(1) 手札を2枚控え室に置く］ あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Book"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_049.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回復しない",
+            "instructions": []
+          },
+          {
+            "label": "1点回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室1枚を山札の上に置き、4ダメージ",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "魔法少女 愛夢",
+    "code": "RZ/S116-055",
+    "rarity": "R",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 すべての領域にあるこのカードのカード名は「ラム」としても扱う。",
+      "【自】［手札の、《魔法》か《武器》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「魔法少女 恋夢」を1枚選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】［あなたのCX置場の「心で繋がる不変の絆」を1枚控え室に置く］ あなたのアンコールステップの始めに、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Maid"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "055",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_055.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(安可步骤): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "妄執より奪う好機 ラム",
+    "code": "RZ/S116-061",
+    "rarity": "U",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 8000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたの、「魔女への妄執 ロズワール」か「現した本性 ロズワール」の下のマーカーを1枚控え室に置く］ このカードがアタックした時、他のあなたの、《魔法》か《武器》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、あなたは自分の山札の上から1枚を公開する。そのカードが《魔法》か《武器》のキャラなら、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Magic",
+      "Maid"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "061",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_061.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付Cost",
+            "instructions": []
+          },
+          {
+            "label": "支付Cost: 翻顶，若为《魔法》或《武器》角色则造成其等级的伤害",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 0
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "煌びやかな和装 エミリア",
+    "code": "RZ/S116-P01",
+    "rarity": "PR",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Celestial Spirit"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "P01",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_p01.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(2费2手): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "煌びやかな和装 エミリア",
+    "code": "RZ/S116-P01S",
+    "rarity": "PR",
+    "expansion": "Re:Zero - Vol.3",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic",
+      "Celestial Spirit"
+    ],
+    "set": "RZ",
+    "release": "S116",
+    "sid": "P01S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/r/rz_s116/rz_s116_p01s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用：造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "王選候補者 フェルト",
+    "code": "RZ/S46-001",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "また後でな、ロム爺",
+    "ability": [
+      "【永】 他のあなたの、《魔法》か《武器》のキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードがアタックした時、あなたは自分の山札を見て《魔法》か《武器》のキャラを1枚まで選んで相手に見せ、ストック置場に置き、その山札をシャッフルする。",
+      "【自】［(2)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Double Tooth 《八重歯》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "001",
+    "image": "https://images.littleakiba.com/tcg/card33504-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)，赋予自身取消烧1效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "剣聖 ラインハルト",
+    "code": "RZ/S46-007",
+    "rarity": "R",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "武器を失ったのなら、投降をおすすめします",
+    "ability": [
+      "【永】 大活躍 （相手がアタックする時、【リバース】していないこのカードが前列の中央の枠にいるなら、かわりに相手はこのカードにフロントアタックする）",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上で、他のあなたのキャラがいないなら、このカードのパワーを＋10000し、このカードは次の5つの能力を得る。『【永】 このカードは相手の効果に選ばれず、相手のキャラの【自】の効果によって【リバース】されない。』『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを思い出にしてよい。』『【自】［手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』『【自】 相手のアタックフェイズの始めに、あなたはこのカードを前列のキャラのいない枠に動かしてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Knight 《騎士》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "007",
+    "image": "https://images.littleakiba.com/tcg/card33510-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(经验6+单骑) & 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "腸狩り エルザ",
+    "code": "RZ/S46-025",
+    "rarity": "C",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6500",
+    "soul": 1,
+    "flavor_text": "どうしたの？\nそんなに怖がらなくても何もしないのだけれど",
+    "ability": [
+      "【自】 このカードがアタックした時、このカードの正面のキャラのレベルが3以上なら、そのターン中、このカードのパワーを＋4000し、ソウルを＋1。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたは相手の山札を上から2枚まで見て、山札の上に好きな順番で置く。"
+    ],
+    "attributes": [
+      "Weapon 《武器》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "025",
+    "image": "https://images.littleakiba.com/tcg/card33528-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "正面角色非3级以上",
+            "instructions": []
+          },
+          {
+            "label": "正面角色为3级以上: +1魂",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "桃色髪のメイド ラム",
+    "code": "RZ/S46-030",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ラムが可愛い？ 当然のことね",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】 あなたのクライマックス置場に「ナツキ・スバル囮大作戦」が置かれた時、前列にこのカードがいるなら、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルし、そのターン中、このカードのパワーを＋3000。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Maid 《メイド》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "030",
+    "image": "https://images.littleakiba.com/tcg/card33537-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连动『ナツキ・スバル囮大作戦』: 未发动",
+            "instructions": []
+          },
+          {
+            "label": "CX连动: 对手2张非CX卡从休息室洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击时效果: 不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "攻击时效果: 支付[2费+1手牌]烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "可憐な少女 ベアトリス",
+    "code": "RZ/S46-031",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "にーちゃとベティーの時間は邪魔させないかしら",
+    "ability": [
+      "【永】 あなたのキャラすべてが《魔法》か《武器》なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 記憶 ［(1)］ 相手のアタックフェイズの始めに、あなたの思い出置場に「禁書庫」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分の、《魔法》か《武器》のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替え、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Book 《本》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "031",
+    "image": "https://images.littleakiba.com/tcg/card33538-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "パックと一緒 ベアトリス",
+    "code": "RZ/S46-043",
+    "rarity": "U",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "6000",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの、《魔法》か《武器》のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「マナドレイン」があり、他のあなたの、《魔法》か《武器》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Book 《本》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card33550-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件/不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连动: 烧1 (未击倒对手或选择不置顶)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连动: 烧1 + 击倒对手并置顶",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToTop"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ナツキ・スバル",
+    "code": "RZ/S46-068",
+    "rarity": "R",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "3000",
+    "soul": 3,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 大活躍 （相手がアタックする時、【リバース】していないこのカードが前列の中央の枠にいるなら、かわりに相手はこのカードにフロントアタックする）",
+      "【自】 記憶 あなたのクライマックスフェイズの始めに、あなたの思い出置場に「ナツキ・スバル」があるなら、あなたは自分の、《魔法》か《武器》のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 記憶 ［(7) 手札を4枚と、手札の「鬼がかったやり方」を1枚控え室に置き、このカードを思い出にする］ アンコールステップの始めに、あなたの思い出置場に「死に戻り」があり、このカードが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックすべてを、控え室に置き、すべてのプレイヤーは自分のキャラすべてを、手札に戻し、自分の控え室のカードすべてを、山札に戻す。その後、あなたは自分の山札を見て「ナツキ・スバル」を1枚まで選び、このカードがいた枠に置き、それらの山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Death 《死》",
+      "Magic 《魔法》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "068",
+    "image": "https://images.littleakiba.com/tcg/card33575-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "记忆中有「ナツキ・スバル」, 发动效果烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不满足条件或不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ロズっち書庫の司書 ベアトリス",
+    "code": "RZ/S46-P02",
+    "rarity": "PR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 1,
+    "flavor_text": "アレの妹なんて願い下げかしら",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《魔法》か《武器》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の、《魔法》か《武器》のキャラを1枚選び、そのターン中、パワーを＋1500。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Book 《本》"
+    ],
+    "set": "RZ",
+    "release": "S46",
+    "sid": "P02",
+    "image": "https://images.littleakiba.com/tcg/card33638-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "公開したカードが対象外、または効果を使わない",
+            "instructions": []
+          },
+          {
+            "label": "公開したカードが対象：1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "輝く竜歴石 フェルト",
+    "code": "RZ/S55-002",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［あなたの舞台の黄のキャラを3枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「やってやるよ、王選」があり、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「剣聖 ラインハルト」を1枚まで選び、舞台の好きな枠に【レスト】して置き、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Double Tooth 《八重歯》"
+    ],
+    "set": "RZ",
+    "release": "S55",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card45648-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "Activate",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX联动",
+            "instructions": []
+          },
+          {
+            "label": "发动CX联动 (支付3黄角色cost): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不意のいたずら ベアトリス",
+    "code": "RZ/S55-035",
+    "rarity": "R",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "スバル「びよーん」",
+    "ability": [
+      "【自】 他のあなたの、《魔法》か《武器》のキャラがアタックした時、そのターン中、このカードのパワーを＋1000。",
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「秘密の私室」があり、他のあなたのカード名に「ベアトリス」を含むキャラが2枚以上なら、そのターン中、このカードのパワーを＋3500し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Book 《本》"
+    ],
+    "set": "RZ",
+    "release": "S55",
+    "sid": "035",
+    "image": "https://images.littleakiba.com/tcg/card45681-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付1费：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 未击倒对手 / 不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "異世界常夏生活 レム",
+    "code": "RZ/S55-060",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "夏といえばやっぱり海ですよね♪",
+    "ability": [
+      "【永】 あなたのターン中、あなたのキャラすべてがカード名に「ラム」か「レム」を含むなら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(3) 手札のカード名に「ラム」か「レム」を含むキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「世界一の英雄」があり、あなたのキャラすべてがカード名に「ラム」か「レム」を含むなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、そのターン中、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Maid 《メイド》"
+    ],
+    "set": "RZ",
+    "release": "S55",
+    "sid": "060",
+    "image": "https://images.littleakiba.com/tcg/card45707-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：再攻击一次",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "相思相愛？エミリア＆パック",
+    "code": "RZ/S55-P09",
+    "rarity": "PR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私が好きなのはパックで、パックが好きなのは私。お話おしまい",
+    "ability": [
+      "【永】 あなたのキャラすべてが《魔法》か《武器》なら、このカードのパワーを＋1000。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Spirit 《精霊》"
+    ],
+    "set": "RZ",
+    "release": "S55",
+    "sid": "P09",
+    "image": "https://images.littleakiba.com/tcg/card56601-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 支付费用并再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "相思相愛？エミリア＆パック",
+    "code": "RZ/S55-P09S",
+    "rarity": "PR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私が好きなのはパックで、パックが好きなのは私。お話おしまい",
+    "ability": [
+      "【永】 あなたのキャラすべてが《魔法》か《武器》なら、このカードのパワーを＋1000。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Spirit 《精霊》"
+    ],
+    "set": "RZ",
+    "release": "S55",
+    "sid": "P09S",
+    "image": "https://images.littleakiba.com/tcg/card56602-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "超芸術家 ラム",
+    "code": "RZ/S68-025",
+    "rarity": "R",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu -Memory Snow-",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの「素晴らしきスバワール様像」がいるなら、このカードのパワーを＋2000。",
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「理想の融合 レム」を1枚選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「期待の眼差し」があり、他のあなたの《Memory Snow》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Memory Snow 《Memory Snow》"
+    ],
+    "set": "RZ",
+    "release": "S68",
+    "sid": "025",
+    "image": "https://images.littleakiba.com/tcg/card54549-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击条件达成: 击倒对手",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Memory Snow”エミリア",
+    "code": "RZ/S68-057",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu -Memory Snow-",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《Memory Snow》のキャラが2枚以上なら、あなたは自分のクロック置場のキャラを1枚選び、思い出にしてよい。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「穏やかな時間」があり、他のあなたの《Memory Snow》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、次の効果のうちあなたが選んだ1つを行う。『あなたは相手のストックすべてを、控え室に置き、相手は自分の山札の上から同じ枚数をストック置場に置き、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋6000。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Memory Snow 《Memory Snow》"
+    ],
+    "set": "RZ",
+    "release": "S68",
+    "sid": "057",
+    "image": "https://images.littleakiba.com/tcg/card54581-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件を満たす (他の《Memory Snow》2枚以上): クロックから思い出へ(1点回復)",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "条件を満たさない、または効果を使用しない",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "バトル相手をリバースさせなかった",
+            "instructions": []
+          },
+          {
+            "label": "バトル相手をリバースさせた (CXコンボ)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "効果選択: 相手のストックを全て入れ替える",
+                "instructions": [
+                  {
+                    "op": "StockSwap"
+                  }
+                ]
+              },
+              {
+                "label": "効果選択: 相手に2ダメージ",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "理想の融合 レム",
+    "code": "RZ/S68-067",
+    "rarity": "R",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu -Memory Snow-",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「超芸術家 ラム」の【自】の効果で舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《Memory Snow》のキャラの枚数に等しい。",
+      "【自】［(1)］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、他のあなたの「素晴らしきスバワール様像」がいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Memory Snow 《Memory Snow》"
+    ],
+    "set": "RZ",
+    "release": "S68",
+    "sid": "067",
+    "image": "https://images.littleakiba.com/tcg/card54591-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "场上没有其他「素晴らしきスバワール様像」",
+            "instructions": []
+          },
+          {
+            "label": "场上有其他「素晴らしきスバワール様像」",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "per_turn": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "契約者と精霊 エミリア＆パック",
+    "code": "RZ/SE35-04",
+    "rarity": "RR",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna-",
+    "side": "SE",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "エミリア「当然でしょ。だって、パックは私と契約したんだし」",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場の、《魔法》か《武器》のキャラが2枚以上なら、このカードのパワーを＋3000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「二人のこれから」が置かれた時、そのターン中、このカードは次の2つの能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラをクロック置場に置いてよい。』『【自】［手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Spirit 《精霊》"
+    ],
+    "set": "RZ",
+    "release": "SE35",
+    "sid": "04",
+    "image": "https://images.littleakiba.com/tcg/card60148-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击角色",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手",
+                "instructions": []
+              },
+              {
+                "label": "击倒对手 -> 将其送入时计区",
+                "instructions": [
+                  {
+                    "op": "OppReverseToClock"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "直接攻击 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "必死の抵抗 エミリア",
+    "code": "RZ/SE35-15",
+    "rarity": "R",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna-",
+    "side": "SE",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "やめて！　私にだけ、かかってきなさい！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Spirit 《精霊》"
+    ],
+    "set": "RZ",
+    "release": "SE35",
+    "sid": "15",
+    "image": "https://images.littleakiba.com/tcg/card60159-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 给予对手5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“調停者”メラクェラ",
+    "code": "RZ/SE35-45",
+    "rarity": "U",
+    "expansion": "Re:Zero kara Hajimeru Isekai Seikatsu: Hyouketsu no Kizuna-",
+    "side": "SE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "四大、異物、終焉の獣――",
+    "ability": [
+      "【永】 このカードと同じカード名のカードは、デッキに7枚まで入れることができる。",
+      "【永】 経験 あなたのレベル置場の「“調停者”メラクェラ」1枚につき、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「焼き尽くす劫火」があるなら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）",
+      "【自】 バトル中のこのカードが【リバース】した時、このカードを思い出にする。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Spirit 《精霊》"
+    ],
+    "set": "RZ",
+    "release": "SE35",
+    "sid": "45",
+    "image": "https://images.littleakiba.com/tcg/card60138-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手",
+                "instructions": []
+              },
+              {
+                "label": "条件达成: 击倒对手 -> 角色推顶",
+                "instructions": [
+                  {
+                    "op": "OppReverseToTop"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,631 @@
+[
+  {
+    "name": "最高のライブ サキ",
+    "code": "ZLS/W93-006",
+    "rarity": "R",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 経験 このカードが手札から舞台に置かれた時、あなたのレベル置場に「運命へのリベンジ」があり、他のあなたの《SAGA》のキャラがいるなら、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 共鳴 ［(2) 手札を1枚控え室に置き、手札の「運命へのリベンジ」を1枚公開する］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「なんこれ…」があり、他のあなたの《SAGA》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "006",
+    "image": "https://images.littleakiba.com/tcg/card70697-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付费用，重置角色进行额外攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "突然のゾンビばれ 純子",
+    "code": "ZLS/W93-030",
+    "rarity": "R",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "こういう瞬間って、突然やってくるんですね…",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の「修復中」を1枚選び、このカードの下にマーカーとして表向きに置いてよい。",
+      "【自】【CXコンボ】［このカードの下のマーカーを1枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「50と4つの忘れ物」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "030",
+    "image": "https://images.littleakiba.com/tcg/card70730-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "源 さくら",
+    "code": "ZLS/W93-047",
+    "rarity": "RR",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私は絶対にあきらめん",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「部屋着でリラックス」があり、他のあなたの《SAGA》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手に1ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手の山札の上から3枚を、クロック置場に置いてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "047",
+    "image": "https://images.littleakiba.com/tcg/card70750-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果: 回血1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (烧1→取消烧2→取消踢3)",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1,
+                "on_cancel": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 2,
+                    "on_cancel": [
+                      {
+                        "op": "ClockShoot",
+                        "amount": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最高のライブ さくら",
+    "code": "ZLS/W93-052",
+    "rarity": "R",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "4500",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 あなたのアタックフェイズの始めに、あなたの控え室に「運命へのリベンジ」があるなら、次の相手のターンの終わりまで、このカードは次の能力を得る。『【永】 他のあなたの《SAGA》のキャラすべてに、パワーを＋2000。』",
+      "【自】【CXコンボ】 記憶 経験 ［(1)］ あなたのクライマックス置場に「部屋着でリラックス」が置かれた時、他のあなたの《SAGA》のキャラがいて、あなたのレベル置場に「運命へのリベンジ」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上からＸ枚まで見て、カードをＸ枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。Ｘはあなたの思い出置場の「“フランシュシュ”さくら」の枚数に等しい。"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card70760-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 回忆区“さくら”x1，摩卡1",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 1,
+                "wr_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区“さくら”x2，摩卡2",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区“さくら”x3，摩卡3",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区“さくら”x4+，摩卡4",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 4,
+                "wr_amount": 4
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“フランシュシュ”サキ",
+    "code": "ZLS/W93-054",
+    "rarity": "R",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手のキャラを1枚まで選び、手札に戻す。あなたは自分の手札を1枚選び、控え室に置いてよい。そうしたら、あなたは相手のキャラを1枚選び、手札に戻す。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "054",
+    "image": "https://images.littleakiba.com/tcg/card70763-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 / 非直接攻击",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1费弃1手): 直接攻击时烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "伝説の花魁 ゆうぎり",
+    "code": "ZLS/W93-055",
+    "rarity": "R",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《SAGA》のキャラか「運命へのリベンジ」なら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「水着でバカンス」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "055",
+    "image": "https://images.littleakiba.com/tcg/card70765-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "トップ公開成功: 相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "伝説の平成のアイドル 水野愛",
+    "code": "ZLS/W93-074",
+    "rarity": "RR",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「最高のライブ 純子」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「可憐な花嫁」が置かれた時、前列にこのカードがいて、他のあなたの《SAGA》のキャラが2枚以上なら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000し、次の能力を与える。『【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "074",
+    "image": "https://images.littleakiba.com/tcg/card70789-large.jpg",
+    "effects": [
+      {
+        "trigger": "Manual",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场回血效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果: 回血1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "伝説の山田たえ",
+    "code": "ZLS/W93-079",
+    "rarity": "R",
+    "expansion": "Zombie Land Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 今日が現地時間の3月8日で、あなたと相手が佐賀県にいるなら、このカードのパワーを＋10000。",
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の《SAGA》のキャラを3枚まで選び、そのターン中、パワーを＋500し、ソウルを＋1。"
+    ],
+    "attributes": [
+      "《SAGA》",
+      "Music 《音楽》"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "079",
+    "image": "https://images.littleakiba.com/tcg/card70798-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 对手逆压缩 (留1张CX)",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动攻击时效果",
+            "instructions": []
+          },
+          {
+            "label": "发动攻击时效果: 1位角色魂+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "发动攻击时效果: 2位角色魂+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "发动攻击时效果: 3位角色魂+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"大河よ共に泣いてくれ\"愛",
+    "code": "ZLS/W93-T07",
+    "rarity": "TD",
+    "expansion": "Zombieland Saga Revenge",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《SAGA》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのトリガーチェックでトリガーアイコンにがあるカードがでた時、相手に3ダメージを与え、そのターン中、このカードのパワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "SAGA",
+      "音楽"
+    ],
+    "set": "ZLS",
+    "release": "W93",
+    "sid": "T07",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/z/zls_w93/zls_w93_t07.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "limit": "once_per_turn",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非本卡登场回合",
+            "instructions": []
+          },
+          {
+            "label": "在本卡登场的回合攻击",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未触发[魂]icon",
+                "instructions": []
+              },
+              {
+                "label": "触发[魂]icon -> 烧3",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,151 @@
+[
+  {
+    "name": "“空蝉の極意”猿飛 佐助",
+    "code": "SB/S06-054",
+    "rarity": "R",
+    "expansion": "Sengoku Basara",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7000",
+    "soul": 1,
+    "flavor_text": "いざ忍び参る！",
+    "ability": [
+      "【自】［(4)］ バトル中のこのカードが【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【レスト】し、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Ninja 《忍》",
+      "Weapon 《武器》"
+    ],
+    "set": "SB",
+    "release": "S06",
+    "sid": "054",
+    "image": "https://images.littleakiba.com/tcg/card2857-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "此卡未被击倒",
+            "instructions": []
+          },
+          {
+            "label": "此卡被击倒 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“神速聖将”上杉 謙信",
+    "code": "SB/S06-077",
+    "rarity": "RR",
+    "expansion": "Sengoku Basara",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "がいしゅういっしょく、わけもなし",
+    "ability": [
+      "【自】［(3) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動できる。このカードとバトル中のキャラが【リバース】した時、あなたのクライマックス置場に「疾風迅雷」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Rose 《薔薇》"
+    ],
+    "set": "SB",
+    "release": "S06",
+    "sid": "077",
+    "image": "https://images.littleakiba.com/tcg/card2984-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(击倒对手/CX在场/支付费用) -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“頼れるアニキ”長曾我部 元親",
+    "code": "SB/S06-T12",
+    "rarity": "TD",
+    "expansion": "Sengoku Basara",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "鬼にかなうヤツなんか、この世にいやしねえのさ",
+    "ability": [
+      "【自】［(2)］ あなたがこのカードの『助太刀』を使った時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Eyepatch 《眼帯》"
+    ],
+    "set": "SB",
+    "release": "S06",
+    "sid": "T12",
+    "image": "https://images.littleakiba.com/tcg/card2870-large.jpg",
+    "effects": [
+      {
+        "trigger": "ActivatedAbility",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用'助太刀'效果",
+            "instructions": []
+          },
+          {
+            "label": "使用'助太刀'效果: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

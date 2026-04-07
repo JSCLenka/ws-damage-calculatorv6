@@ -1,0 +1,405 @@
+[
+  {
+    "name": "勇気をありがとう タケミチ",
+    "code": "TRV/S92-003",
+    "rarity": "RR",
+    "expansion": "Tokyo Revengers",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「勇気をありがとう タケミチ」の【CXコンボ】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置き、このカードを思い出にする］ このカードのアタックの終わりに、クライマックス置場に「タイムリープ」があり、他のあなたの「トリガー ナオト」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のカード名に「タケミチ」を含むキャラを1枚選び、このカードがいた枠に置く。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時か「勇気をありがとう タケミチ」の【CXコンボ】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置き、このカードを思い出にする］ このカードのアタックの終わりに、クライマックス置場に「タイムリープ」があり、他のあなたの「トリガー ナオト」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のカード名に「タケミチ」を含むキャラを1枚選び、このカードがいた枠に置く。"
+    ],
+    "attributes": [
+      "Revenge"
+    ],
+    "set": "TRV",
+    "release": "92",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/trv_s92/trv_s92_003.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 将另一张「タケミチ」登场并再次攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "お子様セット マイキー",
+    "code": "TRV/S92-008",
+    "rarity": "R",
+    "expansion": "Tokyo Revengers",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《リベンジ》のキャラを1枚選び、このカードの下にマーカーとして裏向きに置いてよい。",
+      "【自】［このカードの下のマーカーすべてを山札の下に好きな順番で置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージをＸ回与える。Ｘはこの能力のコストで山札の下に置かれたマーカーの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】［(1)］ アンコールステップの始めに、他のあなたの前列の【レスト】しているキャラがいないなら、あなたはコストを払ってよい。そうしたら、このカードを【レスト】する。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《リベンジ》のキャラを1枚選び、このカードの下にマーカーとして裏向きに置いてよい。",
+      "【自】［このカードの下のマーカーすべてを山札の下に好きな順番で置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージをＸ回与える。Ｘはこの能力のコストで山札の下に置かれたマーカーの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】［(1)］ アンコールステップの始めに、他のあなたの前列の【レスト】しているキャラがいないなら、あなたはコストを払ってよい。そうしたら、このカードを【レスト】する。"
+    ],
+    "attributes": [
+      "Revenge",
+      "Flag"
+    ],
+    "set": "TRV",
+    "release": "92",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/trv_s92/trv_s92_008.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付COST(标记=1): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "支付COST(标记=2): 烧1, 2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "支付COST(标记=3): 烧1, 3次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          },
+          {
+            "label": "支付COST(标记=4): 烧1, 4次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 4
+              }
+            ]
+          },
+          {
+            "label": "支付COST(标记=5): 烧1, 5次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不良の時代 マイキー",
+    "code": "TRV/S92-035",
+    "rarity": "RR",
+    "expansion": "Tokyo Revengers",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(3) 手札を1枚控え室に置き、手札の「不良の時代 マイキー」を1枚公開する］ このカードのアタックの終わりに、クライマックス置場に「不良の時代」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、パワーの合計がＸ以下になるようにキャラを3枚まで選び、クロック置場に好きな順番で置き、残りのカードを控え室に置く。Ｘはこのカードのパワーに等しい。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(3) 手札を1枚控え室に置き、手札の「不良の時代 マイキー」を1枚公開する］ このカードのアタックの終わりに、クライマックス置場に「不良の時代」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から3枚まで見て、パワーの合計がＸ以下になるようにキャラを3枚まで選び、クロック置場に好きな順番で置き、残りのカードを控え室に置く。Ｘはこのカードのパワーに等しい。"
+    ],
+    "attributes": [
+      "Revenge"
+    ],
+    "set": "TRV",
+    "release": "92",
+    "sid": "035",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/trv_s92/trv_s92_035.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【CX连击】不发动或未能满足条件选择角色",
+            "instructions": []
+          },
+          {
+            "label": "【CX连击】选择1张角色踢入时计区",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "【CX连击】选择2张角色踢入时计区",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "【CX连击】选择3张角色踢入时计区",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "こんな毎日が マイキー&ドラケン",
+    "code": "TRV/S92-036",
+    "rarity": "RR",
+    "expansion": "Tokyo Revengers",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Revenge"
+    ],
+    "set": "TRV",
+    "release": "92",
+    "sid": "036",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/trv_s92/trv_s92_036.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费，弃2手: 烧2，对手坟1张置顶",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "一人で戦況を変える ドラケン",
+    "code": "TRV/S92-T18",
+    "rarity": "TD",
+    "expansion": "Tokyo Revengers",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《リベンジ》のキャラの枚数に等しい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から7枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《リベンジ》のキャラの枚数に等しい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から7枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "リベンジ"
+    ],
+    "set": "TRV",
+    "release": "92",
+    "sid": "T18",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/trv_s92/trv_s92_t18.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌：削顶7张，每有1张CX就烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 7,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "大事にしてやれよ マイキー",
+    "code": "TRV/S92-T19",
+    "rarity": "TD",
+    "expansion": "Tokyo Revengers",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《リベンジ》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、手札に戻す。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「オマエもついてこい」があるなら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】［手札の《リベンジ》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、手札に戻す。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「オマエもついてこい」があるなら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "リベンジ"
+    ],
+    "set": "TRV",
+    "release": "92",
+    "sid": "T19",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/trv_s92/trv_s92_t19.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  }
+]

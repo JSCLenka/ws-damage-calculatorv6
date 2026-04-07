@@ -1,0 +1,576 @@
+[
+  {
+    "name": "“宝石魔術の使い手”凛",
+    "code": "PI/S40-004",
+    "rarity": "RR",
+    "expansion": "Fate/kaleid liner Prisma ☆ Illya 2wei Herz",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "最大火力をもって初撃で終わらせる!!",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が4以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「打ち砕く雷神の指」があり、あなたのキャラすべてが《宝石》なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》"
+    ],
+    "set": "PI",
+    "release": "S40",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card26758-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "金髪の少年",
+    "code": "PI/S40-024",
+    "rarity": "U",
+    "expansion": "Fate/kaleid liner Prisma ☆ Illya 2wei Herz",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5000",
+    "soul": 1,
+    "flavor_text": "さあ僕と奪い合おう",
+    "ability": [
+      "【永】 他のあなたのキャラがいないなら、このカードのパワーを＋10000。",
+      "【自】［(4)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを4枚まで選び、控え室に置き、相手にＸダメージを与える。Ｘはこの効果で控え室に置かれたキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》",
+      "Treasure Tool 《宝具》"
+    ],
+    "set": "PI",
+    "release": "S40",
+    "sid": "024",
+    "image": "https://images.littleakiba.com/tcg/card26778-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "4枚控え室に置く (4ダメージ)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 4,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "3枚控え室に置く (3ダメージ)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "2枚控え室に置く (2ダメージ)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "1枚控え室に置く (1ダメージ)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "効果を使わない",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“素直になれない”クロ",
+    "code": "PI/S40-039",
+    "rarity": "C",
+    "expansion": "Fate/kaleid liner Prisma ☆ Illya 2wei Herz",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が3以上なら、このカードのパワーを＋2000。",
+      "【自】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「戦いの終わり」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはそのキャラのコストに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Weapon 《武器》"
+    ],
+    "set": "PI",
+    "release": "S40",
+    "sid": "039",
+    "image": "https://images.littleakiba.com/tcg/card26793-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (发动CX联动)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "被击倒角色的费用为0 (无伤害)",
+                "instructions": []
+              },
+              {
+                "label": "被击倒角色的费用为1: 烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "被击倒角色的费用为2: 烧2",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "被击倒角色的费用为3: 烧3",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ツヴァイフォーム”イリヤ",
+    "code": "PI/S40-053",
+    "rarity": "RR",
+    "expansion": "Fate/kaleid liner Prisma ☆ Illya 2wei Herz",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "多元重奏飽和砲撃!!!",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードがアタックした時、クライマックス置場に「多元重奏飽和砲撃」があり、このカードの下のマーカーが2枚以上で、他のあなたの《魔法》のキャラがいるなら、あなたは自分のストックすべてを、控え室に置き、そのターン中、このカードは次の2つの能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に2ダメージを与えてよい。』『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に5ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Master 《マスター》",
+      "Magic 《魔法》"
+    ],
+    "set": "PI",
+    "release": "S40",
+    "sid": "053",
+    "image": "https://images.littleakiba.com/tcg/card26807-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连动",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连动 (有多元重奏、2指示物、另有魔法角色)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "未击倒对手",
+                    "instructions": []
+                  },
+                  {
+                    "label": "击倒对手 -> 烧2, 再烧5",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      },
+                      {
+                        "op": "Burn",
+                        "amount": 5,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“爆炎弾七連”ルヴィア",
+    "code": "PI/SE18-01",
+    "rarity": "R",
+    "expansion": "Fate/kaleid liner Prisma ☆ Ilya",
+    "side": "SE",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［(3) 手札の《宝石》のキャラを1枚控え室に置く］ このカードがアタックした時、他のあなたの前列の「“轟風弾五連”凛」がいるなら、あなたはコストを払ってよい。そうしたら、相手に7ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Jewel 《宝石》",
+      "Noble Daughter 《令嬢》"
+    ],
+    "set": "PI",
+    "release": "SE18",
+    "sid": "01",
+    "image": "https://images.littleakiba.com/tcg/card10459-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "满足条件并支付费用: 烧7",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“兄としての務め”士郎",
+    "code": "PI/SE31-03",
+    "rarity": "RR",
+    "expansion": "Fate/kaleid liner Prisma ☆ Illya 3rei!!",
+    "side": "SE",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "悪いが最後まで付き合ってもらうぞ",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手の前列のレベル3以下のキャラを1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 共鳴 ［(1) 手札のカード名に「クロ」を含むキャラを1枚公開する］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたのクライマックス置場に「振り絞る力」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはこの能力のコストで公開したキャラのソウルに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Weapon 《武器》"
+    ],
+    "set": "PI",
+    "release": "SE31",
+    "sid": "03",
+    "image": "https://images.littleakiba.com/tcg/card38138-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: ソウル1の「クロ」を公開",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: ソウル2の「クロ」を公開",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: ソウル3の「クロ」を公開",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“平行世界の冒険”イリヤ",
+    "code": "PI/SE31-39",
+    "rarity": "RR",
+    "expansion": "Fate/kaleid liner Prisma ☆ Illya 3rei!!",
+    "side": "SE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの《魔法》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札の「“寝起きの様子”イリヤ＆田中」を1枚公開し、このカードの下にマーカーとして裏向きに置く］ この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「最後の希望」があり、このカードの下にマーカーがあるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Master 《マスター》",
+      "Magic 《魔法》"
+    ],
+    "set": "PI",
+    "release": "SE31",
+    "sid": "39",
+    "image": "https://images.littleakiba.com/tcg/card38190-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击（再动）",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "元気いっぱい イリヤゲンキイッパイイリヤ",
+    "code": "PI/SE36-19",
+    "rarity": "R",
+    "expansion": "Prisma Illya Phantasm",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(1) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「勝負の結末」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、次の2つの効果を好きな順番で1回ずつ行う。『あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Phantasm",
+      "Magic"
+    ],
+    "set": "PI",
+    "release": "SE36",
+    "sid": "19",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/20201224184920/pi02.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "效果顺序: 先摩卡 -> 后烧2",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "效果顺序: 先烧2 -> 后摩卡",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

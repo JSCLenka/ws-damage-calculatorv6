@@ -1,0 +1,681 @@
+[
+  {
+    "name": "\"B小町\"有馬かな",
+    "code": "OSK/S107-004",
+    "rarity": "RR",
+    "expansion": "Oshi no Ko",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(1)］ このカードがアタックした時、クライマックス置場に「その視線の先に」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手の山札の下から3枚を、控え室に置き、相手に2ダメージをＸ回与える。Ｘはそれらのカードのレベル0以下のカードの枚数に等しい。』（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Idol"
+    ],
+    "set": "OSK",
+    "release": "S107",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s107/osk_s107_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (经验6)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "MillAndBurn",
+                      "target_player": "opp",
+                      "zone": "bottom",
+                      "mill_amount": 3,
+                      "condition": "level_le_0",
+                      "mode": "per_card",
+                      "burn_amount": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "輝くステージへ ルビー",
+    "code": "OSK/S107-036",
+    "rarity": "RR",
+    "expansion": "Oshi no Ko",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 記憶 このカードが手札から舞台に置かれた時、あなたの思い出置場に「“B小町”アイ」があるなら、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「秘めた熱情」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、パワーの合計がＸ以下になるようにキャラを2枚まで選び、クロック置場に好きな順番で置き、残りのカードを控え室に置く。Ｘはあなたの思い出置場の異なるカード名のカードの枚数×4000に等しい。"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Idol"
+    ],
+    "set": "OSK",
+    "release": "S107",
+    "sid": "036",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s107/osk_s107_036.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件或不回血",
+            "instructions": []
+          },
+          {
+            "label": "回忆有“B小町”爱: 回血1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击不发动 / 效果未达成",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 踢1张卡到时计",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 踢2张卡到时计",
+            "instructions": [
+              {
+                "op": "ClockShoot",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "吸い寄せられる天性の瞳 アイ",
+    "code": "OSK/S107-044",
+    "rarity": "R",
+    "expansion": "Oshi no Ko",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《芸能界》のキャラすべてに、パワーを＋1500。",
+      "【自】［(1) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Idol"
+    ],
+    "set": "OSK",
+    "release": "S107",
+    "sid": "044",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s107/osk_s107_044.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アンコールステップ効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "アンコールステップ効果: 相手が全滅/全リバース→自山削りレベル+1バーン",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "完璧なトレース 黒川あかね",
+    "code": "OSK/S107-068",
+    "rarity": "RR",
+    "expansion": "Oshi no Ko",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 記憶 このカードがアタックした時、クライマックス置場に「徹底した役作り」があり、このカードの下にマーカーがあり、あなたの思い出置場に「“B小町”アイ」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分のクロックの上から1枚までを、ストック置場に置く。"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Actress"
+    ],
+    "set": "OSK",
+    "release": "S107",
+    "sid": "068",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s107/osk_s107_068.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不执行：从时计区顶将卡送入费用区",
+                "instructions": []
+              },
+              {
+                "label": "执行：从时计区顶将1张卡送入费用区 (回1血)",
+                "instructions": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "打ち上げ アクア",
+    "code": "OSK/S107-084",
+    "rarity": "U",
+    "expansion": "Oshi no Ko",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《芸能界》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、カードを1枚まで選び、ストック置場に置き、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(9) 手札を2枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「打算と策略のキスシーン」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを3回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Actor"
+    ],
+    "set": "OSK",
+    "release": "S107",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s107/osk_s107_084.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "絶対的センター アイ",
+    "code": "OSK/S107-T10",
+    "rarity": "TD",
+    "expansion": "Oshi no Ko",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「アイドル」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードは『【永】 大活躍 （相手がアタックする時、【リバース】していないこのカードが前列の中央の枠にいるなら、かわりに相手はこのカードにフロントアタックする）』を得る。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Idol"
+    ],
+    "set": "OSK",
+    "release": "S107",
+    "sid": "T10",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s107/osk_s107_t10.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "自分だけの色 ルビー",
+    "code": "OSK/S121-003",
+    "rarity": "RR",
+    "expansion": "Oshi no Ko Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 経験 ［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「情熱の再燃」があり、あなたのレベル置場のカードのレベルの合計が6以上で、他のあなたの《芸能界》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。このダメージがキャンセルされたなら、あなたは相手に2ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Idol"
+    ],
+    "set": "OSK",
+    "release": "S121",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s121/osk_s121_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2，若取消则追击烧2",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 2,
+                "on_cancel": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夜のお散歩 ルビー",
+    "code": "OSK/S121-015",
+    "rarity": "U",
+    "expansion": "Oshi no Ko Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、他のあなたの《芸能界》のキャラが2枚以上なら、そのターン中、このカードのパワーを＋4000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。ＸはそれらのカードのCXの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Idol"
+    ],
+    "set": "OSK",
+    "release": "S121",
+    "sid": "015",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s121/osk_s121_015.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手时发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "眩い太陽 有馬かな -ツルギ-",
+    "code": "OSK/S121-050",
+    "rarity": "U",
+    "expansion": "Oshi no Ko Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を1枚控え室に置き、他のあなたの舞台の《芸能界》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの《芸能界》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Actress"
+    ],
+    "set": "OSK",
+    "release": "S121",
+    "sid": "050",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s121/osk_s121_050.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(当回合登场/另有4张以上<艺能界>)，支付cost再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "星降る夜に 黒川あかね",
+    "code": "OSK/S121-067",
+    "rarity": "RR",
+    "expansion": "Oshi no Ko Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《芸能界》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「傷移しの鞘」があり、あなたの手札が5枚以下で、他のあなたの《芸能界》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、次の行動を3回行う。『あなたは相手の山札の下から1枚を、控え室に置く。そのカードのレベルが0以下なら、相手に1ダメージを与え、あなたは自分のクロックの上から1枚までを、控え室に置く。』（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Actress"
+    ],
+    "set": "OSK",
+    "release": "S121",
+    "sid": "067",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s121/osk_s121_067.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (手牌≤5, 其他《芸能界》≥2)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 1,
+                "condition": "level_le_0",
+                "mode": "per_card",
+                "burn_amount": 1,
+                "on_success": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 1,
+                "condition": "level_le_0",
+                "mode": "per_card",
+                "burn_amount": 1,
+                "on_success": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 1,
+                "condition": "level_le_0",
+                "mode": "per_card",
+                "burn_amount": 1,
+                "on_success": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "強烈な感情演技 アクア -刀鬼-",
+    "code": "OSK/S121-074",
+    "rarity": "R",
+    "expansion": "Oshi no Ko Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《芸能界》のキャラの枚数に等しい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Showbiz",
+      "Actor"
+    ],
+    "set": "OSK",
+    "release": "S121",
+    "sid": "074",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/o/osk_s121/osk_s121_074.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 给予对手2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
