@@ -1,0 +1,2219 @@
+[
+  {
+    "name": "ビジョンは明確 姫歌",
+    "code": "ALL/S127-010",
+    "rarity": "R",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、他のあなたの前列の「酸いも甘いも 悠夏」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードのトリガーチェックでトリガーアイコンがのCXがでた時、あなたは相手に1ダメージを与えるか、自分のクロックの上から1枚を、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Gran Epure"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "010",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_010.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果: 翻顶烧",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费,1手]发动效果: 翻顶烧(等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "触发检定: 非CX",
+            "instructions": []
+          },
+          {
+            "label": "触发检定: 触发CX",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "选择效果: 烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "选择效果: 回复1血",
+                "instructions": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビジョンは明確 姫歌",
+    "code": "ALL/S127-010S",
+    "rarity": "SR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、他のあなたの前列の「酸いも甘いも 悠夏」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードのトリガーチェックでトリガーアイコンがのCXがでた時、あなたは相手に1ダメージを与えるか、自分のクロックの上から1枚を、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Gran Epure"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "010S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_010s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果: 削顶烧血",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 削顶烧血 (等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "没有触发带[魂]的CX",
+            "instructions": []
+          },
+          {
+            "label": "触发带[魂]的CX: 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "触发带[魂]的CX: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビジョンは明確 姫歌",
+    "code": "ALL/S127-010SP",
+    "rarity": "SP",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、他のあなたの前列の「酸いも甘いも 悠夏」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードのトリガーチェックでトリガーアイコンがのCXがでた時、あなたは相手に1ダメージを与えるか、自分のクロックの上から1枚を、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Gran Epure"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "010SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_010sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果：不发动",
+            "instructions": []
+          },
+          {
+            "label": "登场效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击时效果1：不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "攻击时效果1：支付费用，削顶烧(等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击时效果2(潮魂触发)：未触发/不发动",
+            "instructions": []
+          },
+          {
+            "label": "攻击时效果2(潮魂触发)：造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "攻击时效果2(潮魂触发)：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白に輝くリリィ 夢結",
+    "code": "ALL/S127-052",
+    "rarity": "RR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《リリィ》なら、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「大切を数えよう」があり、他のあなたの《リリィ》のキャラがいるなら、そのターン中、このカードのソウルを－9し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、相手に3ダメージを与え、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Team Hitotsuyanagi"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "052",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_052.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「大切を数えよう」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白に輝くリリィ 夢結",
+    "code": "ALL/S127-052S",
+    "rarity": "SR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《リリィ》なら、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「大切を数えよう」があり、他のあなたの《リリィ》のキャラがいるなら、そのターン中、このカードのソウルを－9し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、相手に3ダメージを与え、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Team Hitotsuyanagi"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "052S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_052s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(2费2手): 烧2, 烧3, 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白に輝くリリィ 夢結",
+    "code": "ALL/S127-052SSP",
+    "rarity": "SSP",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《リリィ》なら、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「大切を数えよう」があり、他のあなたの《リリィ》のキャラがいるなら、そのターン中、このカードのソウルを－9し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、相手に3ダメージを与え、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Team Hitotsuyanagi"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "052SSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_052ssp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: コストを払い、2点→3点→4点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "探求者 ミリアム",
+    "code": "ALL/S127-061",
+    "rarity": "U",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《リリィ》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】 あなたのアタックフェイズの始めに、CX置場に「アーセナルの絆」があるなら、あなたはこのカードを【スタンド】してよい。",
+      "【自】［(1) 手札を3枚控え室に置く］ このカードがアタックした時、他のあなたの《リリィ》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Team Hitotsuyanagi"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "061",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_061.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费弃3手，烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "探求者 ミリアム",
+    "code": "ALL/S127-061S",
+    "rarity": "SR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《リリィ》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】 あなたのアタックフェイズの始めに、CX置場に「アーセナルの絆」があるなら、あなたはこのカードを【スタンド】してよい。",
+      "【自】［(1) 手札を3枚控え室に置く］ このカードがアタックした時、他のあなたの《リリィ》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Team Hitotsuyanagi"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "061S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_061s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费，弃3张手牌: 造成3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "探求者 ミリアム",
+    "code": "ALL/S127-061SP",
+    "rarity": "SP",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《リリィ》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】 あなたのアタックフェイズの始めに、CX置場に「アーセナルの絆」があるなら、あなたはこのカードを【スタンド】してよい。",
+      "【自】［(1) 手札を3枚控え室に置く］ このカードがアタックした時、他のあなたの《リリィ》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Team Hitotsuyanagi"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "061SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_061sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[① 手牌3张]: 给予对手3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ロネスネス”純",
+    "code": "ALL/S127-074",
+    "rarity": "RR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《リリィ》のキャラを1枚控え室に置く］ 控え室にこのカードがあるなら、あなたの第1ターンの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「舞い降りた姫巫女」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされなかったなら、相手に2ダメージを与える。このダメージがキャンセルされなかったなら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hronesnæsse"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "074",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_074.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "DealDamage",
+            "amount": 1,
+            "on_success": [
+              {
+                "op": "DealDamage",
+                "amount": 2,
+                "on_success": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ロネスネス”純",
+    "code": "ALL/S127-074S",
+    "rarity": "SR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《リリィ》のキャラを1枚控え室に置く］ 控え室にこのカードがあるなら、あなたの第1ターンの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「舞い降りた姫巫女」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされなかったなら、相手に2ダメージを与える。このダメージがキャンセルされなかったなら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hronesnæsse"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "074S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_074s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "DealDamage",
+            "amount": 1,
+            "on_success": [
+              {
+                "op": "DealDamage",
+                "amount": 2,
+                "on_success": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ロネスネス”純",
+    "code": "ALL/S127-074TSP",
+    "rarity": "TSP",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《リリィ》のキャラを1枚控え室に置く］ 控え室にこのカードがあるなら、あなたの第1ターンの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「舞い降りた姫巫女」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされなかったなら、相手に2ダメージを与える。このダメージがキャンセルされなかったなら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hronesnæsse"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "074TSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_074tsp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "DealDamage",
+            "amount": 1,
+            "on_success": [
+              {
+                "op": "DealDamage",
+                "amount": 2,
+                "on_success": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "正義のリリィ 一葉",
+    "code": "ALL/S127-079",
+    "rarity": "R",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 経験 レベル置場にこのカードがあるなら、あなたのメインフェイズの始めに、あなたは自分の控え室の《ヘルヴォル》のキャラを1枚とこのカードを選び、入れ替えてよい。",
+      "【自】【CXコンボ】［(3) 他のあなたの前列のマーカーを持つ「帰る場所 恋花」を1枚とそのキャラの下のマーカーすべてをこのカードの下にマーカーとして好きな順番で表向きに置く］ このカードのアタックの終わりに、CX置場に「光咲く日々を抱いて」があるなら、相手に2ダメージを与え、あなたはコストを払ってよい。コストを払ったなら、このカードを【スタンド】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hervor"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "079",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_079.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不支付再动费用",
+                "instructions": []
+              },
+              {
+                "label": "支付费用再动",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "正義のリリィ 一葉",
+    "code": "ALL/S127-079S",
+    "rarity": "SR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 経験 レベル置場にこのカードがあるなら、あなたのメインフェイズの始めに、あなたは自分の控え室の《ヘルヴォル》のキャラを1枚とこのカードを選び、入れ替えてよい。",
+      "【自】【CXコンボ】［(3) 他のあなたの前列のマーカーを持つ「帰る場所 恋花」を1枚とそのキャラの下のマーカーすべてをこのカードの下にマーカーとして好きな順番で表向きに置く］ このカードのアタックの終わりに、CX置場に「光咲く日々を抱いて」があるなら、相手に2ダメージを与え、あなたはコストを払ってよい。コストを払ったなら、このカードを【スタンド】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hervor"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "079S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_079s.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (烧2, 不再动)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (烧2, 并支付cost再动)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "正義のリリィ 一葉",
+    "code": "ALL/S127-079SP",
+    "rarity": "SP",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 経験 レベル置場にこのカードがあるなら、あなたのメインフェイズの始めに、あなたは自分の控え室の《ヘルヴォル》のキャラを1枚とこのカードを選び、入れ替えてよい。",
+      "【自】【CXコンボ】［(3) 他のあなたの前列のマーカーを持つ「帰る場所 恋花」を1枚とそのキャラの下のマーカーすべてをこのカードの下にマーカーとして好きな順番で表向きに置く］ このカードのアタックの終わりに、CX置場に「光咲く日々を抱いて」があるなら、相手に2ダメージを与え、あなたはコストを払ってよい。コストを払ったなら、このカードを【スタンド】する。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hervor"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "079SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_079sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不支付费用",
+                "instructions": []
+              },
+              {
+                "label": "支付费用进行再攻击",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“クエレブレ”美岳",
+    "code": "ALL/S127-095",
+    "rarity": "C",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《リリィ》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードがアタックした時、他のあなたの《リリィ》のキャラがいるなら、あなたはすべてのプレイヤーの山札の下から2枚を、控え室に置いてよい。それらのカードに、CXがないか「“クエレブレ”緋紅」があるなら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Cuélebre"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "095",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_095.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 / 条件不满足",
+            "instructions": []
+          },
+          {
+            "label": "发动效果且条件满足 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“クエレブレ”美岳",
+    "code": "ALL/S127-095S",
+    "rarity": "SR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《リリィ》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードがアタックした時、他のあなたの《リリィ》のキャラがいるなら、あなたはすべてのプレイヤーの山札の下から2枚を、控え室に置いてよい。それらのカードに、CXがないか「“クエレブレ”緋紅」があるなら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Cuélebre"
+    ],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "095S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_095s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果, 或发动后条件未达成",
+            "instructions": []
+          },
+          {
+            "label": "发动效果(双方牌库底各削2), 条件达成 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“藍の一番長い日”藍",
+    "code": "ALL/S127-P16",
+    "rarity": "PR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《リリィ》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が4以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "P16",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_p16.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "经验未达成 (等级合计<4)",
+            "instructions": []
+          },
+          {
+            "label": "经验达成 (等级合计>=4)",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "未击倒对手",
+                    "instructions": []
+                  },
+                  {
+                    "label": "击倒对手 -> 烧1",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ロネスネス”純",
+    "code": "ALL/S127-P20",
+    "rarity": "PR",
+    "expansion": "Assault Lily Last Bullet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《リリィ》のキャラを1枚控え室に置く］ 控え室にこのカードがあるなら、あなたの第1ターンの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「舞い降りた姫巫女」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。このダメージがキャンセルされなかったなら、相手に2ダメージを与える。このダメージがキャンセルされなかったなら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [],
+    "set": "ALL",
+    "release": "S127",
+    "sid": "P20",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s127/all_s127_p20.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 支付(2)和1手牌",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1,
+                "on_success": [
+                  {
+                    "op": "DealDamage",
+                    "amount": 2,
+                    "on_success": [
+                      {
+                        "op": "DealDamage",
+                        "amount": 3
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "戦場に舞う 神琳",
+    "code": "ALL/S76-010",
+    "rarity": "R",
+    "expansion": "Assault Lily Bouquet",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もちろん、諦めるには早すぎます！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手のキャラを1枚まで選び、手札に戻し、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「見せない本音」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《リリィ》",
+      "《一柳隊》"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "010",
+    "image": "https://images.littleakiba.com/tcg/card65857-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 踢人入时计 + 烧2",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "凛々しく咲く 楓",
+    "code": "ALL/S76-036",
+    "rarity": "RR",
+    "expansion": "Assault Lily Bouquet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7000",
+    "soul": 1,
+    "flavor_text": "うふふふふ！",
+    "ability": [
+      "【永】 あなたの《リリィ》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「シュッツエンゲルとは」が置かれた時、前列にこのカードがいて、あなたのキャラすべてが《リリィ》なら、あなたは他の自分のキャラを1枚まで選び、手札に戻し、そのターン中、このカードは次の能力を得る。『【自】 あなたのアタックフェイズの始めに、あなたは他の自分の《リリィ》のキャラを1枚選び、【スタンド】し、そのターン中、そのキャラのパワーを＋1000。』"
+    ],
+    "attributes": [
+      "《リリィ》",
+      "《一柳隊》"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "036",
+    "image": "https://images.littleakiba.com/tcg/card65890-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：回手1个角色，使另1个角色重置",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "凛々しく咲く 梨璃",
+    "code": "ALL/S76-037",
+    "rarity": "RR",
+    "expansion": "Assault Lily Bouquet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "悲しい思いをするリリィも、もう、いて欲しくないから……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ あなたのクライマックス置場に「再会はよろこび」が置かれた時、前列にこのカードがいて、他のあなたの《リリィ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《リリィ》",
+      "《一柳隊》"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "037",
+    "image": "https://images.littleakiba.com/tcg/card65892-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnClimaxPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击(条件满足)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "MillAndBurn",
+                      "target_player": "opp",
+                      "zone": "bottom",
+                      "mill_amount": 3,
+                      "condition": "is_cx",
+                      "mode": "per_card",
+                      "burn_amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“アールヴヘイム”亜羅椰",
+    "code": "ALL/S76-044",
+    "rarity": "R",
+    "expansion": "Assault Lily Bouquet",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「その気になってもらいます」があり、他のあなたの《リリィ》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《リリィ》",
+      "《アールヴヘイム》"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "044",
+    "image": "https://images.littleakiba.com/tcg/card65906-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付手牌cost",
+            "instructions": []
+          },
+          {
+            "label": "支付1手牌，回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件/不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "凛々しく咲く ミリアム",
+    "code": "ALL/S76-070",
+    "rarity": "RR",
+    "expansion": "Assault Lily Bouquet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "フェイズトランセンデンス！！！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《リリィ》のキャラの枚数×1000に等しい。",
+      "【自】【CXコンボ】［(1)］ このカードのアタックの終わりに、クライマックス置場に「こっちおいで」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から1枚見て、山札の上か下に置き、相手に3ダメージを与え、このカードは次のあなたのスタンドフェイズに【スタンド】しない。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《リリィ》",
+      "《一柳隊》"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "070",
+    "image": "https://images.littleakiba.com/tcg/card65940-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「こっちおいで」: 查看对手牌顶1张并置于顶/底，然后烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "戦場に舞う 夢結",
+    "code": "ALL/S76-078",
+    "rarity": "R",
+    "expansion": "Assault Lily Bouquet",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "11000",
+    "soul": 2,
+    "flavor_text": "あのヒュージはわたしが倒さなくちゃ……",
+    "ability": [
+      "【自】 このカードがアタックした時、他のあなたのカード名に「梨璃」を含むキャラがいないなら、あなたは自分の山札の上から1枚を、クロック置場に置く。",
+      "【自】［(3) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "《リリィ》",
+      "《一柳隊》"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "078",
+    "image": "https://images.littleakiba.com/tcg/card65954-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付cost",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费,弃1手,牺牲1角色]进行再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "元気いっぱい！ 梨璃",
+    "code": "ALL/S76-T12",
+    "rarity": "TD",
+    "expansion": "Assualt Lily",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《リリィ》のキャラの枚数に等しい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "リリィ",
+      "一柳隊"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "T12",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s76/all_s76_t12.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付 [(2) 手札1枚], 给予对手1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "元気いっぱい！ 梨璃",
+    "code": "ALL/S76-T34",
+    "rarity": "TD",
+    "expansion": "Assualt Lily",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《リリィ》のキャラの枚数に等しい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "リリィ",
+      "一柳隊"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "T34",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s76/all_s76_t34.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[(2) 手牌1]: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夢結&梨璃",
+    "code": "ALL/S76-T43",
+    "rarity": "TD",
+    "expansion": "Assualt Lily",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ヒュージ強襲」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "attributes": [
+      "リリィ",
+      "一柳隊"
+    ],
+    "set": "ALL",
+    "release": "S76",
+    "sid": "T43",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s76/all_s76_t43.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场时：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "登场时：不回复",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "label": "CXコンボ：ヒュージ強襲",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"グラン・エプレの必勝戦術\"高嶺",
+    "code": "ALL/S90-005",
+    "rarity": "RR",
+    "expansion": "Assault Lily vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(1) 手札を1枚控え室に置き、手札の「“その笑顔を守るために”叶星」を1枚公開する］ このカードがアタックした時、クライマックス置場に「やさしい黄昏」があり、他のあなたの《リリィ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋5000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Gran Epure"
+    ],
+    "set": "ALL",
+    "release": "S90",
+    "sid": "005",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s90/all_s90_005.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［(1) 手札を1枚控え室に置き、手札の「“その笑顔を守るために”叶星」を1枚公開する］ このカードがアタックした時、クライマックス置場に「やさしい黄昏」があり、他のあなたの《リリィ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋5000。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "发动CX Combo (场上有其他2名<リリィ>角色): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"グラン・エプレ\"灯莉",
+    "code": "ALL/S90-010",
+    "rarity": "R",
+    "expansion": "Assault Lily vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《リリィ》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《リリィ》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】【クロック】 シフト レベル0 （あなたのメインフェイズの始めに、あなたは自分の手札の黄のカードを1枚とクロック置場のこのカードを選び、入れ替えてよい）"
+    ],
+    "attributes": [
+      "Lily",
+      "Gran Epure"
+    ],
+    "set": "ALL",
+    "release": "S90",
+    "sid": "010",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s90/all_s90_010.png",
+    "jpAbility": [
+      "【永】 他のあなたの《リリィ》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《リリィ》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】【クロック】 シフト レベル0 （あなたのメインフェイズの始めに、あなたは自分の手札の黄のカードを1枚とクロック置場のこのカードを選び、入れ替えてよい）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "山札の上を公開し、《リリィ》のキャラではない",
+            "instructions": []
+          },
+          {
+            "label": "山札の上を公開し、《リリィ》のキャラだった→1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"世代を越え伝えるもの\"夢結",
+    "code": "ALL/S90-057",
+    "rarity": "R",
+    "expansion": "Assault Lily vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋4000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を4枚控え室に置き、あなたのクライマックス置場の「果てなき戦いの日々」を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、次の行動を2回行う。『あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hitotsuyanagi Squad"
+    ],
+    "set": "ALL",
+    "release": "S90",
+    "sid": "057",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s90/all_s90_057.png",
+    "jpAbility": [
+      "【永】 あなたのターン中、このカードのパワーを＋4000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を4枚控え室に置き、あなたのクライマックス置場の「果てなき戦いの日々」を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、次の行動を2回行う。『あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场回复效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (不发动CX连击)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"藍の一番長い日\"藍",
+    "code": "ALL/S90-081",
+    "rarity": "RR",
+    "expansion": "Assault Lily vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《リリィ》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が4以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Lily",
+      "Hervor"
+    ],
+    "set": "ALL",
+    "release": "S90",
+    "sid": "081",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s90/all_s90_081.png",
+    "jpAbility": [
+      "【永】 あなたの《リリィ》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が4以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (经验未满4或未击倒对手)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 经验≥4 & 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"パジャマパーティー\"一葉",
+    "code": "ALL/S90-082",
+    "rarity": "RR",
+    "expansion": "Assault Lily vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“ヘルヴォル”恋花」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 あなたのクライマックス置場に「ねむねむにさようなら」が置かれた時、前列にこのカードがいて、あなたのレベル置場のカードのレベルの合計が6以上で、他のあなたの《リリィ》のキャラがいるなら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはこのカードのレベルに等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Lily",
+      "Hervor"
+    ],
+    "set": "ALL",
+    "release": "S90",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s90/all_s90_082.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時か「“ヘルヴォル”恋花」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 あなたのクライマックス置場に「ねむねむにさようなら」が置かれた時、前列にこのカードがいて、あなたのレベル置場のカードのレベルの合計が6以上で、他のあなたの《リリィ》のキャラがいるなら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはこのカードのレベルに等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "选择自身(等级3)赋予[攻击时烧3]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "支付费用: 造成3点伤害",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 3,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "不支付费用",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "选择其他角色(等级3)赋予[攻击时烧3]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "支付费用: 造成3点伤害",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 3,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "不支付费用",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "选择其他角色(等级2)赋予[攻击时烧2]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "支付费用: 造成2点伤害",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 2,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "不支付费用",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "选择其他角色(等级1)赋予[攻击时烧1]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "支付费用: 造成1点伤害",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "不支付费用",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"焔の中の断罪者\"白井夢結",
+    "code": "ALL/S90-P02S",
+    "rarity": "PR",
+    "expansion": "Assault Lily vol. 2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、他のあなたのカード名に「梨璃」を含むキャラがいないなら、あなたは自分の山札の上から1枚を、クロック置場に置く。",
+      "【自】［(3) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "リリィ",
+      "一柳隊"
+    ],
+    "set": "ALL",
+    "release": "S90",
+    "sid": "P02S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/all_s90/all_s90_p02s.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用再站效果",
+            "instructions": []
+          },
+          {
+            "label": "支付cost再站 (如果当回合登场)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

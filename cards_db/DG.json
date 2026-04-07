@@ -1,0 +1,162 @@
+[
+  {
+    "name": "最凶の魔王ラハール",
+    "code": "DG/S02-052",
+    "rarity": "RR",
+    "expansion": "Disgaea",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 2,
+    "flavor_text": "1日3食付の条件で仲間になってやる！",
+    "ability": [
+      "【自】このカードがアタックした時、クライマックス置場に「通りすがりの魔王」があるなら、そのターン中、このカードのパワーを＋3000し、このカードは次の能力を得る。『【自】 このカードとバトルしているキャラが【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Demon 《悪魔》",
+      "Weapon 《武器》"
+    ],
+    "set": "DG",
+    "release": "S02",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card2522-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ビューティー男爵”中ボス",
+    "code": "DG/S02-060",
+    "rarity": "U",
+    "expansion": "Disgaea",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 1,
+    "flavor_text": "中ボス「わたくしをただの中ボスと──」\nエトナ「あ。今、中ボスって認めた」",
+    "ability": [
+      "【自】このカードが手札から舞台に置かれた時、あなたの山札が5枚以下なら、あなたは自分の控え室のカードすべてを山札に戻す。そうしたら、その山札をシャッフルし、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Demon 《悪魔》",
+      "Will 《遺言》"
+    ],
+    "set": "DG",
+    "release": "S02",
+    "sid": "060",
+    "image": "https://images.littleakiba.com/tcg/card2534-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 / 条件不满足 (牌库>5)",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (牌库≤5): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ビューティー男爵”中ボス",
+    "code": "DG/S02-T16",
+    "rarity": "TD",
+    "expansion": "Disgaea",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 1,
+    "flavor_text": "わたくしをただの中ボスとあなどっていると\n後悔することになりますよ！！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたの山札が5枚以下なら、あなたは自分の控え室のカードすべてを山札に戻す。そうしたら、その山札をシャッフルし、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Demon 《悪魔》",
+      "Will 《遺言》"
+    ],
+    "set": "DG",
+    "release": "S02",
+    "sid": "T16",
+    "image": "https://images.littleakiba.com/tcg/card2535-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件未達成: 自分の山札が6枚以上",
+            "instructions": []
+          },
+          {
+            "label": "条件達成: 自分の山札が5枚以下",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "ダメージを与えない",
+                "instructions": []
+              },
+              {
+                "label": "相手に1ダメージを与える",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

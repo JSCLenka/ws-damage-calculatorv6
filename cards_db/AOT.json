@@ -1,0 +1,379 @@
+[
+  {
+    "name": "“運命への抗い”エレン",
+    "code": "AOT/S35-003",
+    "rarity": "RR",
+    "expansion": "Shingeki no Kyoujin",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "巨人を一匹残らず駆逐してやる",
+    "ability": [
+      "【永】 相手のレベル3以上のキャラがいるなら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの《兵団》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Corps 《兵団》",
+      "Weapon 《武器》"
+    ],
+    "set": "AOT",
+    "release": "S35",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card22786-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“運命への抗い”リヴァイ",
+    "code": "AOT/S35-032",
+    "rarity": "RR",
+    "expansion": "Shingeki no Kyoujin",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "約束しよう。俺は必ず！巨人を絶滅させる！",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ あなたのクライマックス置場に「自由の翼」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロック置場の《兵団》のキャラを1枚選び、舞台の好きな枠に置く。",
+      "【自】［(3) 手札の《兵団》のキャラを1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、舞台のキャラのいない他の枠に動かす。"
+    ],
+    "attributes": [
+      "Corps 《兵団》",
+      "Weapon 《武器》"
+    ],
+    "set": "AOT",
+    "release": "S35",
+    "sid": "032",
+    "image": "https://images.littleakiba.com/tcg/card22822-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付3费+1手牌+1场上角色再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“運命への抗い”ミカサ",
+    "code": "AOT/S35-057",
+    "rarity": "RR",
+    "expansion": "Shingeki no Kyoujin",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "この世界は残酷だ……そして……とても美しい……",
+    "ability": [
+      "【永】 他のあなたの《兵団》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時か『チェンジ』で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の《兵団》のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替える。"
+    ],
+    "attributes": [
+      "Corps 《兵団》",
+      "Weapon 《武器》"
+    ],
+    "set": "AOT",
+    "release": "S35",
+    "sid": "057",
+    "image": "https://images.littleakiba.com/tcg/card22852-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动能力：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动能力",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“城壁の彼方”ミカサ",
+    "code": "AOT/S35-058",
+    "rarity": "RR",
+    "expansion": "Shingeki no Kyoujin",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "私の特技を体験したい方がいれば……どうぞ一番先に近づいて来て下さい",
+    "ability": [
+      "【永】 このカードはサイドアタックできない。",
+      "【永】 他のあなたの《兵団》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「少女が見た世界」があるなら、相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Corps 《兵団》",
+      "Weapon 《武器》"
+    ],
+    "set": "AOT",
+    "release": "S35",
+    "sid": "058",
+    "image": "https://images.littleakiba.com/tcg/card22854-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (需CX「少女が見た世界」) -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“高い知性”女型の巨人",
+    "code": "AOT/S35-088",
+    "rarity": "R",
+    "expansion": "Shingeki no Kyoujin",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5000",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの《巨人》のキャラすべてに、パワーを＋1000。",
+      "【自】［(3) 手札を2枚控え室に置く］ あなたのクライマックスがクライマックス置場に置かれた時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）",
+      "【起】［このカードを【レスト】する］ あなたは自分の《巨人》のキャラを1枚選び、そのターン中、パワーを＋1000。"
+    ],
+    "attributes": [
+      "Titan 《巨人》"
+    ],
+    "set": "AOT",
+    "release": "S35",
+    "sid": "088",
+    "image": "https://images.littleakiba.com/tcg/card22889-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 5,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“自由を掴むため”ミカサ",
+    "code": "AOT/S50-059",
+    "rarity": "R",
+    "expansion": "Shingeki no Kyoujin Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "今度は躊躇うことなく奴らを、必ず殺す",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ありがとう…」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Corps 《兵団》",
+      "Weapon 《武器》"
+    ],
+    "set": "AOT",
+    "release": "S50",
+    "sid": "059",
+    "image": "https://images.littleakiba.com/tcg/card39524-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "獣の巨人",
+    "code": "AOT/S50-086",
+    "rarity": "R",
+    "expansion": "Shingeki no Kyoujin Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "その武器は、何て言うんですか？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札の「“捕食”巨人」を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「叡智」があり、他のあなたの《巨人》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Titan 《巨人》"
+    ],
+    "set": "AOT",
+    "release": "S50",
+    "sid": "086",
+    "image": "https://images.littleakiba.com/tcg/card39553-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

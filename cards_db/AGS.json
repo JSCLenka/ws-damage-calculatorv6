@@ -1,0 +1,506 @@
+[
+  {
+    "name": "\"成子坂のかしましオタク\"シタラ",
+    "code": "AGS/W108-004",
+    "rarity": "RR",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札の《アリスギア》のキャラを1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「サバゲやろうぜ！」があり、他のあなたの《アリスギア》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か下か控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(另有2名以上角色): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"ニュースでおなじみ！ アイドルアナウンサー\"杏奈",
+    "code": "AGS/W108-008",
+    "rarity": "R",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“宇宙を駆け巡るフォトジャーナリスト”真理」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「サンドアートコンテスト」があり、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から6枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_008.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 回血1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 扒底6烧X (X=CX数)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 6,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "相河 愛花",
+    "code": "AGS/W108-009",
+    "rarity": "R",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《アリスギア》のキャラすべてに、パワーを＋1500。",
+      "【起】 集中 ［(1) あなたのキャラを2枚【レスト】する］ あなたは自分の山札の上から4枚をめくり、控え室に置く。相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "009",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_009.png",
+    "effects": [
+      {
+        "trigger": "OnActivate",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "self",
+            "zone": "top",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私に出来ること 夜露",
+    "code": "AGS/W108-034",
+    "rarity": "RR",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードがアタックした時、あなたのキャラすべてが《アリスギア》なら、あなたはコストを払ってよい。そうしたら、あなたは相手に1ダメージを与えるか、自分のクロックの上から1枚を、控え室に置く。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】［あなたのクライマックス置場の「帰ろう、一緒に」を1枚控え室に置く］ あなたのアタックフェイズの始めに、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「私に出来ること 夜露」を1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラとこのカードのパワーを＋3000し、あなたは相手の山札を上から1枚見て、山札の上か控え室に置く。"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "034",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_034.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "Do not activate On Attack effect",
+            "instructions": []
+          },
+          {
+            "label": "Pay (1): Deal 1 damage",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "Pay (1): Heal 1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "Do not use CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "Use CX Combo: Look at opponent's top card",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 1,
+                "wr_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "溢れ出る気持ち のどか",
+    "code": "AGS/W108-035",
+    "rarity": "RR",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『合体』で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【永】 経験 あなたのレベル置場に「溢れ出る気持ち のどか」があるなら、このカードは次の2つの能力を得る。『【永】 あなたのターン中、このカードのパワーを＋1000。』『【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の《アリスギア》のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替える。』"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "035",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_035.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "発動する：クロックの上から1枚を控え室に置く",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "発動しない",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"アメとムチと百科事典\"文嘉",
+    "code": "AGS/W108-066",
+    "rarity": "RR",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《アリスギア》のキャラが2枚以上なら、あなたは自分のクロック置場のキャラを1枚選び、思い出にしてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「キレイさっぱりお終いよッ！」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたの思い出の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "066",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_066.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (2张以上其他《アリスギア》角色): 回血1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 回忆区1张, 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区2张, 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区3张, 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区4张, 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区5张, 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区6张, 烧6",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区7张, 烧7",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 回忆区8张或以上, 烧8",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 8,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"成子坂製作所（仮）\"夜露",
+    "code": "AGS/W108-T13",
+    "rarity": "TD",
+    "expansion": "Alice Gear Aegis",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードのアタックの終わりに、クライマックス置場に「特訓、お付き合いしますよ！」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から5枚を、控え室に置き、相手にＸダメージを与え、次の相手のターンの終わりまで、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けない。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Alice Gear",
+      "Actress"
+    ],
+    "set": "AGS",
+    "release": "W108",
+    "sid": "T13",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ags_w108/ags_w108_t13.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 5,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  }
+]

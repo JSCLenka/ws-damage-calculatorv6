@@ -1,0 +1,532 @@
+[
+  {
+    "name": "悪魔が恐れるデビルハンター チェンソーマン",
+    "code": "CSM/S96-003",
+    "rarity": "RR",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「血塗れの宣戦布告」があり、他のあなたのキャラが3枚以上なら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「血塗れの宣戦布告」があり、他のあなたのキャラが3枚以上なら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_003.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "将时计区顶1张卡放入休息室 (回1血)",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (击倒失败)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (击倒成功)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToTop"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "頭脳戦 パワー",
+    "code": "CSM/S96-016",
+    "rarity": "U",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(3) 手札を1枚クロック置場に置き、あなたのクライマックス置場の「魔人の暴走」を1枚控え室に置く］ このカードがアタックした時、あなたのクロックが5枚以下なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札の上に好きな順番で置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】【CXコンボ】［(3) 手札を1枚クロック置場に置き、あなたのクライマックス置場の「魔人の暴走」を1枚控え室に置く］ このカードがアタックした時、あなたのクロックが5枚以下なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札の上に好きな順番で置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "016",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_016.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (自身时计5枚以下)",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 3
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "公安対魔特異4課 早川アキ",
+    "code": "CSM/S96-029",
+    "rarity": "RR",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 6500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場に「デビルハンター 姫野」があるなら、このカードのパワーを＋4000し、このカードは『【自】 アンコール ［手札の、《デビルハンター》か《悪魔》のキャラを1枚控え室に置く］』を得る。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《デビルハンター》か《悪魔》のキャラを1枚選び、手札に戻してよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「覚悟の抜刀」があるなら、そのターン中、このカードのパワーを＋1000し、あなたは相手の山札の下から4枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 記憶 あなたの思い出置場に「デビルハンター 姫野」があるなら、このカードのパワーを＋4000し、このカードは『【自】 アンコール ［手札の、《デビルハンター》か《悪魔》のキャラを1枚控え室に置く］』を得る。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《デビルハンター》か《悪魔》のキャラを1枚選び、手札に戻してよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「覚悟の抜刀」があるなら、そのターン中、このカードのパワーを＋1000し、あなたは相手の山札の下から4枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "029",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_029.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "悪魔の心臓を持つもの チェンソーマン",
+    "code": "CSM/S96-060",
+    "rarity": "R",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を3枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札の上に好きな順番で置き、次の相手のターンの終わりまで、このカードのパワーを＋2000。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を3枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札の上に好きな順番で置き、次の相手のターンの終わりまで、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "060",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_060.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非直击 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "直击",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "支付代价: 将对手休息室最多2张卡置于牌库顶",
+                "instructions": [
+                  {
+                    "op": "OppTopDeck",
+                    "max_cards": 2
+                  }
+                ]
+              },
+              {
+                "label": "不支付代价",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "帰り道のひととき パワー",
+    "code": "CSM/S96-074",
+    "rarity": "C",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を3枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て《デビルハンター》か《悪魔》か《動物》のキャラを4枚まで選び、公開し、1枚選び、ストック置場に置き、残りのカードを手札に加え、その山札をシャッフルする。",
+      "【自】 このカードのトリガーチェックでクライマックスがでた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】［手札を3枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て《デビルハンター》か《悪魔》か《動物》のキャラを4枚まで選び、公開し、1枚選び、ストック置場に置き、残りのカードを手札に加え、その山札をシャッフルする。",
+      "【自】 このカードのトリガーチェックでクライマックスがでた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "074",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_074.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未触发CX",
+            "instructions": []
+          },
+          {
+            "label": "触发CX -> 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最初のタバコ 姫野",
+    "code": "CSM/S96-084",
+    "rarity": "R",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「ゴーストの右手」があり、あなたの思い出置場の「Easy revenge!」が2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「ゴーストの右手」があり、あなたの思い出置場の「Easy revenge!」が2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_084.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX效果",
+            "instructions": []
+          },
+          {
+            "label": "CX效果: 造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX效果: 造成3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天国への鎮魂歌 早川アキ",
+    "code": "CSM/S96-090",
+    "rarity": "U",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードの与えるダメージは山札の下からダメージ処理を行う。",
+      "【永】 他のあなたの、《デビルハンター》か《悪魔》のキャラすべてに、パワーを＋1500。",
+      "【自】［(1) 手札を1枚控え室に置く］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 このカードの与えるダメージは山札の下からダメージ処理を行う。",
+      "【永】 他のあなたの、《デビルハンター》か《悪魔》のキャラすべてに、パワーを＋1500。",
+      "【自】［(1) 手札を1枚控え室に置く］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "090",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_090.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "悪魔を狩る悪魔 チェンソーマン",
+    "code": "CSM/S96-T17",
+    "rarity": "TD",
+    "expansion": "Chainsaw Man",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「心臓の秘密 デンジ」の【起】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時か「心臓の秘密 デンジ」の【起】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Devil Hunter",
+      "Public Safety"
+    ],
+    "set": "CSM",
+    "release": "96",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/csm_s96/csm_s96_t17.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手：扒底4张烧CX数",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

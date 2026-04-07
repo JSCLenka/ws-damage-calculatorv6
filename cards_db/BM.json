@@ -1,0 +1,77 @@
+[
+  {
+    "name": "浮遊霊 八九寺真宵",
+    "code": "BM/S15-012",
+    "rarity": "U",
+    "expansion": "Bakemonogatari",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2)］ このカードがアタックした時、クライマックス置場に「まよいマイマイ」があるなら、あなたはコストを払ってよい。そうしたら、あなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Strangeness 《怪異》",
+      "Spirit/Ghost 《霊》"
+    ],
+    "set": "BM",
+    "release": "S15",
+    "sid": "012",
+    "image": "https://images.littleakiba.com/tcg/card4372-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付[2]费，给予己方全体角色取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

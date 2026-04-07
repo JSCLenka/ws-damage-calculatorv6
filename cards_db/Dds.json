@@ -1,0 +1,159 @@
+[
+  {
+    "name": "初めての友だち リロ＆スティッチ",
+    "code": "Dds/S104-034",
+    "rarity": "R",
+    "expansion": "Disney 100",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《Celebration》か《Disney》のキャラを1枚選び、手札に戻してよい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「オハナはいつもいっしょだよ」があり、他のあなたの、《Celebration》か《Disney》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Celebration",
+      "Disney"
+    ],
+    "set": "Dds",
+    "release": "S104",
+    "sid": "034",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/dds_s104/dds_s104_034.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX Combo: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ジュディ＆ニック＆フラッシュ",
+    "code": "Dds/S104-043",
+    "rarity": "U",
+    "expansion": "Disney 100",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Celebration",
+      "Disney"
+    ],
+    "set": "Dds",
+    "release": "S104",
+    "sid": "043",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/dds_s104/dds_s104_043.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ミッキーマウス",
+    "code": "Dds/S104-056",
+    "rarity": "RR",
+    "expansion": "Disney 100",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 このカードがアタックした時、クライマックス置場に「これからの物語も、一緒に。」があり、あなたのレベル置場のカードのレベルの合計が100以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分の控え室のクライマックスを2枚選び、それらのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。』『［(1) 手札を1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋4000。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Celebration",
+      "Disney"
+    ],
+    "set": "Dds",
+    "release": "S104",
+    "sid": "056",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/dds_s104/dds_s104_056.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果1: 相手は控え室のCX2枚以外を山札に戻す",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "効果2: 相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

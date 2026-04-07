@@ -1,0 +1,1899 @@
+[
+  {
+    "name": "聖園ミカ",
+    "code": "BAV/W112-003",
+    "rarity": "RR",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《キヴォトス》のキャラの枚数に等しい。",
+      "【自】 経験 ［手札を2枚控え室に置く］ このカードがアタックした時、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、あなたは相手の山札の下から4枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Tea Party"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "【经验6】支付2手牌，发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "歌住サクラコ",
+    "code": "BAV/W112-011",
+    "rarity": "R",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 5500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたが【起】を使った時、そのターン中、このカードのパワーを＋5000。",
+      "【自】【CXコンボ】 経験 このカードがアタックした時、クライマックス置場に「シスターフッド」があり、あなたのレベル置場のカードのレベルの合計が5以上なら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Sisterhood"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_011.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "狐坂ワカモ",
+    "code": "BAV/W112-041",
+    "rarity": "RR",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「災厄の狐」が置かれた時、そのターン中、このカードは次の2つの能力のうちあなたが選んだ1つを得る。『【自】 あなたのアタックフェイズの始めに、前列にこのカードがいるなら、あなたはこのカード以外のすべてのプレイヤーのキャラすべてを、控え室に置き、相手に1ダメージを与え、相手に2ダメージを与える。』『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "041",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_041.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "选择效果1：攻击阶段开始时，清场+烧1+烧2",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttackPhaseStart",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    },
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "选择效果2：攻击时，烧2",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "空井サキ（水着）",
+    "code": "BAV/W112-046",
+    "rarity": "R",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、手札に戻す。",
+      "【自】［(1) 手札の《キヴォトス》のキャラを2枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "RABBIT Platoon"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "046",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_046.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "直击时支付费用：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "錠前サオリ",
+    "code": "BAV/W112-048",
+    "rarity": "R",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(3) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「アリウススクワッド」があり、あなたのレベル置場のカードのレベルの合計が4以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、あなたの《アリウススクワッド》のキャラ2枚につき、次の行動を行う。『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Arius Squad"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "048",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_048.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (场上2-3名《阿里乌斯小队》): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (场上4-5名《阿里乌斯小队》): 烧2×2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "陸八魔アル",
+    "code": "BAV/W112-078",
+    "rarity": "RR",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《キヴォトス》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードが「便利屋68」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。（トリガーチェックででた「便利屋68」のの効果でこのカードが舞台に置かれた時も使える）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Problem Solver 68"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "078",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_078.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动「便利屋68」登场再站效果",
+            "instructions": []
+          },
+          {
+            "label": "发动「便利屋68」登场再站效果 (获得一次额外攻击)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "空崎ヒナ（水着）",
+    "code": "BAV/W112-079",
+    "rarity": "RR",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が4以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "079",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_079.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未达成条件 (未击倒对手 或 经验<4)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成 (经验≥4 & 击倒对手) -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "小鳥遊ホシノ（水着）",
+    "code": "BAV/W112-110",
+    "rarity": "RR",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、あなたの《キヴォトス》のキャラすべてに、パワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「アビドスリゾート復旧対策委員会」があるなら、そのターン中、このカードのパワーを＋2000し、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを与える。』『［手札を2枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "110",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_110.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不回复",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【CX连击】选择效果1：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "【CX连击】选择效果2 (支付2手)：烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "天童アリス",
+    "code": "BAV/W112-117",
+    "rarity": "R",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(5) 手札を3枚控え室に置く］ このカードがアタックした時、クライマックス置場に「友情と勇気と光のロマン」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋4000し、次の行動を2回行う。『あなたは相手の山札の下から8枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Game Development Department"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "117",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_117.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (5费弃3手)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 8,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 8,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "空崎ヒナ",
+    "code": "BAV/W112-T07",
+    "rarity": "TD",
+    "expansion": "Blue Archive",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】 経験 ［(3) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「ゲヘナ学園風紀委員長」があり、あなたのレベル置場のカードのレベルの合計が4以上なら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W112",
+    "sid": "T07",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w112/bav_w112_t07.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击 & 经验4 & 击倒对手 -> 踢时计 & 烧2",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アビドス高等学校 シロコ",
+    "code": "BAV/W129-007",
+    "rarity": "R",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《対策委員会》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て《対策委員会》のキャラを2枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】【CXコンボ】［手札の《対策委員会》のキャラを1枚控え室に置く］ このカードがアタックした時、CX置場に「私たちの居場所」があり、あなたの手札が5枚以下なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_007.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件 (手牌>5 或 无CX)",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (手牌≤5): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アビドス高等学校 シロコ",
+    "code": "BAV/W129-007S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札の《対策委員会》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て《対策委員会》のキャラを2枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】【CXコンボ】［手札の《対策委員会》のキャラを1枚控え室に置く］ このカードがアタックした時、CX置場に「私たちの居場所」があり、あなたの手札が5枚以下なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "007S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_007s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "手札が6枚以上、またはコストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 手札が5枚以下でコストを払い、2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員会 イオリ",
+    "code": "BAV/W129-021",
+    "rarity": "RR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 5000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】 あなたのCX置場に「ゲヘナ学園最大戦力」が置かれた時、後列にこのカードがいて、他のあなたの《キヴォトス》のキャラが2枚以上なら、相手に1ダメージを与え、あなたは相手の山札を上から1枚見て、山札の上か控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "021",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_021.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 1,
+            "wr_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員会 イオリ",
+    "code": "BAV/W129-021S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 5000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】 あなたのCX置場に「ゲヘナ学園最大戦力」が置かれた時、後列にこのカードがいて、他のあなたの《キヴォトス》のキャラが2枚以上なら、相手に1ダメージを与え、あなたは相手の山札を上から1枚見て、山札の上か控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "021S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_021s.png",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(后列+2名以上《キヴォトス》角色)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 1,
+                "wr_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員会 イオリ",
+    "code": "BAV/W129-021SP",
+    "rarity": "SP",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 5000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋2000。",
+      "【自】【CXコンボ】 あなたのCX置場に「ゲヘナ学園最大戦力」が置かれた時、後列にこのカードがいて、他のあなたの《キヴォトス》のキャラが2枚以上なら、相手に1ダメージを与え、あなたは相手の山札を上から1枚見て、山札の上か控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "021SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_021sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 1,
+            "wr_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員長 ヒナ",
+    "code": "BAV/W129-037",
+    "rarity": "C",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】［(4) 手札を3枚控え室に置く］ このカードがアタックした時、他のあなたの《風紀委員会》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "037",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_037.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不回复",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 烧1+烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員長 ヒナ",
+    "code": "BAV/W129-037S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】［(4) 手札を3枚控え室に置く］ このカードがアタックした時、他のあなたの《風紀委員会》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "037S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_037s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登場時：1点回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "登場時：回復しない",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アタック時：効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "条件達成(他《風紀》2枚以上)：1点バーン、4点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員会のブレーキ役 チナツ",
+    "code": "BAV/W129-066",
+    "rarity": "C",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《キヴォトス》のキャラが4枚以上なら、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。",
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "066",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_066.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "風紀委員会のブレーキ役 チナツ",
+    "code": "BAV/W129-066S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《キヴォトス》のキャラが4枚以上なら、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。",
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Disciplinary Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "066S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_066s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 送入时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "対策委員会 シロコ",
+    "code": "BAV/W129-075",
+    "rarity": "RR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが、手札かレベル置場から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのCX置場に「青春の一枚」が置かれた時、前列にこのカードがいて、他のあなたの《キヴォトス》のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分のレベル置場の《対策委員会》のキャラと舞台のキャラを1枚ずつ選び、入れ替える。』『そのターン中、このカードは次の能力を得る。『【自】［(1) あなたのCX置場のCXを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "075",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_075.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動、または入れ替え効果を選択",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 2点バーン効果を選択",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "対策委員会 シロコ",
+    "code": "BAV/W129-075EX",
+    "rarity": "SEC",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが、手札かレベル置場から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのCX置場に「青春の一枚」が置かれた時、前列にこのカードがいて、他のあなたの《キヴォトス》のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分のレベル置場の《対策委員会》のキャラと舞台のキャラを1枚ずつ選び、入れ替える。』『そのターン中、このカードは次の能力を得る。『【自】［(1) あなたのCX置場のCXを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "075EX",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_075ex.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ効果: キャラ入れ替え (ダメージなし)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ効果: アタック時2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "対策委員会 シロコ",
+    "code": "BAV/W129-075S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが、手札かレベル置場から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのCX置場に「青春の一枚」が置かれた時、前列にこのカードがいて、他のあなたの《キヴォトス》のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分のレベル置場の《対策委員会》のキャラと舞台のキャラを1枚ずつ選び、入れ替える。』『そのターン中、このカードは次の能力を得る。『【自】［(1) あなたのCX置場のCXを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "075S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_075s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ選択肢: キャラ入替 (ダメージ効果なし)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ選択肢: アタック時2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "青春の一幕 アヤネ",
+    "code": "BAV/W129-078",
+    "rarity": "R",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 3000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《キヴォトス》のキャラすべてに、パワーを＋1500。",
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが、手札かレベル置場から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のCXを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】［手札のCXを1枚控え室に置く］ あなたのCXがトリガーした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "078",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_078.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 对手逆压缩(保留1张CX)",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "若攻击中的角色触发了CX: 支付1手牌CX -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动 / 未触发CX",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "青春の一幕 アヤネ",
+    "code": "BAV/W129-078S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 3000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《キヴォトス》のキャラすべてに、パワーを＋1500。",
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが、手札かレベル置場から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のCXを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】［手札のCXを1枚控え室に置く］ あなたのCXがトリガーした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "078S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_078s.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(横置1个角色) -> 逆压缩(留1张CX)",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnTriggerCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(手牌弃1张CX) -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アビドス高等学校 ノノミ",
+    "code": "BAV/W129-080",
+    "rarity": "R",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を3枚控え室に置く］ このカードがレベル置場から舞台に置かれたターン中、このカードがアタックした時、前列の中央の枠にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージをＸ回与え、そのターン中、このカードのパワーを＋4000し、ソウルを－10。Ｘはあなたの《対策委員会》のキャラの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】 経験 レベル置場にこのカードがあるなら、あなたのCXフェイズの始めに、あなたは自分の控え室の《キヴォトス》のキャラを1枚とこのカードを選び、入れ替えてよい。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_080.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (《对策委员会》角色数=1): 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (《对策委员会》角色数=2): 烧1点x2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (《对策委员会》角色数=3): 烧1点x3次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (《对策委员会》角色数=4): 烧1点x4次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 4
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (《对策委员会》角色数=5): 烧1点x5次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アビドス高等学校 ノノミ",
+    "code": "BAV/W129-080S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を3枚控え室に置く］ このカードがレベル置場から舞台に置かれたターン中、このカードがアタックした時、前列の中央の枠にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージをＸ回与え、そのターン中、このカードのパワーを＋4000し、ソウルを－10。Ｘはあなたの《対策委員会》のキャラの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】 経験 レベル置場にこのカードがあるなら、あなたのCXフェイズの始めに、あなたは自分の控え室の《キヴォトス》のキャラを1枚とこのカードを選び、入れ替えてよい。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "080S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_080s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない (条件未達成 or コストを払わない)",
+            "instructions": []
+          },
+          {
+            "label": "発動(対策委員会1枚): 1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "発動(対策委員会2枚): 1ダメージ x2回",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "発動(対策委員会3枚): 1ダメージ x3回",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          },
+          {
+            "label": "発動(対策委員会4枚): 1ダメージ x4回",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 4
+              }
+            ]
+          },
+          {
+            "label": "発動(対策委員会5枚): 1ダメージ x5回",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アビドス高等学校 セリカ",
+    "code": "BAV/W129-081",
+    "rarity": "R",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【自】 経験 このカードが、手札かレベル置場から舞台に置かれた時、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたは2枚まで引き、自分の手札を1枚選び、ストック置場に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "081",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_081.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[1费 手牌1]: 发动摩卡效果",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アビドス高等学校 セリカ",
+    "code": "BAV/W129-081S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【自】 経験 このカードが、手札かレベル置場から舞台に置かれた時、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたは2枚まで引き、自分の手札を1枚選び、ストック置場に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "081S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_081s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付cost发动效果：查看对手牌库顶2张，最多弃置2张",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "対策委員会のひととき ノノミ＆ホシノ",
+    "code": "BAV/W129-082",
+    "rarity": "R",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けない。",
+      "【自】 経験 ［(1) 手札を2枚控え室に置く］ このカードが、手札かレベル置場から舞台に置かれたターン中、このカードがアタックした時、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、そのターン中、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_082.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "经验6, 登场回合: 支付(1)弃2手 -> 烧3, 对手坟顶1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "対策委員会のひととき ノノミ＆ホシノ",
+    "code": "BAV/W129-082S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けない。",
+      "【自】 経験 ［(1) 手札を2枚控え室に置く］ このカードが、手札かレベル置場から舞台に置かれたターン中、このカードがアタックした時、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、そのターン中、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "082S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_082s.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【经验6】支付cost: 烧3, 对手坟顶1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "青春の一幕 ホシノ",
+    "code": "BAV/W129-095",
+    "rarity": "C",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 0,
+    "power": 5500,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《キヴォトス》なら、このカードのパワーを＋4000。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「アビドスでの生活」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "095",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_095.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "青春の一幕 ホシノ",
+    "code": "BAV/W129-095S",
+    "rarity": "SR",
+    "expansion": "Blue Archive The Animation",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 0,
+    "power": 5500,
+    "soul": 1,
+    "trigger": [],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《キヴォトス》なら、このカードのパワーを＋4000。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「アビドスでの生活」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kivotos",
+      "Countermeasures Committee"
+    ],
+    "set": "BAV",
+    "release": "W129",
+    "sid": "095S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bav_w129/bav_w129_095s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击：击倒对手，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

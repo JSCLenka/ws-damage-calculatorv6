@@ -1,0 +1,378 @@
+[
+  {
+    "name": "運命の魔女 ファティマ",
+    "code": "CC/S48-001",
+    "rarity": "RR",
+    "expansion": "Chain Chronicle: The Light of Haecceitas",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "まだ希望は失われてはいない",
+    "ability": [
+      "【自】［(1) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Mana 《マナ》",
+      "Magic 《魔法》"
+    ],
+    "set": "CC",
+    "release": "S48",
+    "sid": "001",
+    "image": "https://images.littleakiba.com/tcg/card35347-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを払い、このカードに能力を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "コストを払い、他のキャラ1体に能力を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": {
+                "type": "turn",
+                "count": 1
+              },
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "魔法兵団師団長 ヴェルナー",
+    "code": "CC/S48-002",
+    "rarity": "RR",
+    "expansion": "Chain Chronicle: The Light of Haecceitas",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ほう、一端の口叩くじゃねぇか",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「爆ぜろぉ！！」があり、このターンで3回目のアタック中なら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】［(3)］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、他のあなたの黄のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Mana 《マナ》",
+      "Magic 《魔法》"
+    ],
+    "set": "CC",
+    "release": "S48",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card35348-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非CX连击/非第3次攻击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击 (第3次攻击)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "不发动效果",
+                      "instructions": []
+                    },
+                    {
+                      "label": "支付(3)且有4个以上其他黄角色 -> 烧1+烧4",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        },
+                        {
+                          "op": "Burn",
+                          "amount": 4,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "不敵な笑み 黒の王",
+    "code": "CC/S48-032",
+    "rarity": "R",
+    "expansion": "Chain Chronicle: The Light of Haecceitas",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "……ここからだ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「全ては黒に染まる」が置かれた時、前列にこのカードがいるなら、あなたは自分の山札の上から3枚を、控え室に置く。それらのカードの「黒の兵士」1枚につき、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。",
+      "【自】 あなたのターン中、他のあなたのキャラのバトル相手が【リバース】した時、次の相手のターンの終わりまで、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Black Army 《黒の軍勢》"
+    ],
+    "set": "CC",
+    "release": "S48",
+    "sid": "032",
+    "image": "https://images.littleakiba.com/tcg/card35378-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 翻出0张「黒の兵士」(无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 翻出1张「黒の兵士」-> 对手3张卡洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 翻出2张「黒の兵士」-> 对手6张卡洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 6
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 翻出3张「黒の兵士」-> 对手9张卡洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 9
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "光を掴む！ ユーリ",
+    "code": "CC/S48-049",
+    "rarity": "RR",
+    "expansion": "Chain Chronicle: The Light of Haecceitas",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「闇を凌駕する光」があるなら、あなたは自分の控え室のキャラを1枚まで選び、手札に戻し、そのターン中、このカードのパワーを＋3000。",
+      "【自】［手札を3枚控え室に置く］ このカードがアタックした時、このターンで3回目のアタック中なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Mana 《マナ》",
+      "Weapon 《武器》"
+    ],
+    "set": "CC",
+    "release": "S48",
+    "sid": "049",
+    "image": "https://images.littleakiba.com/tcg/card35395-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非本回合第3次攻击",
+            "instructions": []
+          },
+          {
+            "label": "是本回合第3次攻击 (弃3手)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "新たな可能性 アラム",
+    "code": "CC/S48-050",
+    "rarity": "RR",
+    "expansion": "Chain Chronicle: The Light of Haecceitas",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ド馬鹿野郎！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「闇に差す光」があるなら、あなたは自分の控え室の《マナ》のキャラを1枚まで選び、ストック置場に置き、相手の控え室のカードを1枚まで選び、山札の上に置き、そのターン中、このカードのパワーを＋1000。",
+      "【自】［(4) 手札を2枚控え室に置く］ このカードがアタックした時、このターンで3回目のアタック中で、他のあなたの《マナ》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Mana 《マナ》",
+      "Weapon 《武器》"
+    ],
+    "set": "CC",
+    "release": "S48",
+    "sid": "050",
+    "image": "https://images.littleakiba.com/tcg/card35396-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击：不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击：对手坟1张非CX置顶",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "再动：不满足条件/不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "再动：满足条件(第3次攻击+4个<玛那>)并支付费用 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "ルシファー",
+    "code": "DS2/SE16-26",
+    "rarity": "C",
+    "expansion": "Devil Survivor 2",
+    "side": "SE",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 このカードの下にマーカーがあるなら、このカードのパワーを＋3000し、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Angel 《天使》",
+      "Demon 《悪魔》"
+    ],
+    "set": "DS2",
+    "release": "SE16",
+    "sid": "26",
+    "image": "https://images.littleakiba.com/tcg/card10022-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "マーカーなし (効果なし)",
+            "instructions": []
+          },
+          {
+            "label": "マーカーあり (キャンセル時バーン獲得)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "相手に1ダメージ与える",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "ダメージを与えない",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

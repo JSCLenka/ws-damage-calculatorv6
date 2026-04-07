@@ -1,0 +1,516 @@
+[
+  {
+    "name": "憧れの人 舞昼",
+    "code": "AMG/W121-007",
+    "rarity": "U",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《縁》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「白百合が見通すは胸の内」があり、他のあなたの《縁》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与え、自分のクロックの下から1枚までを、控え室に置く。Ｘは公開されたカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Fate",
+      "Doctor"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_007.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)发动CX连击",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "不回复血量",
+                    "instructions": []
+                  },
+                  {
+                    "label": "从时计区底回复1点",
+                    "instructions": [
+                      {
+                        "op": "Heal",
+                        "amount": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "君と縁を結んで 夜重",
+    "code": "AMG/W121-016",
+    "rarity": "RR",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 記憶 ［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「夜と狐」があり、あなたの思い出置場の「縁結びの組紐」が2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から2枚まで見て、山札の上に好きな順番で置き、好きな数を宣言し、相手にＸダメージを与える。Ｘはあなたの宣言した数に等しい。（マイナスの数は宣言できない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fate",
+      "Miko"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "016",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_016.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "宣言1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言4点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言6点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "君と縁を結んで 夕奈",
+    "code": "AMG/W121-045",
+    "rarity": "RR",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場の「縁結びの組紐」が2枚以上なら、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1)］ このカードがアタックした時、CX置場に「夕焼けの猫」があり、あなたの思い出置場の「縁結びの組紐」が2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fate",
+      "Miko"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "045",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_045.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果：回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (回忆区有2张以上「縁結びの組紐」)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "壊滅的な英語力 夕奈",
+    "code": "AMG/W121-065",
+    "rarity": "C",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《縁》のキャラの枚数に等しい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fate",
+      "Miko"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "065",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_065.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付2手费，造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "君と縁を結んで 朝姫",
+    "code": "AMG/W121-075",
+    "rarity": "RR",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1) 手札を1枚控え室に置く］ CX置場に「朝の靴紐」があり、あなたの思い出置場の「縁結びの組紐」が3枚以上なら、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、次の2つの効果をあなたは好きな順番に行う。コストを払わないなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000。』『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fate",
+      "Miko"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "075",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_075.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付COST: 执行摩卡(2)与烧1",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付COST: 仅执行摩卡(2)",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "不支付COST: 仅执行烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "密かなお悩み 朝姫",
+    "code": "AMG/W121-088",
+    "rarity": "U",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《縁》のキャラの枚数×500に等しい。",
+      "【自】［(2) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの《縁》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Fate",
+      "Miko"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "088",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_088.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动再动 (条件:场上另有4个《缘》角色)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "甘神夜重",
+    "code": "AMG/W121-T03",
+    "rarity": "TD",
+    "expansion": "Tying the Knot with an Amagami Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手に2ダメージか4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fate",
+      "Miko"
+    ],
+    "set": "AMG",
+    "release": "W121",
+    "sid": "T03",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/amg_w121/amg_w121_t03.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "从时计区底部回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[(3)费, 弃2手]: 烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "支付[(3)费, 弃2手]: 烧4点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

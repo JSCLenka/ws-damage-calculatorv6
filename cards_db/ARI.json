@@ -1,0 +1,407 @@
+[
+  {
+    "name": "絶大な力 ユエ",
+    "code": "ARI/S103-002",
+    "rarity": "RR",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 7500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《トータス》のキャラが2枚以上なら、このカードのパワーを＋3500し、このカードは相手の効果に選ばれない。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札の《トータス》のキャラを1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「黄金の吸血姫」があるなら、あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの正面のキャラかこのカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Tortus",
+      "Vampire Tribe"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "002",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_002.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回復しない",
+            "instructions": []
+          },
+          {
+            "label": "回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: キャンセル時2点バーン付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ずっと一緒に ユエ",
+    "code": "ARI/S103-047",
+    "rarity": "RR",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《トータス》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの《トータス》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】［あなたの控え室の「揺るぎない信念 ハジメ」を1枚このカードの下にマーカーとして表向きに置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Tortus",
+      "Vampire Tribe"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "047",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_047.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "イレギュラー ハジメ",
+    "code": "ARI/S103-052",
+    "rarity": "R",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［あなたのクライマックス置場の「神山での決戦」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「神山での決戦」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。",
+      "【自】［このカードを控え室に置く］ 他のあなたのキャラがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、あなたは自分のバトル中のキャラを1枚選び、そのターン中、パワーを＋3500。"
+    ],
+    "attributes": [
+      "Tortus",
+      "Classmate"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "052",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_052.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「神山での決戦」: 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "奈落から這い出た者 ハジメ",
+    "code": "ARI/S103-053",
+    "rarity": "R",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「無能の無双」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与え、そのターン中、このカードのパワーを＋2000。Ｘはこの能力のコストで控え室に置かれたカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Tortus",
+      "Classmate"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "053",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_053.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "弃1张0级卡: 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "弃1张1级卡: 烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "弃1张2级卡: 烧3点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "弃1张3级卡: 烧4点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "【剣士】雫",
+    "code": "ARI/S103-080",
+    "rarity": "R",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のクライマックスを1枚選び、手札に戻す。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、他のあなたの、《クラスメイト》か《先生》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Tortus",
+      "Classmate"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_080.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未满足条件 (未击倒对手 或 其他角色不足2)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 + 其他角色≥2 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最後の吸血鬼族 ユエ",
+    "code": "ARI/S103-T07",
+    "rarity": "TD",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《トータス》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Tortus",
+      "Vampire Tribe"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "T07",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_t07.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：支付(3)弃2手，造成3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "勇敢な兎人族 シア",
+    "code": "ARI/S103-T17",
+    "rarity": "TD",
+    "expansion": "Arifureta",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのパワーを＋2000。",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「さあ、いきますよーっ！」があり、他のあなたの《トータス》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Tortus",
+      "Rabbitkin"
+    ],
+    "set": "ARI",
+    "release": "S103",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/ari_s103/ari_s103_t17.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击条件不满足 (其他《トータス》角色不足2)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 支付3费1手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

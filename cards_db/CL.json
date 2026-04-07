@@ -1,0 +1,202 @@
+[
+  {
+    "name": "スポーツ万能 智代\nOmnipotent Sportsgirl Tomoyo",
+    "code": "CL/WE01-10",
+    "rarity": "C",
+    "expansion": "Clannad Vol.1",
+    "side": "WE",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "爽快だ！",
+    "ability": [
+      "【自】［(5)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手の前列のレベル3以下の、《スポーツ》か《不良》のキャラを1枚選び、クロック置場に置く。"
+    ],
+    "attributes": [
+      "Student Council 《生徒会》",
+      "Sports 《スポーツ》"
+    ],
+    "set": "CL",
+    "release": "WE01",
+    "sid": "10",
+    "image": "https://images.littleakiba.com/tcg/card862-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "コスト(5)を払い、相手のキャラ1枚をクロックに置く",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "委員長 杏\nClass President Kyou",
+    "code": "CL/WE04-13",
+    "rarity": "C",
+    "expansion": "Clannad Vol.2 After Story",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "やる！面白そうじゃない！",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Twins 《双子》",
+      "Class Rep 《委員長》"
+    ],
+    "set": "CL",
+    "release": "WE04",
+    "sid": "13",
+    "image": "https://images.littleakiba.com/tcg/card1280-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费用，给予对手1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "委員長 杏",
+    "code": "CL/WE07-67",
+    "rarity": "RE",
+    "expansion": "Clannad Vol.3",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "渚「帰りましょ、朋也くん」",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "双子",
+      "委員長"
+    ],
+    "set": "CL",
+    "release": "WE07",
+    "sid": "67",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/cl_we07/cl_we07_67.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费用，对对手造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "仲の良い家族 渚＆早苗",
+    "code": "CL/WP01-07",
+    "rarity": "PS",
+    "expansion": "Clannad (Power-Up Set)",
+    "side": "WP",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL",
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "早苗「渚、わたしたちはピクニックにいきましょうね」\n渚「本当ですかっ、とても楽しみです」",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加える。残りのカードを控え室に置く。Ｘはあなたの黄のキャラの枚数に等しい。",
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの黄のキャラの枚数×500に等しい。",
+      "【自】［(2) 手札の「だんご大家族 汐＆渚」を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。他のあなたのレベル2以下のキャラがアタックした時、クライマックス置場に「逞しい命」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Bread 《パン》",
+      "Dango 《だんご》"
+    ],
+    "set": "CL",
+    "release": "WP01",
+    "sid": "07",
+    "image": "https://images.littleakiba.com/tcg/card27938-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动再动效果 (CX连击)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,228 @@
+[
+  {
+    "name": "背伸びしたいお年頃 乃絵里",
+    "code": "DS/W46-034",
+    "rarity": "R",
+    "expansion": "D.S. -Dal Segno- & D.C.III With You",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "……むー、子ども扱いしないでっていつも言ってるのに",
+    "ability": [
+      "【永】 他のあなたの《風南島》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたは自分の山札の上から1枚を、控え室に置く。そのカードのトリガーアイコンにがあるなら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Kazanajima 《風南島 》",
+      "Family 《家族》"
+    ],
+    "set": "DS",
+    "release": "W46",
+    "sid": "034",
+    "image": "https://images.littleakiba.com/tcg/card32191-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，触发检定",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "检定成功(翻出魂标): 再动",
+                "instructions": [
+                  {
+                    "op": "PseudoExtraAttack",
+                    "soul": 1
+                  }
+                ]
+              },
+              {
+                "label": "检定失败(未翻出魂标): 无效果",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "朝のハプニング 依愛",
+    "code": "DS/W46-048",
+    "rarity": "RR",
+    "expansion": "D.S. -Dal Segno- & D.C.III With You",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "言われたならすぐに視線を外さぬかっ！",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場の《風南島》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(1)］ あなたのクライマックス置場に「魔王の娘、立つ」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分の《風南島》のキャラを1枚と、このカードを選び、そのターン中、パワーを＋2500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは自分の山札の上から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kazanajima 《風南島 》",
+      "Chunibyo 《中二病》"
+    ],
+    "set": "DS",
+    "release": "W46",
+    "sid": "048",
+    "image": "https://images.littleakiba.com/tcg/card32205-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 削顶3张，根据CX数烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "賑やかな朝 ひまり",
+    "code": "DS/W81-097",
+    "rarity": "RR",
+    "expansion": "CIRCUS 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ふふっ、キミのそういうところ、嫌いじゃないなぁ、わたし",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「ひまりのお友達」があり、他のあなたの、《Anniversary》か《風南島》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、相手に2ダメージを与え、あなたは他の自分のキャラを1枚選び、そのターン中、この能力を与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Kazanajima 《風南島 》"
+    ],
+    "set": "DS",
+    "release": "W81",
+    "sid": "097",
+    "image": "https://images.littleakiba.com/tcg/card61443-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(ひまりのお友達)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    },
+                    {
+                      "op": "GiveEffect",
+                      "target": "other_character",
+                      "effect": {
+                        "trigger": "OnDamageCancel",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 2,
+                            "times": 1
+                          },
+                          {
+                            "op": "GiveEffect",
+                            "target": "other_character",
+                            "effect": {
+                              "trigger": "OnDamageCancel",
+                              "instructions": [
+                                {
+                                  "op": "Burn",
+                                  "amount": 2,
+                                  "times": 1
+                                }
+                              ],
+                              "limit": 1
+                            }
+                          }
+                        ],
+                        "limit": 1
+                      }
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "name": "初めての制服 姫乃",
+    "code": "DC3/W18-062",
+    "rarity": "C",
+    "expansion": "D.C. D.C.III",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "どうかな、兄さん。似合う？",
+    "ability": [
+      "【自】［(4)］ このカードがアタックした時、クライマックス置場に「海辺で語り合って」があるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Newspaper 《新聞》"
+    ],
+    "set": "DC3",
+    "release": "W18",
+    "sid": "062",
+    "image": "https://images.littleakiba.com/tcg/card6442-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付(4)费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(4)费用，造成5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "初めての制服 姫乃",
+    "code": "DC3/W18-T06",
+    "rarity": "TD",
+    "expansion": "D.C. D.C.III",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "ねえ、兄さん。どう？　似合う、かな？",
+    "ability": [
+      "【自】［(4)］ このカードがアタックした時、クライマックス置場に「海辺で語り合って」があるなら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Newspaper 《新聞》"
+    ],
+    "set": "DC3",
+    "release": "W18",
+    "sid": "T06",
+    "image": "https://images.littleakiba.com/tcg/card6005-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付4费: 造成5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ふたつの世界の物語 リッカ",
+    "code": "DC3/W46-078",
+    "rarity": "RR",
+    "expansion": "D.S. -Dal Segno- & D.C.III With You",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "またね♪",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの、《魔法》か《生徒会》のキャラの枚数×500に等しい。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Magic 《魔法》",
+      "Student Council 《生徒会》"
+    ],
+    "set": "DC3",
+    "release": "W46",
+    "sid": "078",
+    "image": "https://images.littleakiba.com/tcg/card32125-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "もっと素直に 美琴",
+    "code": "DC3/W46-092",
+    "rarity": "R",
+    "expansion": "D.S. -Dal Segno- & D.C.III With You",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "その反動っていうか、もっと素直になりたいなって思っちゃって……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《新聞》か《愛》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードがアタックした時、あなたは他の自分の、《新聞》か《愛》のキャラを1枚選び、そのターン中、パワーを＋2000。"
+    ],
+    "attributes": [
+      "Newspaper 《新聞》",
+      "Love 《愛》"
+    ],
+    "set": "DC3",
+    "release": "W46",
+    "sid": "092",
+    "image": "https://images.littleakiba.com/tcg/card32139-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果不发动",
+            "instructions": []
+          },
+          {
+            "label": "登场效果: 牌顶检视成功, 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "幸せな時間 すもも",
+    "code": "DC3/W46-099",
+    "rarity": "RR",
+    "expansion": "D.S. -Dal Segno- & D.C.III With You",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "気づいたら、空がうっすらと明るく",
+    "ability": [
+      "【永】 舞台のこのカードのレベルを－3。このカードのパワーを＋Ｘし、このカードは相手のキャラの【自】の効果によって【リバース】されない。Ｘはこのカードの正面のキャラのレベル×1000に等しい。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札の「守りたい笑顔 すもも」を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたの前列の中央の枠のキャラがアタックした時、クライマックス置場に「出会いの一冊」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Class Rep 《委員長》",
+      "Theater 《演劇》"
+    ],
+    "set": "DC3",
+    "release": "W46",
+    "sid": "099",
+    "image": "https://images.littleakiba.com/tcg/card32146-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付费用发动再动 (需在中央位+CX联动)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动再动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "桜に語り掛ける立夏",
+    "code": "DC3/W81-043",
+    "rarity": "R",
+    "expansion": "CIRCUS 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "心配かけてごめんね。わたしは大丈夫だから",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 記憶 このカードがアタックした時、クライマックス置場に「With You」があり、あなたの思い出が2枚以上なら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Magic 《魔法》"
+    ],
+    "set": "DC3",
+    "release": "W81",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card61360-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動(With You, 思い出2枚以上)＆相手をリバース→3点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "変わらない時間 姫乃",
+    "code": "DC3/WE16-06",
+    "rarity": "R",
+    "expansion": "Anime D.C. Da Capo III",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "兄さん、実はね…私…",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ あなたのクライマックス置場に「いつまでもいたいところ」が置かれた時、他のあなたの前列のキャラが1枚以下なら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与え、あなたのキャラすべてに、そのターン中、パワーを＋1500。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Newspaper 《新聞》"
+    ],
+    "set": "DC3",
+    "release": "WE16",
+    "sid": "06",
+    "image": "https://images.littleakiba.com/tcg/card9701-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件を満たさない/コストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "条件達成(他の前列1枚以下): 5点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "大切な人の隣に さら",
+    "code": "DC3/WE30-04",
+    "rarity": "R",
+    "expansion": "Da Capo VS Little Busters",
+    "side": "WE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "え？　あ、はい。先輩がそう言うんなら、\n私はいつでもいいですよ！",
+    "ability": [
+      "【永】 他のあなたの、《新聞》か《スポーツ》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】［(2) 手札の、《新聞》か《スポーツ》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、あなたの前列の中央の枠のキャラがアタックした時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Newspaper 《新聞》",
+      "Sports 《スポーツ》"
+    ],
+    "set": "DC3",
+    "release": "WE30",
+    "sid": "04",
+    "image": "https://images.littleakiba.com/tcg/card45361-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払い、自身を【スタンド】して再攻撃",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

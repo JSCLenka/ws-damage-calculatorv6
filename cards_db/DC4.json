@@ -1,0 +1,188 @@
+[
+  {
+    "name": "デートバトル延長決定！ ひより",
+    "code": "DC4/W81-083",
+    "rarity": "U",
+    "expansion": "CIRCUS 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "この勝負、延長戦とさせていただきたい！",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《Anniversary》か《魔法》のキャラが2枚以上なら、このカードのパワーを＋4000。",
+      "【自】【CXコンボ】 このカードのアタックの終わりに、クライマックス置場に「ナイスキャッチ！」があるなら、あなたは自分の山札の上から3枚を公開し、その山札をシャッフルする。それらのカードの持つ色の合計が2色なら、あなたは相手に1ダメージを与える。3色以上なら、あなたは相手に3ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Magic 《魔法》"
+    ],
+    "set": "DC4",
+    "release": "W81",
+    "sid": "083",
+    "image": "https://images.littleakiba.com/tcg/card61422-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 未发动或翻出1色 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 翻出2色，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 翻出3色，烧3两次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "恋のはじまり 有里栖",
+    "code": "DC4/W81-089",
+    "rarity": "RR",
+    "expansion": "CIRCUS 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "この恋を、私は最後まで思い切り貫きたいって思うから",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「この恋は、世界を変える」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から5枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋1000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Magic 《魔法》"
+    ],
+    "set": "DC4",
+    "release": "W81",
+    "sid": "089",
+    "image": "https://images.littleakiba.com/tcg/card61431-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 翻对手牌库底5张，每有1张CX烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 5,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "胸に響く音色 詩名",
+    "code": "DC4/W81-092",
+    "rarity": "U",
+    "expansion": "CIRCUS 20th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "――それでは、一曲弾かせていただきます",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「突撃！インタビュー ちよ子」の【自】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か下に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary 《Anniversary》",
+      "Magic 《魔法》"
+    ],
+    "set": "DC4",
+    "release": "W81",
+    "sid": "092",
+    "image": "https://images.littleakiba.com/tcg/card61435-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手: 支付(3)费手牌1张 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

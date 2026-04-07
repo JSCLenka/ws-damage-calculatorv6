@@ -1,0 +1,151 @@
+[
+  {
+    "name": "酉年 しよ子",
+    "code": "CGS/WS01-P03",
+    "rarity": "PR",
+    "expansion": "Card Game Shiyoko",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《カードゲーム》のキャラがいるなら、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《カードゲーム》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】［(1)］ このカードのバトル相手でレベル2以上のキャラが【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のキャラを1枚選び、手札に戻す。"
+    ],
+    "attributes": [
+      "カードゲーム",
+      "和服"
+    ],
+    "set": "CGS",
+    "release": "WS01",
+    "sid": "P03",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/cgs_ws01/cgs_ws01_p03.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果 (条件: 牌顶为角色)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动 / 条件未满足",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "しろくろフェス2018 しよ子",
+    "code": "CGS/WS01-P11a",
+    "rarity": "PR",
+    "expansion": "Card Game Shiyoko",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《カードゲーム》のキャラの枚数×500に等しい。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "カードゲーム",
+      "冒険者"
+    ],
+    "set": "CGS",
+    "release": "WS01",
+    "sid": "P11a",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/cgs_ws01/cgs_ws01_p11a.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(登场回合+击倒对手): 支付(3)费+1手牌 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "しろくろフェス2018 しよ子",
+    "code": "CGS/WS01-P11b",
+    "rarity": "PR",
+    "expansion": "Card Game Shiyoko",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《カードゲーム》のキャラの枚数×500に等しい。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "カードゲーム",
+      "冒険者"
+    ],
+    "set": "CGS",
+    "release": "WS01",
+    "sid": "P11b",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/c/cgs_ws01/cgs_ws01_p11b.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未满足再动条件",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 当回合登场且击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

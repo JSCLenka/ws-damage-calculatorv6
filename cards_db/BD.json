@@ -1,0 +1,4495 @@
+[
+  {
+    "name": "私たちのうた 長崎そよ",
+    "code": "BD/W125-012",
+    "rarity": "U",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 6000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋6000。",
+      "【自】［手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、他のあなたの《CRYCHIC》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "CRYCHIC"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_012.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手或条件不满足",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "迷子のバンド 千早愛音",
+    "code": "BD/W125-029",
+    "rarity": "RR",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 125,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻してよい。』『［(1)］ あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。』",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたのキャラすべてが《音楽》なら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "MyGO!!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "029",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_029.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)和1手牌：翻顶烧（等级+1）",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Masquerade ドロリス",
+    "code": "BD/W125-030",
+    "rarity": "RR",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 125,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「再会 三角初華」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「Ave Mujica」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、相手に同じダメージを与え、あなたは他の自分のキャラを1枚選び、そのターン中、この能力を与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Ave Mujica"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "030",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_030.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(赋予连锁取消烧)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": "last_cancelled"
+                    },
+                    {
+                      "op": "GiveEffect",
+                      "target": "other_character",
+                      "effect": {
+                        "trigger": "OnDamageCancel",
+                        "limit": "once_per_turn",
+                        "instructions": [
+                          {
+                            "op": "DealDamage",
+                            "amount": "last_cancelled"
+                          },
+                          {
+                            "op": "GiveEffect",
+                            "target": "other_character",
+                            "effect": {
+                              "trigger": "OnDamageCancel",
+                              "limit": "once_per_turn",
+                              "instructions": [
+                                {
+                                  "op": "DealDamage",
+                                  "amount": "last_cancelled"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "僕らになれるうた 千早愛音",
+    "code": "BD/W125-050",
+    "rarity": "U",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「僕らになれるうた 高松燈」の【自】の効果で舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「詩超絆」があり、前列の右の枠にこのカードがいるなら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋1000し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "MyGO!!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "050",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_050.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "このカード自身に効果を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "他のキャラに効果を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "僕らになれるうた 長崎そよ",
+    "code": "BD/W125-051",
+    "rarity": "U",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「僕らになれるうた 高松燈」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置き、このカードを【レスト】する］ あなたのアタックフェイズの始めに、CX置場に「詩超絆」があり、後列の右の枠にこのカードがいて、あなたのキャラすべてが《MyGO!!!!!》なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたのキャラすべてに、そのターン中、パワーを＋1500。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "MyGO!!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "051",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_051.png",
+    "effects": [
+      {
+        "trigger": "Startup",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackPhaseStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付CX连击cost: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付CX连击cost",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "迷子のバンド 高松燈",
+    "code": "BD/W125-071",
+    "rarity": "RR",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 あなたのCX置場に「迷星叫」が置かれた時、前列にこのカードがいるなら、あなたは自分の山札を見て《音楽》のキャラを2枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】 経験 共鳴 ［手札を2枚控え室に置き、手札のあなたのレベル置場のキャラと同じカード名のキャラを1枚公開する］ このカードが手札から舞台に置かれたターン中、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分のクロックの上から2枚までを、控え室に置く。』『あなたは自分の山札の上から4枚を、控え室に置き、相手に2ダメージをＸ回与える。ＸはそれらのカードのCXの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "MyGo!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "071",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_071.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "选项A: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "选项A: 回复2点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "选项B: 削顶4张，根据CX数量烧2",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "私たちのうた 高松燈",
+    "code": "BD/W125-078",
+    "rarity": "R",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「春日影」があり、あなたの手札が5枚以下で、あなたのキャラすべてが《CRYCHIC》なら、あなたは相手に2ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】［(3) あなたのCX置場の「春日影」を1枚思い出にする］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードは次の能力を得る。『【自】 相手のアタックフェイズの始めに、あなたは相手のキャラを1枚選び、そのターン中、ソウルを－3。』"
+    ],
+    "attributes": [
+      "Music",
+      "CRYCHIC"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "078",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_078.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 (手牌≤5, 全员《CRYCHIC》)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "发动效果: 烧2",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "不发动",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "エールを受け取って 高松燈",
+    "code": "BD/W125-082",
+    "rarity": "U",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、他のあなたの《音楽》のキャラがいるなら、あなたは自分の控え室のキャラを1枚まで選び、手札に戻し、コストを払ってよい。コストを払ったなら、あなたは自分の手札の「進んだ先の景色 千早愛音」を1枚まで選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】［(3) 手札の「進んだ先の景色 千早愛音」を1枚控え室に置く］ このカードのアタックの終わりに、CX置場に「碧天伴走」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分の「進んだ先の景色 千早愛音」を1枚選び、【スタンド】し、そのターン中、そのキャラのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Music",
+      "MyGO!!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_082.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "【CX连击】支付(3)费+弃1手牌「千早爱音」，再动另一张「千早爱音」",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "僕らになれるうた 要楽奈",
+    "code": "BD/W125-084",
+    "rarity": "U",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「僕らになれるうた 高松燈」の【自】の効果で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「詩超絆」があり、前列の左の枠にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "MyGO!!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_084.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付1费弃1手 (CX连击): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "僕らになれるうた 椎名立希",
+    "code": "BD/W125-085",
+    "rarity": "U",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ あなたのアタックフェイズの始めに、CX置場に「詩超絆」があり、後列の左の枠にこのカードがいて、あなたのキャラすべてが《MyGO!!!!!》なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【永】 後列に【スタンド】しているこのカードがいるなら、このカードはアタックを行うキャラとして選択してよい。そうしたら、このカードはダイレクトアタックする。』"
+    ],
+    "attributes": [
+      "Music",
+      "MyGO!!!!!"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_085.png",
+    "effects": [
+      {
+        "trigger": "OnAttackPhaseStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击[詩超絆]: 支付(2)费1手牌，获得后排直击能力",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Veritas\"オブリビオニス",
+    "code": "BD/W125-T06",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の《音楽》のキャラを1枚選び、そのターン中、パワーを＋1500。",
+      "【自】［(2)］ このカードが手札から舞台に置かれたターン中、あなたのアンコールステップの始めに、他のあなたの《音楽》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Ave Mujica"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "T06",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_t06.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动回合结束时效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)并发动回合结束时效果: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Perdere Omnia\"ドロリス",
+    "code": "BD/W125-T16",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Ave Mujica x MyGo",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、あなたはコストを払ってよい。コストを払ったなら、あなたは相手の控え室のキャラを1枚選び、舞台のキャラのいない枠に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのCX置場に「黒のバースデイ」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたはそのバトル相手をクロック置場に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Ave Mujica"
+    ],
+    "set": "BD",
+    "release": "W125",
+    "sid": "T16",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w125/bd_w125_t16.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (CX连击): 烧1, 将对手踢入时计",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glitter*Green 牛込ゆり",
+    "code": "BD/W47-004",
+    "rarity": "R",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "Don't be afraid！掴め！掴め！強く！ 初めての この高鳴りは―",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのクライマックス置場に「私たちのステージ！」が置かれた時、あなたはコストを払ってよい。そうしたら、あなたは他の自分のカード名に「七菜」か「リィ」か「ひなこ」を含むキャラを1枚とこのカードを選び、そのターン中、パワーを＋1500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Sports 《スポーツ》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card36281-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnAttack",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "未击倒对手",
+                  "instructions": []
+                },
+                {
+                  "label": "击倒对手 -> 烧1",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnAttack",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "未击倒对手",
+                  "instructions": []
+                },
+                {
+                  "label": "击倒对手 -> 烧1",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "山吹沙綾",
+    "code": "BD/W47-023",
+    "rarity": "RR",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もうやるしかない！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「交わした約束」が置かれた時、前列にこのカードがいるなら、そのターン中、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(1) 手札の《音楽》のキャラを1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Bread 《パン》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "023",
+    "image": "https://images.littleakiba.com/tcg/card36300-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "牛込りみ",
+    "code": "BD/W47-024",
+    "rarity": "RR",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "頑張ろうね……っ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「大きな一歩」があるなら、あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、そのターン中、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Choco Coronet 《チョココロネ》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "024",
+    "image": "https://images.littleakiba.com/tcg/card36301-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "OppTopDeck",
+            "max_cards": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手 (无效果)",
+                "instructions": []
+              },
+              {
+                "label": "条件达成：击倒对手 -> 烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "戸山香澄",
+    "code": "BD/W47-025",
+    "rarity": "RR",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "円陣やろ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「STAR BEAT!～ホシノコドウ～」が置かれた時、前列にこのカードがいるなら、あなたは自分の手札の、《音楽》かカード名に「明日香」を含むキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】［(4)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Star 《星》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "025",
+    "image": "https://images.littleakiba.com/tcg/card36302-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付(4)费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(4)费用，削顶烧(等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Starrin’ PARTY 戸山香澄",
+    "code": "BD/W47-036",
+    "rarity": "R",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "いえーいっ！　今日も張り切っていこー♪",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《音楽》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】【CXコンボ】［(4) 手札を3枚控え室に置く］ あなたのアタックフェイズの始めに、クライマックス置場に「私たち Poppin'Party」があり、前列にこのカードがいて、他のあなたの、「Starrin’ PARTY 花園たえ」と「Starrin’ PARTY 牛込りみ」と「Starrin’ PARTY 山吹沙綾」と「Starrin’ PARTY 市ヶ谷有咲」がいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手のキャラすべてを、【スタンド】し、相手にＸダメージを与え、自分のクロックの上からＸ枚までを、控え室に置く。Ｘは相手の【スタンド】しているキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Star 《星》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "036",
+    "image": "https://images.littleakiba.com/tcg/card36313-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackPhaseStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "name": "相手のキャラが5枚",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "name": "相手のキャラが4枚",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "name": "相手のキャラが3枚",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "name": "相手のキャラが2枚",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "name": "相手のキャラが1枚",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "name": "相手のキャラが0枚",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Starrin’ PARTY 牛込りみ",
+    "code": "BD/W47-037",
+    "rarity": "R",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "えへへ、なんか楽しいね",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「私たち Poppin'Party」があるなら、あなたのキャラすべてに、そのターン中、パワーを＋Ｘし、ソウルを＋1。Ｘは相手の【スタンド】しているキャラの枚数×1000に等しい。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Choco Coronet 《チョココロネ》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "037",
+    "image": "https://images.littleakiba.com/tcg/card36314-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "cx_combo": true,
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "soul_boost": 1
+          },
+          {
+            "op": "GiveEffect",
+            "target": "all_others",
+            "soul_boost": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "市ヶ谷有咲",
+    "code": "BD/W47-082",
+    "rarity": "RR",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7500",
+    "soul": 2,
+    "flavor_text": "忘れてんのかと思った",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラすべてに、パワーを＋1500。",
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「ドキドキ星」を1枚控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の《音楽》のキャラを2枚まで選び、次の相手のターンの終わりまで、次の能力を与える。『【自】 このカードがフロントアタックされた時、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。』"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Bonsai 《盆栽》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "082",
+    "image": "https://images.littleakiba.com/tcg/card36359-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果：逆压缩",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "水着の有咲",
+    "code": "BD/W47-083",
+    "rarity": "RR",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル中、あなたの受けたダメージがキャンセルされなかった時、あなたはコストを払ってよい。そうしたら、相手に同じダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Bonsai 《盆栽》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "083",
+    "image": "https://images.littleakiba.com/tcg/card36360-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登場時効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "登場時効果: クロックから1枚回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Starrin’ PARTY 市ヶ谷有咲",
+    "code": "BD/W47-091",
+    "rarity": "R",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5000",
+    "soul": 1,
+    "flavor_text": "い･･････いえーい",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「私たち Poppin'Party」が置かれた時、あなたのレベルが3以上なら、あなたは他の自分のキャラを1枚選び、【スタンド】し、そのターン中、そのキャラのパワーを＋1500。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Bonsai 《盆栽》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "091",
+    "image": "https://images.littleakiba.com/tcg/card36368-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 再动1名其他角色",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Poppin’Party”戸山香澄",
+    "code": "BD/W47-T10",
+    "rarity": "TD",
+    "expansion": "BanG Dream!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ギター&ボーカル戸山香澄です！",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《音楽》のキャラが4枚以上なら、このカードのパワーを＋5000し、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Star 《星》"
+    ],
+    "set": "BD",
+    "release": "W47",
+    "sid": "T10",
+    "image": "https://images.littleakiba.com/tcg/card34179-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "トップチェック失敗、または効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "トップチェック成功：相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“船上の名探偵”弦巻こころ",
+    "code": "BD/W54-003",
+    "rarity": "RR",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ここまでよ！花音を返しなさい！",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Hello, Happy World! 《ハロー、ハッピーワールド！》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card40884-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": "once_per_turn",
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“受け止めたい思い”青葉モカ",
+    "code": "BD/W54-027",
+    "rarity": "RR",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "1000",
+    "soul": 2,
+    "flavor_text": "モカ「『冷たいコンクリート　打ちつける情熱（パトス）』……？」",
+    "ability": [
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「That Is How I Roll!」があるなら、あなたは相手の山札を上から2枚まで見てカードを2枚まで選び、控え室に置き、残りのカードを山札の上に好きな順番で置き、自分の山札を上から2枚まで見てカードを2枚まで選び、控え室に置き、残りのカードを山札の上に好きな順番で置く。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Afterglow 《Afterglow》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "027",
+    "image": "https://images.littleakiba.com/tcg/card40907-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“本当の私を伝えられたら”白鷺千聖",
+    "code": "BD/W54-T37",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ありがとう。一人で片付けようとするのは、子役時代からの悪い癖かもしれないわね",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《音楽》のキャラすべてに、パワーを＋1500。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Pastel*Palettes 《Pastel＊Pal》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "T37",
+    "image": "https://images.littleakiba.com/tcg/card42350-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付费用烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ハッピー革命！”弦巻こころ",
+    "code": "BD/W54-T71",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ここは、ふんふんふーん♪……がいいわ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「えがおのオーケストラっ！」が置かれた時、前列にこのカードがいるなら、あなたは自分の《ハロー、ハッピーワールド！》のキャラを1枚選び、そのターン中、パワーを＋2000し、ソウルを＋1し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Hello, Happy World! 《ハロー、ハッピーワールド！》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "T71",
+    "image": "https://images.littleakiba.com/tcg/card45023-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 选择自身获得+1魂与取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 选择另一名角色获得+1魂与取消烧效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1,
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“りみの大事なもの”牛込りみ",
+    "code": "BD/W54-T86",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "うん……うん……嬉しい……ホンットーーに嬉しい……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“ぜってーとってやる！”市ヶ谷有咲」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「二重の虹（ダブル レインボウ）」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《Poppin’Party》のキャラを1枚選び、そのターン中、パワーを＋2500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin’Party 《Poppin’Par》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "T86",
+    "image": "https://images.littleakiba.com/tcg/card48187-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnAttack",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "未击倒对手 (无效果)",
+                  "instructions": []
+                },
+                {
+                  "label": "条件达成: 击倒对手 -> 烧1点",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“りみの大事なもの”牛込りみ",
+    "code": "BD/W54-T86R",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "うん……うん……嬉しい……ホンットーーに嬉しい……",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“ぜってーとってやる！”市ヶ谷有咲」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「二重の虹（ダブル レインボウ）」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《Poppin’Party》のキャラを1枚選び、そのターン中、パワーを＋2500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin’Party 《Poppin’Par》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "T86R",
+    "image": "https://images.littleakiba.com/tcg/card48201-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnCXPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 他のキャラ1枚に能力を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "相手をリバースしていない",
+                      "instructions": []
+                    },
+                    {
+                      "label": "相手をリバースした: 1ダメージ",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ぜってーとってやる！”市ヶ谷有咲",
+    "code": "BD/W54-T94",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "てか、初めはわからなくても、諦めないでやってれば、だんだんわかってくるもんだから",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「“りみの大事なもの”牛込りみ」を1枚選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「二重の虹（ダブル レインボウ）」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《Poppin’Party》のキャラを1枚選び、そのターン中、パワーを＋2500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin’Party 《Poppin’Par》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "T94",
+    "image": "https://images.littleakiba.com/tcg/card48195-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnCX",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnAttack",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "未击倒对手 (无效果)",
+                  "instructions": []
+                },
+                {
+                  "label": "条件达成：击倒对手 -> 烧1",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ぜってーとってやる！”市ヶ谷有咲",
+    "code": "BD/W54-T94R",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Girls Band Party",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "てか、初めはわからなくても、諦めないでやってれば、だんだんわかってくるもんだから",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「“りみの大事なもの”牛込りみ」を1枚選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「二重の虹（ダブル レインボウ）」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《Poppin’Party》のキャラを1枚選び、そのターン中、パワーを＋2500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin’Party 《Poppin’Par》"
+    ],
+    "set": "BD",
+    "release": "W54",
+    "sid": "T94R",
+    "image": "https://images.littleakiba.com/tcg/card48204-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnAttack",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "未击倒对手 / 或选择不发动效果",
+                  "instructions": []
+                },
+                {
+                  "label": "条件达成：击倒对手 -> 烧1",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夢に続く道”白鷺千聖",
+    "code": "BD/W63-002",
+    "rarity": "RR",
+    "expansion": "Bang Dream! Girls Band Party Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "千聖「ありがとう……彩ちゃん……」",
+    "ability": [
+      "【永】 あなたの舞台のキャラの持つ色の合計が4色以上なら、このカードのパワーを＋1500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2)］ あなたのアンコールステップの始めに、クライマックス置場に「夢を与えるアイドル」があり、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、FEVERする。",
+      "【リプレイ】 FEVER あなたは自分のキャラを1枚まで選び、【レスト】し、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Pastel*Palettes 《Pastel＊Pal》"
+    ],
+    "set": "BD",
+    "release": "W63",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card49788-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回血1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnEncoreStepStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击条件未达成",
+            "instructions": []
+          },
+          {
+            "label": "CX连击条件达成: 发动FEVER烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“気づいた『変化』”羽沢つぐみ",
+    "code": "BD/W63-031",
+    "rarity": "R",
+    "expansion": "Bang Dream! Girls Band Party Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "このお花、今教えてもらうまで知らなかったよ。\nさすが蘭ちゃんだね",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「変わりゆく空」があり、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、FEVERする。",
+      "【リプレイ】 FEVER 相手に1ダメージを与え、あなたは相手の前列のキャラを1枚選び、クロック置場に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Afterglow 《Afterglow》"
+    ],
+    "set": "BD",
+    "release": "W63",
+    "sid": "031",
+    "image": "https://images.littleakiba.com/tcg/card49817-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动FEVER效果",
+            "instructions": []
+          },
+          {
+            "label": "条件满足(对手前列空场或全灭): 发动FEVER",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“キラキラの笑顔”山吹沙綾",
+    "code": "BD/W63-051",
+    "rarity": "RR",
+    "expansion": "Bang Dream! Girls Band Party Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "沙綾「私にとって、ポピパが一番居心地のいい場所、ですから！」",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「キラキラの笑顔」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin’Party 《Poppin’Par》"
+    ],
+    "set": "BD",
+    "release": "W63",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card49837-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“クッキーをもう1度”今井リサ",
+    "code": "BD/W63-073",
+    "rarity": "RR",
+    "expansion": "Bang Dream! Girls Band Party Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "だってさ。やったね、紗夜！",
+    "ability": [
+      "【永】 経験 あなたのレベル置場に、「“こぼれ落ちる涙”湊友希那」と「“今度は私が”氷川紗夜」があるなら、このカードのパワーを＋2500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 手札の《Roselia》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Roselia 《Roselia》"
+    ],
+    "set": "BD",
+    "release": "W63",
+    "sid": "073",
+    "image": "https://images.littleakiba.com/tcg/card49859-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付cost",
+            "instructions": []
+          },
+          {
+            "label": "支付1费+弃1张《Roselia》，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“決意の叫び”白金燐子",
+    "code": "BD/W63-081",
+    "rarity": "R",
+    "expansion": "Bang Dream! Girls Band Party Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "だって……誰も……みんなの音、聴いてないから……っ！！",
+    "ability": [
+      "【永】 他のあなたの《Roselia》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「仮入部員」があり、あなたのキャラすべてが《Roselia》なら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚選び、【スタンド】し、そのターン中、そのキャラのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Roselia 《Roselia》"
+    ],
+    "set": "BD",
+    "release": "W63",
+    "sid": "081",
+    "image": "https://images.littleakiba.com/tcg/card49867-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付cost发动CX连击，再动其他1名角色",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“笑顔の音楽”奥沢美咲",
+    "code": "BD/W73-004",
+    "rarity": "R",
+    "expansion": "BanG Dream! Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "4500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 このカードの下にマーカーがあるなら、このカードのパワーを＋7000し、このカードは次の能力を得る。『【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の《ハロー、ハッピーワールド！》のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替える。』",
+      "【自】 このカードが手札から舞台に置かれた時か「“笑顔の音楽”弦巻こころ」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、自分の控え室のカード名に「こころ」を含むキャラを1枚まで選び、このカードの下にマーカーとして表向きに置く。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Hello, Happy World! 《ハロー、ハッピーワールド！》"
+    ],
+    "set": "BD",
+    "release": "W73",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card55284-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "震えも味方に 丸山彩",
+    "code": "BD/W73-006",
+    "rarity": "R",
+    "expansion": "BanG Dream! Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札の《Pastel＊Palettes》のキャラを4枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋4000し、相手にＸダメージを与える。Ｘはこの能力のコストで控え室に置かれたカードの持つ色の合計に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Pastel*Palettes 《Pastel＊Pal》"
+    ],
+    "set": "BD",
+    "release": "W73",
+    "sid": "006",
+    "image": "https://images.littleakiba.com/tcg/card55286-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "クロックから1枚回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払う (捨て札の色1種類)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "コストを払う (捨て札の色2種類)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "コストを払う (捨て札の色3種類)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "コストを払う (捨て札の色4種類)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "いざ、主催ライブ！ 戸山香澄",
+    "code": "BD/W73-053",
+    "rarity": "R",
+    "expansion": "BanG Dream! Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《Poppin'Party》のキャラが2枚以上なら、このカードのパワーを＋4000。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「キズナのメロディ」があり、このカードの正面のキャラがいないか【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin’Party 《Poppin’Par》"
+    ],
+    "set": "BD",
+    "release": "W73",
+    "sid": "053",
+    "image": "https://images.littleakiba.com/tcg/card55333-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (未击倒对手)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (击倒对手)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "確かな実力 レイヤ",
+    "code": "BD/W73-T10",
+    "rarity": "TD",
+    "expansion": "BanG Dream! Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《音楽》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "RAISE A SUILEN 《RAISE A SUILEN》"
+    ],
+    "set": "BD",
+    "release": "W73",
+    "sid": "T10",
+    "image": "https://images.littleakiba.com/tcg/card55560-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(当回合登场且击倒对手)：支付3费1手，再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"みんなでポーズ☆\"桐ヶ谷透子",
+    "code": "BD/W95-016",
+    "rarity": "U",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 相手の後列のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードが手札か控え室から、舞台に置かれた時、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "016",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_016.png",
+    "jpAbility": [
+      "【永】 相手の後列のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードが手札か控え室から、舞台に置かれた時、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"反骨精神\"美竹蘭",
+    "code": "BD/W95-032",
+    "rarity": "RR",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ありのままでいること」があり、あなたのキャラすべてが《Anniversary》か《Afterglow》なら、相手に1ダメージを与え、あなたは自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれたターン中、アンコールステップの始めに、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "032",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_032.png",
+    "jpAbility": [
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「ありのままでいること」があり、あなたのキャラすべてが《Anniversary》か《Afterglow》なら、相手に1ダメージを与え、あなたは自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれたターン中、アンコールステップの始めに、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"やっぱり、ブラック\"レイヤ",
+    "code": "BD/W95-042",
+    "rarity": "U",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 6500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《Anniversary》か《RAISE A SUILEN》のキャラ1枚につき、このカードのパワーを＋1500。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたは相手のクロックの上から1枚を、控え室に置いてよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "042",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_042.png",
+    "jpAbility": [
+      "【永】 あなたのターン中、他のあなたの、《Anniversary》か《RAISE A SUILEN》のキャラ1枚につき、このカードのパワーを＋1500。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたは相手のクロックの上から1枚を、控え室に置いてよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (未击倒或选择不发动)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手并执行时计交换",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"和太鼓の魅力\"宇田川巴",
+    "code": "BD/W95-044",
+    "rarity": "U",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《Anniversary》か《Afterglow》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "044",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_044.png",
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の、《Anniversary》か《Afterglow》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费, 2手], 对敌方造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"STAR☆\"戸山香澄",
+    "code": "BD/W95-064",
+    "rarity": "RR",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《Anniversary》か《Poppin'Party》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが、手札か山札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードのアタックの終わりに、クライマックス置場に「ついに来ちゃったね！」があり、他のあなたの、《Anniversary》か《Poppin'Party》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けない。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "064",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_064.png",
+    "jpAbility": [
+      "【永】 あなたのターン中、他のあなたの、《Anniversary》か《Poppin&#8217;Party》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが、手札か山札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードのアタックの終わりに、クライマックス置場に「ついに来ちゃったね！」があり、他のあなたの、《Anniversary》か《Poppin&#8217;Party》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けない。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"朝焼けに包まれて\"丸山彩",
+    "code": "BD/W95-065",
+    "rarity": "RR",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「イベント前のワクワク」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「イベント前のワクワク」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《Anniversary》か《Pastel＊Palettes》のキャラか「SNS映え？」なら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "065",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_065.png",
+    "jpAbility": [
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「イベント前のワクワク」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「イベント前のワクワク」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《Anniversary》か《Pastel＊Palettes》のキャラか「SNS映え？」なら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 对手坟墓最多2张非CX洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动顶牌烧血效果",
+            "instructions": []
+          },
+          {
+            "label": "顶牌检查成功 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"希望のメロディ\"戸山香澄",
+    "code": "BD/W95-072",
+    "rarity": "U",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 7500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【起】［(2) あなたの「“これで完璧！”丸山彩」を1枚とこのカードを【レスト】する］ あなたは自分の【スタンド】している《Anniversary》のキャラを1枚選び、控え室に置く。そうしたら、あなたは自分の山札を上から7枚まで見て、《Anniversary》のキャラを1枚まで選び、この効果で控え室に置かれたキャラがいた枠に置き、その山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "072",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_072.png",
+    "jpAbility": [
+      "【起】［(2) あなたの「“これで完璧！”丸山彩」を1枚とこのカードを【レスト】する］ あなたは自分の【スタンド】している《Anniversary》のキャラを1枚選び、控え室に置く。そうしたら、あなたは自分の山札を上から7枚まで見て、《Anniversary》のキャラを1枚まで選び、この効果で控え室に置かれたキャラがいた枠に置き、その山札をシャッフルする。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不启动效果",
+            "instructions": []
+          },
+          {
+            "label": "启动换人效果 (登场角色魂1)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "启动换人效果 (登场角色魂2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "启动换人效果 (登场角色魂3)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"お姉ちゃんだから\"二葉つくし",
+    "code": "BD/W95-092",
+    "rarity": "R",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの、《Anniversary》か《Morfonica》のキャラがいるなら、このカードのパワーを＋1500し、このカードは『【自】 アンコール ［手札のキャラを1枚控え室に置く］』を得る。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「できた！実力の証明」が置かれた時、前列にこのカードがいて、他のあなたの、《Anniversary》か《Morfonica》のキャラがいるなら、あなたは自分の控え室の、《Anniversary》か《Morfonica》のキャラを1枚まで選び、手札に戻すか舞台の好きな枠に置く。手札に戻したなら、相手に1ダメージを与える。舞台に置いたなら、次の相手のターンの終わりまで、そのキャラのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "092",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_092.png",
+    "jpAbility": [
+      "【永】 他のあなたの、《Anniversary》か《Morfonica》のキャラがいるなら、このカードのパワーを＋1500し、このカードは『【自】 アンコール ［手札のキャラを1枚控え室に置く］』を得る。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「できた！実力の証明」が置かれた時、前列にこのカードがいて、他のあなたの、《Anniversary》か《Morfonica》のキャラがいるなら、あなたは自分の控え室の、《Anniversary》か《Morfonica》のキャラを1枚まで選び、手札に戻すか舞台の好きな枠に置く。手札に戻したなら、相手に1ダメージを与える。舞台に置いたなら、次の相手のターンの終わりまで、そのキャラのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 控え室のキャラを手札に戻し、1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のキャラを舞台に置く (ダメージなし)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"クローゼットの涙\"チュチュ",
+    "code": "BD/W95-095",
+    "rarity": "R",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「“あなたがいたから”パレオ」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのクライマックス置場に「セッションは全員で」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、あなたは相手の山札の下から2枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "095",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_095.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场回血",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (付1费1手)：全体队友获得扒底烧2",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "MillAndBurn",
+                      "target_player": "opp",
+                      "zone": "bottom",
+                      "mill_amount": 2,
+                      "condition": "is_cx",
+                      "mode": "once_if_any",
+                      "burn_amount": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"大切なメモワール\"花園たえ",
+    "code": "BD/W95-106",
+    "rarity": "U",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが6枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの、《Anniversary》か《Poppin'Party》のキャラが2枚以上なら、このカードのパワーを＋2500し、このカードは次の能力を得る。『【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "106",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_106.png",
+    "jpAbility": [
+      "【永】 あなたの控え室のクライマックスが6枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの、《Anniversary》か《Poppin&#8217;Party》のキャラが2枚以上なら、このカードのパワーを＋2500し、このカードは次の能力を得る。『【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。"
+    ],
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "支付1手, 回复1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动攻击效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(2+其他角色): 支付(3)费2手, 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"目指す理想のアイドル\"丸山彩",
+    "code": "BD/W95-T12",
+    "rarity": "TD",
+    "expansion": "BanG Dream Girls Band Party 5th Anniversary",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "音楽",
+      "Pastel＊Palettes"
+    ],
+    "set": "BD",
+    "release": "W95",
+    "sid": "T12",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_w95/bd_w95_t12.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不回复",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)费弃2手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Smiling Magic\" Hagumi Kitazawa",
+    "code": "BD/WE31-006",
+    "rarity": "NR",
+    "expansion": "BanG Dream Special Pack",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚引き、自分の手札を1枚選び、控え室に置き、相手のキャラを1枚まで選び、手札に戻す。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「笑顔のマジック」が置かれた時、そのターン中、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードのトリガーチェックでトリガーアイコンにがあるカードがでた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Hello, Happy World!"
+    ],
+    "set": "BD",
+    "release": "WE31",
+    "sid": "006",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we31/bd_we31_006.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "label": "CXコンボ「笑顔のマジック」",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "ソウルトリガーなし (No Soul Trigger)",
+            "instructions": []
+          },
+          {
+            "label": "ソウルトリガーあり→3点ダメージ (Soul Triggered -> Burn 3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Colorful Poppin'!\" Rimi Ushigome",
+    "code": "BD/WE31-019",
+    "rarity": "NR",
+    "expansion": "BanG Dream Special Pack",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「カラフルポッピン！」があるなら、あなたは他の自分の《音楽》のキャラを1枚とこのカードを選び、次の相手のターンの終わりまで、パワーを＋2500。",
+      "【自】［(1)］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Poppin'Party"
+    ],
+    "set": "BD",
+    "release": "WE31",
+    "sid": "019",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we31/bd_we31_019.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Overlapping Blue Roses\" Rinko Shirokane",
+    "code": "BD/WE31-027",
+    "rarity": "NR",
+    "expansion": "BanG Dream Special Pack",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置き、あなたの【スタンド】している《Roselia》のキャラを2枚【レスト】する］ あなたのクライマックス置場に「重なり合う青薔薇」が置かれた時、あなたのレベルが3以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Music",
+      "Roselia"
+    ],
+    "set": "BD",
+    "release": "WE31",
+    "sid": "027",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we31/bd_we31_027.png",
+    "soul": 1,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 洗对手坟场最多3张非CX回牌库",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "洗1张回牌库",
+                "instructions": [
+                  {
+                    "op": "ReverseShuffle",
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "洗2张回牌库",
+                "instructions": [
+                  {
+                    "op": "ReverseShuffle",
+                    "amount": 2
+                  }
+                ]
+              },
+              {
+                "label": "洗3张回牌库",
+                "instructions": [
+                  {
+                    "op": "ReverseShuffle",
+                    "amount": 3
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"Overlapping Blue Roses\" Ako Udagawa",
+    "code": "BD/WE31-028",
+    "rarity": "NR",
+    "expansion": "BanG Dream Special Pack",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《Roselia》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「重なり合う青薔薇」があり、他のあなたの《音楽》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Roselia"
+    ],
+    "set": "BD",
+    "release": "WE31",
+    "sid": "028",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we31/bd_we31_028.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 5,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Summerly Tone♪”広町七深",
+    "code": "BD/WE34-04",
+    "rarity": "R",
+    "expansion": "Morfonica x RAISE A SUILEN",
+    "side": "WE",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "やー、楽しかったねー。\n初めてにしてはいい感じだったんじゃない？",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのソウルを＋1。",
+      "【自】［(4)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Morfonica 《Morfonica》"
+    ],
+    "set": "BD",
+    "release": "WE34",
+    "sid": "04",
+    "image": "https://images.littleakiba.com/tcg/card67900-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付(4)費用",
+            "instructions": []
+          },
+          {
+            "label": "支付(4)費用，賦予取消時追加傷害效果",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "將效果賦予給自身",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "self",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "limit": 1,
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": "last_cancelled"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "將效果賦予給其他角色",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "other_character",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "limit": 1,
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": "last_cancelled"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Astral Harmony”倉田ましろ",
+    "code": "BD/WE34-28",
+    "rarity": "RR",
+    "expansion": "Morfonica x RAISE A SUILEN",
+    "side": "WE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "えっと……がんばって、いいものにしますね",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) このカードを思い出にする］ このカードの与えたダメージがキャンセルされた時、あなたのクライマックス置場に「Daylight」があり、他のあなたの《音楽》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のキャラを1枚選び、このカードがいた枠に置く。（バトルは発生しない）"
+    ],
+    "attributes": [
+      "Music",
+      "Morfonica"
+    ],
+    "set": "BD",
+    "release": "WE34",
+    "sid": "28",
+    "image": "https://images.littleakiba.com/tcg/card67933-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "PseudoExtraAttack",
+                  "soul": 2
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"青空に見えた星\"倉田ましろ",
+    "code": "BD/WE34-T17",
+    "rarity": "TD",
+    "expansion": "Morfonica x RAS EB",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】 相手のターン中、あなたの受けたダメージがキャンセルされなかった時、前列にこのカードがいるなら、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。"
+    ],
+    "attributes": [
+      "音楽",
+      "Morfonica"
+    ],
+    "set": "BD",
+    "release": "WE34",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we34/bd_we34_t17.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)手牌1: 扒对手牌库底3张，每有1张CX烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Astral Harmony”牛込りみ",
+    "code": "BD/WE35-03",
+    "rarity": "RR",
+    "expansion": "Poppin'Party x Roselia",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ライブ……めっっっっちゃ楽しかった",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札の「“Astral Harmony”山吹沙綾」を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「だいまんぞく」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin'Party 《Poppin'Party》"
+    ],
+    "set": "BD",
+    "release": "WE35",
+    "sid": "03",
+    "image": "https://images.littleakiba.com/tcg/card67662-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击效果: 烧1点两次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Breakthrough!”山吹沙綾",
+    "code": "BD/WE35-08",
+    "rarity": "R",
+    "expansion": "Poppin'Party x Roselia",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】【CXコンボ】［あなたのクライマックス置場の「らぶらぶ」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「らぶらぶ」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin'Party 《Poppin'Party》"
+    ],
+    "set": "BD",
+    "release": "WE35",
+    "sid": "08",
+    "image": "https://images.littleakiba.com/tcg/card67667-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击效果（将自身站起）",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Breakthrough!”戸山香澄",
+    "code": "BD/WE35-10",
+    "rarity": "R",
+    "expansion": "Poppin'Party x Roselia",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "わー、お客さん近いよー",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《Poppin'Party》のキャラすべてに、パワーを＋1500。",
+      "【自】［(2) 手札の「“Breakthrough!”市ヶ谷有咲」を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Poppin'Party 《Poppin'Party》"
+    ],
+    "set": "BD",
+    "release": "WE35",
+    "sid": "10",
+    "image": "https://images.littleakiba.com/tcg/card67608-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払い、トップを削りレベル+1バーン",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Rausch und/and Craziness Ⅱ”今井リサ",
+    "code": "BD/WE35-28",
+    "rarity": "RR",
+    "expansion": "Poppin'Party x Roselia",
+    "side": "WE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "今日のステージも思いっきりやっちゃおう！",
+    "ability": [
+      "【自】［(1)］ このカードが、手札か山札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を見て「“Rausch und/and Craziness Ⅱ”今井リサ」を1枚まで選び、舞台の好きな枠に置き、その山札をシャッフルする。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「盛り上がってきたね」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から2枚まで見て、山札の上に好きな順番で置き、相手にＸダメージを与える。Ｘはあなたの「“Rausch und/and Craziness Ⅱ”今井リサ」の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Roselia 《Roselia》"
+    ],
+    "set": "BD",
+    "release": "WE35",
+    "sid": "28",
+    "image": "https://images.littleakiba.com/tcg/card67629-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "发动CX Combo: 场上有1张「今井リサ」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX Combo: 场上有2张「今井リサ」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX Combo: 场上有3张「今井リサ」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX Combo: 场上有4张「今井リサ」",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“幼馴染は留学生”弦巻こころ",
+    "code": "BD/WE49-09",
+    "rarity": "N",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「伝え合う心」があり、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手にＸダメージを与える。Ｘは他のあなたの、《Anniversary》か《ハロー、ハッピーワールド！》のキャラの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Hello Happy World"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "09",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_09.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (贴膜：洗坟+取消烧)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "ReverseShuffle",
+                      "amount": "count_other_characters"
+                    },
+                    {
+                      "op": "DealDamage",
+                      "amount": "count_other_characters"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夢と現実を飛び越える”仲町あられ",
+    "code": "BD/WE49-10",
+    "rarity": "N",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Mugendai Mewtype"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "10",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_10.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费弃2手]: 烧2+对手坟顶1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夢と現実を飛び越える”仲町あられ",
+    "code": "BD/WE49-10BDR",
+    "rarity": "BDR",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Mugendai Mewtype"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "10BDR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_10bdr.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アタック時効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払い、2ダメージを与え、相手の控え室1枚を山札の上に置く",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夢と現実を飛び越える”仲町あられ",
+    "code": "BD/WE49-10SP",
+    "rarity": "SP",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Mugendai Mewtype"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "10SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_10sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付cost",
+            "instructions": []
+          },
+          {
+            "label": "支付cost(3费2手): 烧2, 对手坟顶1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“夢と現実を飛び越える”仲町あられ",
+    "code": "BD/WE49-10SSP",
+    "rarity": "SSP",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Mugendai Mewtype"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "10SSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_10ssp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          },
+          {
+            "op": "OppTopDeck",
+            "max_cards": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“いつもと違う教室で”牛込りみ",
+    "code": "BD/WE49-37",
+    "rarity": "N",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【ターン1】 このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Poppin'Party"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "37",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_37.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アタック時能力: 発動しない",
+            "instructions": []
+          },
+          {
+            "label": "アタック時能力: [コスト(2), 手札2枚] 相手に4ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnDamageCancel",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "キャンセル時能力: 発動しない",
+            "instructions": []
+          },
+          {
+            "label": "キャンセル時能力: 相手に1ダメージ (条件: このターン登場, ターン1回)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“いつもと違う教室で”牛込りみ",
+    "code": "BD/WE49-37BDR",
+    "rarity": "BDR",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【ターン1】 このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Poppin'Party"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "37BDR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_37bdr.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "伤害被取消时: 不发动追烧效果",
+                  "instructions": []
+                },
+                {
+                  "label": "伤害被取消时: 发动追烧(烧1) [回合1次]",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“いつもと違う教室で”牛込りみ",
+    "code": "BD/WE49-37SP",
+    "rarity": "SP",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のストックすべてを、控え室に置き、相手に4ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【ターン1】 このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "Poppin'Party"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "37SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_37sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付cost",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费2手]，清空自己费用区，对敌方造成4点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "非登场回合 (无取消烧效果)",
+            "instructions": []
+          },
+          {
+            "label": "登场回合 (获得取消烧效果)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“遠のいてゆくきみ”パレオ",
+    "code": "BD/WE49-58",
+    "rarity": "N",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【ターン1】［(2) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの、《Anniversary》か《RAISE A SUILEN》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "RAISE A SUILEN"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "58",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_58.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再站效果",
+            "instructions": []
+          },
+          {
+            "label": "条件满足(场上另有4个以上指定角色)，支付cost再站",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“遠のいてゆくきみ”パレオ",
+    "code": "BD/WE49-58BDR",
+    "rarity": "BDR",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【ターン1】［(2) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの、《Anniversary》か《RAISE A SUILEN》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "RAISE A SUILEN"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "58BDR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_58bdr.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【一回合一次】支付2费+弃1手牌+送1角色再攻击 (需场上另有4名<Anniversary>或<RAISE A SUILEN>角色)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“遠のいてゆくきみ”パレオ",
+    "code": "BD/WE49-58SP",
+    "rarity": "SP",
+    "expansion": "BanG Dream! 10th Anniversary Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【ターン1】［(2) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの、《Anniversary》か《RAISE A SUILEN》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Anniversary",
+      "Music",
+      "RAISE A SUILEN"
+    ],
+    "set": "BD",
+    "release": "WE49",
+    "sid": "58SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/b/bd_we49/bd_we49_58sp.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费, 弃1手牌, 牺牲1角色]发动效果: 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

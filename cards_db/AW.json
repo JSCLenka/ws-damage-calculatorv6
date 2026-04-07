@@ -1,0 +1,278 @@
+[
+  {
+    "name": "《加速世界》の絆 黒雪姫",
+    "code": "AW/S43-002",
+    "rarity": "RR",
+    "expansion": "Accel World -Infinite Burst-",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "私もかつてキミと同じことを考えていた。すべてを失い、二度と立ち上がれないと思ったこともある",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 あなたのクライマックス置場に「Nega Nebulas」が置かれた時、前列にこのカードがいるなら、あなたは他の自分のキャラを1枚とこのカードを選び、そのターン中、パワーを＋1500し、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベルに等しい。』（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Student Council 《生徒会》",
+      "Avatar 《アバター》"
+    ],
+    "set": "AW",
+    "release": "S43",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card29637-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": {
+                "type": "turn",
+                "count": 1
+              },
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 0
+                }
+              ]
+            }
+          },
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": {
+                "type": "turn",
+                "count": 1
+              },
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 0
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夜の女神 ニュクス",
+    "code": "AW/S43-040",
+    "rarity": "U",
+    "expansion": "Accel World -Infinite Burst-",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "3",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "12000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 このカードはサイドアタックできない。",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から7枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードの「ノックスコーア」の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Enemy 《エネミー》"
+    ],
+    "set": "AW",
+    "release": "S43",
+    "sid": "040",
+    "image": "https://images.littleakiba.com/tcg/card29689-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻出0张「ノックスコーア」(无伤害)",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 翻出1张「ノックスコーア」-> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出2张「ノックスコーア」-> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出3张「ノックスコーア」-> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果: 翻出4张「ノックスコーア」-> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アーダー・メイデン",
+    "code": "AW/S43-055",
+    "rarity": "RR",
+    "expansion": "Accel World -Infinite Burst-",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "11000",
+    "soul": 2,
+    "flavor_text": "今なのです！",
+    "ability": [
+      "【永】 このカードはサイドアタックできない。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《アバター》か《ネット》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【起】［(1)］ そのターン中、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Avatar 《アバター》",
+      "Miko 《巫女》"
+    ],
+    "set": "AW",
+    "release": "S43",
+    "sid": "055",
+    "image": "https://images.littleakiba.com/tcg/card29704-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "トップ公開が対象外、または効果を使わない",
+            "instructions": []
+          },
+          {
+            "label": "トップ公開が対象、1ダメージを与える",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "着装コマンド スカーレット・レイン",
+    "code": "AW/S43-067",
+    "rarity": "U",
+    "expansion": "Accel World -Infinite Burst-",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "7000",
+    "soul": 1,
+    "flavor_text": "来い！　インビンシブル！",
+    "ability": [
+      "【自】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「ヒートブラスト・サチュレーション」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】 このカードが【リバース】した時、このカードのバトル相手のレベルが相手のレベルより高いなら、あなたはそのキャラを【リバース】してよい。"
+    ],
+    "attributes": [
+      "Avatar 《アバター》",
+      "Weapon 《武器》"
+    ],
+    "set": "AW",
+    "release": "S43",
+    "sid": "067",
+    "image": "https://images.littleakiba.com/tcg/card29716-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 & CX联动: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

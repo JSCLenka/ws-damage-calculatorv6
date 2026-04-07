@@ -1,0 +1,420 @@
+[
+  {
+    "name": "執念の追撃 オカルンシュウネンノツイゲキ オカルン",
+    "code": "DDD/S118-008",
+    "rarity": "R",
+    "expansion": "Dandadan",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「本気の一撃 オカルン」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「オカルト世界」があり、他のあなたの、《人間》か《怪異》のキャラが2枚以上なら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に5ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Human",
+      "Occult"
+    ],
+    "set": "DDD",
+    "release": "S118",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/ddd_s118/ddd_s118_008.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: オカルト世界",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消, 发动效果烧5",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 5,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "伤害被取消, 不发动效果",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "開花した超能力 モモカイカシタチョウノウリョク モモ",
+    "code": "DDD/S118-048",
+    "rarity": "RR",
+    "expansion": "Dandadan",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10500,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】【CXコンボ】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の「超能力者は女子高生」を1枚選び、手札に戻すかストック置場に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「超能力者は女子高生」があり、他のあなたのキャラが2枚以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックすべてを、山札に戻し、その山札をシャッフルし、自分の山札の上から同じ枚数をストック置場に置く。あなたは相手の山札を上から1枚見て、山札の上か控え室に置く。』『［(1) 手札を1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Human",
+      "Supernatural Power"
+    ],
+    "set": "DDD",
+    "release": "S118",
+    "sid": "048",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/ddd_s118/ddd_s118_048.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "效果1: 对手洗费,然后摩卡1张",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 1,
+                "wr_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "效果2: 支付费用 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "呪いの家へレッツゴー モモノロイノイエヘレッツゴー モモ",
+    "code": "DDD/S118-082",
+    "rarity": "R",
+    "expansion": "Dandadan",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 9500,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「宇宙人の話がしたい」があり、あなたの思い出置場の「オカルト！ 未知との遭遇」が2枚以上で、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から1枚見て、山札の上か下に置き、自分の後列のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードが【スタンド】しているなら、このカードはアタックを行うキャラとして選択してよい。そうしたら、このカードはダイレクトアタックする。』"
+    ],
+    "attributes": [
+      "Human",
+      "Supernatural Power"
+    ],
+    "set": "DDD",
+    "release": "S118",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/ddd_s118/ddd_s118_082.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (后台角色魂为1)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (后台角色魂为2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "カミッシーカミッシー",
+    "code": "DDD/S118-085",
+    "rarity": "U",
+    "expansion": "Dandadan",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "trigger": [],
+    "power": 7000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの、青か《怪異》のキャラの枚数×1000に等しい。",
+      "【自】［(1)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、ターンの終わりに、あなたに1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Strange",
+      "Nessie"
+    ],
+    "set": "DDD",
+    "release": "S118",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/ddd_s118/ddd_s118_085.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "呪いの力 オカルンノロイノチカラ オカルン",
+    "code": "DDD/S118-T09",
+    "rarity": "TD",
+    "expansion": "Dandadan",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『合体』で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「正能市オカルティック鬼ごっこ」があるなら、あなたはコストを払ってよい。そうしたら、次の相手のターンの終わりまで、このカードのパワーを＋1000し、次の行動を2回行う。『あなたは相手の山札の下から2枚を、控え室に置く。それらのカードにCXがあるなら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Human",
+      "Occult"
+    ],
+    "set": "DDD",
+    "release": "S118",
+    "sid": "T09",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/ddd_s118/ddd_s118_t09.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "地縛霊の解放 モモジバクレイノカイホウ モモ",
+    "code": "DDD/S118-T17",
+    "rarity": "TD",
+    "expansion": "Dandadan",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、相手のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードのバトル中、あなたはイベントと『助太刀』を、手札からプレイできない。』",
+      "【自】［手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、他のあなたの、《人間》か《怪異》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Human",
+      "Supernatural Power"
+    ],
+    "set": "DDD",
+    "release": "S118",
+    "sid": "T17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/d/ddd_s118/ddd_s118_t17.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "不发动效果/条件不满足",
+                  "instructions": []
+                },
+                {
+                  "label": "条件满足(另有2个人/怪异): 支付1手牌烧1",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

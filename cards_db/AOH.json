@@ -1,0 +1,919 @@
+[
+  {
+    "name": "Only Girl in Love 栗駒こまる",
+    "code": "AOH/W127-007",
+    "rarity": "R",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 7500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】【リンク】 ASMR",
+      "【永】 あなたのターン中、このカードのパワーを＋4000。",
+      "【自】 このカードが手札か思い出置場から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［手札を2枚控え室に置く］ このカードのアタックの終わりに、このカードの正面のキャラが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、あなたはこのカードの正面のキャラを1枚選び、クロック置場に置く。"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Maron Group"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "007",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_007.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 角色踢入时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "玄人様ランチ 山黒音玄",
+    "code": "AOH/W127-008",
+    "rarity": "R",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「内緒のアフターサービス」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを2回与え、そのターン中、このカードのパワーを＋1000。Ｘはあなたの思い出の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Otaku"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "008",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_008.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 思い出1枚 → 1点ダメージx2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 思い出2枚 → 2点ダメージx2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 思い出3枚 → 3点ダメージx2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 思い出4枚以上 → 4点ダメージx2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "一緒にストレッチ！ 千代浦蝶美",
+    "code": "AOH/W127-013",
+    "rarity": "U",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 3,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Idol"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "013",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_013.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付(1)费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费用，获得【回合1次】取消追伤能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "不发动效果",
+                      "instructions": []
+                    },
+                    {
+                      "label": "发动【回合1次】效果：造成等同于被取消的伤害",
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": "last_cancelled"
+                        }
+                      ]
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "うる虎がーる",
+    "code": "AOH/W127-021",
+    "rarity": "C",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、このカードがアタックした時、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを山札の下に好きな順番で置く。",
+      "【自】［(2)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、あなたは相手の山札の下から2枚を、控え室に置く。それらのカードにCXがあるなら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Bancho"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "021",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_021.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2费: 检查对手牌库底2张，若有CX则烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GENSEKI ちょこ組 エトラ",
+    "code": "AOH/W127-045",
+    "rarity": "U",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引くか相手のキャラを1枚まで選び、手札に戻す。",
+      "【自】【CXコンボ】［(1) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「記念日の夜に」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを2枚まで選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "ASI"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "045",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_045.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "CX Combo: 赋予1名角色【取消时烧2】",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "CX Combo: 赋予2名角色【取消时烧2】",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "食べるの大好き！ ぷわぷわぽぷら",
+    "code": "AOH/W127-054",
+    "rarity": "C",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのパワーを＋2000。",
+      "【自】［あなたの、手札とストックすべてを控え室に置く］ このカードが手札から舞台に置かれたターン中、あなたのアンコールステップの始めに、あなたはコストを払ってよい。この能力のコストで控え室に置かれたカード6枚につき、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Glutton"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "054",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_054.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动安可步骤效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (手札+费用 6-11枚): 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (手札+费用 12-17枚): 烧8",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (手札+费用 18-23枚): 烧12",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 3
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (手札+费用 24-29枚): 烧16",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 4
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (手札+费用 >=30枚): 烧20",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "とびっきりのワンショット！ 八十科むじな",
+    "code": "AOH/W127-066",
+    "rarity": "RR",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《あおぎり高校》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「一緒に描く未来」があり、他のあなたの《あおぎり高校》のキャラが2枚以上なら、そのターン中、このカードは次の2つの能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与える。』『【自】［手札を2枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Half-Human Half-Demon"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "066",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_066.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "攻击结束时不支付2手费",
+                    "instructions": []
+                  },
+                  {
+                    "label": "攻击结束时支付2手费 -> 烧1",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 1,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白の装い 我部りえる",
+    "code": "AOH/W127-073",
+    "rarity": "R",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 あなたのCX置場に「天使降臨」が置かれた時、前列にこのカードがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『すべてのプレイヤーのレベルが3以上なら、すべてのプレイヤーは自分のクロックの上から4枚までを、控え室に置く。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードがアタックした時、他のあなたの《あおぎり高校》のキャラが2枚以上なら、あなたは自分の山札を上から2枚まで見て、山札の上に好きな順番で置き、そのターン中、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Student Teacher"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "073",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_073.png",
+    "effects": [
+      {
+        "trigger": "OnCX",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件(全員L3): 全員4点回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "相手に2ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GENSEKI ちょこ組 月赴ゐぶき",
+    "code": "AOH/W127-080",
+    "rarity": "U",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《あおぎり高校》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Cigarettes"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_080.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "牌顶为《あおぎり高校》角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "千代浦蝶美",
+    "code": "AOH/W127-090",
+    "rarity": "C",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 4000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《あおぎり高校》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 あなたのターン中、このカードのパワーを＋6000。",
+      "【自】【CXコンボ】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたのCX置場に「早口言葉はお手の物！」があり、他のあなたの《あおぎり高校》のキャラが2枚以上なら、あなたは自分の山札の上から1枚までを、ストック置場に置き、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Idol"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "090",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_090.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(取消时烧1)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白の装い 山黒音玄",
+    "code": "AOH/W127-107",
+    "rarity": "R",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】【リンク】 ASMR",
+      "【自】 このカードが手札か思い出置場から舞台に置かれた時、そのターン中、このカードのパワーを＋2000し、次の行動を2回行う。『あなたは自分の山札の上から1枚を公開する。そのカードが《あおぎり高校》のキャラかイベントなら手札に加える。』（そうでないなら元に戻す）",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードがCXなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Otaku"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "107",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_107.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动看顶效果",
+            "instructions": []
+          },
+          {
+            "label": "发动看顶效果: 若为CX则烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 1,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "一緒にストレッチ！ 栗駒こまる",
+    "code": "AOH/W127-114",
+    "rarity": "U",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】 あなたのCX置場に「ご奉仕タイム」が置かれた時、前列にこのカードがいるなら、あなたは自分の山札を見て《あおぎり高校》のキャラを2枚まで選び、公開し、1枚選び、手札に加え、残りのカードをストック置場に置き、その山札をシャッフルする。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、他のあなたの《あおぎり高校》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から3枚を、控え室に置く。それらのカードにCXがあるなら、あなたは相手に1ダメージを与え、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Maron Group"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "114",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_114.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费1手]:削顶3张,若有CX则烧1,再烧2",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "on_success": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  },
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夏の思い出 石狩あかり",
+    "code": "AOH/W127-T06",
+    "rarity": "TD",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「記憶にございません！」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Game"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "T06",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_t06.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "op": "OppTopDeck",
+            "max_cards": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夏の思い出 春雨麗女",
+    "code": "AOH/W127-T14",
+    "rarity": "TD",
+    "expansion": "Aogiri High School",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、山札の上に好きな順番で置き、相手のキャラを1枚まで選び、手札に戻す。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたのキャラすべてが《あおぎり高校》なら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開し、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Aogiri High School",
+      "Liquor"
+    ],
+    "set": "AOH",
+    "release": "W127",
+    "sid": "T14",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/aoh_w127/aoh_w127_t14.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付2费1手，削顶烧(等级+1)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

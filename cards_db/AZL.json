@@ -1,0 +1,1224 @@
+[
+  {
+    "name": "チェシャー",
+    "code": "AZL/S102-004",
+    "rarity": "RR",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 あなたのクライマックス置場に「ダンナさまのお気に入り？」が置かれた時、前列にこのカードがいて、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Royal Navy"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场时：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "label": "CX连携「ダンナさまのお気に入り？」",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连携 (经验6, 前列)",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ドレイク",
+    "code": "AZL/S102-009",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が8以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Warship",
+      "Royal Navy"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "009",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_009.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回血1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(经验8+击倒) -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "パーシュース",
+    "code": "AZL/S102-010",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を2枚控え室に置き、このカードを【レスト】する］ あなたのアタックフェイズの始めに、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを2回与え、あなたは自分のクロックの上から1枚までを、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Royal Navy"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "010",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_010.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "クロックの上から1枚を控え室に置く",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "回復しない",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackPhaseStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払い、2ダメージx2を与え、1点回復する",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "コストを払い、2ダメージx2のみ与える",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ル・マラン",
+    "code": "AZL/S102-011",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「騎士姫の空想」があるなら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Vichya Dominion"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_011.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 2,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "信濃",
+    "code": "AZL/S102-038",
+    "rarity": "RR",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、アンコールステップの始めに、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「泡沫の夢」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から9枚を、控え室に置き、相手に1ダメージをＸ回与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Sakura Empire"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "038",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_038.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "self",
+            "zone": "top",
+            "mill_amount": 9,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "白龍",
+    "code": "AZL/S102-045",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が8以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(3) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。"
+    ],
+    "attributes": [
+      "Warship",
+      "Sakura Empire"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "045",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_045.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "経験Lv8未満 (永続能力なし)",
+            "instructions": []
+          },
+          {
+            "label": "経験Lv8以上: アタック時2点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "吾妻",
+    "code": "AZL/S102-046",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が8以上なら、このカードのパワーを＋500し、このカードは『【自】 アンコール ［手札のキャラを1枚控え室に置く］』を得る。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 経験 このカードが手札から舞台に置かれた時、あなたのレベル置場のカードのレベルの合計が8以上なら、あなたは相手のキャラを2枚まで選び、手札に戻す。"
+    ],
+    "attributes": [
+      "Warship",
+      "Sakura Empire"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "046",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_046.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "直击时支付费用: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "フリードリヒ・デア・グローセ",
+    "code": "AZL/S102-076",
+    "rarity": "RR",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 このカードがアタックした時、クライマックス置場に「闇黒のRhapsodie」があり、あなたのレベル置場のカードのレベルの合計が8以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルし、そのターン中、このカードのパワーを＋3000。』『［(2)］ あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Iron Blood"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "076",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_076.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击（经验未满8）",
+            "instructions": []
+          },
+          {
+            "label": "CX连击效果A：对手坟洗最多3张",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "CX连击效果B：烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アドミラル・グラーフ・シュペー",
+    "code": "AZL/S102-080",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《艦船》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「今度は最後まで」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「今度は最後まで」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたのキャラすべてに、そのターン中、パワーを＋500し、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを山札の上に置いてよい。』"
+    ],
+    "attributes": [
+      "Warship",
+      "Iron Blood"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "080",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_080.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(CX联动)：击倒对手 -> 角色推顶",
+            "instructions": [
+              {
+                "op": "OppReverseToTop"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ニュージャージー",
+    "code": "AZL/S102-102",
+    "rarity": "RR",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、あなたの《ユニオン》のキャラすべてに、パワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(1)］ このカードがアタックした時、クライマックス置場に「こういうの好きなんでしょ？」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたの「ニュージャージー」の枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Eagle Union"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "102",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_102.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 1张「ニュージャージー」, 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 2张「ニュージャージー」, 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 3张「ニュージャージー」, 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 4张「ニュージャージー」, 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャングリラ",
+    "code": "AZL/S102-108",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 6500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［(2)］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「空と海の観測者」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《艦船》のキャラなら、このカードを【スタンド】する。（公開したカードは元に戻す）",
+      "【自】 共鳴 ［手札の「ニュージャージー」を1枚公開する］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋6000。"
+    ],
+    "attributes": [
+      "Warship",
+      "Eagle Union"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "108",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_108.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动连击成功(顶卡为《舰船》角色) -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "发动连击失败(顶卡非《舰船》角色)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クロンシュタット",
+    "code": "AZL/S102-111",
+    "rarity": "R",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(2) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、他のあなたの《艦船》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。",
+      "【自】 経験 このカードがアタックした時、あなたのレベル置場のカードのレベルの合計が6以上なら、そのターン中、このカードのパワーを＋3000。"
+    ],
+    "attributes": [
+      "Warship",
+      "Northern Parliament"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "111",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_111.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再站效果",
+            "instructions": []
+          },
+          {
+            "label": "满足条件，支付费用发动再站",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ワシントン",
+    "code": "AZL/S102-120",
+    "rarity": "U",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《艦船》のキャラの枚数×1000に等しい。"
+    ],
+    "attributes": [
+      "Warship",
+      "Eagle Union"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "120",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_120.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：逆压缩（对手保留1张CX洗坟）",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "エンタープライズ",
+    "code": "AZL/S102-T16",
+    "rarity": "TD",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「グレイゴースト」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《艦船》のキャラなら、相手に3ダメージを与え、次の相手のターンの終わりまで、このカードは次の能力を得る。『【永】 このカードは【リバース】しない。』（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Warship",
+      "Eagle Union"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "T16",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_t16.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击：翻顶检定失败 (非《舰船》角色)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击：翻顶检定成功 (《舰船》角色) -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ヴィクトリアス",
+    "code": "AZL/S102-T36",
+    "rarity": "TD",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《艦船》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Royal Navy"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "T36",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_t36.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费, 弃2手]: 造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "赤城",
+    "code": "AZL/S102-T55",
+    "rarity": "TD",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「加賀」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「想いと花火と」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Sakura Empire"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "T55",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_t55.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビスマルク",
+    "code": "AZL/S102-T76",
+    "rarity": "TD",
+    "expansion": "Azur Lane",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのクライマックス置場に「黒鉄のカリスマ」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。』"
+    ],
+    "attributes": [
+      "Warship",
+      "Iron Blood"
+    ],
+    "set": "AZL",
+    "release": "S102",
+    "sid": "T76",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s102/azl_s102_t76.png",
+    "effects": [
+      {
+        "trigger": "ClimaxCombo",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX联动：给予我方其他角色攻击时看对手牌顶2张的能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Moca",
+                      "target_player": "opp",
+                      "look_amount": 2,
+                      "wr_amount": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "不发动CX联动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "駆逐艦 綾波",
+    "code": "AZL/S119-039",
+    "rarity": "RR",
+    "expansion": "Azur Lane Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が7以上なら、このカードのパワーを＋3000し、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントを手札からプレイできない。』",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、CX置場に「ダンスは勉強中？」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Warship",
+      "Sakura Empire"
+    ],
+    "set": "AZL",
+    "release": "S119",
+    "sid": "039",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s119/azl_s119_039.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：支付(1)费+1手牌，此卡再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "雲仙",
+    "code": "AZL/S119-044",
+    "rarity": "R",
+    "expansion": "Azur Lane Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「諸悪調伏、人の世のために」があるなら、あなたは自分の山札を上から3枚まで見て、カードを3枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Sakura Empire"
+    ],
+    "set": "AZL",
+    "release": "S119",
+    "sid": "044",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s119/azl_s119_044.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "回復しない",
+            "instructions": []
+          },
+          {
+            "label": "クロックから1枚回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": {
+                "per_turn": 1
+              },
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "キャンセル時効果を使わない",
+                  "instructions": []
+                },
+                {
+                  "label": "キャンセル時に1ダメージ",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "キアサージ",
+    "code": "AZL/S119-105",
+    "rarity": "R",
+    "expansion": "Azur Lane Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《艦船》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】【CXコンボ】 経験［(1) 手札の《艦船》のキャラを1枚控え室に置く］ このカードがアタックした時、CX置場に「ハイブリッド・イマジン」があり、あなたのレベル置場のカードのレベルの合計が8以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手のキャラを1枚選び、そのターン中、パワーを－Ｘ。Ｘは他のあなたの《艦船》のキャラの枚数×1000に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Warship",
+      "Eagle Union"
+    ],
+    "set": "AZL",
+    "release": "S119",
+    "sid": "105",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/a/azl_s119/azl_s119_105.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击 (经验8): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
