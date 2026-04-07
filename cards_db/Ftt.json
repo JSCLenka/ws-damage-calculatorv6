@@ -1,0 +1,90 @@
+[
+  {
+    "name": "一緒に追いかける夢 アニスフィア＆ユフィリア",
+    "code": "Ftt/W120-124",
+    "rarity": "R",
+    "expansion": "Fujimi Fantasia Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのCXフェイズ中、CX置場に「祝福を贈る虹」が置かれた時、他のあなたの、《ファンタジア文庫》か《魔法》のキャラがいて、他のあなたの前列のキャラが1枚以下なら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の山札を上から6枚まで見て、カードを6枚まで選び、控え室に置き、残りのカードを山札に戻し、相手はその山札をシャッフルする。』『［(1) 手札を2枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に3ダメージを2回与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fantasia Bunko",
+      "Magic",
+      "Royalty"
+    ],
+    "set": "Ftt",
+    "release": "W120",
+    "sid": "124",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/f/ftt_w120/ftt_w120_124.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (满足条件)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "效果1: 摩卡6",
+                "instructions": [
+                  {
+                    "op": "Moca",
+                    "target_player": "opp",
+                    "look_amount": 6,
+                    "wr_amount": 6
+                  }
+                ]
+              },
+              {
+                "label": "效果2: 烧3, 两次",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

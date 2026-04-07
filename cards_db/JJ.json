@@ -1,0 +1,834 @@
+[
+  {
+    "name": "覚悟の示す先 ジョルノ",
+    "code": "JJ/S66-003",
+    "rarity": "RR",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card53370-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "到達者 G・E・R",
+    "code": "JJ/S66-004",
+    "rarity": "RR",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時か「運命に選ばれしもの ジョルノ」の【起】の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】 このカードがフロントアタックした時、クライマックス置場に「この世の『真実』」があるなら、そのターン中、このカードは次の能力を得る。『【自】［(3)］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、2回、次の行動を行う。『相手に1ダメージを与える。』』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand 《スタンド》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card53371-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击[この世の『真実』]: 烧1点两次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "重なる銃声 ミスタ",
+    "code": "JJ/S66-008",
+    "rarity": "R",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのクロック置場に「暗闇に見えた道 ミスタ」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの《黄金の風》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "008",
+    "image": "https://images.littleakiba.com/tcg/card53375-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件满足: 本回合从手牌登场",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "条件不满足: 非本回合登场",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "死を撒く煙 フーゴ",
+    "code": "JJ/S66-016",
+    "rarity": "U",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのキャラすべてが《黄金の風》なら、このカードのパワーを＋1000。",
+      "【自】［手札を2枚控え室に置く］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "016",
+    "image": "https://images.littleakiba.com/tcg/card53388-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，支付2手费 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "覚悟の重み プロシュート＆T・G・D",
+    "code": "JJ/S66-039",
+    "rarity": "U",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、相手のキャラすべてに、そのターン中、パワーを－Ｘ。Ｘはそのキャラのレベル×1000に等しい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「偉大なる死」があるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、あなたは相手のキャラを1枚選び、そのターン中、パワーを－3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "039",
+    "image": "https://images.littleakiba.com/tcg/card53411-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 造成4点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "過去の残滓 ディアボロ",
+    "code": "JJ/S66-047",
+    "rarity": "RR",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《黄金の風》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードが「永遠の絶頂」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。（トリガーチェックででた「永遠の絶頂」のの効果でこのカードが舞台に置かれた時も使える）"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "047",
+    "image": "https://images.littleakiba.com/tcg/card53419-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 使用しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ:【コスト(2)手札2枚】再スタンド",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "空を駆る狩猟者 ナランチャ",
+    "code": "JJ/S66-081",
+    "rarity": "R",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から5枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【起】［(1)］ あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－1000。"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "081",
+    "image": "https://images.littleakiba.com/tcg/card53453-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "self",
+            "zone": "top",
+            "mill_amount": 5,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "抗う意志 トリッシュ",
+    "code": "JJ/S66-087",
+    "rarity": "U",
+    "expansion": "Jojo no Kimyou na Bouken - Ougon no Kaze",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、相手のキャラを1枚選び、そのターン中、次の能力を与える。『【永】 このカードのバトル中、あなたはイベントと『助太刀』を、手札からプレイできない。』",
+      "【自】［(2)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Golden Wind 《黄金の風》",
+      "Stand User 《スタンド使い》"
+    ],
+    "set": "JJ",
+    "release": "S66",
+    "sid": "087",
+    "image": "https://images.littleakiba.com/tcg/card53459-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(2)费，将对手休息室最多2张卡洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "止まらぬ追撃 承太郎",
+    "code": "JJ/SE41-50",
+    "rarity": "N",
+    "expansion": "Jojo Stardust Crusaders",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《スタンド使い》か《スタンド》のキャラ1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「ぶちのめす宣言」を1枚控え室に置く］ あなたのアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、次の相手のターンの終わりまで、このカードは次の能力を得る。『【永】 このカードは【リバース】しない。』"
+    ],
+    "attributes": [
+      "Stand User"
+    ],
+    "set": "JJ",
+    "release": "SE41",
+    "sid": "50",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se41/jj_se41_50.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)并发动CX连击: 再攻击一次",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "強固な精神 花京院＆ハイエロファントグリーン",
+    "code": "JJ/SE41-51",
+    "rarity": "N",
+    "expansion": "Jojo Stardust Crusaders",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの、《スタンド使い》か《スタンド》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Stand User",
+      "Stand"
+    ],
+    "set": "JJ",
+    "release": "SE41",
+    "sid": "51",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se41/jj_se41_51.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手费：扒底4张烧",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "自由な生き様 イギー＆ザ・フール",
+    "code": "JJ/SE41-52",
+    "rarity": "N",
+    "expansion": "Jojo Stardust Crusaders",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの、《スタンド使い》か《スタンド》のキャラすべてに、パワーを＋1500。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 アンコール ［手札の、《スタンド使い》か《スタンド》のキャラを1枚控え室に置く］ （このカードが舞台から控え室に置かれた時、あなたはコストを払ってよい。そうしたら、このカードがいた枠に【レスト】して置く）"
+    ],
+    "attributes": [
+      "Stand User",
+      "Stand"
+    ],
+    "set": "JJ",
+    "release": "SE41",
+    "sid": "52",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se41/jj_se41_52.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[② 手牌2] -> 给予对手2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "希望の星 承太郎＆スタープラチナ",
+    "code": "JJ/SE41-53",
+    "rarity": "N",
+    "expansion": "Jojo Stardust Crusaders",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の、《スタンド使い》か《スタンド》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】 あなたのアタックフェイズの始めに、クライマックス置場に「ジョースター家の宿命」があり、他のあなたの前列のキャラがいないなら、そのターン中、このカードのパワーを＋11000し、このカードは次の能力を得る。『【自】［手札の「希望の星 承太郎＆スタープラチナ」を2枚控え室に置き、手札を4枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを7回与え、相手に7ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Stand User",
+      "Stand"
+    ],
+    "set": "JJ",
+    "release": "SE41",
+    "sid": "53",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se41/jj_se41_53.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未使用",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ効果を使用 (コストを払う)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 7
+              },
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "騎士道精神 ポルナレフ",
+    "code": "JJ/SE41-54",
+    "rarity": "N",
+    "expansion": "Jojo Stardust Crusaders",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 11000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの、《スタンド使い》か《スタンド》のキャラがいないなら、このカードはあなたのスタンドフェイズに【スタンド】しない。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロック置場の、《スタンド使い》か《スタンド》のキャラを1枚選び、山札の下に置いてよい。"
+    ],
+    "attributes": [
+      "Stand User"
+    ],
+    "set": "JJ",
+    "release": "SE41",
+    "sid": "54",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se41/jj_se41_54.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：从时计区将1张角色置于牌库底 (回复1点)",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "『天国』への到達 エンリコ・P",
+    "code": "JJ/SE42-23",
+    "rarity": "N",
+    "expansion": "Jojo Stone Ocean",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《スタンド使い》か《スタンド》なら、このカードのパワーを＋2000。",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Stand User"
+    ],
+    "set": "JJ",
+    "release": "SE42",
+    "sid": "23",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se42/jj_se42_23.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "繋ぐ希望 徐倫",
+    "code": "JJ/SE42-54",
+    "rarity": "N",
+    "expansion": "Jojo Stone Ocean",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時か「圧倒する凄み 徐倫＆S・F」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 経験 ［(1) 手札を2枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「希望を繋ぐ意志」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、このカードの正面のキャラが【リバース】しているなら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Stand User"
+    ],
+    "set": "JJ",
+    "release": "SE42",
+    "sid": "54",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/j/jj_se42/jj_se42_54.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (未击倒对手): 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (击倒对手): 烧4+烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

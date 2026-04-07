@@ -1,0 +1,1174 @@
+[
+  {
+    "name": "Awakening Iris 白河 ユイナ",
+    "code": "HBR/W103-003",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのクロック置場に「Awakening Iris 白河 ユイナ」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの黄のキャラが2枚以上なら、このカードのパワーを＋1500し、このカードは『【自】 アンコール ［手札の《セラフ》のキャラを1枚控え室に置く］』を得る。",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、他のあなたの黄のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分のクロックの上から1枚までを、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 あなたのクロック置場に「Awakening Iris 白河 ユイナ」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの黄のキャラが2枚以上なら、このカードのパワーを＋1500し、このカードは『【自】 アンコール ［手札の《セラフ》のキャラを1枚控え室に置く］』を得る。",
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、他のあなたの黄のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分のクロックの上から1枚までを、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 30G"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_003.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1 + 回1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "此に期するは豊穣の御霊 蔵 里見",
+    "code": "HBR/W103-009",
+    "rarity": "R",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 7500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《セラフ》のキャラが4枚以上なら、あなたは自分の控え室の《セラフ》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】【CXコンボ】 このカードがダイレクトアタックした時、クライマックス置場に「これからを夢見て」があり、このカードのソウルが3以下なら、そのアタック中、このカードが相手にアタックのダメージを与える時、かわりに相手に1ダメージをＸ回与える。Ｘはこのカードのソウルに等しい。（このダメージは【自】の効果によるダメージではない。ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《セラフ》のキャラが4枚以上なら、あなたは自分の控え室の《セラフ》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】【CXコンボ】 このカードがダイレクトアタックした時、クライマックス置場に「これからを夢見て」があり、このカードのソウルが3以下なら、そのアタック中、このカードが相手にアタックのダメージを与える時、かわりに相手に1ダメージをＸ回与える。Ｘはこのカードのソウルに等しい。（このダメージは【自】の効果によるダメージではない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 30G"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "009",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_009.png",
+    "soul": 1,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動 (ソウル1点): 1点ダメージ x1",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ発動 (ソウル2点): 1点ダメージ x2",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1
+              },
+              {
+                "op": "DealDamage",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ発動 (ソウル3点): 1点ダメージ x3",
+            "instructions": [
+              {
+                "op": "DealDamage",
+                "amount": 1
+              },
+              {
+                "op": "DealDamage",
+                "amount": 1
+              },
+              {
+                "op": "DealDamage",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "真宵晴るれば、一閃心静 月城 最中",
+    "code": "HBR/W103-012",
+    "rarity": "R",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚引いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置き、あなたの前列の「此に期するは豊穣の御霊 蔵 里見」を1枚控え室に置く］ あなたのクライマックス置場に「これからを夢見て」が置かれた時、前列にこのカードがいて、他のあなたの《セラフ》のキャラがいるなら、あなたは相手のキャラすべてを、控え室に置く。その後、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。コストを払わないなら、あなたはこのカード以外の自分のキャラすべてを、控え室に置き、次の行動を3回行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚引いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置き、あなたの前列の「此に期するは豊穣の御霊 蔵 里見」を1枚控え室に置く］ あなたのクライマックス置場に「これからを夢見て」が置かれた時、前列にこのカードがいて、他のあなたの《セラフ》のキャラがいるなら、あなたは相手のキャラすべてを、控え室に置く。その後、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。コストを払わないなら、あなたはこのカード以外の自分のキャラすべてを、控え室に置き、次の行動を3回行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 30G"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_012.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: コストを払い、1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: コストを払わず、1ダメージを3回",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "果てなき慈愛の守護者 大島 一千子",
+    "code": "HBR/W103-030",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「小さな涙 忘れられた記憶」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、次の相手のターンの終わりまで、このカードは次の2つの能力を得る。『【永】 このカードは相手の効果に選ばれない。』『【永】 このカードの正面のキャラのソウルを－2。』"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「小さな涙 忘れられた記憶」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、次の相手のターンの終わりまで、このカードは次の2つの能力を得る。『【永】 このカードは相手の効果に選ばれない。』『【永】 このカードの正面のキャラのソウルを－2。』"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31E"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "030",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_030.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击：查看对手牌库顶最多2张，最多丢弃2张",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最年少名人 二階堂 三郷",
+    "code": "HBR/W103-040",
+    "rarity": "U",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードのアタックの終わりに、クライマックス置場に「この星に紡ぐ一手」があり、あなたのストックが3枚以上で、他のあなたの《セラフ》のキャラが4枚以上なら、次の行動を行ってよい。『あなたは自分のストックを見てカードを3枚選び、控え室に置き、そのストックをシャッフルする。3枚置いたなら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードのアタックの終わりに、クライマックス置場に「この星に紡ぐ一手」があり、あなたのストックが3枚以上で、他のあなたの《セラフ》のキャラが4枚以上なら、次の行動を行ってよい。『あなたは自分のストックを見てカードを3枚選び、控え室に置き、そのストックをシャッフルする。3枚置いたなら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31D"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "040",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_040.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(3费，4个其他<セラフ>)：烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "黎明のエモーショナル・ソウル 茅森 月歌",
+    "code": "HBR/W103-054",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 加速 ［(2) 手札を2枚控え室に置き、あなたの山札の上から1枚をクロック置場に置く］ このカードがアタックした時、クライマックス置場に「第31A部隊」があり、あなたのクロックが5枚以下なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、次の2つの効果を好きな順番で1回ずつ行う。『相手に1ダメージを与える。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 加速 ［(2) 手札を2枚控え室に置き、あなたの山札の上から1枚をクロック置場に置く］ このカードがアタックした時、クライマックス置場に「第31A部隊」があり、あなたのクロックが5枚以下なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、次の2つの効果を好きな順番で1回ずつ行う。『相手に1ダメージを与える。』『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31A"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "054",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_054.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不回复血量",
+            "instructions": []
+          },
+          {
+            "label": "回复1点血量",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (条件: 时计5枚以下)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "顺序: 先烧1 -> 再烧2",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  },
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "顺序: 先烧2 -> 再烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  },
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "君のUnisono 華村 詩紀",
+    "code": "HBR/W103-063",
+    "rarity": "R",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《セラフ》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札のキャラを1枚控え室に置く］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは相手のキャラを2枚選び、それぞれを【スタンド】して入れ替える。"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたの《セラフ》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札のキャラを1枚控え室に置く］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは相手のキャラを2枚選び、それぞれを【スタンド】して入れ替える。"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31F"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "063",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_063.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ロイヤルバトラー 柳 美音",
+    "code": "HBR/W103-069",
+    "rarity": "U",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《セラフ》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「第31F部隊」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「第31F部隊」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたのキャラすべてに、そのターン中、ソウルを＋1。"
+    ],
+    "jpAbility": [
+      "【永】 前列にこのカードがいるなら、あなたの《セラフ》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「第31F部隊」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「第31F部隊」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたのキャラすべてに、そのターン中、ソウルを＋1。"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31F"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "069",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_069.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動：味方全体のソウル+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "嬉々迫るフォール・イン・ラヴ 水瀬 いちご",
+    "code": "HBR/W103-087",
+    "rarity": "R",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 記憶 ［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたの思い出置場に「ココロ・Inspire 蒼井 えりか」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 記憶 ［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたの思い出置場に「ココロ・Inspire 蒼井 えりか」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31B"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "087",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_087.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (条件未满足/不支付cost)",
+            "instructions": []
+          },
+          {
+            "label": "回忆区有「苍井えりか」并支付cost: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "北風の使者 シャルロッタ・スコポフスカヤ",
+    "code": "HBR/W103-100",
+    "rarity": "C",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 7500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《セラフ》のキャラが4枚以上なら、あなたは自分の控え室の《セラフ》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】［あなたのストックすべてを控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。この能力のコストで控え室に置かれたカードが1枚なら、そのターン中、このカードのパワーを＋3000し、2枚なら、あなたは自分の控え室のキャラを1枚選び、手札に戻し、3枚以上なら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《セラフ》のキャラが4枚以上なら、あなたは自分の控え室の《セラフ》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】［あなたのストックすべてを控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。この能力のコストで控え室に置かれたカードが1枚なら、そのターン中、このカードのパワーを＋3000し、2枚なら、あなたは自分の控え室のキャラを1枚選び、手札に戻し、3枚以上なら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "Squad 31X"
+    ],
+    "set": "HBR",
+    "release": "103",
+    "sid": "100",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w103/hbr_w103_100.png",
+    "soul": 1,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用 / 费用不足3 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "支付所有费用 (≥3) -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "最前線のブルワーク 朝倉 可憐サイゼンセンノブルワーク アサクラ カレン",
+    "code": "HBR/W103-T10",
+    "rarity": "TD",
+    "expansion": "Heaven Burns Red",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《セラフ》のキャラが4枚以上なら、このカードのパワーを＋5000し、このカードは次の能力を得る。『【永】 このカードのバトル中、相手はイベントと『助太刀』を手札からプレイできない。』",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を公開する。そのカードが《セラフ》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Seraph",
+      "31A Unit"
+    ],
+    "set": "HBR",
+    "release": "W103",
+    "sid": "T10",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/today_card/20230117_si09.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "公开牌顶非《セラフ》角色，或选择不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "公开牌顶为《セラフ》角色，对对手造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "氷花のHexerei 神崎 アーデルハイド",
+    "code": "HBR/W117-003",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの《セラフ》のキャラの枚数×1000に等しい。",
+      "【自】【CXコンボ】 記憶 ［(6) 手札を3枚控え室に置き、他のあなたの舞台の《セラフ》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、CX置場に「君に読む憧れ」があり、あなたのキャラすべてが《セラフ》で、あなたの思い出置場の「アサシン忍法大繁盛 佐月 マリ」が2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の《第31C部隊》のキャラを1枚まで選び、舞台の好きな枠に置き、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Seraph",
+      "31C Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_003.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击（再动）",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "掩蔽された暇 月城 最中",
+    "code": "HBR/W117-010",
+    "rarity": "R",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 3000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードの下にマーカーがあるなら、このカードのパワーを＋8000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《セラフ》のキャラならこのカードの下にマーカーとして裏向きに置いてよい。（そうしないなら元に戻す）",
+      "【自】［(1)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、ターンの終わりに、あなたに1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "30G Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "010",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_010.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Holy Knight 山脇・ボン・イヴァール",
+    "code": "HBR/W117-011",
+    "rarity": "R",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(4) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Seraph",
+      "31C Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_011.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【登场回合限定】支付(4)费弃1手，再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sweet Phantasy 大島 一千子",
+    "code": "HBR/W117-031",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《セラフ》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。ＸはそれらのカードのCXの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "31E Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "031",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_031.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 4,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "トワイライト・グロース 逢川 めぐみ",
+    "code": "HBR/W117-058",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": ["SOUL"],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロック置場の《セラフ》のキャラを1枚選び、山札の下に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「溢れ出る感情」があるなら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき2回まで発動する。このカードの与えたダメージがキャンセルされなかった時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": ["Seraph", "31A Unit"],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "058",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_058.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          { "op": "Heal", "amount": 1 }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (贴膜: 贯通时烧1, 限2次)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "limit": 2,
+                  "instructions": [
+                    { "op": "Burn", "amount": 1, "times": 1 }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付攻击时费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费 手牌2]: 烧2",
+            "instructions": [
+              { "op": "Burn", "amount": 2, "times": 1 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夏椿、けうらなる夜光星 和泉 ユキ",
+    "code": "HBR/W117-079",
+    "rarity": "C",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、他のあなたの《セラフ》のキャラが4枚以上なら、あなたは自分の山札の上から1枚を、ストック置場に置いてよい。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《セラフ》のキャラかイベントなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Seraph",
+      "31A Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "079",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_079.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果或翻顶失败",
+            "instructions": []
+          },
+          {
+            "label": "翻顶为《セラフ》或事件，造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "逆境に咲く華 シャルロッタ・スコポフスカヤ",
+    "code": "HBR/W117-087",
+    "rarity": "RR",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「罪と罰と愛と」があり、他のあなたの《セラフ》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはこの効果で控え室に置かれたカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "31X Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "087",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_087.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "op": "SelfMillLevelBurn",
+            "base_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "キララ・究極のアイドル 蒼井 えりか",
+    "code": "HBR/W117-102",
+    "rarity": "U",
+    "expansion": "Heaven Burns Red Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ あなたのCX置場に「私立セラフィム学園　～蒼井、アイドルになります！～」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、あなたは相手の山札の下から2枚を、控え室に置く。それらのカードにCXがあるなら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Seraph",
+      "31B Unit"
+    ],
+    "set": "HBR",
+    "release": "W117",
+    "sid": "102",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hbr_w117/hbr_w117_102.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 他のキャラに能力を付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "MillAndBurn",
+                      "target_player": "opp",
+                      "zone": "bottom",
+                      "mill_amount": 2,
+                      "condition": "is_cx",
+                      "mode": "once_if_any",
+                      "burn_amount": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

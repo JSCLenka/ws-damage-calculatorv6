@@ -1,0 +1,2396 @@
+[
+  {
+    "name": "Noisy Rush 斑鳩ルカ",
+    "code": "ISC/S110-003",
+    "rarity": "RR",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「杖たちの足跡」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）",
+      "【自】 経験 ［(1)］ このカードのバトル相手が【リバース】した時、あなたのレベル置場の裏向きのカードが3枚なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「杖たちの足跡」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）",
+      "【自】 経験 ［(1)］ このカードのバトル相手が【リバース】した時、あなたのレベル置場の裏向きのカードが3枚なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "CoMETIK"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_003.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击「杖たちの足跡」：烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 / 经验未达成",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 + 经验3 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たそかれスワッグ 八宮めぐる",
+    "code": "ISC/S110-004",
+    "rarity": "RR",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードのパワーを＋1000。",
+      "【自】 経験 ［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたのレベル置場のカードの持つ色の合計が3色以上で、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを2回与える。』『相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードのパワーを＋1000。",
+      "【自】 経験 ［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたのレベル置場のカードの持つ色の合計が3色以上で、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを2回与える。』『相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_004.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付费用，选择：烧1点两次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          },
+          {
+            "label": "支付费用，选择：烧3点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ring a bell 有栖川夏葉",
+    "code": "ISC/S110-011",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 5000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋10000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「おあがり←くらいまっくす」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 あなたのターン中、このカードのパワーを＋10000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「おあがり←くらいまっくす」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Hokago Climax Girls"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_011.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 踢人入时计 + 烧5",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              },
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "サマーハニー・シーズン 桑山千雪",
+    "code": "ISC/S110-012",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《音楽》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】 共鳴 ［手札を1枚控え室に置き、手札の「バス・タイムの気分で 大崎甜花」を1枚公開する］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《音楽》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】 共鳴 ［手札を1枚控え室に置き、手札の「バス・タイムの気分で 大崎甜花」を1枚公開する］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "ALSTROEMERIA"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_012.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "↓ろウTea 七草にちか",
+    "code": "ISC/S110-031",
+    "rarity": "RR",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードの下にマーカーがあるなら、このカードのパワーを＋3000。",
+      "【自】 このカードが手札から舞台に置かれた時か「CONTRAIL 緋田美琴」の【CXコンボ】の効果で舞台に置かれた時、あなたは自分の控え室の「CONTRAIL 緋田美琴」を1枚まで選び、このカードの下にマーカーとして表向きに置き、自分の控え室の《音楽》のキャラを1枚まで選び、手札に戻す。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「短二度、一番線」があり、このカードの下にマーカーがあるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 このカードの下にマーカーがあるなら、このカードのパワーを＋3000。",
+      "【自】 このカードが手札から舞台に置かれた時か「CONTRAIL 緋田美琴」の【CXコンボ】の効果で舞台に置かれた時、あなたは自分の控え室の「CONTRAIL 緋田美琴」を1枚まで選び、このカードの下にマーカーとして表向きに置き、自分の控え室の《音楽》のキャラを1枚まで選び、手札に戻す。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「短二度、一番線」があり、このカードの下にマーカーがあるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "SHHiS"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "031",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_031.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 4,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "潮騒のシーショア 小宮果穂",
+    "code": "ISC/S110-039",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(5) 手札を3枚控え室に置く］ あなたのアタックフェイズの始めに、クライマックス置場に「グロウン・メイク・アップ！」があり、前列にこのカードがいて、他のあなたの、「プリティ・スイート 園田智代子」と「曲がり角のランウェイ 西城樹里」と「われにかへれ 杜野凛世」と「cheer＋ 有栖川夏葉」がいるなら、あなたはコストを払ってよい。そうしたら、あなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(5) 手札を3枚控え室に置く］ あなたのアタックフェイズの始めに、クライマックス置場に「グロウン・メイク・アップ！」があり、前列にこのカードがいて、他のあなたの、「プリティ・スイート 園田智代子」と「曲がり角のランウェイ 西城樹里」と「われにかへれ 杜野凛世」と「cheer＋ 有栖川夏葉」がいるなら、あなたはコストを払ってよい。そうしたら、あなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 このカードがアタックした時、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Hokago Climax Girls"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "039",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_039.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 全体角色获得【攻击时烧2】",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "プリティ・スイート 園田智代子",
+    "code": "ISC/S110-040",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのパワーを＋2000し、《チョコ》を与える。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場にクライマックスがあるなら、あなたは自分の控え室の《音楽》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「グロウン・メイク・アップ！」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのパワーを＋2000し、《チョコ》を与える。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場にクライマックスがあるなら、あなたは自分の控え室の《音楽》のキャラを1枚選び、ストック置場に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「グロウン・メイク・アップ！」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music",
+      "Hokago Climax Girls"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "040",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_040.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「グロウン・メイク・アップ！」：支付(2)费，弃2手，此卡再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "縷・縷・屡・来 幽谷霧子",
+    "code": "ISC/S110-063",
+    "rarity": "RR",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「煌・煌・星・娘」があり、他のあなたの『アラーム』か『シフト』を持つキャラがいるなら、相手に1ダメージを与え、あなたはコストを払ってよい。コストを払ったなら、相手に3ダメージを与え、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「煌・煌・星・娘」があり、他のあなたの『アラーム』か『シフト』を持つキャラがいるなら、相手に1ダメージを与え、あなたはコストを払ってよい。コストを払ったなら、相手に3ダメージを与え、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "L’antica"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "063",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_063.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足CX连击条件",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1，并选择是否支付费用追加烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "支付费用 (3费, 2手): 追加烧3",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 3,
+                        "times": 1
+                      }
+                    ]
+                  },
+                  {
+                    "label": "不支付费用",
+                    "instructions": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ONSTAGE？ 黛 冬優子",
+    "code": "ISC/S110-069",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「＜IF＞」があり、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「＜IF＞」があり、他のあなたのキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Straylight"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "069",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_069.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Have a bad day♥ 田中摩美々",
+    "code": "ISC/S110-071",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】【クロック】 シフト レベル0 （あなたのメインフェイズの始めに、あなたは自分の手札の赤のカードを1枚とクロック置場のこのカードを選び、入れ替えてよい）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは相手のキャラを1枚選び、手札に戻してよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】【クロック】 シフト レベル0 （あなたのメインフェイズの始めに、あなたは自分の手札の赤のカードを1枚とクロック置場のこのカードを選び、入れ替えてよい）"
+    ],
+    "attributes": [
+      "Music",
+      "L’antica"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "071",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_071.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "MillAndBurn",
+            "target_player": "opp",
+            "zone": "bottom",
+            "mill_amount": 3,
+            "condition": "is_cx",
+            "mode": "per_card",
+            "burn_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夜はなにいろ 浅倉 透",
+    "code": "ISC/S110-101",
+    "rarity": "RR",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(3) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「floooat」があり、他のあなたの《音楽》のキャラが2枚以上で、あなたの思い出が4枚以上なら、あなたはコストを払ってよい。そうしたら、次の行動を3回行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(3) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「floooat」があり、他のあなたの《音楽》のキャラが2枚以上で、あなたの思い出が4枚以上なら、あなたはコストを払ってよい。そうしたら、次の行動を3回行う。『相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "noctchill"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "101",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_101.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 造成1点伤害(共3次)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "♡LOG 市川雛菜",
+    "code": "ISC/S110-115",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《音楽》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロック置場のカード名に「透」か「円香」か「小糸」か「雛菜」を含むキャラを1枚選び、思い出にしてよい。",
+      "【自】 記憶 ［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたの思い出が3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 あなたの《音楽》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロック置場のカード名に「透」か「円香」か「小糸」か「雛菜」を含むキャラを1枚選び、思い出にしてよい。",
+      "【自】 記憶 ［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたの思い出が3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "noctchill"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "115",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_115.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (回忆区不足3张)",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (回忆区≥3张): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ひとりじゃない夜のこと 風野灯織",
+    "code": "ISC/S110-116",
+    "rarity": "R",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】【CXコンボ】［あなたのクライマックス置場のクライマックスを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「星掬い藍仰ぐ」を1枚まで選び、クライマックス置場に置く。",
+      "【自】【CXコンボ】 経験 このカードがアタックした時、クライマックス置場に「星掬い藍仰ぐ」があり、あなたのレベル置場に、黄のカードと赤のカードと青のカードがあるなら、相手に3ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】【CXコンボ】［あなたのクライマックス置場のクライマックスを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「星掬い藍仰ぐ」を1枚まで選び、クライマックス置場に置く。",
+      "【自】【CXコンボ】 経験 このカードがアタックした時、クライマックス置場に「星掬い藍仰ぐ」があり、あなたのレベル置場に、黄のカードと赤のカードと青のカードがあるなら、相手に3ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "116",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_116.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(需满足经验): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シルキージェムシリカ 七草にちか",
+    "code": "ISC/S110-T07",
+    "rarity": "TD",
+    "expansion": "The Idolm@ster Shiny Colors Shine More!",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ あなたのクライマックス置場に「あっかい」が置かれた時、他のあなたの「シルキージェムシリカ 緋田美琴」がいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1500。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ あなたのクライマックス置場に「あっかい」が置かれた時、他のあなたの「シルキージェムシリカ 緋田美琴」がいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1500。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "SHHiS"
+    ],
+    "set": "ISC",
+    "release": "110",
+    "sid": "T07",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_s110/isc_s110_t07.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX联动",
+            "instructions": []
+          },
+          {
+            "label": "发动CX联动(场上有另一张美琴): 造成2点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "事務所。静寂。大輪の華 大崎甜花",
+    "code": "ISC/S81-002",
+    "rarity": "RR",
+    "expansion": "The iDOLM@STER Shiny Colors Booster Box",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "ゆ、浴衣、着付けてもらったんだけど\n似合う、かな……？",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「ハッピーの答えはどこに？」があるなら、あなたはコストを払ってよい。そうしたら、次の行動を行う。『あなたのクロックが3枚以下なら、相手に3ダメージを与える。あなたのクロックが4枚以上なら、相手に1ダメージを与え、あなたは自分のクロックの上から1枚までを、控え室に置く。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Alstroemeria 《アルストロメリア》"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card65284-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "自クロックが3枚以下の場合：相手に3ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "自クロックが4枚以上の場合：相手に1ダメージ、1回復",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スタンバイオッケー 大崎甘奈",
+    "code": "ISC/S81-003",
+    "rarity": "RR",
+    "expansion": "The iDOLM@STER Shiny Colors Booster Box",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "えーっと、ここをこうして……\nよし、バッチリだよね☆",
+    "ability": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 共鳴 ［手札の「マイ・ピュア・ロマンス 桑山千雪」を1枚公開する］ このカードがアタックした時、クライマックス置場に「ハッピーの答えはどこに？」があり、他のあなたの《音楽》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚とこのカードを選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Alstroemeria 《アルストロメリア》"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card65287-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動: 自身ともう1体にキャンセル時1点バーン付与",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ちびイルミネーションスターズ",
+    "code": "ISC/S81-022",
+    "rarity": "C",
+    "expansion": "The iDOLM@STER Shiny Colors Booster Box",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "1",
+    "trigger": [],
+    "power": "N/A",
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000。",
+      "あなたは自分のキャラを1枚選び、そのターン中、ソウルを＋1。",
+      "あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "illumination STARS 《イルミネーションスターズ》"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "022",
+    "image": "https://images.littleakiba.com/tcg/card65326-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不使用此事件效果",
+            "instructions": []
+          },
+          {
+            "label": "对攻击角色使用事件(魂+1, 取消烧)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消: 烧1",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "伤害被取消: 不烧",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "パーティーのやくそく 福丸小糸",
+    "code": "ISC/S81-038",
+    "rarity": "R",
+    "expansion": "The iDOLM@STER Shiny Colors Booster Box",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "ど、どこに貼ろうかな……！\nこ、こっちかな……！　そっちかな……！",
+    "ability": [
+      "【永】 他のあなたの【レスト】している《音楽》のキャラがいるなら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、クライマックス置場に「きせつはアイスクリン」があり、前列にこのカードがいて、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手に1ダメージを与え、自分の山札を見て《音楽》のキャラを2枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "noctchill 《ノクチル》"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "038",
+    "image": "https://images.littleakiba.com/tcg/card65358-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アンコールステップの始めにCXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "アンコールステップの始めにCXコンボを発動: 相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "さかさま世界 芹沢あさひ",
+    "code": "ISC/S81-066",
+    "rarity": "R",
+    "expansion": "The iDOLM@STER Shiny Colors Booster Box",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ほら、プロデューサーさんも！　一緒にやるっす！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『チェンジ』で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「プレゼン・バトン！」があるなら、あなたはコストを払ってよい。そうしたら、このカードの下のマーカーをすべて控え室に置き、相手にＸダメージを与える。Ｘはこの効果で控え室に置かれたカードの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Straylight 《ストレイライト》"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "066",
+    "image": "https://images.littleakiba.com/tcg/card65414-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 标记数=1 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 标记数=2 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 标记数=3 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 标记数=4 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 标记数=5 -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "トリッキーナイト 田中摩美々",
+    "code": "ISC/S81-088",
+    "rarity": "RR",
+    "expansion": "The iDOLM@STER Shiny Colors Booster Box",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ふふー。私を待たせるなんてー\n覚悟しておいてくださいねー",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの下から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札の《音楽》のキャラを1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「デタラメハッシュタグ」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から6枚を公開し、その山札をシャッフルし、相手にＸダメージを与える。Ｘはそれらのカードの、『アラーム』か『シフト』を持つカードの合計に等しい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】【クロック】 シフト レベル0 （あなたのメインフェイズの始めに、あなたは自分の手札の青のカードを1枚とクロック置場のこのカードを選び、入れ替えてよい）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "L'Antica 《アンティーカ》"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "088",
+    "image": "https://images.littleakiba.com/tcg/card65458-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (0张命中): 烧0",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (1张命中): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (2张命中): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (3张命中): 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (4张命中): 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (5张命中): 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (6张命中): 烧6",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビヨンドザブルースカイ 櫻木真乃ﾋﾞﾖﾝﾄﾞｻﾞﾌﾞﾙｰｽｶｲ ｻｸﾗｷﾞﾏﾉ",
+    "code": "ISC/S81-T009",
+    "rarity": "Music/illumination STARS",
+    "expansion": "Idolm@ster Shiny Colors",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《音楽》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「駅線上の日常」があり、他のあなたの、カード名に「灯織」を含むキャラと「めぐる」を含むキャラが別々に1枚ずついるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "T009",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20210212_mh13.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スパークルイルミネーション 風野灯織ｽﾊﾟｰｸﾙｲﾙﾐﾈｰｼｮﾝ ｶｻﾞﾉﾋｵﾘ",
+    "code": "ISC/S81-T014",
+    "rarity": "Music/Illumination STARS",
+    "expansion": "Idolm@ster Shiny Colors",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは他の自分の前列の中央の枠のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替え、そのターン中、このカードのパワーを＋1000。"
+    ],
+    "attributes": [
+      "Music",
+      "Illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "T014",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20210212_mh18.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビヨンドザブルースカイ 月岡恋鐘ﾋﾞﾖﾝﾄﾞｻﾞﾌﾞﾙｰｽｶｲ ﾂｷｵｶｺｶﾞﾈ",
+    "code": "ISC/S81-T035",
+    "rarity": "Music/L'Antica",
+    "expansion": "Idolm@ster Shiny Colors",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、アンコールステップの始めに、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) あなたの山札の上から1枚をクロック置場に置く］ このカードがアタックした時、クライマックス置場に「アンティーカ」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたのクロックの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "L'Antica"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "T035",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20210215_vw32.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (当前时计0张 -> 烧1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (当前时计1张 -> 烧2)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (当前时计2张 -> 烧3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (当前时计3张 -> 烧4)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (当前时计4张 -> 烧5)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (当前时计5张 -> 烧6)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (当前时计6张 -> 烧7)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビヨンドザブルースカイ 小宮果穂ﾋﾞﾖﾝﾄﾞｻﾞﾌﾞﾙｰｽｶｲ ｺﾐﾔｶﾎ",
+    "code": "ISC/S81-T046",
+    "rarity": "Music/Houkago Climax Girls",
+    "expansion": "Idolm@ster Shiny Colors",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「雨のち、マイヒーロー」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music",
+      "Houkago Climax Girls"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "T046",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20210216_ek14.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(CX连击): 击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ビヨンドザブルースカイ 芹沢あさひﾋﾞﾖﾝﾄﾞｻﾞﾌﾞﾙｰｽｶｲ ｾﾘｻﾞﾜｱｻﾋ",
+    "code": "ISC/S81-T089",
+    "rarity": "Music/Straylight",
+    "expansion": "Idolm@ster Shiny Colors",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「あめ、ゆき、はれ」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋4000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Straylight"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "T089",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20210218_ug17.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クリアマリンカーム 浅倉 透ｸﾘｱﾏﾘﾝｶｰﾑ ｱｻｸﾗ ﾄｵﾙ",
+    "code": "ISC/S81-T108",
+    "rarity": "Music/noctchill",
+    "expansion": "Idolm@ster Shiny Colors",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場の《音楽》のキャラが2枚以上なら、このカードのパワーを＋1000。",
+      "【自】［(2) 手札の《音楽》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、あなたの前列の中央の枠のキャラがアタックした時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music",
+      "noctchill"
+    ],
+    "set": "ISC",
+    "release": "S81",
+    "sid": "T108",
+    "image": "https://ws-tcg.com/wordpress/wp-content/uploads/today_card/20210219_it22.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "CIP",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动再动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动再动效果 (需满足中央角色攻击)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たまゆらフレーミング 八宮めぐる",
+    "code": "ISC/SE53-12",
+    "rarity": "N",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(3) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「春待ちララバイ」があり、あなたのレベル置場に、黄のカードと赤のカードと青のカードがあるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋3000し、あなたの《イルミネーションスターズ》のキャラ2枚につき、次の行動を行う。『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "12",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_12.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (场上2-3张《イルミネーションスターズ》): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (场上4-5张《イルミネーションスターズ》): 烧2, 再烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たまゆらフレーミング 八宮めぐる",
+    "code": "ISC/SE53-12SSP",
+    "rarity": "SSP",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(3) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「春待ちララバイ」があり、あなたのレベル置場に、黄のカードと赤のカードと青のカードがあるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋3000し、あなたの《イルミネーションスターズ》のキャラ2枚につき、次の行動を行う。『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "12SSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_12ssp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (场上共2-3张《イルミネ》): 烧2点",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (场上共4-5张《イルミネ》): 烧2点x2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "たまゆらフレーミング 八宮めぐる",
+    "code": "ISC/SE53-12WIR",
+    "rarity": "WIR",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(3) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「春待ちララバイ」があり、あなたのレベル置場に、黄のカードと赤のカードと青のカードがあるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋3000し、あなたの《イルミネーションスターズ》のキャラ2枚につき、次の行動を行う。『相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "illumination STARS"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "12WIR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_12wir.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (2-3张《イルミネーションスターズ》): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (4-5张《イルミネーションスターズ》): 烧2x2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャッターチャンス！？ 和泉愛依",
+    "code": "ISC/SE53-28",
+    "rarity": "N",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「うち来る～！？」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の2つの能力のうちあなたが選んだ1つを得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与え、あなたはそのキャラをクロック置場に置く。』『【自】 このカードのアタックの終わりに、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Straylight"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "28",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_28.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不回复",
+            "instructions": []
+          },
+          {
+            "label": "回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 -> 效果A (击倒时)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未击倒对手",
+                "instructions": []
+              },
+              {
+                "label": "击倒对手 -> 烧1 + 踢人入时计",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  },
+                  {
+                    "op": "OppReverseToClock"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 -> 效果B (攻击结束时)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不发动烧3效果",
+                "instructions": []
+              },
+              {
+                "label": "发动烧3效果",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 3,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャッターチャンス！？ 和泉愛依",
+    "code": "ISC/SE53-28WIR",
+    "rarity": "WIR",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「うち来る～！？」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の2つの能力のうちあなたが選んだ1つを得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与え、あなたはそのキャラをクロック置場に置く。』『【自】 このカードのアタックの終わりに、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Straylight"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "28WIR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_28wir.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ選択①: リバース時1点バーン&クロック送り",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "未撃倒（効果なし）",
+                "instructions": []
+              },
+              {
+                "label": "条件達成: 相手をリバースさせた",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  },
+                  {
+                    "op": "OppReverseToClock"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ選択②: アタック終了時3点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ひとひらで紡ぐ世界 桑山千雪",
+    "code": "ISC/SE53-45",
+    "rarity": "N",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「夏空への挑戦」があり、他のあなたの《アルストロメリア》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）",
+      "【自】 共鳴 ［手札を1枚控え室に置き、手札の「バス・タイムの気分で 大崎甜花」を1枚公開する］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "ALSTROEMERIA"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "45",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_45.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ひとひらで紡ぐ世界 桑山千雪",
+    "code": "ISC/SE53-45SP",
+    "rarity": "SP",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「夏空への挑戦」があり、他のあなたの《アルストロメリア》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）",
+      "【自】 共鳴 ［手札を1枚控え室に置き、手札の「バス・タイムの気分で 大崎甜花」を1枚公開する］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "ALSTROEMERIA"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "45SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_45sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (不发动共鸣)",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手: 发动共鸣 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ひとひらで紡ぐ世界 桑山千雪",
+    "code": "ISC/SE53-45WIR",
+    "rarity": "WIR",
+    "expansion": "Idolmaster Shiny Colors Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「夏空への挑戦」があり、他のあなたの《アルストロメリア》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）",
+      "【自】 共鳴 ［手札を1枚控え室に置き、手札の「バス・タイムの気分で 大崎甜花」を1枚公開する］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "ALSTROEMERIA"
+    ],
+    "set": "ISC",
+    "release": "SE53",
+    "sid": "45WIR",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/isc_se53/isc_se53_45wir.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (共鸣效果)",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手并发动共鸣: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

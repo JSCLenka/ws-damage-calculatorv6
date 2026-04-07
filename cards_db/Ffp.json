@@ -1,0 +1,114 @@
+[
+  {
+    "name": "選択した未来 宗介＆かなめ",
+    "code": "Ffp/W120-040",
+    "rarity": "RR",
+    "expansion": "Fujimi Fantasia Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「戦うボーイ・ミーツ・ガール」があり、他のあなたの、《ファンタジア文庫》か《ミスリル》か《ウィスパード》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは好きな数を宣言し、相手にＸダメージを与える。Ｘはあなたの宣言した数に等しい。（マイナスの数は宣言できない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fantasia Bunko",
+      "Mithril",
+      "Whispered"
+    ],
+    "set": "Ffp",
+    "release": "W120",
+    "sid": "040",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/f/ffp_w120/ffp_w120_040.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 1ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 2ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 3ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 4ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 5ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 6ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 7ダメージを宣言",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

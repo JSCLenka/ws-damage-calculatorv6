@@ -1,0 +1,104 @@
+[
+  {
+    "name": "甘城ブリリアントパークの再建 いすず",
+    "code": "Fab/W120-049",
+    "rarity": "R",
+    "expansion": "Fujimi Fantasia Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札すべてを、控え室に置いてよい。そうしたら、あなたは同じ枚数引く。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fantasia Bunko",
+      "AmaBri",
+      "Gun"
+    ],
+    "set": "Fab",
+    "release": "W120",
+    "sid": "049",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/f/fab_w120/fab_w120_049.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "30周年大サービス ミュース＆いすず＆ラティファ",
+    "code": "Fab/W120-058",
+    "rarity": "U",
+    "expansion": "Fujimi Fantasia Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 2,
+    "cost": 1,
+    "power": 8000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 あなたのアタックフェイズの始めに、このカードが前列にいて【スタンド】しているなら、あなたはこのカードを【レスト】し、1枚まで引き、自分の山札の上から1枚までを、ストック置場に置き、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fantasia Bunko",
+      "AmaBri"
+    ],
+    "set": "Fab",
+    "release": "W120",
+    "sid": "058",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/f/fab_w120/fab_w120_058.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：横置自身，对敌方造成1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果（正常攻击）",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  }
+]

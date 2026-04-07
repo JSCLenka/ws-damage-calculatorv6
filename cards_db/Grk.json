@@ -1,0 +1,65 @@
+[
+  {
+    "name": "&#8220;氷の絶対女王政&#8221; 紗季",
+    "code": "Grk/WS02-085",
+    "rarity": "R",
+    "expansion": "Dengeki Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 7000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場に「\"雨上がりに咲く花\" 智花」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「眠れない夜」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《電撃文庫》のキャラを1枚選び、【スタンド】してよい。"
+    ],
+    "jpAbility": [
+      "【永】 経験 あなたのレベル置場に「&#8221;雨上がりに咲く花&#8221; 智花」があるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「眠れない夜」が置かれた時、前列にこのカードがいるなら、あなたは他の自分の《電撃文庫》のキャラを1枚選び、【スタンド】してよい。"
+    ],
+    "attributes": [
+      "Dengeki Bunko",
+      "Sports"
+    ],
+    "set": "Grk",
+    "release": "WS02",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/g_ws02/grk_ws02_085.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "站起另1个角色进行攻击 (基础魂心1)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "站起另1个角色进行攻击 (基础魂心2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

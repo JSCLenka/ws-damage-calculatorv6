@@ -1,0 +1,174 @@
+[
+  {
+    "name": "続く生徒会 くりむ",
+    "code": "Fsi/W120-085",
+    "rarity": "R",
+    "expansion": "Fujimi Fantasia Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの、《ファンタジア文庫》か《生徒会》のキャラの枚数×500に等しい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードが「生徒会の快進撃はまだまだ続くのよ！」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。（トリガーした「生徒会の快進撃はまだまだ続くのよ！」のの効果でこのカードが舞台に置かれた時も使える）"
+    ],
+    "attributes": [
+      "Fantasia Bunko",
+      "Student Council",
+      "Sweets"
+    ],
+    "set": "Fsi",
+    "release": "W120",
+    "sid": "085",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/f/fsi_w120/fsi_w120_085.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "光彩陸離 深夏",
+    "code": "Fsi/W65-067",
+    "rarity": "C",
+    "expansion": "Fujimi Fantasia Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "真冬……",
+    "ability": [
+      "【永】 あなたのキャラすべてが、《ファンタジア文庫》か《生徒会》なら、このカードのパワーを＋1000。",
+      "【自】［(1)］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fantasia Bunko 《ファンタジア文庫》",
+      "Student Council 《生徒会》"
+    ],
+    "set": "Fsi",
+    "release": "W65",
+    "sid": "067",
+    "image": "https://images.littleakiba.com/tcg/card51727-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "高らかな宣言 くりむ",
+    "code": "Fsi/W65-T11",
+    "rarity": "TD",
+    "expansion": "Fujimi Fantasia Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "立つ鳥はっ、後を濁さないのよ！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「生徒会の一存」があるなら、あなたは自分の控え室の、《ファンタジア文庫》か《生徒会》のキャラを1枚まで選び、ストック置場に置き、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Fantasia Bunko 《ファンタジア文庫》",
+      "Student Council 《生徒会》"
+    ],
+    "set": "Fsi",
+    "release": "W65",
+    "sid": "T11",
+    "image": "https://images.littleakiba.com/tcg/card51792-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回1血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(CX连击)：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

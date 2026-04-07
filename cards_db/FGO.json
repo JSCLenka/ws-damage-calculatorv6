@@ -1,0 +1,431 @@
+[
+  {
+    "name": "復讐の女神 ゴルゴーン",
+    "code": "FGO/S75-007",
+    "rarity": "R",
+    "expansion": "Fate/Grand Order -Absolute Demonic Battlefront: Babylonia-",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「巨大にして強大」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Babylonia 《バビロニア》",
+      "Goddess 《女神》"
+    ],
+    "set": "FGO",
+    "release": "S75",
+    "sid": "007",
+    "image": "https://images.littleakiba.com/tcg/card59386-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 3,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "民を導く王 ギルガメッシュ",
+    "code": "FGO/S75-026",
+    "rarity": "RR",
+    "expansion": "Fate/Grand Order -Absolute Demonic Battlefront: Babylonia-",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "心せよ、我が精鋭たちよ！",
+    "ability": [
+      "【永】 あなたのキャラすべてが、《カルデア》か《バビロニア》なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《カルデア》か《バビロニア》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［手札のキャラを2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのバトル相手をクロック置場に置く。"
+    ],
+    "attributes": [
+      "Babylonia 《バビロニア》",
+      "《賢王》"
+    ],
+    "set": "FGO",
+    "release": "S75",
+    "sid": "026",
+    "image": "https://images.littleakiba.com/tcg/card59408-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 将其送入时计区",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "決戦の時 ギルガメッシュ",
+    "code": "FGO/S75-027",
+    "rarity": "RR",
+    "expansion": "Fate/Grand Order -Absolute Demonic Battlefront: Babylonia-",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "今よりティアマトへ、ウルクの最後の意地を見せてくれよう！",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2) このカードを【レスト】する］ あなたのクライマックス置場に「戦い続けるウルクの意志」が置かれた時、前列にこのカードがいるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを3回与え、あなたはこのカードの正面のレベル3以下のキャラを1枚選び、控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Babylonia 《バビロニア》",
+      "《賢王》"
+    ],
+    "set": "FGO",
+    "release": "S75",
+    "sid": "027",
+    "image": "https://images.littleakiba.com/tcg/card59410-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 造成1点伤害3次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "金星を司る女神 イシュタル",
+    "code": "FGO/S75-053",
+    "rarity": "RR",
+    "expansion": "Fate/Grand Order -Absolute Demonic Battlefront: Babylonia-",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "注文通り、その足下、容赦なくブチ抜いてあげる‼",
+    "ability": [
+      "【永】 他のあなたの、《カルデア》か《バビロニア》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「母との決戦」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルし、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Babylonia 《バビロニア》",
+      "Goddess 《女神》"
+    ],
+    "set": "FGO",
+    "release": "S75",
+    "sid": "053",
+    "image": "https://images.littleakiba.com/tcg/card59444-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "女神の力 イシュタル",
+    "code": "FGO/S75-T08",
+    "rarity": "TD",
+    "expansion": "Fate/Grand Order -Absolute Demonic Battlefront: Babylonia-",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "とっておき！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Babylonia 《バビロニア》",
+      "Goddess 《女神》"
+    ],
+    "set": "FGO",
+    "release": "S75",
+    "sid": "T08",
+    "image": "https://images.littleakiba.com/tcg/card60231-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "太陽王 オジマンディアス",
+    "code": "FGO/S87-030",
+    "rarity": "RR",
+    "expansion": "Fate/Grand Order Movie -Shinsei Entaku Ryouiki Camelot-",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "魔術王か……フン。恐れるに足りぬわ",
+    "ability": [
+      "【永】 このカードの下に表向きのマーカーがあるなら、このカードのパワーを＋6000。",
+      "【自】 このカードが手札から舞台に置かれたターン中、アンコールステップの始めに、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「光輝の大複合神殿」があるなら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置き、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《キャメロット》",
+      "《ファラオ》"
+    ],
+    "set": "FGO",
+    "release": "S87",
+    "sid": "030",
+    "image": "https://images.littleakiba.com/tcg/card70586-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (CX连击): 踢人入时计 + 烧2",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "聖剣返還 ベディヴィエール",
+    "code": "FGO/S87-066",
+    "rarity": "U",
+    "expansion": "Fate/Grand Order Movie -Shinsei Entaku Ryouiki Camelot-",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "我が王、我が主よ。今こそ、いえ今度こそ\nこの剣を、お返しします",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの、《カルデア》か《キャメロット》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(4) 手札を2枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「剣を摂れ、銀色の腕」があり、他のあなたの、《カルデア》か《キャメロット》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを2回与え、このカードを思い出にする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《キャメロット》",
+      "《遍歴の騎士》"
+    ],
+    "set": "FGO",
+    "release": "S87",
+    "sid": "066",
+    "image": "https://images.littleakiba.com/tcg/card70638-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX Combo",
+            "instructions": []
+          },
+          {
+            "label": "发动CX Combo: 烧3点, 2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "円卓の騎士道 マシュ・キリエライト",
+    "code": "FGO/S87-086",
+    "rarity": "R",
+    "expansion": "Fate/Grand Order Movie -Shinsei Entaku Ryouiki Camelot-",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "そういうことですよね！ お父さん！",
+    "ability": [
+      "【自】 相手のドローフェイズの始めに、前列にこのカードがいるなら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋4000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Chaldea 《カルデア》",
+      "Shielder 《シールダー》"
+    ],
+    "set": "FGO",
+    "release": "S87",
+    "sid": "086",
+    "image": "https://images.littleakiba.com/tcg/card70665-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用, 但未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "支付费用, 且击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,298 @@
+[
+  {
+    "name": "“破壊の王”ゴジラ",
+    "code": "GZL/S54-T04",
+    "rarity": "TD",
+    "expansion": "Godzilla The Animation",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "滅びるのは、人か、ゴジラか",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、あなたのアタックフェイズの始めに、あなたはこのカード以外のすべてのプレイヤーのキャラすべてを、控え室に置いてよい。そうしたら、次の相手のターンの終わりまで、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手にＸダメージを与えてよい。Ｘはこのカードのソウルに等しい。』（ダメージキャンセルは発生する）",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Kaijuu 《怪獣》"
+    ],
+    "set": "GZL",
+    "release": "S54",
+    "sid": "T04",
+    "image": "https://images.littleakiba.com/tcg/card44927-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动[登场回合开始时]效果",
+            "instructions": []
+          },
+          {
+            "label": "发动[登场回合开始时]效果，获得取消烧能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "此卡魂=1时: 烧1",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 1,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "此卡魂=2时: 烧2",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 2,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "此卡魂=3时: 烧3",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 3,
+                          "times": 1
+                        }
+                      ]
+                    },
+                    {
+                      "label": "此卡魂=4时: 烧4",
+                      "instructions": [
+                        {
+                          "op": "Burn",
+                          "amount": 4,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付[攻击时]费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费2手]: 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“希望の先導者”ハルオ",
+    "code": "GZL/S54-T16",
+    "rarity": "TD",
+    "expansion": "Godzilla The Animation",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "俺たちは、もう一度ゴジラと戦わなきゃならない。人としての尊厳を取り戻すために",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(3) 手札を2枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Gematron Algorithm 《アラトラム号》",
+      "Human 《人類》"
+    ],
+    "set": "GZL",
+    "release": "S54",
+    "sid": "T16",
+    "image": "https://images.littleakiba.com/tcg/card44939-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“起動”メカゴジラ",
+    "code": "GZL/SE33-15",
+    "rarity": "R",
+    "expansion": "Godzilla The Animation",
+    "side": "SE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ガルグ「いや、我々のメカゴジラはまだ生きてる」",
+    "ability": [
+      "【永】 このカードの下のマーカー1枚につき、このカードのパワーを＋1000。",
+      "【自】 このカードがアタックした時、あなたは自分の山札の上から1枚を、このカードの下にマーカーとして表向きに置く。",
+      "【自】【CXコンボ】［手札を1枚控え室に置き、このカードの下のマーカーを2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「増殖都市」があるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】［(3) このカードの下のマーカーを3枚控え室に置く］ このカードがアタックされた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のカードを1枚選び、山札の上に置く。"
+    ],
+    "attributes": [
+      "Kaijuu 《怪獣》",
+      "Mecha 《メカ》"
+    ],
+    "set": "GZL",
+    "release": "SE33",
+    "sid": "15",
+    "image": "https://images.littleakiba.com/tcg/card59670-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：造成4点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“装甲兵器”ヴァルチャー",
+    "code": "GZL/SE33-23",
+    "rarity": "RR",
+    "expansion": "Godzilla The Animation",
+    "side": "SE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ユウコ「了解！」",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、自分の控え室のキャラを1枚まで選び、このカードの下にマーカーとして表向きに置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「全機、出撃！」があるなら、次の行動を行う。『このカードのマーカーにカード名に「ハルオ」を含むキャラがあるなら、相手に1ダメージを与え、このカードのマーカーにカード名に「ユウコ」を含むキャラがあるなら、あなたは自分の山札の上から1枚を、控え室に置く。そのカードがレベル1以下のキャラなら、あなたは相手の控え室のカードを5枚まで選び、山札に戻し、相手はその山札をシャッフルする。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Gematron Algorithm 《アラトラム号》",
+      "Human 《人類》"
+    ],
+    "set": "GZL",
+    "release": "SE33",
+    "sid": "23",
+    "image": "https://images.littleakiba.com/tcg/card59867-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: マーカー条件未達成",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 「ハルオ」マーカーのみ → 1点バーン",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 「ユウコ」マーカーのみ → 相手控え室5枚山札に戻す",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 5
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 「ハルオ」と「ユウコ」両方のマーカーあり",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "ReverseShuffle",
+                "amount": 5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

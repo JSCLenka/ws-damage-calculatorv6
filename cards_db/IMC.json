@@ -1,0 +1,2128 @@
+[
+  {
+    "name": "凪めく日々のおとぎ話 久川 凪",
+    "code": "IMC/W115-004",
+    "rarity": "RR",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、CX置場に「MOTTO!」があり、他のあなたの《音楽》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは相手の山札を上から3枚まで見て、カードを3枚まで選び、控え室に置き、残りのカードを山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Music",
+      "Twins"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_004.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 看对手牌顶3张弃3张，然后此卡再动",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 3,
+                "wr_amount": 3
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "カレイドスノー 本田未央",
+    "code": "IMC/W115-021",
+    "rarity": "R",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《音楽》のキャラを1枚選び、手札に戻してよい。",
+      "【自】【CXコンボ】［(4) 手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「情熱ファンファンファーレ」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Nickname"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "021",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_021.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[4费, 2手牌]: 造成2点伤害, 2次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ひらり花紅葉 相葉夕美",
+    "code": "IMC/W115-030",
+    "rarity": "U",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、他のあなたの黄のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、他のあなたのキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。』"
+    ],
+    "attributes": [
+      "Music",
+      "Flower"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "030",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_030.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付2手牌 (需场上另有4+黄角色): 赋予我方其他角色[取消时洗坟3]能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "ReverseShuffle",
+                      "amount": 3
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ドルチェ・プエラ 一ノ瀬志希",
+    "code": "IMC/W115-051",
+    "rarity": "RR",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれたターン中、このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】［手札の「ドルチェ・プエラ 一ノ瀬志希」を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Gifted"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "051",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_051.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[1费, 1手牌]: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 & 支付手牌cost: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "おめざめ☆あかりんご 辻野あかり",
+    "code": "IMC/W115-052",
+    "rarity": "RR",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】【CXコンボ】 あなたのCX置場に「無限L∞PだLOVE♡」があるなら、相手のキャラすべてに、《愛》を与える。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2)］ このカードのアタックの終わりに、CX置場に「無限L∞PだLOVE♡」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の《愛》のキャラの枚数以下の好きな数を宣言し、相手にＸダメージを与える。Ｘはあなたの宣言した数に等しい。（マイナスの数は宣言できない。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Apple"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "052",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_052.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "宣言1 (相手キャラ1体以上): 1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言2 (相手キャラ2体以上): 2点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言3 (相手キャラ3体以上): 3点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言4 (相手キャラ4体以上): 4点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "宣言5 (相手キャラ5体): 5点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "秋風乙女 乙倉悠貴",
+    "code": "IMC/W115-074",
+    "rarity": "U",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 6500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《音楽》のキャラ1枚につき、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのCX置場に「Halloween♥Code」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Sports"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "074",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_074.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(CX连击/击倒对手): 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "セレブレイト・カレイド 速水 奏",
+    "code": "IMC/W115-097",
+    "rarity": "RR",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《音楽》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのCX置場に「Nightwear」が置かれた時、前列にこのカードがいるなら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［(2)］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。そうしたら、あなたはこのカードの正面の【リバース】しているキャラを1枚選び、クロック置場に置く。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Kiss"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "097",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_097.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnAttack",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "未击倒对手",
+                  "instructions": []
+                },
+                {
+                  "label": "条件达成：击倒对手 -> 角色踢时计",
+                  "instructions": [
+                    {
+                      "op": "OppReverseToClock"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "イモータル・ネットワーク 高峯のあ",
+    "code": "IMC/W115-111",
+    "rarity": "R",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋3000。",
+      "【自】［(3) 手札を1枚控え室に置き、他のあなたの舞台のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music",
+      "Star"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "111",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_111.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费+1手牌+1角色，再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "蝶のはなむけ 塩見周子",
+    "code": "IMC/W115-112",
+    "rarity": "R",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは次の効果を行ってよい。『相手は自分の控え室のCXを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。』",
+      "【自】【CXコンボ】［(1)］ あなたのCX置場に「Nightwear」が置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手のキャラを1枚選び、【スタンド】して相手の舞台のキャラのいない他の枠に動かすか、他の相手のキャラを1枚選び、それぞれを【スタンド】して入れ替える。"
+    ],
+    "attributes": [
+      "Music",
+      "Sweets"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "112",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_112.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：对手选择1张CX留在休息室，其余洗回牌库",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ストリート・ランウェイ 砂塚あきら",
+    "code": "IMC/W115-120",
+    "rarity": "U",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 2,
+    "cost": 1,
+    "power": 5500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋5000。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのCX置場に「星環世界」があり、他のあなたの、黄のキャラと赤のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の控え室の《音楽》のキャラを1枚まで選び、手札に戻し、自分のキャラを1枚選び、そのターン中、パワーを＋5000。』『［手札の青のカードを1枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Fashion"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "120",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_120.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 (需有CX、黄、赤角色)",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "选择效果1：回收角色+加攻 (无斩杀效果)",
+                "instructions": []
+              },
+              {
+                "label": "选择效果2：弃1张蓝色手牌 -> 烧2",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スウィートハートロマンス 五十嵐響子",
+    "code": "IMC/W115-T18",
+    "rarity": "TD",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「Palette」があり、あなたのキャラすべてが赤なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Housework"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "T18",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_t18.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 给予对手3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ユースフルロマンス 小日向美穂",
+    "code": "IMC/W115-T19",
+    "rarity": "TD",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋3500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「Palette」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "The Sun"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "T19",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_t19.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 给予对手1点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "想いのリリーバー 姫川友紀",
+    "code": "IMC/W115-T66",
+    "rarity": "TD",
+    "expansion": "iDOLM@STER Cinderella Girls Next Twinkle!",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、CX置場に「きみにいっぱい☆」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Sports"
+    ],
+    "set": "IMC",
+    "release": "W115",
+    "sid": "T66",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_w115/imc_w115_t66.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(效果赋予自身)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击(效果赋予其他角色)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "クリスタルナイトパーティー 未央",
+    "code": "IMC/W43-001",
+    "rarity": "RR+",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "それってきっと最強だよね……！ね、プロデューサー！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】 このカードがアタックした時、クライマックス置場に「つぼみ」があり、他のあなたの黄のキャラが4枚以上なら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】［(2)］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "001",
+    "image": "https://images.littleakiba.com/tcg/card26513-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ不発",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 攻撃ダメージがキャンセルされた時、5ダメージ",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 5,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "お姉ちゃん みりあ",
+    "code": "IMC/W43-004",
+    "rarity": "RR",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたの黄のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたの《音楽》のキャラが3枚以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(1)］ 相手のアタックフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは他の自分の前列の中央の枠の《音楽》のキャラを1枚とこのカードを選び、それぞれを【スタンド】して入れ替え、そのターン中、このカードのパワーを＋1500。』",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card26517-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ＫＢＹＤ散歩 友紀",
+    "code": "IMC/W43-012",
+    "rarity": "R",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "行っくよー、プレイボール！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】 このカードのバトル相手が【リバース】した時、あなたは他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［(1)］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Sports 《スポーツ》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "012",
+    "image": "https://images.littleakiba.com/tcg/card26525-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，赋予另一角色取消烧能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ROCKなアイドル 夏樹",
+    "code": "IMC/W43-022",
+    "rarity": "U",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "ロックな話なら、いつでも付き合うぜ！",
+    "ability": [
+      "【自】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「Rockin’ Emotion」があるなら、あなたはコストを払ってよい。そうしたら、あなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Rock 《ロック》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "022",
+    "image": "https://images.littleakiba.com/tcg/card26535-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手或无CX (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手且有CX -> 赋予全体前列取消烧",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "S（mile）ING！ 卯月",
+    "code": "IMC/W43-043",
+    "rarity": "RR+",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私も、キラキラできるって信じたいから……！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを－Ｘ。Ｘはあなたのキャラの枚数×500に等しい。",
+      "【自】［(2) 手札の《音楽》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。バトル中のこのカードが【リバース】した時、あなたのクライマックス置場に「S（mile）ING！」があり、あなたのキャラすべてが《音楽》なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、そのターン中、このカードのパワーを＋3000。"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card26556-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Power of Smile 凛",
+    "code": "IMC/W43-090",
+    "rarity": "R",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を2枚選び、控え室に置き、自分の山札の上から1枚までを、ストック置場に置く。",
+      "【自】 あなたのクライマックスがクライマックス置場に置かれた時、そのターン中、このカードのパワーを＋1500。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードがアタックした時、クライマックス置場に「Triad Primus」があるなら、そのターン中、このカードは次の能力を得る。『【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。他のあなたのキャラがアタックした時、他のあなたの青のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。』"
+    ],
+    "attributes": [
+      "Music 《音楽》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "090",
+    "image": "https://images.littleakiba.com/tcg/card26603-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "クライマックスコンボを使用しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ『Triad Primus』(条件: 他の青のキャラ3枚以上で再スタンド)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Project:Krone 文香",
+    "code": "IMC/W43-091",
+    "rarity": "PR",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 あなたのクライマックス置場に「Project:Krone」が置かれた時、前列にこのカードがいるなら、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルする。Ｘはあなたのカード名に「Krone」を含むキャラの枚数に等しい。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Book 《本》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "091",
+    "image": "https://images.littleakiba.com/tcg/card26689-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXCombo",
+        "instructions": [
+          {
+            "op": "ReverseShuffle",
+            "amount": "count_other_characters"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "五十嵐 響子",
+    "code": "IMC/W43-P05",
+    "rarity": "PR",
+    "expansion": "The iDOLM@STER Cinderella Girls 2nd Season",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "は、はあ!?",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Housekeeping 《家事》"
+    ],
+    "set": "IMC",
+    "release": "W43",
+    "sid": "P05",
+    "image": "https://images.littleakiba.com/tcg/card26753-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "綺羅星のエンプレス 諸星きらり",
+    "code": "IMC/WE51-19",
+    "rarity": "N",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［手札の黄のカードを1枚控え室に置く］ あなたのCX置場に「ダンシング・デッド」が置かれた時、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に4ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Happy Happy"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "19",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_19.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击「ダンシング・デッド」",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": 3,
+                      "on_cancel": [
+                        {
+                          "op": "Burn",
+                          "amount": 4,
+                          "times": 1
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "綺羅星のエンプレス 諸星きらり",
+    "code": "IMC/WE51-19M@P",
+    "rarity": "M@P",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［手札の黄のカードを1枚控え室に置く］ あなたのCX置場に「ダンシング・デッド」が置かれた時、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に4ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Happy Happy"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "19M@P",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_19m@p.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果使用: 回復1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "効果を使用しない",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件達成/コスト支払い: CXコンボ発動",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "キャンセル時効果を発動",
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 3,
+                          "on_cancel": [
+                            {
+                              "is_choice": true,
+                              "choices": [
+                                {
+                                  "label": "追加の4ダメージを与える",
+                                  "instructions": [
+                                    {
+                                      "op": "DealDamage",
+                                      "amount": 4
+                                    }
+                                  ]
+                                },
+                                {
+                                  "label": "追加ダメージを与えない",
+                                  "instructions": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "キャンセル時効果を発動しない",
+                      "instructions": []
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "条件未達成/コストを支払わない",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "綺羅星のエンプレス 諸星きらり",
+    "code": "IMC/WE51-19SP",
+    "rarity": "SP",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 8500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚までを、控え室に置き、そのターン中、このカードのパワーを＋3000。",
+      "【自】【CXコンボ】［手札の黄のカードを1枚控え室に置く］ あなたのCX置場に「ダンシング・デッド」が置かれた時、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。このダメージがキャンセルされたなら、あなたは相手に4ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Happy Happy"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "19SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_19sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "回复1点血",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnCXPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 赋予取消烧能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消, 但不发动效果",
+                      "instructions": []
+                    },
+                    {
+                      "label": "伤害被取消, 发动效果: 烧3",
+                      "instructions": [
+                        {
+                          "op": "DealDamage",
+                          "amount": 3,
+                          "on_cancel": [
+                            {
+                              "is_choice": true,
+                              "choices": [
+                                {
+                                  "label": "3点伤害被取消, 不追加烧4",
+                                  "instructions": []
+                                },
+                                {
+                                  "label": "3点伤害被取消, 追加烧4",
+                                  "instructions": [
+                                    {
+                                      "op": "DealDamage",
+                                      "amount": 4
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夢見りあむは愛を救う 夢見りあむ",
+    "code": "IMC/WE51-21",
+    "rarity": "N",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの黄のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋7500し、このカードは次の3つの能力を得る。『【永】 このカードは相手の効果に選ばれない。』『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたはこのカードを【スタンド】してよい。』『【自】 ターンの終わりに、このカードを控え室に置く。』"
+    ],
+    "attributes": [
+      "Music",
+      "Otaku"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "21",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_21.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付登场COST",
+            "instructions": []
+          },
+          {
+            "label": "支付登场COST，获得能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "伤害被取消，选择不重置",
+                      "instructions": []
+                    },
+                    {
+                      "label": "伤害被取消，选择重置攻击",
+                      "instructions": [
+                        {
+                          "op": "PseudoExtraAttack",
+                          "soul": 2
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夢見りあむは愛を救う 夢見りあむ",
+    "code": "IMC/WE51-21M@P",
+    "rarity": "M@P",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの黄のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋7500し、このカードは次の3つの能力を得る。『【永】 このカードは相手の効果に選ばれない。』『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたはこのカードを【スタンド】してよい。』『【自】 ターンの終わりに、このカードを控え室に置く。』"
+    ],
+    "attributes": [
+      "Music",
+      "Otaku"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "21M@P",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_21m@p.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付cost(1费1手)，无效果",
+            "instructions": []
+          },
+          {
+            "label": "支付cost(1费1手)，获得[再动]能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": "once_per_turn",
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夢見りあむは愛を救う 夢見りあむ",
+    "code": "IMC/WE51-21SP",
+    "rarity": "SP",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの黄のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋7500し、このカードは次の3つの能力を得る。『【永】 このカードは相手の効果に選ばれない。』『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたはこのカードを【スタンド】してよい。』『【自】 ターンの終わりに、このカードを控え室に置く。』"
+    ],
+    "attributes": [
+      "Music",
+      "Otaku"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "21SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_21sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST(1,弃1)",
+            "instructions": []
+          },
+          {
+            "label": "支付COST(1,弃1): 获得[取消时再动]能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "amount": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スプラッシュ・マイ・ラブ! 佐久間まゆ",
+    "code": "IMC/WE51-40M@P",
+    "rarity": "M@P",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のCXが2枚以下か6枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋1500し、このカードは黄を得る。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラかイベントなら、あなたは相手に1ダメージを与えるか、相手の前列のレベル3以下のキャラを1枚まで選び、控え室に置く。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Music",
+      "Cooking"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "40M@P",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_40m@p.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "【登场时】翻顶失败 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "【登场时】翻顶成功",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "选择: 对手烧1",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "选择: 移除对手前列角色 (无直接伤害)",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "スプラッシュ・マイ・ラブ! 佐久間まゆ",
+    "code": "IMC/WE51-40SP",
+    "rarity": "SP",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの控え室のCXが2枚以下か6枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋1500し、このカードは黄を得る。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラかイベントなら、あなたは相手に1ダメージを与えるか、相手の前列のレベル3以下のキャラを1枚まで選び、控え室に置く。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Music",
+      "Cooking"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "40SP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_40sp.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "翻顶检定失败 (非《音乐》或事件)",
+            "instructions": []
+          },
+          {
+            "label": "翻顶检定成功",
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "效果选择：造成1点伤害",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "效果选择：除去对手前列角色 (无伤害)",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャルム・シェルシュール 渋谷 凛",
+    "code": "IMC/WE51-65",
+    "rarity": "N",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「Drastic Melody」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードは次の能力を得る。『【自】［(1) 手札の青のカードを3枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、終わりなきランウェイを発動する。』",
+      "【リプレイ】 終わりなきランウェイ あなたは自分の青のキャラを1枚選び、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Flowers"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "65",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_65.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不支付费用发动[終わりなきランウェイ]",
+                "instructions": []
+              },
+              {
+                "label": "支付费用发动[終わりなきランウェイ]",
+                "instructions": [
+                  {
+                    "is_choice": true,
+                    "choices": [
+                      {
+                        "label": "选择等级3的角色造成3点伤害",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 3,
+                            "times": 1
+                          }
+                        ]
+                      },
+                      {
+                        "label": "选择等级2的角色造成2点伤害",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 2,
+                            "times": 1
+                          }
+                        ]
+                      },
+                      {
+                        "label": "选择等级1的角色造成1点伤害",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 1,
+                            "times": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャルム・シェルシュール 渋谷 凛",
+    "code": "IMC/WE51-65M@P",
+    "rarity": "M@P",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「Drastic Melody」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードは次の能力を得る。『【自】［(1) 手札の青のカードを3枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、終わりなきランウェイを発動する。』",
+      "【リプレイ】 終わりなきランウェイ あなたは自分の青のキャラを1枚選び、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Flowers"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "65M@P",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_65m@p.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不发动[終わりなきランウェイ]",
+                "instructions": []
+              },
+              {
+                "label": "发动[終わりなきランウェイ] (需支付费用)",
+                "instructions": [
+                  {
+                    "is_choice": true,
+                    "choices": [
+                      {
+                        "label": "选择等级1角色 -> 烧1",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 1,
+                            "times": 1
+                          }
+                        ]
+                      },
+                      {
+                        "label": "选择等级2角色 -> 烧2",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 2,
+                            "times": 1
+                          }
+                        ]
+                      },
+                      {
+                        "label": "选择等级3角色 -> 烧3",
+                        "instructions": [
+                          {
+                            "op": "Burn",
+                            "amount": 3,
+                            "times": 1
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "シャルム・シェルシュール 渋谷 凛",
+    "code": "IMC/WE51-65SSP",
+    "rarity": "SSP",
+    "expansion": "Idolm@ster Cinderella Girls Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「Drastic Melody」があるなら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、そのターン中、このカードは次の能力を得る。『【自】［(1) 手札の青のカードを3枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、終わりなきランウェイを発動する。』",
+      "【リプレイ】 終わりなきランウェイ あなたは自分の青のキャラを1枚選び、相手にＸダメージを与える。Ｘはそのキャラのレベルに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Flowers"
+    ],
+    "set": "IMC",
+    "release": "WE51",
+    "sid": "65SSP",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/imc_we51/imc_we51_65ssp.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 2,
+            "wr_amount": 2
+          }
+        ],
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击结束: 不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "攻击结束: 支付费用，选择等级1角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "攻击结束: 支付费用，选择等级2角色 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "攻击结束: 支付费用，选择等级3角色 -> 烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

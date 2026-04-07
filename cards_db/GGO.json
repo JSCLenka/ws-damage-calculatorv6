@@ -1,0 +1,578 @@
+[
+  {
+    "name": "果たすべき約束 レン",
+    "code": "GGO/S59-002",
+    "rarity": "RR",
+    "expansion": "Sword Art Online Alternative Gun Gale Online",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "約束、覚えてますよね？",
+    "ability": [
+      "【永】 他のあなたのレベル3以上のキャラがいるなら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時か「グレネードで一掃！ フカ次郎」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar 《アバター》",
+      "Weapon 《武器》"
+    ],
+    "set": "GGO",
+    "release": "S59",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card47517-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "イカれたレン",
+    "code": "GGO/S59-037",
+    "rarity": "RR",
+    "expansion": "Sword Art Online Alternative Gun Gale Online",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "そのために、今わたしは、ここにいる！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から3枚を、控え室に置く。それらのカードの、《アバター》か《ネット》のキャラが1枚以上なら、あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－2000。2枚以上なら、あなたは相手の前列のキャラを1枚選び、そのターン中、パワーを－4000。3枚以上なら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「喉を噛み切ってでも」があるなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar 《アバター》",
+      "Weapon 《武器》"
+    ],
+    "set": "GGO",
+    "release": "S59",
+    "sid": "037",
+    "image": "https://images.littleakiba.com/tcg/card47552-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果: 不发动伤害",
+            "instructions": []
+          },
+          {
+            "label": "登场效果: 条件满足并烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 不发动伤害",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "躍然たる強襲 レン",
+    "code": "GGO/S59-046",
+    "rarity": "R",
+    "expansion": "Sword Art Online Alternative Gun Gale Online",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ああもう！　やったる！",
+    "ability": [
+      "【永】 大活躍 （相手がアタックする時、【リバース】していないこのカードが前列の中央の枠にいるなら、かわりに相手はこのカードにフロントアタックする）",
+      "【自】［(2)］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar 《アバター》",
+      "Weapon 《武器》"
+    ],
+    "set": "GGO",
+    "release": "S59",
+    "sid": "046",
+    "image": "https://images.littleakiba.com/tcg/card47561-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手，烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "趣味の話 ピトフーイ",
+    "code": "GGO/S59-T19",
+    "rarity": "TD",
+    "expansion": "Sword Art Online Alternative Gun Gale Online",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "音楽かあ……私はほとんど聞かないなあ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar 《アバター》",
+      "Weapon 《武器》"
+    ],
+    "set": "GGO",
+    "release": "S59",
+    "sid": "T19",
+    "image": "https://images.littleakiba.com/tcg/card47042-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "リベンジに燃える レン",
+    "code": "GGO/SE50-04",
+    "rarity": "R",
+    "expansion": "Gun Gale Online II",
+    "side": "S",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「誓いの金丁」があり、他のあなたの、《アバター》か《ネット》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar",
+      "Weapon"
+    ],
+    "set": "GGO",
+    "release": "SE50",
+    "sid": "04",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/ggo_se50/ggo_se50_04.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_cx_combo": true,
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 3,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "戦場を駆ける レン",
+    "code": "GGO/SE50-20",
+    "rarity": "RR",
+    "expansion": "Gun Gale Online II",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】【CXコンボ】 あなたのCX置場に「決闘」があるなら、このカードのパワーを＋4000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ あなたのアンコールステップの始めに、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar",
+      "Weapon"
+    ],
+    "set": "GGO",
+    "release": "SE50",
+    "sid": "20",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/ggo_se50/ggo_se50_20.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "【CXコンボ】击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "对手前列有未【リバース】的角色",
+            "instructions": []
+          },
+          {
+            "label": "对手前列全灭或不存在 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "《サード・スクワッド・ジャム》 フカ次郎",
+    "code": "GGO/SE50-24",
+    "rarity": "R",
+    "expansion": "Gun Gale Online II",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《アバター》か《ネット》なら、このカードは次の2つの能力を得る。『【自】 相手のターン中、あなたの受けたダメージがキャンセルされなかった時、前列にこのカードがいるなら、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。』『【自】 アンコール ［手札のキャラを1枚控え室に置く］』",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、CX置場に「戦いの合間に」があり、他のあなたの、《アバター》か《ネット》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar",
+      "Weapon"
+    ],
+    "set": "GGO",
+    "release": "SE50",
+    "sid": "24",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/ggo_se50/ggo_se50_24.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 3,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"攻撃困難な的\"レン",
+    "code": "GGO/SE50-25",
+    "rarity": "R",
+    "expansion": "Gun Gale Online II",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、他のあなたの、《アバター》か《ネット》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar",
+      "Weapon"
+    ],
+    "set": "GGO",
+    "release": "SE50",
+    "sid": "25",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/ggo_se50/ggo_se50_25.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "《サード・スクワッド・ジャム》 ピトフーイ",
+    "code": "GGO/SE50-45",
+    "rarity": "R",
+    "expansion": "Gun Gale Online II",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードのアタックの終わりに、CX置場に「戦場に響く狂喜の声」があり、他のあなたの、《アバター》か《ネット》のキャラがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『相手に1ダメージを与える。』『［手札を2枚控え室に置く］ あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar",
+      "Weapon"
+    ],
+    "set": "GGO",
+    "release": "SE50",
+    "sid": "45",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/ggo_se50/ggo_se50_45.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: (丢2手)烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "再び、銃をとる レン",
+    "code": "GGO/SE50-P04S",
+    "rarity": "PR",
+    "expansion": "Gun Gale Online II",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のCXを1枚選び、手札に戻す。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、他のあなたの、《アバター》か《ネット》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Avatar",
+      "Weapon"
+    ],
+    "set": "GGO",
+    "release": "SE50",
+    "sid": "P04S",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/ggo_se50/ggo_se50_p04s.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

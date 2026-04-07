@@ -1,0 +1,2251 @@
+[
+  {
+    "name": "未来へと踏み出す一歩 ラプラス・ダークネス",
+    "code": "HOL/W104-004",
+    "rarity": "RR",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「両手いっぱいの幸せ」があるなら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージをＸ回与えてよい。Ｘはあなたの「未来へと踏み出す一歩 ラプラス・ダークネス」の枚数の合計が1枚以下なら1、2枚以上なら2に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Secret Society HoloX"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "効果を発動しない",
+            "instructions": []
+          },
+          {
+            "label": "1点回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 「ラプラス」1枚以下",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 「ラプラス」2枚以上",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白を纏う 常闇トワ",
+    "code": "HOL/W104-042",
+    "rarity": "RR",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「目覚めは一緒に」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から1枚見て、山札の上か下に置き、相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋1000。Ｘはそれらのカードのレベル0以下のカードの枚数に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "4th Gen"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "042",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_042.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(支付1费手牌1)：削对手牌库底3张，根据0级卡数量烧X点",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "level_le_0",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "茜さす地でキミと 白上フブキ",
+    "code": "HOL/W104-048",
+    "rarity": "R",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「白上の秘密基地」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルする。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "1st Gen",
+      "Gamers"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "048",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_048.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          },
+          {
+            "op": "ReverseShuffle",
+            "amount": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "海辺の街でキミと AZKi",
+    "code": "HOL/W104-082",
+    "rarity": "R",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《ホロライブ》のキャラすべてに、パワーを＋1500。",
+      "【自】［手札を2枚控え室に置く］ あなたのアンコールステップの始めに、前列にこのカードがいて、相手の前列のキャラがいないか相手の前列のキャラすべてが【リバース】しているなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か控え室に置き、次の相手のターンの終わりまで、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "0th Gen"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "082",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_082.png",
+    "effects": [
+      {
+        "trigger": "OnEncoreStepStart",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(敌方前列全灭/不存在) & 支付2手牌: 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来へと踏み出す一歩 ロボ子さん",
+    "code": "HOL/W104-093",
+    "rarity": "U",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 6500,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのレベル3以上のキャラすべてに、パワーを＋2000。",
+      "【自】［このカードを【レスト】する］ あなたのアタックフェイズの始めに、このカードが【スタンド】しているなら、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを山札の上に置いてよい。』このカードは次のあなたのスタンドフェイズに【スタンド】しない。"
+    ],
+    "attributes": [
+      "Hololive",
+      "0th Gen"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "093",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_093.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付费用，赋予己方1个角色送顶能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnAttack",
+                  "is_choice": true,
+                  "choices": [
+                    {
+                      "label": "未击倒对手",
+                      "instructions": []
+                    },
+                    {
+                      "label": "条件达成：击倒对手 -> 将其置于牌库顶",
+                      "instructions": [
+                        {
+                          "op": "OppReverseToTop"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "STELLAR into the GALAXY 星街すいせい",
+    "code": "HOL/W104-123",
+    "rarity": "R",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのアタックフェイズの始めに、クライマックス置場に「COMET」があり、前列にこのカードがいるなら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手のキャラすべてを、思い出にしてよい。あなたはそれらのキャラを舞台の別々の枠に置く。』『そのターン中、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "0th Gen"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "123",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_123.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 効果1 (相手キャラを再配置)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 効果2 (2ダメージ)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来へと踏み出す一歩 湊あくあ",
+    "code": "HOL/W104-132",
+    "rarity": "U",
+    "expansion": "Hololive vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの、「未来へと踏み出す一歩 常闇トワ」と「未来へと踏み出す一歩 星街すいせい」がいるなら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(1) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。あなたの前列の中央の枠のキャラがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を公開する。そのカードが《ホロライブ》のキャラなら、このカードを【スタンド】する。（公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Hololive",
+      "2nd Gen"
+    ],
+    "set": "HOL",
+    "release": "W104",
+    "sid": "132",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_w104/hol_w104_132.png",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动能力：翻顶重置自己",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动能力",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来へ一緒に 桐生ココ",
+    "code": "HOL/W91-004",
+    "rarity": "RR",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《ホロライブ》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「桐生会へようこそ」があるなら、そのターン中、このカードは赤を得て、あなたはコストを5回まで払う。次の行動をＸ回行う。『あなたは相手の山札の下から3枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に1ダメージを与える。』Ｘはこの能力のコストを払った回数＋1に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《4期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "004",
+    "image": "https://images.littleakiba.com/tcg/card69752-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (不发动CX Combo)",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手, 支付0次费用 (执行1次)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒对手, 支付1次费用 (执行2次)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒对手, 支付2次费用 (执行3次)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒对手, 支付3次费用 (执行4次)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒对手, 支付4次费用 (执行5次)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "击倒对手, 支付5次费用 (执行6次)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "#しらぬえ 不知火フレア",
+    "code": "HOL/W91-019",
+    "rarity": "U",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのターン中、あなたのキャラすべてが《ホロライブ》なら、このカードのパワーを＋2000。",
+      "【自】［(1) あなたの舞台のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《3期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "019",
+    "image": "https://images.littleakiba.com/tcg/card69782-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 1,
+                  "times": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払い、追加のキャンセル時1点バーン能力を得る",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "#TOWART 常闇トワ",
+    "code": "HOL/W91-056",
+    "rarity": "U",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】【CXコンボ】［(2) 手札の「#ホロライブ4期生」を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「小悪魔な瞳」があり、他のあなたの《ホロライブ》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを2回与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《4期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card69856-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 支付2费+弃1手牌 -> 烧2两次",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "姫森ルーナ",
+    "code": "HOL/W91-057",
+    "rarity": "U",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "11500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 舞台のこのカードのレベルを－3。このカードの正面のキャラはサイドアタックできない。",
+      "【自】［手札の《ホロライブ》のキャラを1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】 このカードがフロントアタックされた時、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《4期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "057",
+    "image": "https://images.littleakiba.com/tcg/card69858-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来へ一緒に 宝鐘マリン",
+    "code": "HOL/W91-076",
+    "rarity": "RR",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［他のあなたの舞台の《ホロライブ》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、カードを1枚まで選び、ストック置場に置き、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札の《ホロライブ》のキャラを1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「魅惑の視線」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《3期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "076",
+    "image": "https://images.littleakiba.com/tcg/card69896-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "#ねねアルバム 桃鈴ねね",
+    "code": "HOL/W91-091",
+    "rarity": "U",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "2500",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 記憶 ［(1)］ あなたがこのカードの『助太刀』を使った時、あなたの思い出置場の異なるカード名のカードが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【起】【カウンター】 助太刀2500 レベル2 ［(1) 手札のこのカードを控え室に置く］ （あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋2500）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《5期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "091",
+    "image": "https://images.littleakiba.com/tcg/card69926-large.jpg",
+    "effects": [
+      {
+        "trigger": "PlayFromHand",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "思い出置場のカードが3枚未満 (効果なし)",
+            "instructions": []
+          },
+          {
+            "label": "思い出置場のカードが3枚以上: 相手に1ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "癒月ちょこ",
+    "code": "HOL/W91-095",
+    "rarity": "U",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】【CXコンボ】［あなたのクライマックス置場の「悪魔サンタのプレゼント」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「悪魔サンタのプレゼント」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。",
+      "【自】［このカードを控え室に置く］ 他のあなたのキャラがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、あなたは自分のバトル中のキャラを1枚選び、そのターン中、パワーを＋3500。"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《2期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "095",
+    "image": "https://images.littleakiba.com/tcg/card69934-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ:「悪魔サンタのプレゼント」の効果で登場し、コストを払いこのカードをスタンドする",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          },
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "赤井はあと",
+    "code": "HOL/W91-096",
+    "rarity": "U",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 この能力は1ターンにつき1回まで発動する。あなたが【起】を使った時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《ホロライブ》のキャラの枚数×1000に等しい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「先輩へ愛をこめて」があり、他のあなたの《ホロライブ》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の控え室のキャラを1枚まで選び、手札に戻す。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《1期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "096",
+    "image": "https://images.littleakiba.com/tcg/card69936-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ不発動/条件未達成",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 他のキャラ4枚以上 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来へ一緒に 白銀ノエル",
+    "code": "HOL/W91-114",
+    "rarity": "RR",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、次の相手のターンの終わりまで、このカードのパワーを＋4500し、このカードは次の能力を得る。『【永】 このカードのバトル中、すべてのプレイヤーは『助太刀』を手札からプレイできない。』",
+      "【自】［(2)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から3枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《3期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "114",
+    "image": "https://images.littleakiba.com/tcg/card69972-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "支付(2): 翻对手牌库底3张, 有CX则烧1",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "未来へ一緒に 湊あくあ",
+    "code": "HOL/W91-115",
+    "rarity": "RR",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「休日ゲーム」があり、他のあなたの《ホロライブ》のキャラが2枚以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックの上から10枚を山札に戻し、その山札をシャッフルし、自分の山札の上から同じ枚数をストック置場に置く。』『あなたは自分の手札を2枚選び、控え室に置く。2枚置いたなら、相手に3ダメージを与え、あなたは自分の山札を上から2枚まで見て、山札の上に好きな順番で置く。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《2期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "115",
+    "image": "https://images.littleakiba.com/tcg/card69974-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CX连击效果1：对手洗费",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              }
+            ]
+          },
+          {
+            "label": "CX连击效果2：烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ボクに任せて！ ロボ子さん",
+    "code": "HOL/W91-T017",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『合体』で舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「自然との共生」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《0期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T017",
+    "image": "https://images.littleakiba.com/tcg/card70128-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "サマーバケーション 赤井はあと",
+    "code": "HOL/W91-T028",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれたターン中、あなたのアタックフェイズの始めに、あなたはこのカード以外のすべてのプレイヤーのキャラすべてを、控え室に置いてよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に3ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《1期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T028",
+    "image": "https://images.littleakiba.com/tcg/card70150-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未发动[盘面清除]效果",
+            "instructions": []
+          },
+          {
+            "label": "发动[盘面清除]效果 -> 获得[取消烧3]",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 3,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(2费2手) -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "どれにしようかな？ アキロゼ",
+    "code": "HOL/W91-T034",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「私だけを見て」があるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードのパワーを＋1000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《1期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T034",
+    "image": "https://images.littleakiba.com/tcg/card70162-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "サンオイル 癒月ちょこ",
+    "code": "HOL/W91-T043",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "－",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《2期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T043",
+    "image": "https://images.littleakiba.com/tcg/card70180-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付代价(弃2手牌)：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付代价",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "こんこんきーつね！ 白上フブキ",
+    "code": "HOL/W91-T063",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋2000し、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）",
+      "【自】 相手のドローフェイズの始めに、前列にこのカードがいるなら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋4000。"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《1期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T063",
+    "image": "https://images.littleakiba.com/tcg/card70220-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 / 未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "支付费用(1费1手)并击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夏祭りとりんご飴 大神ミオ",
+    "code": "HOL/W91-T073",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「流星の空」があるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、次の相手のターンの終わりまで、このカードのパワーを＋2000。"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《ゲーマーズ》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T073",
+    "image": "https://images.littleakiba.com/tcg/card70240-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击: 摩卡效果(看2弃2)",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "穏やかな時間 潤羽るしあ",
+    "code": "HOL/W91-T090",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの《ホロライブ》のキャラが2枚以上なら、このカードのパワーを＋1500し、このカードは『【自】 アンコール ［手札の《ホロライブ》のキャラを1枚控え室に置く］』を得る。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「どんな時でも一緒」が置かれた時、前列にこのカードがいて、他のあなたの《ホロライブ》のキャラがいるなら、あなたは自分の控え室の《ホロライブ》のキャラを1枚まで選び、手札に戻すか舞台の好きな枠に置く。手札に戻したなら、あなたは相手の控え室のカードを4枚まで選び、山札に戻し、相手はその山札をシャッフルする。舞台に置いたなら、次の相手のターンの終わりまで、そのキャラのパワーを＋2500。"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《3期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T090",
+    "image": "https://images.littleakiba.com/tcg/card70274-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 回收到手牌 -> 对手洗坟4张",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 4
+              }
+            ]
+          },
+          {
+            "label": "CX连击: 放置到场上 (无伤害/干扰效果)",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "緑担当 獅白ぼたん",
+    "code": "HOL/W91-T127",
+    "rarity": "TD",
+    "expansion": "Hololive Production",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "－",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの《ホロライブ》のキャラすべてに、パワーを＋1500。",
+      "【自】［手札を2枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "《ホロライブ》",
+      "《5期生》"
+    ],
+    "set": "HOL",
+    "release": "W91",
+    "sid": "T127",
+    "image": "https://images.littleakiba.com/tcg/card70348-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付2手费: 对手3张非CX洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "キミと願うミライ 森カリオペ",
+    "code": "HOL/WE36-13",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、あなたは他の自分の《ホロライブ》のキャラを1枚選び、そのターン中、パワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードがアタックした時、あなたは他の自分の《ホロライブ》のキャラを1枚選び、そのターン中、パワーを＋2000。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Hololive English-Myth-"
+    ],
+    "set": "HOL",
+    "release": "E36",
+    "sid": "13",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we36/hol_we36_13.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "このターンに手札から舞台に置かれた",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "SelfMillLevelBurn",
+                      "base_amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "このターンに手札から舞台に置かれていない",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "キミと願うミライ 赤井はあと",
+    "code": "HOL/WE36-40",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 他のあなたの舞台のキャラを3枚控え室に置く］ このカードのアタックの終わりに、あなたのレベルが3以上で、あなたのクロックが6枚なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(1) 他のあなたの舞台のキャラを3枚控え室に置く］ このカードのアタックの終わりに、あなたのレベルが3以上で、あなたのクロックが6枚なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Generation 1"
+    ],
+    "set": "HOL",
+    "release": "E36",
+    "sid": "40",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we36/hol_we36_40.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(LV3, 6血): 支付代价烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "キミと願うミライ 星街すいせい",
+    "code": "HOL/WE36-53",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Generation 0"
+    ],
+    "set": "HOL",
+    "release": "E36",
+    "sid": "53",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we36/hol_we36_53.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Splash Party! カエラ・コヴァルスキア",
+    "code": "HOL/WE44-24",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster Summer Collection",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの《ホロライブ》のキャラの枚数に等しい。",
+      "【自】［(1) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは相手の控え室のカードを1枚まで選び、山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Hololive Indonesia 3rd Gen"
+    ],
+    "set": "HOL",
+    "release": "WE44",
+    "sid": "24",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we44/hol_we44_24.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用：烧1，对手坟顶1张",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Splash Party! ハコス・ベールズ",
+    "code": "HOL/WE44-25",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster Summer Collection",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Hololive English-Promise-"
+    ],
+    "set": "HOL",
+    "release": "WE44",
+    "sid": "25",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we44/hol_we44_25.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "支付费用(2费2手牌)：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Splash Party! パヴォリア・レイネ",
+    "code": "HOL/WE44-38",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster Summer Collection",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたの《ホロライブ》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《ホロライブ》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Hololive Indonesia 2nd Gen"
+    ],
+    "set": "HOL",
+    "release": "WE44",
+    "sid": "38",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we44/hol_we44_38.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 翻顶为<ホロライブ>角色 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Splash Party! 癒月ちょこ",
+    "code": "HOL/WE44-39",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster Summer Collection",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋2000。",
+      "【自】［(3) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは自分の山札を上から1枚見て、山札の上か下に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "2nd Gen"
+    ],
+    "set": "HOL",
+    "release": "WE44",
+    "sid": "39",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we44/hol_we44_39.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Splash Party! 七詩ムメイ",
+    "code": "HOL/WE44-51",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster Summer Collection",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《ホロライブ》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置き、あなたのクライマックス置場の「黄昏の丘で」を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを3枚まで選び、山札の上に好きな順番で置き、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Hololive",
+      "Hololive English-Promise-"
+    ],
+    "set": "HOL",
+    "release": "WE44",
+    "sid": "51",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we44/hol_we44_51.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "【CX连击】击倒对手",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 3
+              },
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Summer Splash Party! 白銀ノエル",
+    "code": "HOL/WE44-53",
+    "rarity": "N",
+    "expansion": "Hololive Premium Booster Summer Collection",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《ホロライブ》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「団長と一緒」があり、他のあなたの《ホロライブ》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、相手は自分の山札の上から20枚を、控え室に置き、あなたは相手の山札を上から2枚まで見て、カードを1枚まで選び、山札の下に置き、残りのカードを山札の上に好きな順番で置く。"
+    ],
+    "attributes": [
+      "Hololive",
+      "3rd Gen"
+    ],
+    "set": "HOL",
+    "release": "WE44",
+    "sid": "53",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/h/hol_we44/hol_we44_53.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Moca",
+            "target_player": "opp",
+            "look_amount": 20,
+            "wr_amount": 20
+          }
+        ]
+      }
+    ]
+  }
+]

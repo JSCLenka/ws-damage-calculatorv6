@@ -1,0 +1,51 @@
+[
+  {
+    "name": "狂乱の騎士 バーサーカー",
+    "code": "FZ/S17-056",
+    "rarity": "RR",
+    "expansion": "Fate/Zero",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "URRRRRRRRッ!!",
+    "ability": [
+      "【自】［このカードを控え室に置く］ あなたのクライマックス置場に「墜ちた騎士の正体」が置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のレベル2以下の《サーヴァント》のキャラを1枚選び、このカードがいた枠に置く。"
+    ],
+    "attributes": [
+      "Servant 《サーヴァント》",
+      "Weapon 《武器》"
+    ],
+    "set": "FZ",
+    "release": "S17",
+    "sid": "056",
+    "image": "https://images.littleakiba.com/tcg/card7532-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付代价，从休息室换上LV2以下《从者》角色进行攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

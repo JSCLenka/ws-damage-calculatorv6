@@ -1,0 +1,52 @@
+[
+  {
+    "name": "新人隊員　あかり",
+    "code": "GT/W29-051",
+    "rarity": "RR",
+    "expansion": "Genei wo Kakeru Taiyou",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "教えて、何があったのかを……！\nどうしたらあなたの心を救えるのかを……！",
+    "ability": [
+      "【自】［(1) 手札の「拓かれた運命」を1枚控え室に置き、このカードをクロック置場に置く］ バトル中のこのカードが【リバース】した時、他のあなたの《タロット》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、あなたは自分の控え室の「太陽の力 あかり」を1枚選び、このカードがいた枠に【レスト】して置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Tarot 《タロット》",
+      "Weapon 《武器》"
+    ],
+    "set": "GT",
+    "release": "W29",
+    "sid": "051",
+    "image": "https://images.littleakiba.com/tcg/card10198-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(被击倒&另有3张以上<タロット>)，支付费用",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "name": "《氷刃》のモニカ",
+    "code": "Fsp/W120-004",
+    "rarity": "RR",
+    "expansion": "Fujimi Fantasia Bunko Vol.2",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードが手札から舞台に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘは相手のキャラの枚数×1000に等しい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「少女交戦中」があり、他のあなたの、《ファンタジア文庫》か《スパイ》のキャラが4枚以上なら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、自分の、《ファンタジア文庫》か《スパイ》のキャラを2枚まで選び、そのターン中、ソウルを＋1。"
+    ],
+    "attributes": [
+      "Fantasia Bunko",
+      "Spy",
+      "Light"
+    ],
+    "set": "Fsp",
+    "release": "W120",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/f/fsp_w120/fsp_w120_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: Moca, 自身魂+1 (+另1人)",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "CX连击: Moca, 自身魂不变 (+另2人)",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

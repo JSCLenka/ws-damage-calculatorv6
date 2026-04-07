@@ -1,0 +1,591 @@
+[
+  {
+    "name": "冠菊 藤田ことねカムロギク フジタコトネ",
+    "code": "GIM/W124-011",
+    "rarity": "R",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(2) 手札の《音楽》のキャラを2枚控え室に置く］ このカードがアタックした時、CX置場に「ぜったい追いついてやる！」があるなら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードは次の2つの能力を得る。『【永】 このカードのバトル中、あなたは相手のキャラの【自】の効果によるダメージを受けない。』『【永】 このカードの正面のキャラのソウルを－2。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Part Timer"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "011",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_011.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tame-Lie-One-Step 紫雲清夏Tame-Lie-One-Step  シウンスミカ",
+    "code": "GIM/W124-012",
+    "rarity": "R",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「白線 葛城リーリヤ」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「おいしい顔、いただき～！」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、あなたは相手の山札の下から1枚を、控え室に置き、そのカードがイベントかレベル2以下のキャラなら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Gal"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "012",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_012.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击：烧2，然后扒底1张，若是事件卡或2级以下角色则再烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 1,
+                "condition": "level_le_2",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "White Night! White Wish! 花海佑芽White Night! White Wish! ハナミウメ",
+    "code": "GIM/W124-037",
+    "rarity": "RR",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［他のあなたの舞台の《音楽》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】【CXコンボ】 経験 このカードがアタックした時、CX置場に「まだ上がりませんように！」があり、あなたの手札が5枚以下で、あなたのレベル置場のカードのレベルの合計が6以上なら、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルし、次の相手のターンの終わりまで、このカードのパワーを＋1500。』『［(1)］ あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Sports"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "037",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_037a.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "コストを払わない",
+            "instructions": []
+          },
+          {
+            "label": "コストを払う(他のキャラ1枚控え室)：1回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ不発 (CX無/手札6枚以上/経験Lv5以下)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ発動",
+            "instructions": [
+              {
+                "is_choice": true,
+                "choices": [
+                  {
+                    "label": "効果選択：相手の控え室のカードを山札に戻す",
+                    "instructions": [
+                      {
+                        "is_choice": true,
+                        "choices": [
+                          {
+                            "label": "0枚戻す",
+                            "instructions": []
+                          },
+                          {
+                            "label": "1枚戻す",
+                            "instructions": [
+                              {
+                                "op": "ReverseShuffle",
+                                "amount": 1
+                              }
+                            ]
+                          },
+                          {
+                            "label": "2枚戻す",
+                            "instructions": [
+                              {
+                                "op": "ReverseShuffle",
+                                "amount": 2
+                              }
+                            ]
+                          },
+                          {
+                            "label": "3枚戻す",
+                            "instructions": [
+                              {
+                                "op": "ReverseShuffle",
+                                "amount": 3
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "効果選択：【コスト(1)】相手に2ダメージ",
+                    "instructions": [
+                      {
+                        "op": "Burn",
+                        "amount": 2,
+                        "times": 1
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fluorite 有村麻央Fluorite アリムラマオ",
+    "code": "GIM/W124-044",
+    "rarity": "R",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10500,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】【CXコンボ】［あなたのCX置場の「晴れたね」を1枚控え室に置く］ あなたのアタックフェイズの始めに、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、次の相手のターンの終わりまで、このカードは次の2つの能力を得る。『【永】 このカードは相手の効果に選ばれない。』『【永】 大活躍』",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがダイレクトアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（CXのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Opera"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "044",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_044.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击(有其他2名<音乐>角色): 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击未直击",
+            "instructions": []
+          },
+          {
+            "label": "直击: 支付1费1手发动效果",
+            "instructions": [
+              {
+                "op": "SelfMillLevelBurn",
+                "base_amount": 1
+              }
+            ]
+          },
+          {
+            "label": "直击: 但不发动效果",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "憧れを目指して 倉本千奈アコガレヲメザシテ クラモトチナ",
+    "code": "GIM/W124-059",
+    "rarity": "C",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "trigger": [],
+    "power": 7000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードがアタックした時、他のあなたの《音楽》のキャラが2枚以上なら、そのターン中、このカードのパワーを＋4000。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与える。ＸはそれらのカードのCXの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Young Lady"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "059",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_059.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手: 削底4张, 根据CX数烧X点",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アナザーアイドル'24ハロウィン 花海咲季アナザーアイドル'24ハロウィン ハナミサキ",
+    "code": "GIM/W124-061",
+    "rarity": "C",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 経験 レベル置場にこのカードがあるなら、あなたの「ぐぬぬぬぬ…………！ 花海佑芽」すべてに、次の能力を与える。『【永】 このカードは相手の効果に選ばれない。』",
+      "【自】 経験 ［(2) あなたの「ぐぬぬぬぬ…………！ 花海佑芽」すべての下のマーカーを合計2枚控え室に置く］ レベル置場にこのカードがあり、あなたのレベルが3以上なら、あなたのCXフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の「White Night! White Wish! 花海佑芽」を1枚選び、このカードと入れ替え、そのターン中、このカードは次の2つの能力を得る。『【永】 あなたのキャラすべては相手の効果に選ばれない。』『【自】 このカードがアタックした時、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Competition"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "061",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_061.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX阶段的效果",
+            "instructions": []
+          },
+          {
+            "label": "发动CX阶段的效果: 攻击时烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "アイヴイ 月村手毬アイヴイ ツキムラテマリ",
+    "code": "GIM/W124-071",
+    "rarity": "RR",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 このカードがアタックした時、CX置場に「何やってるんだろう、」があり、他のあなたの《音楽》のキャラが2枚以上なら、相手に1ダメージを与え、次の行動を行う。『あなたは相手の山札の下からＸ枚を、控え室に置いてよい。それらのカードにCXがあるなら、相手に1ダメージを与える。Ｘはあなたの思い出置場の《音楽》のキャラの枚数－1に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Song"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "071",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_071a.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (烧1, 扒底[思出-1]张, 若含CX追烧1)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": {
+                  "base": "player_memory",
+                  "modifier": -1
+                },
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "学園生活 藤田ことねガクエンセイカツ フジタコトネ",
+    "code": "GIM/W124-T05",
+    "rarity": "TD",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Part Timer"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "T05",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_t05.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(3)费，弃2手：烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "学園生活 花海咲季ガクエンセイカツ ハナミサキ",
+    "code": "GIM/W124-T12",
+    "rarity": "TD",
+    "expansion": "Gakuen Idolmaster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [],
+    "power": 10000,
+    "soul": 0,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、CX置場に「あなたにも作ってあげる！」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】 このカードのバトル相手が【リバース】した時、あなたはそのキャラを山札の上に置いてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Competition"
+    ],
+    "set": "GIM",
+    "release": "W124",
+    "sid": "T12",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gim_w124/gim_w124_t12.png",
+    "community": true,
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (未击倒对手)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "发动CX连击 (击倒对手)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToTop"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

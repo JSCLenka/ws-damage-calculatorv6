@@ -1,0 +1,158 @@
+[
+  {
+    "name": "生粋の冒険者 妖精弓手",
+    "code": "GBS/S63-002",
+    "rarity": "RR",
+    "expansion": "Goblin Slayer",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "私も、ゴブリン退治、やるわ！\nそのかわり！　また一緒にきなさい！",
+    "ability": [
+      "【自】［(2)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは相手のレベル3以下のキャラを1枚選び、手札に戻す。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Order 《秩序》",
+      "Adventurer 《冒険者》"
+    ],
+    "set": "GBS",
+    "release": "S63",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card50338-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "滅殺の鉄影 ゴブリンスレイヤー",
+    "code": "GBS/S63-030",
+    "rarity": "RR",
+    "expansion": "Goblin Slayer",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "奴らは馬鹿だが、間抜けじゃない",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「Last Breath」があるなら、相手に1ダメージを与え、あなたはそのキャラを山札の上に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Order 《秩序》",
+      "Weapon 《武器》"
+    ],
+    "set": "GBS",
+    "release": "S63",
+    "sid": "030",
+    "image": "https://images.littleakiba.com/tcg/card50366-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "OppReverseToTop"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "その者の名は ゴブリンスレイヤー",
+    "code": "GBS/S63-T07",
+    "rarity": "TD",
+    "expansion": "Goblin Slayer",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "…ゴブリンスレイヤー",
+    "ability": [
+      "【永】 このカードのバトル中、相手は『助太刀』を手札からプレイできない。",
+      "【自】［(3)］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Order 《秩序》",
+      "Weapon 《武器》"
+    ],
+    "set": "GBS",
+    "release": "S63",
+    "sid": "T07",
+    "image": "https://images.littleakiba.com/tcg/card50443-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

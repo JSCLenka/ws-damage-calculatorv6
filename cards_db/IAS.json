@@ -1,0 +1,665 @@
+[
+  {
+    "name": "魅惑のプロポーション　三浦あずさ",
+    "code": "IAS/S61-018",
+    "rarity": "R",
+    "expansion": "The Idolmaster Million Live!",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "あら……？ プロデューサーさん、どこを見ているんですか？",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《音楽》のキャラの枚数×1000に等しい。",
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたは自分の山札の上から1枚を、控え室に置く。そのカードのトリガーアイコンにがあるなら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Fortune Telling 《占い》"
+    ],
+    "set": "IAS",
+    "release": "S61",
+    "sid": "018",
+    "image": "https://images.littleakiba.com/tcg/card49034-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (未满足登场回合/击倒/翻顶任一条件)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 登场回合击倒对手 & 翻顶命中魂标 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "確かな信頼　萩原雪歩",
+    "code": "IAS/S61-061",
+    "rarity": "R",
+    "expansion": "The Idolmaster Million Live!",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もし私が毒リンゴを食べて倒れたら、プロデューサーが起こしてくださいね？",
+    "ability": [
+      "【永】 あなたの《音楽》のキャラが4枚以上なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《音楽》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Tea 《お茶》"
+    ],
+    "set": "IAS",
+    "release": "S61",
+    "sid": "061",
+    "image": "https://images.littleakiba.com/tcg/card49045-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果不发动 / 翻出非《音乐》角色",
+            "instructions": []
+          },
+          {
+            "label": "登场效果发动(翻出《音乐》角色): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夕映えに歌声を　如月千早",
+    "code": "IAS/S61-091",
+    "rarity": "RR",
+    "expansion": "The Idolmaster Million Live!",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "音楽を楽しむみんなの想いが空に溶けて、空気中でキラキラ輝いているような気がします。",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「Eternal Harmony」があるなら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘはあなたの控え室のクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music 《音楽》",
+      "Camera 《カメラ》"
+    ],
+    "set": "IAS",
+    "release": "S61",
+    "sid": "091",
+    "image": "https://images.littleakiba.com/tcg/card49053-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "クロックから1枚回復しない",
+            "instructions": []
+          },
+          {
+            "label": "クロックから1枚回復する",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=1枚 → 1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=2枚 → 2点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=3枚 → 3点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=4枚 → 4点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=5枚 → 5点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=6枚 → 6点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 6,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=7枚 → 7点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 7,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 控え室のCX=8枚 → 8点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 8,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "秋色ハイ、ターッチ♪　高槻やよい",
+    "code": "IAS/S93-003",
+    "rarity": "RR",
+    "expansion": "Million Live Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《音楽》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(3) 手札の《音楽》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「Deep, Deep Blue」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "jpAbility": [
+      "【永】 他のあなたの《音楽》のキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［(3) 手札の《音楽》のキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「Deep, Deep Blue」があり、他のあなたの《音楽》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは相手の控え室のカードを3枚まで選び、山札に戻し、相手はその山札をシャッフルする。"
+    ],
+    "attributes": [
+      "Music",
+      "Family"
+    ],
+    "set": "IAS",
+    "release": "93",
+    "sid": "003",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_s93/ias_s93_003.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费,弃1手牌]发动再动",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "つながる笑顔　天海春香",
+    "code": "IAS/S93-060",
+    "rarity": "R",
+    "expansion": "Million Live Vol.2",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードは次の2つの能力を得る。『【自】 相手のターン中、あなたの受けたダメージがキャンセルされなかった時、前列にこのカードがいるなら、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。』『【自】 アンコール ［手札のキャラを1枚控え室に置く］』",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「LEADER!!」があり、他のあなたの《音楽》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 あなたのキャラすべてが《音楽》なら、このカードは次の2つの能力を得る。『【自】 相手のターン中、あなたの受けたダメージがキャンセルされなかった時、前列にこのカードがいるなら、あなたは自分の山札を上から1枚見て、山札の上か控え室に置く。』『【自】 アンコール ［手札のキャラを1枚控え室に置く］』",
+      "【自】【CXコンボ】［(2)］ このカードがアタックした時、クライマックス置場に「LEADER!!」があり、他のあなたの《音楽》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Sweets"
+    ],
+    "set": "IAS",
+    "release": "93",
+    "sid": "060",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_s93/ias_s93_060.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 支付(2), 给予对手3点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Love me do♡　星井美希",
+    "code": "IAS/SE52-14",
+    "rarity": "N",
+    "expansion": "Idolmaster 765PRO ALLSTARS Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 2,
+    "cost": 1,
+    "power": 5000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの、「輝きの向こう側へ！ 美希」と「ザ☆ワイルドストロベリー　星井美希」すべてに、パワーを＋500し、次の能力を与える。『【自】【ターン1】［(2) 手札の《音楽》のキャラを2枚控え室に置く］ このカードの与えたダメージがキャンセルされた時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。"
+    ],
+    "attributes": [
+      "Music",
+      "Nail"
+    ],
+    "set": "IAS",
+    "release": "SE52",
+    "sid": "14",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_se52/ias_se52_14.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "all_others",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "【Turn 1】Pay cost to burn 4 on cancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 4,
+                      "times": 1
+                    }
+                  ]
+                },
+                {
+                  "label": "Do not pay cost",
+                  "instructions": []
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "マリオネットの心　星井美希",
+    "code": "IAS/SE52-17",
+    "rarity": "N",
+    "expansion": "Idolmaster 765PRO ALLSTARS Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「オーバーマスター」があるなら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】【ターン1】 このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Nail"
+    ],
+    "set": "IAS",
+    "release": "SE52",
+    "sid": "17",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_se52/ias_se52_17.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "DealDamage",
+                  "amount": "last_cancelled"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Impervious Resolution　萩原雪歩",
+    "code": "IAS/SE52-39",
+    "rarity": "N",
+    "expansion": "Idolmaster 765PRO ALLSTARS Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 8000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋4000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を4枚控え室に置き、あなたのCX置場の「ラビットファー」を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、次の行動を2回行う。『あなたは相手の控え室のカードを1枚まで選び、山札の上に置き、相手に4ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Tea"
+    ],
+    "set": "IAS",
+    "release": "SE52",
+    "sid": "39",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_se52/ias_se52_39.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 置顶烧4 x2",
+            "instructions": [
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              },
+              {
+                "op": "OppTopDeck",
+                "max_cards": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "I'm yours　天海春香",
+    "code": "IAS/SE52-41",
+    "rarity": "N",
+    "expansion": "Idolmaster 765PRO ALLSTARS Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札の、《音楽》のキャラか「キラメキ進行形」を1枚控え室に置く］ このカードがアタックした時、CX置場に「M@STERPIECE」があり、他のあなたの《音楽》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、そのターン中、このカードのパワーを＋1500。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Sweets"
+    ],
+    "set": "IAS",
+    "release": "SE52",
+    "sid": "41",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_se52/ias_se52_41.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (场上有3张以上其他<音乐>角色): 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DIAMOND　水瀬伊織",
+    "code": "IAS/SE52-56",
+    "rarity": "N",
+    "expansion": "Idolmaster 765PRO ALLSTARS Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 9000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたのキャラが3枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、CX置場に「SMOKY THRILL」があり、他のあなたのキャラが3枚以上なら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。この効果で相手のカードが控え室に置かれなかったなら、あなたは自分の控え室のキャラを1枚選び、手札に戻してよい。"
+    ],
+    "attributes": [
+      "Music",
+      "Stuffed Animal"
+    ],
+    "set": "IAS",
+    "release": "SE52",
+    "sid": "56",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/i/ias_se52/ias_se52_56.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを使用しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 相手の山札の上2枚を操作",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

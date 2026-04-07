@@ -1,0 +1,130 @@
+[
+  {
+    "name": "手乗りタイガー 大河",
+    "code": "Gtd/WS02-004",
+    "rarity": "RR",
+    "expansion": "Dengeki Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 このカードのバトル中、すべてのプレイヤーは『助太刀』を手札からプレイできない。",
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。』『相手に1ダメージを与え、そのターン中、このカードのパワーを＋2000。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 このカードのバトル中、すべてのプレイヤーは『助太刀』を手札からプレイできない。",
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、次の2つの効果のうちあなたが選んだ1つを行う。『相手は自分のストックすべてを、控え室に置き、自分の山札の上から同じ枚数をストック置場に置く。』『相手に1ダメージを与え、そのターン中、このカードのパワーを＋2000。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Dengeki Bunko",
+      "Youth",
+      "Weapon"
+    ],
+    "set": "Gtd",
+    "release": "WS02",
+    "sid": "004",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/g_ws02/gtd_ws02_004.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付COST",
+            "instructions": []
+          },
+          {
+            "label": "支付COST -> 选择效果A：对手洗费",
+            "instructions": [
+              {
+                "op": "StockSwap"
+              }
+            ]
+          },
+          {
+            "label": "支付COST -> 选择效果B：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "それぞれの想い 実乃梨＆大河＆亜美",
+    "code": "Gtd/WS02-T08",
+    "rarity": "TD",
+    "expansion": "Dengeki Bunko",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「トラの休息」があるなら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の能力を与える。『【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 このカードがアタックした時、クライマックス置場に「トラの休息」があるなら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2000し、次の能力を与える。『【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Dengeki Bunko",
+      "Youth"
+    ],
+    "set": "Gtd",
+    "release": "WS02",
+    "sid": "T08",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/g_ws02/gtd_ws02_t08.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "“暴君”セイバーオルタ",
+    "code": "FH/SE03-029",
+    "rarity": "R",
+    "expansion": "Fate/hollow ataraxia",
+    "side": "SE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "もっきゅもっきゅ",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Servant 《サーヴァント》",
+      "Weapon 《武器》"
+    ],
+    "set": "FH",
+    "release": "SE03",
+    "sid": "029",
+    "image": "https://images.littleakiba.com/tcg/card2109-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费用 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

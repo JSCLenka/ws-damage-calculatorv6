@@ -1,0 +1,1658 @@
+[
+  {
+    "name": "“うさみみパーカー”リゼ",
+    "code": "GU/W44-033",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka??",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたのキャラすべてが《ラビットハウス》なら、このカードのパワーを＋1000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《ラビットハウス》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】［(6)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Weapon 《武器》"
+    ],
+    "set": "GU",
+    "release": "W44",
+    "sid": "033",
+    "image": "https://images.littleakiba.com/tcg/card29362-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登场效果(翻顶成功): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "登场效果(翻顶失败/不发动)",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "攻击时效果: 支付6费烧5",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "攻击时效果: 不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“ラビットハウスのウェイトレス”ココア",
+    "code": "GU/W44-058",
+    "rarity": "C",
+    "expansion": "Gochuumon wa Usagi Desu ka??",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8000",
+    "soul": 1,
+    "flavor_text": "キリマンジャロ、お願いします！",
+    "ability": [
+      "【自】［(1)］ このカードがアタックした時、クライマックス置場に「ラビットハウスへようこそ」があり、他のあなたの、《ラビットハウス》か《パン》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、そのターン中、このカードのパワーを＋3000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Bread 《パン》"
+    ],
+    "set": "GU",
+    "release": "W44",
+    "sid": "058",
+    "image": "https://images.littleakiba.com/tcg/card29406-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "CX联动 & 场上4+角色: 支付1费 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“対お姉ちゃん用決戦部隊”チマメ隊",
+    "code": "GU/W44-070",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka??",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの青のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】［(3)］ このカードがアタックした時、クライマックス置場に「仲良し3人組」があり、あなたのキャラすべてが青なら、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋1000。Ｘはあなたのキャラの中で、レベルが1番高いキャラのレベルに等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》"
+    ],
+    "set": "GU",
+    "release": "W44",
+    "sid": "070",
+    "image": "https://images.littleakiba.com/tcg/card29489-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 最高レベル0 → 0点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 0,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 最高レベル1 → 1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 最高レベル2 → 2点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 最高レベル3 → 3点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Welcome！ シャロ",
+    "code": "GU/W57-002",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka?? Dear My Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "……しょうがないわね！",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】［(1) このカードを控え室に置く］ 他のあなたのカード名に「シャロ」か「千夜」を含むキャラがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、そのキャラを手札に戻す。"
+    ],
+    "attributes": [
+      "Fleur de Lapin 《フルール・ド・ラパン》",
+      "Dear My Sister 《Dear My Sister》"
+    ],
+    "set": "GU",
+    "release": "W57",
+    "sid": "002",
+    "image": "https://images.littleakiba.com/tcg/card42394-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "SelfMillLevelBurn",
+                  "base_amount": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Welcome！ ココア",
+    "code": "GU/W57-028",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka?? Dear My Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "サプラ〜〜イズだよ！",
+    "ability": [
+      "【自】 このカードが手札か思い出置場から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 記憶 あなたのクライマックス置場に「ただいま」が置かれた時、あなたのレベルが3以上で、思い出置場にこのカードがあるなら、あなたはこのカードを舞台のキャラのいない枠に置いてよい。"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Dear My Sister 《Dear My Sister》"
+    ],
+    "set": "GU",
+    "release": "W57",
+    "sid": "028",
+    "image": "https://images.littleakiba.com/tcg/card42420-large.jpg",
+    "effects": [
+      {
+        "trigger": "CIP",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动进场回血效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果：回血1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付费用：烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“お姉ちゃん”モカ",
+    "code": "GU/W57-030",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka?? Dear My Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "サプラ〜イズ！",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘは他のあなたのカード名に「ココア」か「モカ」を含むキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Bread 《パン》",
+      "Dear My Sister 《Dear My Sister》"
+    ],
+    "set": "GU",
+    "release": "W57",
+    "sid": "030",
+    "image": "https://images.littleakiba.com/tcg/card42422-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "Pay cost to heal to stock",
+                "instructions": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "Skip",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "Reverse Opponent & Pay Cost (Burn X)",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": "count_other_characters",
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "Cannot Reverse / Skip",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“かけがえのない宝物”チノ&モカ&ココア",
+    "code": "GU/W57-040",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka?? Dear My Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "ココア「私の新しい思い出だよ！」",
+    "ability": [
+      "【永】 このカードの正面のキャラのソウルを－1。",
+      "【自】［(2) 手札のカード名に「宝物」を含むキャラを1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から4枚を、控え室に置く。それらのカードのトリガーアイコンにがあるカードが2枚以上なら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Dear My Sister 《Dear My Sister》"
+    ],
+    "set": "GU",
+    "release": "W57",
+    "sid": "040",
+    "image": "https://images.littleakiba.com/tcg/card42432-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未满足再动条件 (未击倒或判定失败)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 & 自削4张有2张以上魂标 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“みんなで花火”チノ",
+    "code": "GU/W57-078",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka?? Dear My Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "勇気を出して誘ってみてよかったです",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［あなたのクライマックス置場のクライマックスを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「おかえりなさい」を1枚まで選び、クライマックス置場に置く。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「おかえりなさい」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚選び、【スタンド】する。"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Dear My Sister 《Dear My Sister》"
+    ],
+    "set": "GU",
+    "release": "W57",
+    "sid": "078",
+    "image": "https://images.littleakiba.com/tcg/card42471-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动アタック終了時效果",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 将另一角色站起 (该角色基础魂为1)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 将另一角色站起 (该角色基础魂为2)",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“プールで遊ぼっ”チマメ隊",
+    "code": "GU/W57-079",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka?? Dear My Sister",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(3) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に5ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Dear My Sister 《Dear My Sister》"
+    ],
+    "set": "GU",
+    "release": "W57",
+    "sid": "079",
+    "image": "https://images.littleakiba.com/tcg/card42472-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付[3费, 弃2手牌]: 造成5点伤害",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 5,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“シークレットサンタ” シャロ",
+    "code": "GU/W88-006",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ふふん、その顔が見たかったのよ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「シークレットサンタ」が置かれた時、前列にこのカードがいるなら、あなたは他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "《フルール》",
+      "《ド》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "006",
+    "image": "https://images.littleakiba.com/tcg/card67720-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnCX",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "发动取消烧效果: 烧2点",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 2,
+                      "times": 1
+                    }
+                  ]
+                },
+                {
+                  "label": "不发动取消烧效果",
+                  "instructions": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“トリック・オア・トリート” リゼ＆千夜",
+    "code": "GU/W88-017",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの、《BLOOM》かカード名に「シャロ」か「千夜」を含むキャラが2枚以上なら、このカードのパワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、他のあなたの、《BLOOM》かカード名に「シャロ」か「千夜」を含むキャラがいるなら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルする。Ｘはあなたの控え室の「魔女の怒り」の枚数に等しい。"
+    ],
+    "attributes": [
+      "Ama Usa An 《甘兎庵》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "017",
+    "image": "https://images.littleakiba.com/tcg/card67735-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果(X=1): 对手1张非CX洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果(X=2): 对手2张非CX洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              }
+            ]
+          },
+          {
+            "label": "发动效果(X=3): 对手3张非CX洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 3
+              }
+            ]
+          },
+          {
+            "label": "发动效果(X=4): 对手4张非CX洗回牌库",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 4
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“積み重ねた朝” 千夜",
+    "code": "GU/W88-021",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "リゼちゃんと一緒だったから毎朝がんばれたの",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの、《BLOOM》かカード名に「シャロ」か「千夜」を含むキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「実を結ぶ日」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Ama Usa An 《甘兎庵》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "021",
+    "image": "https://images.littleakiba.com/tcg/card67743-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "击倒对手 (CX连击): 烧1, 再烧3",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“Halloween Night” ココア",
+    "code": "GU/W88-033",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "いつもの街なのに今日は違って見えるよ",
+    "ability": [
+      "【永】 相手の後列のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「魔法の時間」があり、あなたの手札が5枚以下なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、他のあなたの前列の「“Halloween Night” チノ」がいるなら、あなたは相手の山札の下から2枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "033",
+    "image": "https://images.littleakiba.com/tcg/card67760-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ未発動",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 2点ダメージ (他のチノなし)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ: 2点ダメージ + 落下バーン (他のチノあり)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              },
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“シークレットサンタ” ココア",
+    "code": "GU/W88-041",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "大切にするっ、ゼッタイ割らない！",
+    "ability": [
+      "【永】 他のあなたの「“シークレットサンタ” シャロ」がいるなら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(1) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札の上から5枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』（ダメージキャンセルは発生する）",
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室のクライマックスを1枚選び、手札に戻す。"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "041",
+    "image": "https://images.littleakiba.com/tcg/card67776-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "有另一张““シークレットサンタ” シャロ”，支付费用发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "self",
+                "zone": "top",
+                "mill_amount": 5,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“大人コーデ” リゼ",
+    "code": "GU/W88-042",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "ありがとうございますー！",
+    "ability": [
+      "【永】 前列にこのカードがいるなら、あなたの、《BLOOM》か《ラビットハウス》のキャラすべてに、パワーを＋1500。",
+      "【自】【CXコンボ】［(1) あなたのクライマックス置場の「気づいてた？」を1枚控え室に置く］ あなたのクライマックスフェイズ中、このカードが「気づいてた？」の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたのキャラすべてに、そのターン中、ソウルを＋1。"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "042",
+    "image": "https://images.littleakiba.com/tcg/card67778-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnClimax",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 全体角色灵魂+1",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“オフの過ごしかた” 青山ブルーマウンテン",
+    "code": "GU/W88-071",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "オフをいただいたのですが何をすればいいのかわからなくて……",
+    "ability": [
+      "【永】 他のあなたの、青か《BLOOM》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】【CXコンボ】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「ウサギのカルーセル」があり、他のあなたの、青か《BLOOM》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置き、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Novel 《小説》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "071",
+    "image": "https://images.littleakiba.com/tcg/card67820-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 查看对手牌库顶2张再决定排序, 并再攻击",
+            "instructions": [
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              },
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“不思議の国” マヤ",
+    "code": "GU/W88-081",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(3) 手札の、青か《BLOOM》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時か「“不思議の国” チノ」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Double Tooth 《八重歯》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "081",
+    "image": "https://images.littleakiba.com/tcg/card67840-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足经验6 或 不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "经验6达成: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“不思議の国” メグ",
+    "code": "GU/W88-083",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka? BLOOM",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】［あなたの【スタンド】しているキャラを1枚【レスト】する］ このカードが手札から舞台に置かれた時か「“不思議の国” チノ」の【自】の効果で舞台に置かれた時、あなたはコストを払ってよい。そうしたら、相手は自分の控え室のクライマックスを1枚選び、そのカード以外の控え室のカードすべてを、山札に戻し、その山札をシャッフルする。",
+      "【自】 経験 このカードがアタックした時、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたは自分のキャラを1枚選び、次の相手のターンの終わりまで、パワーを＋1500。"
+    ],
+    "attributes": [
+      "Ballet 《バレエ》",
+      "《BLOOM》"
+    ],
+    "set": "GU",
+    "release": "W88",
+    "sid": "083",
+    "image": "https://images.littleakiba.com/tcg/card67844-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付代价",
+            "instructions": []
+          },
+          {
+            "label": "支付代价：对手休息室除1张CX外，全部洗回牌库",
+            "instructions": [
+              {
+                "op": "Decompress",
+                "retain_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Welcome！ シャロ",
+    "code": "GU/W94-005",
+    "rarity": "R",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードの与えたダメージがキャンセルされた時、あなたは自分の山札の上から1枚を、控え室に置き、相手にＸダメージを与える。Ｘはそのカードのレベル＋1に等しい。（クライマックスのレベルは0として扱う。ダメージキャンセルは発生する）",
+      "【自】［(1) このカードを控え室に置く］ 他のあなたのカード名に「シャロ」か「千夜」を含むキャラがフロントアタックされた時、あなたはコストを払ってよい。そうしたら、そのキャラを手札に戻す。"
+    ],
+    "attributes": [
+      "フルール",
+      "ド",
+      "ラパン",
+      "Dear My Sister"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "005",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_005.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnDamageCancel",
+        "instructions": [
+          {
+            "op": "SelfMillLevelBurn",
+            "base_amount": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sing For You 千夜＆ココア",
+    "code": "GU/W94-023",
+    "rarity": "R",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見てカード名に「シャロ」か「千夜」を含むキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "甘兎庵",
+      "Sing For You"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "023",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_023.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "支付费用: 烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "出会えてよかった チノ&ココア",
+    "code": "GU/W94-039",
+    "rarity": "RR",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの《ラビットハウス》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「枕投げ」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に1ダメージを与え、そのターン中、このカードのパワーを＋6000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "ラビットハウス"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "039",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_039.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Welcome！ ココア",
+    "code": "GU/W94-045",
+    "rarity": "R",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札か思い出置場から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 記憶 あなたのクライマックス置場に「ただいま」が置かれた時、あなたのレベルが3以上で、思い出置場にこのカードがあるなら、あなたはこのカードを舞台のキャラのいない枠に置いてよい。"
+    ],
+    "attributes": [
+      "ラビットハウス",
+      "Dear My Sister"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "045",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_045.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "登場時効果なし",
+            "instructions": []
+          },
+          {
+            "label": "登場時：1点回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "アタック時効果なし",
+            "instructions": []
+          },
+          {
+            "label": "アタック時：コストを払い1点ダメージ",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"お姉ちゃん\"モカ",
+    "code": "GU/W94-058",
+    "rarity": "U",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［手札を1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、ストック置場に置く。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手にＸダメージを与える。Ｘは他のあなたのカード名に「ココア」か「モカ」を含むキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "パン",
+      "Dear My Sister"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "058",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_058.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "Pay cost to Heal",
+                "instructions": [
+                  {
+                    "op": "Heal",
+                    "amount": 1
+                  }
+                ]
+              },
+              {
+                "label": "Decline",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "label": "Reverse Opponent and Pay Cost for Burn X",
+                "instructions": [
+                  {
+                    "op": "DealDamage",
+                    "amount": "count_other_characters"
+                  }
+                ]
+              },
+              {
+                "label": "Cannot Reverse or Decline",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sing For You チノ",
+    "code": "GU/W94-072",
+    "rarity": "RR",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「Sing For You」があり、あなたの思い出置場の「Sing For You サキ」が2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルし、相手に2ダメージを与える。Ｘはあなたの、青か《ラビットハウス》のキャラの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "ラビットハウス",
+      "Sing For You"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "072",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_072.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": "count_other_characters"
+              },
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "\"みんなで花火\"チノ",
+    "code": "GU/W94-084",
+    "rarity": "U",
+    "expansion": "Gochiusa Re:Edit",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは1枚まで引き、そのターン中、このカードのパワーを＋2000。",
+      "【自】【CXコンボ】［あなたのクライマックス置場のクライマックスを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の「おかえりなさい」を1枚まで選び、クライマックス置場に置く。",
+      "【自】【CXコンボ】［(3) 手札を2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「おかえりなさい」があるなら、あなたはコストを払ってよい。そうしたら、あなたは他の自分のキャラを1枚選び、【スタンド】する。"
+    ],
+    "attributes": [
+      "ラビットハウス",
+      "Dear My Sister"
+    ],
+    "set": "GU",
+    "release": "W94",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gu_w94/gu_w94_084.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【CX联动】支付(3)费，弃2张手牌，将另一名己方角色竖置",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "出会えてよかった チノ&ココア",
+    "code": "GU/WE26-018",
+    "rarity": "RR",
+    "expansion": "Gochuumon wa Usagi Desu ka?? EB",
+    "side": "WE",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "ココア「お姉ちゃんに任せなさい……」\nチノ「……うん」",
+    "ability": [
+      "【永】 他のあなたの《ラビットハウス》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、クライマックス置場に「枕投げ」があるなら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に1ダメージを与え、そのターン中、このカードのパワーを＋6000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》"
+    ],
+    "set": "GU",
+    "release": "WE26",
+    "sid": "018",
+    "image": "https://images.littleakiba.com/tcg/card32943-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "クライマックスコンボを発動しない",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 相手に1ダメージを2回与える",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "現代アーティスト チノ",
+    "code": "GU/WE26-038",
+    "rarity": "R",
+    "expansion": "Gochuumon wa Usagi Desu ka?? EB",
+    "side": "WE",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9000",
+    "soul": 2,
+    "flavor_text": "マヤ「動いたら経験値にするぞ！」",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上からＸ枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。Ｘはあなたの青のキャラの枚数に等しい。",
+      "【自】 あなたのクライマックスがクライマックス置場に置かれた時、そのターン中、このカードのパワーを＋Ｘ。Ｘはあなたの青のキャラの枚数×500に等しい。",
+      "【自】［(2) 手札の青のキャラを2枚控え室に置き、このカードを控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「キュビズム！」があるなら、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の青のキャラを1枚選び、このカードがいた枠に置く。"
+    ],
+    "attributes": [
+      "Rabbit House 《ラビットハウス》",
+      "Coffee 《コーヒー》"
+    ],
+    "set": "GU",
+    "release": "WE26",
+    "sid": "038",
+    "image": "https://images.littleakiba.com/tcg/card32963-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 (需要CX「キュビズム！」) -> 换人连击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

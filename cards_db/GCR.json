@@ -1,0 +1,254 @@
+[
+  {
+    "name": "ちょこれーと？ 仁菜",
+    "code": "GCR/SE48-41",
+    "rarity": "N",
+    "expansion": "Girls Band Cry Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の2つの能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは自分の山札を見て《音楽》のキャラを3枚まで選び、公開し、1枚選び、手札に加え、1枚選び、ストック置場に置き、残りのカードを控え室に置き、その山札をシャッフルする。』『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされなかった時、相手は自分の山札の上から1枚を、クロック置場に置く。』"
+    ],
+    "attributes": [
+      "Music",
+      "Togenashi Togeari"
+    ],
+    "set": "GCR",
+    "release": "SE48",
+    "sid": "41",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gcr_se48/gcr_se48_41.png",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "支付(1)费用，获得伤害贯通时Clock Shoot的效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "limit": {
+                    "type": "per_turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "ClockShoot",
+                      "amount": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "間違ってない証明 仁菜",
+    "code": "GCR/SE48-42",
+    "rarity": "N",
+    "expansion": "Girls Band Cry Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 あなたのCX置場に「空白とカタルシス」が置かれた時、前列にこのカードがいて、他のあなたの《音楽》のキャラがいるなら、相手に1ダメージを与え、そのターン中、このカードは次の能力を得る。『【自】［あなたの、手札とストックすべてを控え室に置く］ あなたのアンコールステップの始めに、あなたはコストを払ってよい。この能力のコストで控え室に置かれたカード5枚につき、相手に2ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Togenashi Togeari"
+    ],
+    "set": "GCR",
+    "release": "SE48",
+    "sid": "42",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gcr_se48/gcr_se48_42.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          },
+          {
+            "is_choice": true,
+            "choices": [
+              {
+                "label": "不发动终阶效果",
+                "instructions": []
+              },
+              {
+                "label": "终阶效果(手牌+费用合计5-9张): 烧2",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 1
+                  }
+                ]
+              },
+              {
+                "label": "终阶效果(手牌+费用合计10-14张): 烧4",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 2
+                  }
+                ]
+              },
+              {
+                "label": "终阶效果(手牌+费用合计15-19张): 烧6",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 3
+                  }
+                ]
+              },
+              {
+                "label": "终阶效果(手牌+费用合计20-24张): 烧8",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 4
+                  }
+                ]
+              },
+              {
+                "label": "终阶效果(手牌+费用合计≥25张): 烧10",
+                "instructions": [
+                  {
+                    "op": "Burn",
+                    "amount": 2,
+                    "times": 5
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "正しさの証明 ヒナ",
+    "code": "GCR/SE48-66",
+    "rarity": "N",
+    "expansion": "Girls Band Cry Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】［他のあなたの舞台の《音楽》のキャラを1枚控え室に置く］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、カードを1枚まで選び、ストック置場に置き、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】 経験 ［(1) 手札を1枚控え室に置く］ このカードがアタックした時、CX置場に「ETERNAL FLAME 〜空の箱〜」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋2000。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Music",
+      "Diamond Dust"
+    ],
+    "set": "GCR",
+    "release": "SE48",
+    "sid": "66",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gcr_se48/gcr_se48_66.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 2,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ダイヤモンドダスト ナナ",
+    "code": "GCR/SE48-67",
+    "rarity": "N",
+    "expansion": "Girls Band Cry Premium Booster",
+    "side": "S",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、このカードのパワーを＋2000。",
+      "【自】 経験 ［(1) 手札を1枚控え室に置く］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたのレベル置場のカードのレベルの合計が4以上なら、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Music",
+      "Diamond Dust"
+    ],
+    "set": "GCR",
+    "release": "SE48",
+    "sid": "67",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/g/gcr_se48/gcr_se48_67.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(经验4+)：击倒对手 -> 角色踢钟",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

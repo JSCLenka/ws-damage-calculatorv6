@@ -1,0 +1,311 @@
+[
+  {
+    "name": "ヨーコ",
+    "code": "GL/S52-003",
+    "rarity": "RR",
+    "expansion": "Tengen Toppa Gurren Lagann",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 あなたの控え室のクライマックスが2枚以下なら、あなたの手札のこのカードのレベルを－1。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】 このカードがアタックした時、あなたは他の自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Team Dai-Gurren 《大グレン団》",
+      "Weapon 《武器》"
+    ],
+    "set": "GL",
+    "release": "S52",
+    "sid": "003",
+    "image": "https://images.littleakiba.com/tcg/card41375-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动赋予能力的效果",
+            "instructions": []
+          },
+          {
+            "label": "赋予能力给其他角色，且该角色击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "特別授業 ヨマコ",
+    "code": "GL/S52-019",
+    "rarity": "U",
+    "expansion": "Tengen Toppa Gurren Lagann",
+    "side": "S",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "2",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "テストに出るから、よく覚えときなさい！",
+    "ability": [
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「大切な子供達のために」があり、他のあなたの《大グレン団》のキャラが4枚以上なら、あなたはコストを払ってよい。そうしたら、あなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Teacher 《先生》",
+      "Team Dai-Gurren 《大グレン団》"
+    ],
+    "set": "GL",
+    "release": "S52",
+    "sid": "019",
+    "image": "https://images.littleakiba.com/tcg/card41391-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击: 前排全体获得[取消时烧1]效果",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ],
+                  "limit": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "大グレン団リーダー シモン",
+    "code": "GL/S52-062",
+    "rarity": "RR",
+    "expansion": "Tengen Toppa Gurren Lagann",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "アニキは死んだ！もういない!!",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「俺の背中に、この胸に、」があるなら、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。（ダメージキャンセルは発生する）",
+      "【起】［(1) あなたの思い出置場の「カミナ」を1枚このカードの下にマーカーとして表向きに置く］ 次の相手のターンの終わりまで、このカードのパワーを＋2500し、このカードは次の能力を得る。『【永】 このカードのバトル中、相手は『助太刀』を手札からプレイできない。』"
+    ],
+    "attributes": [
+      "Team Dai-Gurren 《大グレン団》",
+      "Drill 《ドリル》"
+    ],
+    "set": "GL",
+    "release": "S52",
+    "sid": "062",
+    "image": "https://images.littleakiba.com/tcg/card41434-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动效果",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "カミナの相棒 シモン",
+    "code": "GL/S52-075",
+    "rarity": "U",
+    "expansion": "Tengen Toppa Gurren Lagann",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "5000",
+    "soul": 1,
+    "flavor_text": "-",
+    "ability": [
+      "【永】 他のあなたの「グレン団リーダー カミナ」すべてに、パワーを＋500し、次の能力を与える。『【自】［(2) 手札の《大グレン団》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。"
+    ],
+    "attributes": [
+      "Team Dai-Gurren 《大グレン団》",
+      "Drill 《ドリル》"
+    ],
+    "set": "GL",
+    "release": "S52",
+    "sid": "075",
+    "image": "https://images.littleakiba.com/tcg/card41447-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnDamageCancel",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "当“卡米那”造成的伤害被取消时，支付费用烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不支付费用",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "合体！グレンラガン",
+    "code": "GL/S52-T17",
+    "rarity": "TD",
+    "expansion": "Tengen Toppa Gurren Lagann",
+    "side": "S",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "男の魂燃え上がる！度胸合体！！グレンラガン！！！",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か『合体』で舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】［(1) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Team Dai-Gurren 《大グレン団》",
+      "Drill 《ドリル》"
+    ],
+    "set": "GL",
+    "release": "S52",
+    "sid": "T17",
+    "image": "https://images.littleakiba.com/tcg/card41494-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
