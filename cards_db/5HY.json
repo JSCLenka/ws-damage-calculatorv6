@@ -1,0 +1,1884 @@
+[
+  {
+    "name": "静まらない気持ち 中野 一花",
+    "code": "5HY/W101-002",
+    "rarity": "RR",
+    "expansion": "Quints Movie",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「大胆な答え合わせ」があり、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手にＸダメージを与える。Ｘは他のあなたの《五つ子》のキャラの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［手札を1枚控え室に置く］ このカードがアタックした時、クライマックス置場に「大胆な答え合わせ」があり、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手の控え室のカードをＸ枚まで選び、山札に戻し、相手はその山札をシャッフルし、あなたは相手にＸダメージを与える。Ｘは他のあなたの《五つ子》のキャラの枚数に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Fashionable"
+    ],
+    "set": "5HY",
+    "release": "101",
+    "sid": "002",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_w101/5hy_w101_002.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "is_choice",
+            "choices": [
+              {
+                "name": "CX Combo",
+                "instructions": [
+                  {
+                    "op": "GiveEffect",
+                    "target": "self",
+                    "effect": {
+                      "trigger": "OnDamageCancel",
+                      "limit": "once_per_turn",
+                      "instructions": [
+                        {
+                          "op": "ReverseShuffle",
+                          "amount": "count_other_characters"
+                        },
+                        {
+                          "op": "DealDamage",
+                          "amount": "count_other_characters"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "No CX Combo",
+                "instructions": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "“特別” 中野 四葉",
+    "code": "5HY/W101-025",
+    "rarity": "RR",
+    "expansion": "Quints Movie",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 記憶 あなたの思い出置場の《五つ子》のキャラが3枚以上なら、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1)］ このカードがアタックした時、クライマックス置場に「嘘のない気持ち」があり、あなたの思い出置場の《五つ子》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 記憶 あなたの思い出置場の《五つ子》のキャラが3枚以上なら、このカードのパワーを＋1000し、このカードは次の能力を得る。『【自】［(2) 手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(1)］ このカードがアタックした時、クライマックス置場に「嘘のない気持ち」があり、あなたの思い出置場の《五つ子》のキャラが3枚以上なら、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Ribbon"
+    ],
+    "set": "5HY",
+    "release": "101",
+    "sid": "025",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_w101/5hy_w101_025.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "発動しない",
+            "instructions": []
+          },
+          {
+            "label": "1点回復",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "永続効果: 発動しない (記憶<3 or コストなし)",
+            "instructions": []
+          },
+          {
+            "label": "永続効果: 2点バーン (記憶>=3)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ: 発動しない (記憶<3 or コストなし)",
+            "instructions": []
+          },
+          {
+            "label": "CXコンボ: 2点バーン (記憶>=3 & CX配置)",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "努力の結実 中野 五月",
+    "code": "5HY/W101-037",
+    "rarity": "U",
+    "expansion": "Quints Movie",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(3) 手札の《五つ子》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "jpAbility": [
+      "【永】 経験 あなたのレベル置場のカードのレベルの合計が6以上なら、このカードのパワーを＋1500し、このカードは次の能力を得る。『【自】［(3) 手札の《五つ子》のキャラを1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に2ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Diligence"
+    ],
+    "set": "5HY",
+    "release": "101",
+    "sid": "037",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_w101/5hy_w101_037.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足经验6条件或不支付费用",
+            "instructions": []
+          },
+          {
+            "label": "经验6达成，支付费用：烧2",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 2,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不回复",
+            "instructions": []
+          },
+          {
+            "label": "回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "気づけた想い 中野 五月",
+    "code": "5HY/W101-053",
+    "rarity": "RR",
+    "expansion": "Quints Movie",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】 経験 ［手札を3枚控え室に置く］ このカードがアタックした時、クライマックス置場に「理想の教師像」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置き、そのターン中、このカードのパワーを＋1500。",
+      "【自】【CXコンボ】 経験 ［手札を3枚控え室に置く］ このカードがアタックした時、クライマックス置場に「理想の教師像」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与え、あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Diligence"
+    ],
+    "set": "5HY",
+    "release": "101",
+    "sid": "053",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_w101/5hy_w101_053.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (经验6, 手牌3): 烧3, 对手牌库顶2张控顶/送室",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "したいこと 中野 三玖",
+    "code": "5HY/W101-079",
+    "rarity": "RR",
+    "expansion": "Quints Movie",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「抱えた気持ち 中野 三玖」の【起】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「遠慮はしない」があり、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、次の行動を行う。『あなたは相手の山札の下から4枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に1ダメージをＸ回与える。Ｘはあなたのキャラの下のマーカーの枚数の合計が2枚以下なら1、3枚以上なら2に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【自】 このカードが手札から舞台に置かれた時か「抱えた気持ち 中野 三玖」の【起】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「遠慮はしない」があり、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、次の行動を行う。『あなたは相手の山札の下から4枚を、控え室に置く。それらのカードにクライマックスがあるなら、相手に1ダメージをＸ回与える。Ｘはあなたのキャラの下のマーカーの枚数の合計が2枚以下なら1、3枚以上なら2に等しい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Headphones"
+    ],
+    "set": "5HY",
+    "release": "101",
+    "sid": "079",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_w101/5hy_w101_079.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "CXコンボ (マーカー合計2枚以下)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "CXコンボ (マーカー合計3枚以上)",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "once_if_any",
+                "burn_amount": 0,
+                "on_success": [
+                  {
+                    "op": "Burn",
+                    "amount": 1,
+                    "times": 2
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "五等分の軌跡 中野 二乃",
+    "code": "5HY/W101-084",
+    "rarity": "R",
+    "expansion": "Quints Movie",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 7500,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 応援 このカードの前のあなたのカード名に「二乃」を含むキャラすべてに、パワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【起】［(2) このカードを【レスト】する］ あなたのキャラすべてがカード名に「二乃」を含むなら、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "jpAbility": [
+      "【永】 応援 このカードの前のあなたのカード名に「二乃」を含むキャラすべてに、パワーを＋2000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【起】［(2) このカードを【レスト】する］ あなたのキャラすべてがカード名に「二乃」を含むなら、あなたは相手の山札の下から3枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Cooking"
+    ],
+    "set": "5HY",
+    "release": "101",
+    "sid": "084",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_w101/5hy_w101_084.png",
+    "soul": 2,
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不回复",
+            "instructions": []
+          },
+          {
+            "label": "回复1点生命",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnActivate",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "条件不满足 (非全员'二乃')",
+            "instructions": []
+          },
+          {
+            "label": "条件满足: 检视对手牌库底3张，根据CX数烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 3,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "鳴り止まぬ想い 中野 一花",
+    "code": "5HY/W83-001",
+    "rarity": "RR+",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "今夜は二人だけのキャンプファイヤーだよ",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を上から3枚まで見て、カードを1枚まで選び、手札に加え、残りのカードを控え室に置く。",
+      "【自】【CXコンボ】［(1) 手札の《五つ子》のキャラを1枚控え室に置く］ あなたのクライマックス置場に「不意の接近」が置かれた時、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードは次の能力を得る。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に2ダメージを2回与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Fashionable 《オシャレ》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "001",
+    "image": "https://images.littleakiba.com/tcg/card60965-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "self",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "Burn",
+                  "amount": 2,
+                  "times": 2
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "浴衣姿 中野 五月",
+    "code": "5HY/W83-064",
+    "rarity": "RR+",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "なんですか",
+    "ability": [
+      "【永】 あなたのターン中、他のあなたの《五つ子》のキャラ1枚につき、このカードのパワーを＋500。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(2) 手札を1枚控え室に置く］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「咲く笑顔」があり、あなたのキャラすべてが《五つ子》なら、あなたはコストを払ってよい。そうしたら、あなたは相手の控え室のカードを2枚まで選び、山札に戻し、相手はその山札をシャッフルし、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Diligent 《真面目》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "064",
+    "image": "https://images.littleakiba.com/tcg/card61054-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动登场效果",
+            "instructions": []
+          },
+          {
+            "label": "发动登场效果: 回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (CX连击不发动)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 洗坟2张 + 烧3",
+            "instructions": [
+              {
+                "op": "ReverseShuffle",
+                "amount": 2
+              },
+              {
+                "op": "Burn",
+                "amount": 3,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "サンタ服 中野 一花",
+    "code": "5HY/W83-076",
+    "rarity": "R",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札の上から1枚を公開する。そのカードが《五つ子》のキャラなら、あなたは相手に1ダメージを与えてよい。（ダメージキャンセルは発生する。公開したカードは元に戻す）",
+      "【自】 このカードがアタックした時、他のあなたの《五つ子》のキャラが4枚以上なら、あなたは自分のキャラを1枚選び、そのターン中、パワーを＋2500し、ソウルを＋1。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Fashionable 《オシャレ》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "076",
+    "image": "https://images.littleakiba.com/tcg/card61078-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (假设翻出五子角色): 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果 (另有4个以下五子)",
+            "instructions": []
+          },
+          {
+            "label": "发动效果 (条件达成): 给自身+1魂",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "soul_boost": 1
+              }
+            ]
+          },
+          {
+            "label": "发动效果 (条件达成): 给其他角色+1魂",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "soul_boost": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "繊細で真っ直ぐ 中野 二乃",
+    "code": "5HY/W83-105",
+    "rarity": "RR+",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "パパ？二乃だけど一つ聞いていい？",
+    "ability": [
+      "【自】［(1) 手札の、赤か青のカードを1枚控え室に置く］ このカードがアタックした時、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、あなたは自分のクロックの上から1枚を、控え室に置く。",
+      "【自】【CXコンボ】［(2)］ この能力は1ターンにつき1回まで発動する。このカードのアタックの終わりに、クライマックス置場に「守るための嘘」があり、他のあなたの《五つ子》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Cuisine 《料理》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "105",
+    "image": "https://images.littleakiba.com/tcg/card61110-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果1",
+            "instructions": []
+          },
+          {
+            "label": "条件(另有2名以上<五子>): 回血1",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttackEnd",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "条件(CX在场/另有<五子>): 再攻击",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "踏み出す一歩 中野 三玖",
+    "code": "5HY/W83-106",
+    "rarity": "RR+",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "約束通り、日本史教えてね",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1)］ このカードがアタックした時、クライマックス置場に「開けた道筋」があり、他のあなたの《五つ子》のキャラがいるなら、あなたはコストを払ってよい。そうしたら、次の2つの効果を1回ずつ行う。『あなたは相手の山札の下から2枚を、控え室に置き、相手にＸダメージを与える。Ｘはそれらのカードのクライマックスの枚数に等しい。』『あなたは相手の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Heddohon(Headphone) 《ヘッドホン》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "106",
+    "image": "https://images.littleakiba.com/tcg/card61112-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动登场效果：回复1点",
+            "instructions": [
+              {
+                "op": "Heal",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动CX连击：削底烧+摩卡",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 2,
+                "condition": "is_cx",
+                "mode": "sum",
+                "burn_amount": 1
+              },
+              {
+                "op": "Moca",
+                "target_player": "opp",
+                "look_amount": 2,
+                "wr_amount": 2
+              }
+            ]
+          },
+          {
+            "label": "不发动",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "立ちはだかる障壁 中野 二乃",
+    "code": "5HY/W83-T35",
+    "rarity": "TD",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "なに君、ストーカー？",
+    "ability": [
+      "【自】 他のあなたの《五つ子》のキャラがアタックした時、そのターン中、このカードのパワーを＋1000。",
+      "【自】［(3) 手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Cuisine 《料理》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "T35",
+    "image": "https://images.littleakiba.com/tcg/card61205-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ヘッドホンガール 中野 三玖",
+    "code": "5HY/W83-T52",
+    "rarity": "TD",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《五つ子》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋1000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Heddohon(Headphone) 《ヘッドホン》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "T52",
+    "image": "https://images.littleakiba.com/tcg/card61227-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[② 手牌1]发动效果",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "前日準備 中野 四葉",
+    "code": "5HY/W83-T70",
+    "rarity": "TD",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "サボらずに来てくださいよ！",
+    "ability": [
+      "【永】 あなたのターン中、このカードのパワーを＋2000。",
+      "【自】［(1)］ このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、あなたはそのキャラをクロック置場に置く。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Ribbon 《リボン》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "T70",
+    "image": "https://images.littleakiba.com/tcg/card61251-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成(本回合登场): 击倒对手 -> 踢时计",
+            "instructions": [
+              {
+                "op": "OppReverseToClock"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "真面目ガール 中野 五月",
+    "code": "5HY/W83-T88",
+    "rarity": "TD",
+    "expansion": "Gotoubun no Hanayome",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "-",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の控え室の《五つ子》のキャラを1枚選び、手札に戻してよい。",
+      "【自】［手札を2枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Diligent 《真面目》"
+    ],
+    "set": "5HY",
+    "release": "W83",
+    "sid": "T88",
+    "image": "https://images.littleakiba.com/tcg/card61275-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "欲しかったもの 中野 四葉",
+    "code": "5HY/W90-023",
+    "rarity": "RR",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】［(2) 手札を1枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から5枚を、控え室に置き、相手にＸダメージを与え、次の相手のターンの終わりまで、このカードのパワーを＋1000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）",
+      "【自】【CXコンボ】 記憶 あなたのクライマックス置場に「飛び越える世界」が置かれた時、あなたのレベルが3以上で、思い出置場にこのカードがあるなら、あなたはこのカードを前列の好きな枠に置いてよい。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Ribbon 《リボン》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "023",
+    "image": "https://images.littleakiba.com/tcg/card69357-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "【自】支付(2)费弃1张手牌，翻对手牌库底5张，根据CX数量烧X",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 5,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "かけがえのない絆 中野 五月",
+    "code": "5HY/W90-043",
+    "rarity": "C",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "GREEN",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「五つ子の教師 上杉 風太郎」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(4)］ このカードのバトル相手が【リバース】した時、あなたのクライマックス置場に「五つ子の思ひ出」があり、他のあなたの《五つ子》のキャラがいて、あなたの思い出置場に「五つ子の教師 上杉 風太郎」があるなら、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】し、あなたは自分の山札を上から2枚まで見て、カードを2枚まで選び、山札の上に好きな順番で置き、残りのカードを控え室に置く。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Diligent 《真面目》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "043",
+    "image": "https://images.littleakiba.com/tcg/card69397-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未满足CX连击条件 (不击倒或无角色)",
+            "instructions": []
+          },
+          {
+            "label": "CX连击: 击倒对手 -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "走り出す恋心 中野 二乃",
+    "code": "5HY/W90-052",
+    "rarity": "RR",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "8500",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【永】【CXコンボ】 あなたのクライマックス置場に「真っ直ぐな想い」があるなら、すべての領域にあるこのカードはトリガーアイコンにを得る。",
+      "【永】 あなたのターン中、他のあなたの《五つ子》のキャラが2枚以上なら、このカードのパワーを＋4000。",
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】［(1) 手札を1枚控え室に置く］ このカードのアタックの終わりに、クライマックス置場に「真っ直ぐな想い」があり、他のあなたの《五つ子》のキャラが2枚以上なら、あなたはコストを払ってよい。そうしたら、相手に3ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Cuisine 《料理》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "052",
+    "image": "https://images.littleakiba.com/tcg/card69415-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 3,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "純白の願い 中野 二乃",
+    "code": "5HY/W90-058",
+    "rarity": "R",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【永】 あなたのターン中、あなたのキャラすべてがカード名に「二乃」を含むなら、このカードのパワーを＋4000。",
+      "【自】［(1)］ あなたのターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Cuisine 《料理》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "058",
+    "image": "https://images.littleakiba.com/tcg/card69427-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手",
+            "instructions": []
+          },
+          {
+            "label": "条件达成: 击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "月夜の晩に 中野 五月",
+    "code": "5HY/W90-060",
+    "rarity": "R",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは2枚まで引き、自分の手札を1枚選び、控え室に置く。",
+      "【自】【CXコンボ】 経験 ［手札の《五つ子》のキャラを3枚控え室に置く］ このカードがアタックした時、クライマックス置場に「月夜の下で」があり、あなたのレベル置場のカードのレベルの合計が6以上なら、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与え、相手に4ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Diligent 《真面目》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "060",
+    "image": "https://images.littleakiba.com/tcg/card69431-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "【经验6】支付3手费 -> 烧1, 再烧4",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              },
+              {
+                "op": "Burn",
+                "amount": 4,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "良好な関係 中野 五月",
+    "code": "5HY/W90-063",
+    "rarity": "U",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "2",
+    "cost": "1",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "3000",
+    "soul": 1,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】 あなたがこのカードの『助太刀』を使った時、あなたは自分のバトル中のキャラを1枚選び、そのターン中、次の能力を与える。『【自】［手札を1枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、相手に1ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【起】【カウンター】 助太刀2500 レベル2 ［(1) 手札のこのカードを控え室に置く］ （あなたは自分のフロントアタックされているキャラを1枚選び、そのターン中、パワーを＋2500）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Diligent 《真面目》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "063",
+    "image": "https://images.littleakiba.com/tcg/card69437-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未击倒对手 (无效果)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成：击倒对手 -> 烧1",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "妄想中 中野 一花",
+    "code": "5HY/W90-073",
+    "rarity": "C",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "9500",
+    "soul": 2,
+    "flavor_text": "せっかくの京都だよ？",
+    "ability": [
+      "【自】 チェンジ ［このカードを手札に戻す］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の《五つ子》のキャラを1枚まで選び、このカードがいた枠に置く。",
+      "【起】［(2) このカードを【レスト】する］ 相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Fashionable 《オシャレ》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "073",
+    "image": "https://images.littleakiba.com/tcg/card69457-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAct",
+        "instructions": [
+          {
+            "op": "Burn",
+            "amount": 1,
+            "times": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "好きの告白 中野 三玖",
+    "code": "5HY/W90-083",
+    "rarity": "RR",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10500",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、次の2つの効果のうちあなたが選んだ1つを行う。『あなたは自分の山札を見て「ヘッドホン」か「秘密の告白」を1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。』『あなたは自分の控え室の、「ヘッドホン」か「秘密の告白」を1枚選び、手札に戻す。』",
+      "【自】【CXコンボ】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたのクライマックス置場に「好きなもの」があり、他のあなたの《五つ子》のキャラが4枚以上なら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Heddohon(Headphone) 《ヘッドホン》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "083",
+    "image": "https://images.littleakiba.com/tcg/card69477-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "发动CX连击 (场上另有4名以上《五つ子》角色)",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "PseudoExtraAttack",
+                      "soul": 2
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "お買い物 中野 二乃",
+    "code": "5HY/W90-095",
+    "rarity": "C",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】［(1)］ このカードが手札から舞台に置かれた時、あなたはコストを払ってよい。そうしたら、あなたは自分の控え室の「繊細で真っ直ぐ 中野 二乃」を1枚選び、舞台の好きな枠に置く。",
+      "【自】【CXコンボ】 あなたのクライマックス置場に「守るための嘘」が置かれた時、前列にこのカードがいて、あなたの手札が5枚以下なら、あなたは自分の「繊細で真っ直ぐ 中野 二乃」を1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Cuisine 《料理》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "095",
+    "image": "https://images.littleakiba.com/tcg/card69501-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnCX",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "other_character",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "limit": 1,
+              "instructions": [
+                {
+                  "op": "DealDamage",
+                  "amount": "last_cancelled"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "かけがえのない絆 中野 二乃",
+    "code": "5HY/W90-096",
+    "rarity": "C",
+    "expansion": "Gotoubun no Hanayome ∬",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": "3",
+    "cost": "2",
+    "trigger": [
+      "SOUL"
+    ],
+    "power": "10000",
+    "soul": 2,
+    "flavor_text": "なし",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時か「五つ子の教師 上杉 風太郎」の【自】の効果で舞台に置かれた時、あなたは自分のクロックの上から1枚を、控え室に置いてよい。",
+      "【自】【CXコンボ】 記憶 ［(3)］ このカードがアタックした時、クライマックス置場に「五つ子の思ひ出」があり、あなたの思い出置場に「五つ子の教師 上杉 風太郎」があるなら、あなたはコストを払ってよい。そうしたら、そのターン中、このカードのパワーを＋1000し、あなたの前列のキャラすべてに、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされなかった時、あなたは相手に1ダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets 《五つ子》",
+      "Cuisine 《料理》"
+    ],
+    "set": "5HY",
+    "release": "W90",
+    "sid": "096",
+    "image": "https://images.littleakiba.com/tcg/card69503-large.jpg",
+    "effects": [
+      {
+        "trigger": "OnPlay",
+        "instructions": [
+          {
+            "op": "Heal",
+            "amount": 1
+          }
+        ]
+      },
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不满足条件/不支付3费，不发动CX连击",
+            "instructions": []
+          },
+          {
+            "label": "支付3费，发动CX连击：赋予前列角色【贯通烧1】能力",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              },
+              {
+                "op": "GiveEffect",
+                "target": "all_others",
+                "effect": {
+                  "trigger": "OnDamageDealt",
+                  "limit": 1,
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 1,
+                      "times": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "女優の矜持 中野 一花",
+    "code": "5HY/WE43-09",
+    "rarity": "N",
+    "expansion": "Quintuplets Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "YELLOW",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の手札の自分のレベル以下のレベルのキャラを1枚まで選び、舞台の好きな枠に置き、そのターン中、そのキャラのソウルを＋1。",
+      "【自】［(4)］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは自分のキャラを1枚選び、そのターン中、次の能力を与える。『【自】 この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたは相手に同じダメージを与えてよい。』（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Stylish"
+    ],
+    "set": "5HY",
+    "release": "WE43",
+    "sid": "09",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_we43/5hy_we43_09.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付(4)费，赋予自身【取消时追加伤害】",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "self",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": "last_cancelled"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "label": "支付(4)费，赋予其他角色【取消时追加伤害】",
+            "instructions": [
+              {
+                "op": "GiveEffect",
+                "target": "other_character",
+                "effect": {
+                  "trigger": "OnDamageCancel",
+                  "limit": {
+                    "type": "turn",
+                    "count": 1
+                  },
+                  "instructions": [
+                    {
+                      "op": "DealDamage",
+                      "amount": "last_cancelled"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "続く物語 中野 二乃",
+    "code": "5HY/WE43-33",
+    "rarity": "N",
+    "expansion": "Quintuplets Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 2,
+    "cost": 1,
+    "power": 5000,
+    "soul": 1,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【永】 他のあなたの「私たちの覚悟 中野 二乃」すべてに、パワーを＋500し、次の能力を与える。『【自】［(2) 手札の《五つ子》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードの与えたダメージがキャンセルされた時、あなたはコストを払ってよい。そうしたら、相手に4ダメージを与える。』（ダメージキャンセルは発生する）",
+      "【永】 応援 このカードの前のあなたのキャラすべてに、パワーを＋Ｘ。Ｘはそのキャラのレベル×500に等しい。"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Cooking"
+    ],
+    "set": "5HY",
+    "release": "WE43",
+    "sid": "33",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_we43/5hy_we43_33.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "instructions": [
+          {
+            "op": "GiveEffect",
+            "target": "all_others",
+            "effect": {
+              "trigger": "OnDamageCancel",
+              "is_choice": true,
+              "choices": [
+                {
+                  "label": "不发动二乃支援效果",
+                  "instructions": []
+                },
+                {
+                  "label": "发动二乃支援效果: 烧4",
+                  "instructions": [
+                    {
+                      "op": "Burn",
+                      "amount": 4,
+                      "times": 1
+                    }
+                  ]
+                }
+              ],
+              "limit": 1
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "君と進む先 中野 二乃",
+    "code": "5HY/WE43-35",
+    "rarity": "N",
+    "expansion": "Quintuplets Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 9500,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 チェンジ ［このカードを手札に戻す］ あなたのクライマックスフェイズの始めに、あなたはコストを払ってよい。そうしたら、あなたは自分の手札の《五つ子》のキャラを1枚まで選び、このカードがいた枠に置く。",
+      "【起】［(2) このカードを【レスト】する］ 相手に1ダメージを与える。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Cooking"
+    ],
+    "set": "5HY",
+    "release": "WE43",
+    "sid": "35",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_we43/5hy_we43_35.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "发动【起】效果：造成1点伤害（此角色之后无法攻击）",
+            "instructions": [
+              {
+                "op": "Burn",
+                "amount": 1,
+                "times": 1
+              }
+            ]
+          },
+          {
+            "label": "不发动【起】效果，正常攻击",
+            "instructions": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "割り切れない想い 中野 二乃",
+    "code": "5HY/WE43-36",
+    "rarity": "N",
+    "expansion": "Quintuplets Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "RED",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードが手札から舞台に置かれた時、あなたは自分の山札を見て《五つ子》のキャラを1枚まで選んで相手に見せ、手札に加え、その山札をシャッフルする。",
+      "【自】［(2) 手札を1枚控え室に置く］ このカードがアタックした時、あなたはコストを払ってよい。そうしたら、あなたは相手の山札の下から4枚を、控え室に置き、相手にＸダメージを与え、そのターン中、このカードのパワーを＋1000。Ｘはそれらのカードのクライマックスの枚数に等しい。（ダメージキャンセルは発生する）"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Cooking"
+    ],
+    "set": "5HY",
+    "release": "WE43",
+    "sid": "36",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_we43/5hy_we43_36.png",
+    "effects": [
+      {
+        "trigger": "OnAttack",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "不发动效果",
+            "instructions": []
+          },
+          {
+            "label": "支付[2费,1手]: 削对手牌库底4张，根据CX数烧血",
+            "instructions": [
+              {
+                "op": "MillAndBurn",
+                "target_player": "opp",
+                "zone": "bottom",
+                "mill_amount": 4,
+                "condition": "is_cx",
+                "mode": "per_card",
+                "burn_amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "夏を味わう 中野 三玖",
+    "code": "5HY/WE43-45",
+    "rarity": "N",
+    "expansion": "Quintuplets Premium Booster",
+    "side": "W",
+    "type": "Character",
+    "color": "BLUE",
+    "level": 3,
+    "cost": 2,
+    "power": 10000,
+    "soul": 2,
+    "trigger": [
+      "SOUL"
+    ],
+    "flavor_text": "",
+    "ability": [
+      "【自】 このカードがアタックした時、そのターン中、このカードのパワーを＋Ｘ。Ｘは他のあなたの《五つ子》のキャラの枚数×500に等しい。",
+      "【自】［(1) 手札の《五つ子》のキャラを2枚控え室に置く］ この能力は1ターンにつき1回まで発動する。このカードが手札から舞台に置かれたターン中、このカードのバトル相手が【リバース】した時、あなたはコストを払ってよい。そうしたら、このカードを【スタンド】する。"
+    ],
+    "attributes": [
+      "Quintuplets",
+      "Headphones"
+    ],
+    "set": "5HY",
+    "release": "WE43",
+    "sid": "45",
+    "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/5/5hy_we43/5hy_we43_45.png",
+    "effects": [
+      {
+        "trigger": "OnReverse",
+        "is_choice": true,
+        "choices": [
+          {
+            "label": "未满足条件 (未击倒对手 或 非登场回合)",
+            "instructions": []
+          },
+          {
+            "label": "条件达成 (登场回合且击倒对手) -> 再动",
+            "instructions": [
+              {
+                "op": "PseudoExtraAttack",
+                "soul": 2
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
