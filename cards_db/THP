@@ -1,0 +1,65 @@
+{
+  "name": "楽園の素敵な巫女 霊夢",
+  "code": "THP/S130-063",
+  "rarity": "R",
+  "expansion": "Touhou Project",
+  "side": "W",
+  "type": "Character",
+  "color": "RED",
+  "level": 3,
+  "cost": 2,
+  "power": 11000,
+  "soul": 2,
+  "trigger": [
+    "SOUL"
+  ],
+  "flavor_text": "",
+  "ability": [
+    "【自】【CXコンボ】 あなたのアタックフェイズの始めに、クライマックス置場に「夢想天生」があり、他のあなたの「少女綺想曲　～ Dream Battle 霊夢」がいて、他のあなたの前列のキャラがいないなら、そのターン中、このカードは次の能力を得る。『【自】［(4) 手札の「楽園の素敵な巫女 霊夢」を1枚控え室に置き、手札を4枚控え室に置く］ このカードのアタックの終わりに、あなたはコストを払ってよい。そうしたら、相手に1ダメージを2回、2ダメージを2回、3ダメージを2回、4ダメージを1回与える。』（ダメージキャンセルは発生する）"
+  ],
+  "attributes": [
+    "幻想郷",
+    "博麗神社"
+  ],
+  "set": "THP",
+  "release": "S130",
+  "sid": "063",
+  "image": "https://ws-tcg.com/wordpress/wp-content/images/cardlist/t/thp_s130/thp_s130_063.png",
+  "effects": [
+    {
+      "trigger": "OnAttackEnd",
+      "is_choice": true,
+      "choices": [
+        {
+          "label": "不发动CX连动",
+          "instructions": []
+        },
+        {
+          "label": "发动CX连动 (条件达成，付4费5手): 终极七段连环烧",
+          "instructions": [
+            {
+              "op": "Burn",
+              "amount": 1,
+              "times": 2
+            },
+            {
+              "op": "Burn",
+              "amount": 2,
+              "times": 2
+            },
+            {
+              "op": "Burn",
+              "amount": 3,
+              "times": 2
+            },
+            {
+              "op": "Burn",
+              "amount": 4,
+              "times": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
